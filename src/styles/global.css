@@ -1,3 +1,129 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+body{font-family: 'Roboto', sans-serif !important;}
+h1,h2,h3,h4,h5,h6,p{margin: 0;}
+
+p{font-weight: 400;}
+
+.cookie-back{background-color: #353535;}
+.bg-gray-990 {background-color: #080808;}
+
+
+.border-grey-subnav {border-color: hsla(0,0%,100%,.24);}
+
+.rollover-svg-item:hover .border-grey-theater, .rollover-svg-item:hover .rollover-color-title {
+    border-color: #ff5400!important;
+}
+.rollover-svg-item:hover .color-svg-blue, .rollover-svg-item:hover .color-svg-blue-fill {
+    stroke: #2ea8df!important;
+}
+.rollover-svg-item:hover .color-svg-yellow, .rollover-svg-item:hover .color-svg-yellow-fill {
+    stroke: #fac55e!important;
+}
+.rollover-svg-item:hover .color-svg-red {stroke: #e90505!important;}
+.rollover-svg-item:hover .color-svg-purple2 {fill: #7267ae!important;}
+.rollover-svg-item:hover .color-svg-orange2-fill { fill: #f15722!important;}
+.rollover-svg-item:hover .color-svg-green {stroke: #63bc46!important;}
+
+.rollover-svg-item:hover .rollover-color-title { color: #ff5400!important;}
+
+.orng-rollover-overlay:hover {border-color: #ff5400;}
+.orng-overlay:hover {color: #ff5400!important;}
+.orng-overlay:hover .border-grey-theater {border-color: #ff5400!important;}
+.rollover-svg-item:hover .color-svg-orange-fill {fill: #eca821!important;}
+.rollover-svg-item:hover .color-svg-purple-fill {fill: #6d4ee2!important;}
+.orng-overlay:hover .grid-icon {fill: #ff5400;}
+.rollover-svg-item:hover .color-svg-darkred-fill {fill: #a41d23!important;}
+.rollover-svg-item:hover .color-svg-lightbrown-fill {fill: #b27f4c!important;}
+.rollover-svg-item:hover .color-svg-red-fill {fill: #e90505!important;}
+.rollover-svg-item:hover .color-svg-green { fill: #22b24b!important;}
+.rollover-svg-item:hover .color-svg-grey { fill: #a6adb1!important;}
+.rollover-svg-item:hover .color-svg-blue2 {fill: #33aae1!important;}
+.rollover-svg-item:hover .color-svg-red2 { fill: #bc2025!important;}
+.orgn-rollover-svg path, .white-svg path {fill: #fff!important;}
+
+.bg-opacity-gray {background-color: rgba(0,0,0,.4);background-size: contain;}
+
+.bonus-banner-image {max-width: 60px; position: absolute; margin-left: -9px; margin-top: -15px;}
+
+.hr_brd{background: inherit;height: inherit; border: 1px solid rgb(107 114 128);}
+
+.text-grey-bdbbba {color: #bdbbba;}
+.text-green-1f8f13 {color: #1f8f13;}
+.text-red-b20000 {color: #b20000;}
+
+input.tgg-title {appearance: unset; all: unset;}
+.faq-accordion-title label {display: flex;align-items: center; padding: 8px 0; cursor: pointer;}
+.faq-accordion-header {position: relative;transition: color .2s linear; cursor: pointer; margin-left: 3.8rem;}
+.faq-accordion-header:hover {color: #ff5400;}
+.faq-accordion-header:after, .faq-accordion-header:before {content: "";position: absolute;left: 0; top: 50%; width: 22px; height: 4px;
+margin-top: -2px; background-color: #fff; margin-left: -3rem;}
+.faq-accordion .faq-accordion-header:after {transform: rotate(90deg); transition: transform .35s cubic-bezier(.65,.05,.36,1);}
+.faq-accordion-content { margin-left: 3.8rem;}
+.faq-accordion-content {overflow: hidden; max-height: 0; transition: max-height .35s ease-in-out;}
+.faq-accordion .tgg-title:checked~.faq-accordion-content {will-change: max-height; max-height: 100%;}
+.faq-accordion .tgg-title:checked~.faq-accordion-title .faq-accordion-header:before {transition: transform .35s cubic-bezier(.65,.05,.36,1);background-color: #ff5400;}
+.faq-accordion .tgg-title:checked~.faq-accordion-title .faq-accordion-header:after {transform: rotate(0deg);transition: transform .35s cubic-bezier(.65,.05,.36,1); background-color: #ff5400;}
+
+
+.text-menu {font-size: .5em; font-weight: 700;}
+.mobile_bg {background-image: url(../assets/images/blackfade.jpg); background-position: top center;}
+
+.quote {color: #fff;font-size: 1.875rem;}
+.quote span {font-size: 4rem;line-height: 0;position: relative;top: 16px;}
+.quote.two {top: 21px;}
+
+.orange-input {border-radius: 10px!important;}
+
+.closed-ps {max-height: 0;}
+
+.quote-todd:before {
+    content: open-quote;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    padding-right: 5px;
+}
+.quote-todd:after {content: close-quote; font-weight: 700;font-size: 64px;line-height:16px;
+padding-left: 5px;position: absolute;padding-top: 22px;}
+
+
+
+
+
+
+@media screen and (min-width: 1280px){
+.callout .xl\:text-6xl {font-size: 3.6rem;}
+.callout .xl\:text-2xl {font-size: 1.75rem; line-height: 1.8rem;}
+.xl\:text-50{font-size: 50px !important;}
+.xl\:text-35{font-size: 35px !important;}
+}
+
+
+@media screen and (min-width: 1024px){
+
+.large-justify-start {justify-content: flex-start!important;}
+.large-justify-end {justify-content: flex-end!important;}
+
+.wirelesscinema{background-image: url('../assets/images/wireless-cinema-package-1398px-x-658px.jpg');
+background-size: cover; background-position: center center;background-repeat: no-repeat;}
+.wiredcinema{background-image: url('../assets/images/wired-cinema-package-1398px-x-658px.jpg');
+background-size: cover; background-position: center center;background-repeat: no-repeat;}
+.projectorstand{background-image: url('../assets/images/timberline-projector-stand-1398px-x-658px.jpg');
+background-size: cover; background-position: center center;background-repeat: no-repeat;}
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 767px){
+.bonus-banner-image { margin-left: -13px; margin-top: -8px;}
+}

@@ -1,32 +1,275 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React, { useState, useEffect } from "react"
+import { Link, StaticQuery } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import { globalHistory } from "@reach/router"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      margin: `0 auto`,
-      padding: `var(--space-4) var(--size-gutter)`,
-      display: `flex`,
-      alignItems: `center`,
-      justifyContent: `space-between`,
-    }}
-  >
-    <Link
-      to="/"
-      style={{
-        fontSize: `var(--font-sm)`,
-        textDecoration: `none`,
-      }}
-    >
-      {siteTitle}
-    </Link>
-    <img
-      alt="Gatsby logo"
-      height={20}
-      style={{ margin: 0 }}
-      src="data:image/svg+xml,%3Csvg fill='none' viewBox='0 0 107 28' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3CclipPath id='a'%3E%3Cpath d='m0 0h106.1v28h-106.1z'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23a)'%3E%3Cg fill='%23000'%3E%3Cpath clip-rule='evenodd' d='m89 11.7c-.8 0-2.2.2-3.2 1.6v-8.10005h-2.8v16.80005h2.7v-1.3c1.1 1.5 2.6 1.5999 3.2 1.5999 3 0 5-2.2999 5-5.2999s-2-5.3-4.9-5.3zm-.7 2.5c1.7 0 2.8 1.2 2.8 2.8s-1.2 2.8-2.8 2.8c-1.7 0-2.8-1.2-2.8-2.8s1.1-2.8 2.8-2.8z' fill-rule='evenodd'/%3E%3Cpath d='m71.2 21.9999v-7.6h1.9v-2.4h-1.9v-3.40005h-2.8v3.40005h-1.1v2.4h1.1v7.6z'/%3E%3Cpath clip-rule='evenodd' d='m65.6999 12h-2.9v1.3c-.8999-1.5-2.4-1.6-3.2-1.6-2.9 0-4.8999 2.4-4.8999 5.3s1.9999 5.2999 5.0999 5.2999c.8 0 2.1001-.0999 3.1001-1.5999v1.3h2.7999zm-5.1999 7.8c-1.7001 0-2.8-1.2-2.8-2.8s1.2-2.8 2.8-2.8c1.7 0 2.7999 1.2 2.7999 2.8s-1.1999 2.8-2.7999 2.8z' fill-rule='evenodd'/%3E%3Cpath d='m79.7001 14.4c-.7-.6-1.3-.7-1.6-.7-.7 0-1.1.3-1.1.8 0 .3.1.6.9.9l.7.2c.1261.0472.2621.0945.4037.1437.7571.2632 1.6751.5823 2.0963 1.2563.3.4.5 1 .5 1.7 0 .9-.3 1.8-1.1 2.5s-1.8 1.0999-3 1.0999c-2.1 0-3.2-.9999-3.9-1.6999l1.5-1.7c.6.6 1.4 1.2 2.2 1.2s1.4-.4 1.4-1.1c0-.6-.5-.9-.9-1l-.6-.2c-.0687-.0295-.1384-.0589-.2087-.0887l-.0011-.0004c-.6458-.2729-1.3496-.5704-1.8902-1.1109-.5-.5-.8-1.1-.8-1.9 0-1 .5-1.8 1-2.3.8-.6 1.8-.7 2.6-.7.7 0 1.9.1 3.2 1.1z'/%3E%3Cpath d='m98.5 20.5-4.8-8.5h3.3l3.1 5.7 2.8-5.7h3.2l-8 15.3h-3.2z'/%3E%3Cpath d='m47 13.7h7c0 .0634.01.1267.0206.1932.0227.1435.0477.3018-.0206.5068 0 4.5-3.4 8.1-8 8.1s-8-3.6-8-8.1c0-4.49995 3.6-8.09995 8-8.09995 2.6 0 5 1.2 6.5 3.3l-2.3 1.49995c-1-1.29995-2.6-2.09995-4.2-2.09995-2.9 0-4.9 2.49995-4.9 5.39995s2.1 5.3 5 5.3c2.6 0 4-1.3 4.6-3.2h-3.7z'/%3E%3C/g%3E%3Cpath d='m18 14h7c0 5.2-3.7 9.6-8.5 10.8l-13.19995-13.2c1.1-4.9 5.5-8.6 10.69995-8.6 3.7 0 6.9 1.8 8.9 4.5l-1.5 1.3c-1.7-2.3-4.4-3.8-7.4-3.8-3.9 0-7.29995 2.5-8.49995 6l11.49995 11.5c2.9-1 5.1-3.5 5.8-6.5h-4.8z' fill='%23fff'/%3E%3Cpath d='m6.2 21.7001c-2.1-2.1-3.2-4.8-3.2-7.6l10.8 10.8c-2.7 0-5.5-1.1-7.6-3.2z' fill='%23fff'/%3E%3Cpath d='m14 0c-7.7 0-14 6.3-14 14s6.3 14 14 14 14-6.3 14-14-6.3-14-14-14zm-7.8 21.8c-2.1-2.1-3.2-4.9-3.2-7.6l10.9 10.8c-2.8-.1-5.6-1.1-7.7-3.2zm10.2 2.9-13.1-13.1c1.1-4.9 5.5-8.6 10.7-8.6 3.7 0 6.9 1.8 8.9 4.5l-1.5 1.3c-1.7-2.3-4.4-3.8-7.4-3.8-3.9 0-7.2 2.5-8.5 6l11.5 11.5c2.9-1 5.1-3.5 5.8-6.5h-4.8v-2h7c0 5.2-3.7 9.6-8.6 10.7z' fill='%237026b9'/%3E%3C/g%3E%3C/svg%3E"
-    />
-  </header>
-)
+const Header = ({ siteTitle }) => {
+  const [open, setOpen] = useState(false)
+  const [openW, setOpenW] = useState(false)
+  useEffect(() => {
+    return globalHistory.listen(({ action }) => {
+      if (action === "PUSH") setOpen(false)
+    })
+  }, [setOpen])
+  return (
+    <>
+      <header className="full-width bg-black py-4 px-6">
+        <div className="">
+          <div className="">
+            <div className=" mx-auto lg:container flex items-center justify-between uppercase text-sm text-white relative">
+              <Link to="/" className="cursor-pointer">
+                <StaticImage src="../assets/images/cinemalogo.png" className="md:w-64 w-48" />
+              </Link>
+              <div
+                className="flex flex-col items-center w-8 cursor-pointer lg:hidden"
+                onClick={() => setOpen(!open)}
+              >
+                <span className="text-menu uppercase leading-none">Menu</span>
+                <div className="w-full bg-orange-500 h-0.5 mt-1" />
+                <div className="w-full bg-white h-0.5 mt-1" />
+                <div className="w-full bg-white h-0.5 mt-1" />
+              </div>
+              <div className="hidden lg:flex flex-col items-end">
+                <div className="flex items-center">
+                  <Link to="tel:2075952960"
+                    className="cursor-pointer flex items-center no-underline"
+                  >
+                    <StaticImage src="../assets/images/icons/cell.png" className="w-5" />
+                    <span className="ml-2 text-white no-underline">(207) 647-8759</span>
+                  </Link>
+                  <div className="mx-6 bg-orange-500 w-px h-5"></div>
+                  <div className="flex items-center">
+                    <Link
+                      to="https://www.facebook.com/The-Wireless-Outdoor-Cinema-Company-112773330512496"
+                      target="_blank"
+                      className="cursor-pointer hover:text-orange-500 no-underline"
+                    >
+                      <StaticImage src="../assets/images/icons/facebook.svg" className="h-4 w-3 text-white no-underline" />
+                    </Link>
+                    <Link
+                      to="https://www.linkedin.com/in/todd-morton-7851b1b"
+                      target="_blank"
+                      className="cursor-pointer hover:text-orange-500 no-underline"
+                    >
+                      <StaticImage
+                        src="../assets/images/icons/linkedinwhite.png"
+                        className="ml-6 h-5 w-4 text-white"
+                      />
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="flex items-center mt-3">
+                  <Link
+                    to="/about"
+                    className="cursor-pointer hover:text-orange-500 text-white no-underline"
+                  >
+                    About
+                  </Link>
+                  <span
+                    to="#"
+                    className="cursor-pointer ml-12 flex items-center relative group"
+                  >
+                    <Link to="/comparison" className="hover:text-orange-500 text-white no-underline">
+                      OUTDOOR CINEMAS
+                    </Link>{" "}
+                    <StaticImage
+                      src="../assets/images/icons/downarrow.png"
+                      className="ml-2 h-2 w-2 transition-transform transform group-hover:rotate-180 duration-300"
+                    />
+                    <div className="bg-black w-80 z-50 absolute left-0 bottom-0 transform translate-y-full z-10 flex-col pt-6 pb-2 hidden group-hover:flex whitespace-no-wrap">
+                    <Link
+                        to="/comparison"
+                        className="py-2 px-4 hover:text-orange-500 no-underline text-white"
+                      >
+                        How to build a professional outdoor movie theater
+                      </Link>
+                      <Link
+                        to="/comparison"
+                        className="py-2 px-4 hover:text-orange-500 no-underline text-white"
+                      >
+                        Cinema Comparison
+                      </Link>
+                      <Link
+                        to="/comparison"
+                        className="pt-2 px-4 hover:text-orange-500 text-white no-underline"
+                      >
+                        Timberline Series
+                      </Link>
+                     
+                      <Link
+                        to="/accessory"
+                        className="py-2 px-4 cursor-pointer hover:text-orange-500 text-white no-underline"
+                      >
+                        Outdoor Cinema Accessories
+                      </Link>
+                    </div>
+                  </span>
+                  <span
+                    to="#"
+                    className="cursor-pointer ml-12 flex items-center relative group"
+                  >
+                    <Link to="/in-the-news" className="hover:text-orange-500 text-white no-underline">
+                      In The News
+                    </Link>{" "}
+                    <StaticImage
+                      src="../assets/images/icons/downarrow.png"
+                      className="ml-2 h-2 w-2 transition-transform transform group-hover:rotate-180 duration-300"
+                    />
+                    <div className="bg-black w-60 absolute z-50 left-0 bottom-0 transform translate-y-full z-10 flex-col pt-6 pb-2 hidden group-hover:flex whitespace-no-wrap">
+                      <Link
+                        to="/october-10-sun-journal-news-article"
+                        className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                      >
+                        Oct 11 2021 News Article
+                      </Link>
+                      <Link
+                        to="/august-28-press-release"
+                        className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                      >
+                        Aug 28 2021 Press Release
+                      </Link>
+                      <Link
+                        to="/june-30-press-release"
+                        className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                      >
+                        June 30 2021 Press Release
+                      </Link>
+                      <Link
+                        to="/january-04-press-release"
+                        className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                      >
+                        Jan 04 2021 Press Release
+                      </Link>
+                      <Link
+                        to="/september-10-press-release"
+                        className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                      >
+                        Sept 10 2020 Press Release
+                      </Link>
+                      <Link
+                        to="/june-25-bridgton-news-article"
+                        className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                      >
+                        June 25 2020 Press Release
+                      </Link>
+                      <Link
+                        to="/june-08-press-release"
+                        className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                      >
+                        June 08 2020 Press Release
+                      </Link>
+                    </div>
+                  </span>
+                  <Link
+                    to="/faq"
+                    className="cursor-pointer ml-12 hover:text-orange-500 text-white no-underline"
+                  >
+                    FAQ
+                  </Link>
+                  <Link
+                    to="/connect"
+                    className="cursor-pointer ml-12 hover:text-orange-500 text-white no-underline"
+                  >
+                    Connect
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {open && (
+        <div
+          className="w-full bg-cover absolute z-30 lg:hidden mobile_bg"
+         
+        >
+          <div className="text-white text-xl flex flex-col">
+            <Link to="/about" className="no-underline">
+              <span className="block py-3 px-6 text-white">About</span>
+            </Link>
+            <div class="w-full border border-b border-gray-600"></div>
+            <span onClick={() => setOpenW(!openW)} className="cursor-pointer">
+              <span className="block py-3 px-6 flex items-center justify-between">
+                <span>Outdoor Cinemas</span>
+                <span>&#9660;</span>
+              </span>
+              {openW && (
+                <div className="flex flex-col text-orange-500 py-3 px-6">
+                  <Link to="/comparison" className="block text-orange-500 py-3 no-underline ">
+                    Cinema Comparison
+                  </Link>
+                  <div class="w-full border border-b border-gray-600"></div>
+                  <span className="py-3">Timberline Series</span>
+                 
+                  <div class="w-full border border-b border-gray-600 mt-3"></div>
+                  <Link to="/accessory" className="block py-3 no-underline text-orange-500">
+                    Outdoor Cinema Accessories
+                  </Link>
+                </div>
+              )}
+            </span>
+            <div class="w-full border border-b border-gray-600"></div>
+            <Link to="/in-the-news" className="no-underline">
+              <span className="block py-3 px-6 text-white">In the News</span>
+            </Link>
+            <div class="w-full border border-b border-gray-600"></div>
+            <Link to="/faq"  className="no-underline text-white">
+              <span className="block py-3 px-6">
+                Frequently Asked Questions
+              </span>
+            </Link>
+            <div class="w-full border border-b border-gray-600"></div>
+            <Link to="/connect"  className="no-underline text-white">
+              <span className="block py-3 px-6">Connect</span>
+            </Link>
+            <div class="w-full border border-b border-gray-600"></div>
+            <Link to="/terms"  className="no-underline text-white">
+              <span className="block py-3 px-6">Terms Of Use</span>
+            </Link>
+            <div class="w-full border border-b border-gray-600"></div>
+            <Link to="/privacy"  className="no-underline text-white">
+              <span className="block py-3 px-6">Privacy Policy</span>
+            </Link>
+            <div class="w-full border border-b border-gray-600"></div>
+            <Link to="/sitemap" className="no-underline text-white">
+              <span className="block py-3 px-6">Sitemap</span>
+            </Link>
+            <div class="w-full border border-b border-gray-600"></div>
+            <div className="py-3 px-6 flex items-center justify-between">
+              <Link
+                to="tel:2075952960"
+                className="cursor-pointer flex items-center w-8/12 text-white no-underline"
+              >
+                <StaticImage src="../assets/images/cellorange.png" className="h-6" />
+                <span className="ml-2">(207) 595-2960</span>
+              </Link>
+              <div className="flex items-center">
+                <a
+                  href="https://www.facebook.com/The-Wireless-Outdoor-Cinema-Company-112773330512496"
+                  target="_blank"
+                  className="cursor-pointer hover:text-orange-500"
+                >
+                  <StaticImage src="../assets/images/icons/facebookOrange.png" className="" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/todd-morton-7851b1b"
+                  target="_blank"
+                  className="cursor-pointer hover:text-orange-500"
+                >
+                  <StaticImage src="../assets/images/icons/linkedinOrange.png" className="ml-6" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
+      }
+    </>
+
+  )
+}
+
 
 export default Header

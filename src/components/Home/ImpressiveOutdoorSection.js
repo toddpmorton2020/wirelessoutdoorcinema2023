@@ -45,7 +45,7 @@ const ImpressiveOutdoorSection = () => {
     ]
   
     return (
-      <div className="bg-gray-990 relative text-white border-grey-subnav py-12 xl:py-24">
+      <div className="bg-gray-990 relative text-white border-grey-subnav pt-12 pb-4 xl:py-24">
         <div className="max-w-7xl px-5 mx-auto">
           <div className="mx-auto flex flex-col xl:grid xl:grid-cols-12 w-full">
             <div className="md:text-center xl:col-span-12 xl:text-xl mb-11">
@@ -84,7 +84,7 @@ const ImpressiveOutdoorSection = () => {
                         style={{
                           bottom: "1rem",
                         }}
-                        className={`bg-black/[.5] flex p-2 absolute lg:hidden items-center ${
+                        className={`bg-black/[.6] flex p-2 absolute lg:hidden items-center ${
                           item.align === "start" ? "" : "right-0 flex-row-reverse"
                         }`}
                       >
@@ -99,7 +99,7 @@ const ImpressiveOutdoorSection = () => {
                       </div>
   
                       <div
-                        className={`absolute w-full lg:flex justify-center hidden large-justify-${item.align} top-1/2 xl:py-24 y-4 lg:my-0`}
+                        className={`absolute w-full lg:flex justify-center hidden large-justify-${item.align} top-1/2 xl:py-24 py-12 lg:my-0`}
                       >
                         <div className="flex flex-row bg-opacity-gray items-center relative">
                           <Icon

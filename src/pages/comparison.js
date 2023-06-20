@@ -40,8 +40,8 @@ const ComparisonPage = () => {
 
             <div>
           <div>
-            <div className="container px-5 mx-auto">
-             <div className="md:px-6 lg:px-10">
+            <div className="max-w-7xl px-5 mx-auto">
+             <div className="">
                 <h1 className="md:text-5xl text-4xl privacy-heading text-center leading-none mt-6 mb-1">
                   <span className="text-orange-500">Compare</span> Timberline
                   Outdoor Cinemas
@@ -56,7 +56,7 @@ const ComparisonPage = () => {
                   </span>
                 </p>
               </div>
-              <div className="hidden lg:grid grid-cols-3 gap-5 lg:pt-16 hide pt-8 lg:space-x-4 text-center items-center md:px-6 lg:px-10">
+              <div className="hidden lg:grid grid-cols-3 gap-5 lg:pt-16 hide pt-8 lg:space-x-4 text-center items-center">
                 <div>
                   <StaticImage
                     src="../assets/images/jedi-bobcat.png"
@@ -133,7 +133,7 @@ const ComparisonPage = () => {
                   </button>
                 </div>
               </div>
-              <div className="lg:hidden text-center pt-6 md:px-6 lg:px-10">
+              <div className="lg:hidden text-center pt-6">
                 <div>
                   <StaticImage
                     src="../assets/images/mobile-jedi-bobcat-compare-396x356.png"
@@ -331,18 +331,18 @@ const ComparisonPage = () => {
                     </div>
                   </div>
                   <div className="block sm:hidden py-1 included-btn mt-6 mb-4 comparison-details mx-auto rounded-md border border-orange-1000 comparison-detail-border text-left">
-                    <div className="flex-1">
+                    <div className="">
                       <div
-                        className="flex lg:justify-around items-center w-full sm:w-auto px-3 sm:px-0"
+                        className="w-full px-3"
                         onClick={() => setOpen(!open)}
                       >
-                        <h2 className="text-2xl text-orange-1000 flex-grow text-center">
+                        <h2 className={`text-2xl text-orange-1000 flex-grow text-center  ${open ? 'minusicon' : 'plusicon'} `}>
                           What's included?
                         </h2>
-                        <img
+                        {/* <img
                           src={open ? 'PlusIcon' : 'MinusIcon'}
                           className="w-4 sm:w-8 md:w-auto md:h-5 cursor-pointer sm:pl-4 ml-4 sm:ml-0"
-                        />
+                        /> */}
                       </div>
                     </div>
                     <div className={answerClassName}>
@@ -718,19 +718,19 @@ const ComparisonPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="block sm:hidden py-1 included-btn mt-6 mb-4 comparison-details mx-auto rounded-md comparison-detail-border-p text-left">
-                    <div className="flex-1">
+                  <div className="block sm:hidden py-1 included-btn mt-6 mb-4 comparison-details border border-orange-1000 mx-auto rounded-md comparison-detail-border-p text-left">
+                    <div className="">                    
                       <div
-                        className="flex lg:justify-around items-center w-full sm:w-auto px-3 sm:px-0"
+                        className="w-full px-3"
                         onClick={() => setOpen1(!open1)}
                       >
-                        <h2 className="text-2xl text-purple-1000 flex-grow text-center">
+                        <h2 className={`text-2xl text-purple-1000 flex-grow text-center  ${open1 ? 'minusicon' : 'plusicon'} `}>
                           What's included?
                         </h2>
-                        <StaticImage
-                          src={open1 ? "../assets/images/icons/minus.png" : "../assets/images/icons/plus.png"}
+                        {/* <img
+                          src={open ? 'PlusIcon' : 'MinusIcon'}
                           className="w-4 sm:w-8 md:w-auto md:h-5 cursor-pointer sm:pl-4 ml-4 sm:ml-0"
-                        />
+                        /> */}
                       </div>
                     </div>
                     <div className={answerClassName1}>
@@ -1109,19 +1109,20 @@ const ComparisonPage = () => {
                     </div>
                   </div>
                   <div className="block sm:hidden py-1 included-btn mt-6 mb-4 comparison-details mx-auto rounded-md border-orange-1000 border comparison-detail-border text-left">
-                    <div className="flex-1">
+                    <div className="">                     
                       <div
-                        className="flex lg:justify-around items-center w-full sm:w-auto px-3 sm:px-0"
+                        className="w-full px-3"
                         onClick={() => setOpen2(!open2)}
                       >
-                        <h2 className="text-2xl text-orange-1000 flex-grow text-center">
+                        <h2 className={`text-2xl text-orange-1000 flex-grow text-center  ${open2 ? 'minusicon' : 'plusicon'} `}>
                           What's included?
                         </h2>
-                        <StaticImage
-                          src={open2 ? "../assets/images/icons/minus.png" : "../assets/images/icons/plus.png"}
+                        {/* <img
+                          src={open ? 'PlusIcon' : 'MinusIcon'}
                           className="w-4 sm:w-8 md:w-auto md:h-5 cursor-pointer sm:pl-4 ml-4 sm:ml-0"
-                        />
+                        /> */}
                       </div>
+                      
                     </div>
                     <div className={answerClassName2}>
                       <div className="px-3 pt-6 text-left">
@@ -1307,7 +1308,7 @@ const ComparisonPage = () => {
                   </p>
                 </div>
               </div>
-              <div className="pt-20 pb-10 md:px-6 lg:px-10 hidden lg:block">
+              <div className="pt-20 pb-10 hidden lg:block">
                 <div className="">
                   <h1 className="text-31 pb-5 mb-0">Wooden Frame size</h1>
                   <hr class="border-gray-500 mb-0" />

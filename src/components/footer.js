@@ -142,15 +142,18 @@ function Footer() {
                   <span className="text-orange-600 mr-2">&gt;</span>
                   About
                 </Link>
-                <Link to="/about" className="flex items-center py-2 no-underline text-white">
-                  <span className="text-orange-600 mr-2">&gt;</span>
-                  Cinema Packages
+                <Link to="/comparison" className="flex items-center py-2 no-underline text-white">
+                  <span className="text-orange-500 mr-2">&gt;</span>
+                  Outdoor Cinemas
                 </Link>
-                <Link to="/about" className="flex items-center py-2 no-underline text-white">
-                  <span className="text-orange-600 mr-2">&gt;</span>
-                  How to build a Professional Outdoor Movie Theater
-                </Link>                
-                
+                <Link to="/how-to-build-an-outdoor-movie-theater" className="flex items-center py-2 no-underline text-white">
+                <span className="text-orange-500 mr-2">&gt;</span>
+                How To Build an Outdoor Movie Theater
+                </Link>
+                {/* <Link to="/accessory" className="flex items-center py-2 no-underline text-white">
+                  <span className="text-orange-500 mr-2">&gt;</span>
+                  Outdoor Cinema Accessories
+                </Link> */}
                 <Link to="/in-the-news" className="flex items-center py-2 no-underline text-white">
                   <span className="text-orange-500 mr-2">&gt;</span>
                   In the News
@@ -163,7 +166,7 @@ function Footer() {
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Connect
                 </Link>
-                {/* <Link to="/terms" className="flex items-center py-2 no-underline text-white">
+                <Link to="/terms" className="flex items-center py-2 no-underline text-white">
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Terms Of Use
                 </Link>
@@ -174,7 +177,7 @@ function Footer() {
                 <Link to="/sitemap" className="flex items-center py-2 no-underline text-white">
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Sitemap
-                </Link> */}
+                </Link>
               </div>
             </div>
             <div className="mb-4">
@@ -239,11 +242,7 @@ function Footer() {
               <div className="flex flex-col lg:pl-10">
                 <h5 className="text-left text-orange-500 font-bold uppercase mb-1">
                   Quick Links
-                </h5>              
-                <Link to="/about" className="flex items-center no-underline text-white">
-                <StaticImage src="../assets/images/icons/arrowright.png" className="h-3 mr-3" />
-                How To Build an Outdoor Movie Theater
-                </Link>
+                </h5>            
                 <Link to="/about" className="flex items-center no-underline text-white">
                 <StaticImage src="../assets/images/icons/arrowright.png" className="h-3 mr-3" />
                   About
@@ -252,10 +251,14 @@ function Footer() {
                 <StaticImage src="../assets/images/icons/arrowright.png" className="h-3 mr-3" />
                   Cinema Packages
                 </Link>
-                <Link to="/accessory" className="flex items-center no-underline text-white">
+                <Link to="/about" className="flex items-center no-underline text-white">
+                <StaticImage src="../assets/images/icons/arrowright.png" className="h-3 mr-3" />
+                How To Build an Outdoor Movie Theater
+                </Link>
+                {/* <Link to="/accessory" className="flex items-center no-underline text-white">
                 <StaticImage src="../assets/images/icons/arrowright.png" className="h-3 mr-3" />
                   Outdoor Cinema Accessories
-                </Link>
+                </Link> */}
                 <Link to="/in-the-news" className="flex items-center no-underline text-white">
                 <StaticImage src="../assets/images/icons/arrowright.png" className="h-3 mr-3" />
                   In the News

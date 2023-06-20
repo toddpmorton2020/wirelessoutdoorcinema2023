@@ -98,8 +98,8 @@ const PowerfulCinemaSection = () => {
         className="bg-black relative text-white border-grey-subnav py-8 xl:py-24"
         id="features"
       >
-        <div className="max-w-6xl md:px-3 px-5 mx-auto">
-          <div className="container mx-auto flex flex-col xl:grid xl:grid-cols-12 w-full">
+        <div className="max-w-7xl px-5 mx-auto">
+          <div className="flex flex-col xl:grid xl:grid-cols-12 w-full">
             <div className="text-left xl:col-span-12 xl:text-xl mb-11">
               <h2 className="text-2xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Powerful wireless and wired cinema packages</h2>
               <h3 className="txt-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 max-w-full mb-0 text-orange-1000">
@@ -116,7 +116,7 @@ const PowerfulCinemaSection = () => {
               </p>
             </div>
   
-            <div className="flex flex-col lg:hidden">
+            <div className="flex flex-col lg:hidden mb-8">
               <div>
                 {" "}
                 <StaticImage
@@ -125,20 +125,20 @@ const PowerfulCinemaSection = () => {
                   alt=""
                 />
               </div>
-              <div className="">
+              <div className="mt-5">
                 <h3 className="text-2xl">Go Wireless</h3>
-                <h3 className="font-bold">
+                <h4 className="font-bold text-lg">
                   No extensions cords. Fast setup every time.{" "}
-                </h3>
+                </h4>
   
-                <h3 className="text-orange-1000">Connect to: </h3>
+                <p className="text-orange-1000 mb-0 text-lg">Connect to: </p>
                 <ul className="m-0 p-0">
                   {gridItems.map(item => {
                     const Image = item.img
                     return (
-                      <li className="flex items-center my-4 " key={item.id}>
+                      <li className="flex items-center my-4 gap-3" key={item.id}>
                         <Image className="white-svg p-0 h-8  pb-3 lg:pb-0 lg:w-10 x-auto lg:ml-0" />
-                        <span className="ml-2 font-bold">{item.text}</span>
+                        <span className="font-bold text-base">{item.text}</span>
                       </li>
                     )
                   })}
@@ -146,22 +146,22 @@ const PowerfulCinemaSection = () => {
               </div>
             </div>
             <div
-              className="wirelesscinema col-span-12 mx-auto w-full text-center relative hidden lg:block"
+              className="wirelesscinema col-span-12 mx-auto w-full text-center relative hidden lg:block mb-24"
             >
               <div className="relative w-full mx-auto flex flex-start">
                 <div className="block text-left pt-5 pb-10 px-10 bg-black/[.7]">
                   <div className="container mx-auto">
                     <h3 className="text-4xl">Go Wireless</h3>
-                    <h3 className="text-3xl">No extensions cords. </h3>
-                    <h3 className="text-3xl">Fast setup every time. </h3>
-                    <h3 className="text-xl text-orange-1000 my-2">Connect to: </h3>
+                    <h4 className="text-3xl my-2">No extensions cords. </h4>
+                    <h4 className="text-3xl">Fast setup every time. </h4>
+                    <p className="text-xl text-orange-1000 my-2">Connect to: </p>
                     <ul className="text-xl m-0 p-0">
                       {gridItems.map(item => {
                         const Image = item.img
                         return (
-                          <li className="flex items-center mb-5 " key={item.id}>
+                          <li className="flex items-center mb-5 gap-3" key={item.id}>
                             <Image className="white-svg p-0 h-8  pb-3 lg:pb-0 lg:w-10 x-auto lg:ml-0" />
-                            <span className="ml-2">{item.text}</span>
+                            <span className="ml-2 text-base">{item.text}</span>
                           </li>
                         )
                       })}
@@ -172,24 +172,24 @@ const PowerfulCinemaSection = () => {
             </div>
           </div>
   
-          <div className="container mx-auto">
+          <div className="">
             <div className="block lg:hidden col-span-12 ">
               <div>
                 <StaticImage className="mx-auto w-full mb-3" src="../../assets/images/mobile-wired-cinema-package-480px-x-340px2.jpg" alt="" />
               </div>
-              <div className="">
-                <h3 className="text-2xl font-bold">Go Wired</h3>
-                <h3 className="font-bold">
+              <div className="mt-5">
+                <h3 className="text-2xl">Go Wired</h3>
+                <h4 className="font-bold text-lg">
                   Unlimited connection options. Play video games{" "}
-                </h3>
-                <h3 className="text-orange-1000">Connect to: </h3>
+                </h4>
+                <p className="text-orange-1000 mb-0 text-lg">Connect to: </p>
                 <ul className="m-0 p-0">
                   {gridItems2.map(item => {
                     const Image = item.img
                     return (
-                      <li className="flex items-center my-4 " key={item.id}>
+                      <li className="flex items-center my-4 gap-3" key={item.id}>
                         <Image className="white-svg h-12 p-3 pl-0 x-auto" />
-                        <span className="ml-2 font-bold">{item.text}</span>
+                        <span className="font-bold text-base">{item.text}</span>
                       </li>
                     )
                   })}
@@ -203,16 +203,16 @@ const PowerfulCinemaSection = () => {
                 <div className="block text-left pt-5 pb-10 px-10 bg-blck-size-128 bg-black/[.7]">
                   <div className="cotainer mx-auo">
                     <h3 className="text-4xl">Go Wired</h3>
-                    <h3 className="text-3xl">Unlimited connection options. </h3>
-                    <h3 className="text-3xl">Play video games and more. </h3>
-                    <h3 className="text-xl text-orange-1000 my-2">Connect to: </h3>
+                    <h4 className="text-3xl">Unlimited connection options. </h4>
+                    <h4 className="text-3xl">Play video games and more. </h4>
+                    <p className="text-xl text-orange-1000 my-2">Connect to: </p>
                     <ul className="text-xl m-0 p-0">
                       {gridItems2.map(item => {
                         const Image = item.img
                         return (
-                          <li className="flex items-center my-4 " key={item.id}>
+                          <li className="flex items-center my-4 gap-3" key={item.id}>
                             <Image className="white-svg p-0 h-8 pb-3 lg:pb-0 lg:w-10 x-auto lg:ml-0" />
-                            <span className="ml-2">{item.text}</span>
+                            <span className="ml-2 text-base">{item.text}</span>
                           </li>
                         )
                       })}

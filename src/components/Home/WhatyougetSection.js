@@ -9,10 +9,20 @@ import { HowVideoIcon } from "../../assets/images/icons/how-to-video-icon"
 import { TipsTechniquesIcon } from "../../assets/images/icons/tips-and-techniques-icon"
 
 
+import {DesignPlanIconHover} from "../../assets/images/icons/design-plan-icon-hover"
+import { MaterialListIconHover } from "../../assets/images/icons/material-list-icon-hover"
+import { ToolsNeededIconHover } from "../../assets/images/icons/tools-needed-icon-hover"
+import { EquipmentListIconHover } from "../../assets/images/icons/equipment-list-icon-hover"
+import { HowVideoIconHover } from "../../assets/images/icons/how-to-video-icon-hover"
+import { TipsTechniquesIconHover } from "../../assets/images/icons/tips-and-techniques-icon-hover"
+
+
+
 const gridItems = [
     {
       id: 0,
       img: DesignPlanIcon,
+      imghover: DesignPlanIconHover,
       title: "Design Plans",
       text:
         "Detailed plans show you how to build the frame and the projector stand.",
@@ -21,6 +31,7 @@ const gridItems = [
     {
       id: 1,
       img: MaterialListIcon,
+      imghover: MaterialListIconHover,
       title: "Material List",
       text: "List of required materials including hardware, fasteners, and wood.",
       bonus: false,
@@ -28,6 +39,7 @@ const gridItems = [
     {
       id: 2,
       img: ToolsNeededIcon,
+      imghover: ToolsNeededIconHover,
       title: "Equipment List",
       text:
         "Recommended electronics for wireless and wired systems.",
@@ -36,6 +48,7 @@ const gridItems = [
     {
       id: 3,
       img: EquipmentListIcon,
+      imghover: EquipmentListIconHover,
       title: "Required Tools",
       text: "All tools are covered, from essential handheld to power tools.",
       bonus: false,
@@ -43,6 +56,7 @@ const gridItems = [
     {
       id: 4,
       img: HowVideoIcon,
+      imghover: HowVideoIconHover,
       title: "How-To Videos",
       text: "How to videos on assembling and installing your movie theater.",
       bonus: true,
@@ -50,6 +64,7 @@ const gridItems = [
     {
       id: 5,
       img: TipsTechniquesIcon,
+      imghover: TipsTechniquesIconHover,
       title: "Tips & Techniques",
       text:
         "Get the most out of your outdoor movie theater with expert advice.",
@@ -77,13 +92,11 @@ const WhatyougetSection =() => {
           </div>
 
           <div className="text-center xl:col-span-7 xl:text-left xl:text-xl pt-12 xl:pt-16 ">
-            <h2 className="text-2xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Here's what you get</h2>
-            <p className="text-white txt-xl font-bold md:text-2xl pb-4 xl:pb-5 mb-0">
-            <span className="text-orange-1000 md:leading-none leading-c14">
+            <h2 className="text-2xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Here's what you get</h2>
+            <h3 className="txt-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 mb-0 text-orange-1000">
               Timberline Big Moose
-           <span className="text-white"> DIY </span>{" "} Guide.
-              </span>
-            </p>
+           <span className="text-white"> DIY </span>{" "} Guide.              
+            </h3>
 
             <div className="max-w-xl text-center md:text-justify">
               <p className="text-lg mb-4 ">
@@ -93,7 +106,7 @@ const WhatyougetSection =() => {
               </p>
             </div>
           </div>
-          <div className="col-span-5 hidden md:block -mt-10">
+          <div className="col-span-5 hidden md:block xl:-mt-10">
             <StaticImage
               className="mx-auto px-10 xl:px-0 md:pb-32 mb-5 xl:pb-0 w-full"
               src="../../assets/images/timberline-big-moose-791px-x-755px.png"
@@ -110,7 +123,7 @@ const WhatyougetSection =() => {
                   key={item.id}
                 >
                   {item.bonus && (
-                    <StaticImage src="../../assets/images/bonus-corner-banner-141px-x-121px.png" className="bonus-banner-image" />
+                    <StaticImage src="../../assets/images/icons/icon-red-corner-bonus.svg" className="bonus-banner-image" />
                   )}
                   <div className="border wblock  rounded-md border-grey-theater px-2 text-center h-full flex flex-col justify-start">
                     <div className="flex justify-center">

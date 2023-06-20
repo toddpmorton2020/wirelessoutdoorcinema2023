@@ -43,7 +43,7 @@ const FrameSystemsSection = () => {
                             </p>
                             <p className="mb-4 text-lg max-w-full">Made from pressure-treated wood and weather-resistance hardware.   </p>
                             <p className="mb-0 text-lg  max-w-full">
-                                <WarnIcon className="h-4 mr-2 inline-flex" />
+                                <WarnIcon className="h-4 mr-2 -mt-1 inline-flex" />
                                 Before you start building the Movable Frame System, you need to make exact calculations
                                 in order for the cinematic screen to fit correctly in the frame opening. You’ll find all the
                                 details you need in the how-to manual.
@@ -55,7 +55,7 @@ const FrameSystemsSection = () => {
                                 src="../../assets/images/timberline-movable-frame-1617px-x-750px.jpg"
                                 alt=""
                             />
-                            <div className="py-3 flex justify-around text-center ">
+                            <div className="py-3 flex sm:justify-around justify-between text-center sm:gap-0 gap-4 sm:flex-nowrap flex-wrap">
                                 <div>
                                     <MovableIcon className="w-full h-8 xl:h-12 p-1" />
 
@@ -83,7 +83,7 @@ const FrameSystemsSection = () => {
                                 src="../../assets/images/timberline-streamline-frame-1617px-x-750px.jpg"
                                 alt=""
                             />
-                            <div className="bg-gray-990 py-3 flex justify-around">
+                            <div className="bg-gray-990 py-3 flex sm:justify-around justify-between sm:gap-0 gap-4 sm:flex-nowrap flex-wrap">
                                 <div>
                                     <PermanentIcon className="w-full h-8 xl:h-12 p-1" />
 
@@ -124,7 +124,7 @@ const FrameSystemsSection = () => {
 
                             </p>
                             <p className="text-lg mb-0 max-w-full">
-                                <WarnIcon className="h-4 mr-2 inline-flex" />
+                                <WarnIcon className="h-4 mr-2 -mt-1 inline-flex" />
                                 The Streamline Frame System’s installation instructions are covered in the how-to manual.
                             </p>
                         </div>

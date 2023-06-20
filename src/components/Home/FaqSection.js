@@ -539,10 +539,10 @@ const FaqSection = () => {
                 if you have a question that isn't here.
               </p>
             </div>
-            <div className="col-span-12 grid grid-cols-12 gap-3 md:mt-12 mt-8">
+            <div className="col-span-12 grid grid-cols-12 gap-4 md:mt-12 mt-8">
               {faqList.map(item => (
                 <div
-                  className="col-span-12 lg:col-span-4 border rounded-md p-3 m-1 lg:py-15 orng-rollover-overlay rollover-svg-item"
+                  className="col-span-12 lg:col-span-4 border border-grey-subnav  rounded-md py-8 px-4 lg:py-15 orng-rollover-overlay rollover-svg-item"
                   key={item.id}
                 >
                   <div className="flex items-center pb-3">

@@ -75,7 +75,7 @@ const CustomProjectorSection = () => {
               and level, the projector stand must be aligned perfectly with the cinematic screen.
               </p>
               <p className="text-lg md:txt-2xl max-w-full mb-0">
-                <WarnIcon className="h-4 mr-2 inline-flex" />
+                <WarnIcon className="h-4 mr-2 -mt-1 inline-flex" />
                 Several calculations need to be made when building your custom projector stand to 
                 ensure that it aligns correctly with the screen and landscape of your property. 
                 All of the measurements are covered in the DIY guide. 
@@ -88,19 +88,18 @@ const CustomProjectorSection = () => {
               <h2 className="text-2xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Custom projector stand</h2>
               <h3 className="txt-xl md:text-2xl pb-4 xl:pb-5 text-orange-1000">
                 A light-weight portable entertainment center
-              </h3>
-  
+              </h3>  
               <ul className="m-0 p-0">
                 {gridItems.map((item, index) => {
                   const Image = item.img
                   return (
                     <li
-                      className={`flex items-center mb-4 ${
+                      className={`flex items-center mb-4 gap-3 ${
                         index === 0 ? "mt-4" : ""
                       }`}
                       key={item.id}
                     >
-                      <Image className="white-svg h-8 p-1  x-auto " />
+                      <Image className="white-svg h-8 p-1 mx-auto " />
                       <span className="ml-2 font-bold">{item.text}</span>
                     </li>
                   )
@@ -112,7 +111,7 @@ const CustomProjectorSection = () => {
             className="projectorstand mx-auto w-full relative hidden lg:block"           
           >
             <div className="reltive w-fill mx-auto  flex justify-end">
-              <div className="block text-left py-2 pb-16 p-10 bg-blck-size-128 bg-black bg-opacity-50">
+              <div className="block text-left py-2 pb-16 p-10 bg-blck-size-128 bg-black/[.6]">
                 <div>
                   <h3 className="text-3xl">Projector Stand </h3>
                   <h4 className="text-2xl">Solid wood. Easy to build. </h4>
@@ -121,7 +120,7 @@ const CustomProjectorSection = () => {
                     {gridItems.map(item => {
                       const Image = item.img
                       return (
-                        <li className="flex items-center my-4" key={item.id}>
+                        <li className="flex items-center my-4 gap-3" key={item.id}>
                           <Image className="white-svg p-0 h-8 pb-3 lg:pb-0 lg:w-10 x-auto lg:ml-0" />
                           <span className="ml-2">{item.text}</span>
                         </li>

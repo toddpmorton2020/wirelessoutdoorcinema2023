@@ -14,15 +14,15 @@ const BannerCalloutSection = () => {
             />
           </div>
           <div className="col-span-7 flex flex-col">
-            <p className="text-xxs sm:text-xs md:text-base xl:text-2xl lg:text-2xl font-semibold mb-0 max-w-full">
+            <p className="text-xxs sm:text-xs md:text-lg xl:text-2xl lg:text-2xl font-semibold mb-0 max-w-full">
               <span className="text-orange-1000">Get the</span> only DIY{" "}
               <span className="text-orange-1000">on how-to build a professional</span>
             </p>
-            <p className="text-base sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-semibold mb-0">
+            <p className="text-base sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mb-0">
               Outdoor Movie Theater
             </p>
           </div>
-          <div className="col-start-9 col-span-3 lg:col-start-9 lg:col-span-3 flex flex-col justify-start text-center">
+          <div className="col-start-9 col-span-4 lg:col-start-9 lg:col-span-3 flex flex-col justify-start text-center">
             <p className="text-xxs sm:text-xs md:text-base lg:text-2xl xl:text-3xl mb-3">
               Now only $99*
             </p>

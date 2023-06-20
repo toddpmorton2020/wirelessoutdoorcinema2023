@@ -1,6 +1,6 @@
 import React from "react"
 
-export const HowVideoIcon = ({ className }) => (
+export const HowVideoIconHover = ({ className }) => (
 
   <>
    <svg
@@ -10,7 +10,7 @@ export const HowVideoIcon = ({ className }) => (
       className={className}
     >
       <path
-        fill="#fff"
+        fill="#4e62ad"
         d="M161.5 95v-.2-.2-.2-.2-.1-.1l-.1-.1-.1-.1-.1-.1-.1-.1-22.2-13.1v-73c0-4.1-3.4-7.5-7.5-7.5H30.5C26.4 0 23 3.4 23 7.5v72.9L.9 93.5s-.1 0-.1.1l-.1.1-.1.1-.1.1v10c0 1 .8 1.8 1.8 1.8h158c1 0 1.8-.8 1.8-1.8v-9zM25.3 83.2h111l17.1 10.1H8.2l17.1-10.1zm1.3-75.6c0-2.2 1.8-4 4-4H131c2.2 0 4 1.8 4 4v72.1H26.5V7.5zm131.5 94.7H3.5v-5.5H158v5.5z"
       ></path>
       <path

@@ -13,10 +13,10 @@ const Header = ({ siteTitle }) => {
   }, [setOpen])
   return (
     <>
-      <header className="full-width bg-black py-4 px-6">
+      <header className="full-width bg-black py-4 xl:px-6">
         <div className="">
           <div className="">
-            <div className=" mx-auto lg:container flex items-center justify-between uppercase text-sm text-white relative">
+            <div className=" mx-auto lg:container px-5 flex items-center justify-between uppercase text-sm text-white relative">
               <Link to="/" className="cursor-pointer">
                 <StaticImage src="../assets/images/cinemalogo.png" className="md:w-64 w-48" />
               </Link>
@@ -92,7 +92,7 @@ const Header = ({ siteTitle }) => {
                       </Link>
                       <Link
                         to="/comparison"
-                        className="pt-2 px-4 hover:text-orange-500 text-white no-underline"
+                        className="py-2 px-4 hover:text-orange-500 text-white no-underline"
                       >
                         Timberline Series
                       </Link>

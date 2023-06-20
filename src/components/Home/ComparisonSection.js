@@ -218,7 +218,6 @@ const ComparisonSection = () => {
               <div className="grid grid-cols-12 mt-11 text-center items-center">
                 <div className="col-span-6">
                   <StaticImage src="../../assets/images/airscreen-frame-photo-423px-x-307px.png" alt="" className="md:w-80 mx-auto" />
-                 111
                   <h1 className="text-sm md:py-3 md:text-31 font-medium mb-0">
                     <p className="font-semibold mb-0">Inflatable Air Screen</p>
                   </h1>

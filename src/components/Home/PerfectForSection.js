@@ -1,10 +1,14 @@
 import React from "react";
 
 import { BackyardIcon } from "../../assets/images/icons/backyard-icon"
-import { FamilyMovieIcon } from "../../assets/images/icons/family-movie-icon"
+import  {FamilyMovieIcon}  from "../../assets/images/icons/family-movie-icon"
 import { SportStadiumIcon } from "../../assets/images/icons/sport-stadium-icon"
 import { VideoGameConsoleIcon } from "../../assets/images/icons/video-game-console"
 
+import { BackyardIconHover } from "../../assets/images/icons/backyard-icon-hover"
+import  {FamilyMovieIconHover}  from "../../assets/images/icons/family-movie-icon-hover"
+import { SportStadiumIconHover } from "../../assets/images/icons/sport-stadium-icon-hover"
+import { VideoGameConsoleIconHover } from "../../assets/images/icons/video-game-console-hover"
 
 
 const PerfectForSection = () => {
@@ -12,16 +16,20 @@ const PerfectForSection = () => {
     {
       id: 0,
       img: (
-        <BackyardIcon className="grid-icon mx-auto w-full md:w-auto h-16 md:h-18 p-4" />
+        <BackyardIcon className="grid-icon mx-auto w-full md:w-auto h-18 p-4" />
       ),
+      imghover:BackyardIconHover,
+      
       title: "Streaming Shows",
       text: "Stream your favorite shows outside on the apps you watch inside",
+
     },
     {
       id: 2,
       img: (
-        <FamilyMovieIcon className="grid-icon  mx-auto w-full md:w-auto h-24 md:h-18 p-4" />
+        <FamilyMovieIcon className="grid-icon  mx-auto w-full md:w-auto h-18 p-4" />
       ),
+      imghover:FamilyMovieIconHover,
       title: "Movie Night",
       text:
         "Enjoy a blockbuster movie on the big screen with family and friends",
@@ -29,8 +37,9 @@ const PerfectForSection = () => {
     {
       id: 3,
       img: (
-        <SportStadiumIcon className="grid-icon mx-auto w-full md:w-auto h-18 md:h-18 p-4" />
+        <SportStadiumIcon className="grid-icon mx-auto w-full md:w-auto h-18 p-4" />
       ),
+      imghover:SportStadiumIconHover,
       title: "Sporting Events",
       text:
         "Gather all your friends together to watch favorite teams play.",
@@ -38,8 +47,9 @@ const PerfectForSection = () => {
     {
       id: 4,
       img: (
-        <VideoGameConsoleIcon className="grid-icon mx-auto w-full md:w-auto h-18 md:h-18 p-4" />
+        <VideoGameConsoleIcon className="grid-icon mx-auto w-full md:w-auto h-18 p-4" />
       ),
+      imghover:VideoGameConsoleIconHover,
       title: "Video Games",
       text: "Play life-size video games on a massive cinematic screen.",
     },
@@ -50,7 +60,7 @@ const PerfectForSection = () => {
       className="bg-black relative text-white pt-12 xl:pt-24"
       id="cnemauses"
     >
-      <div className="max-w-7xl md:px-3 px-5 mx-auto xl:pb-24 pb-10 border-b border-grey-subnav">
+      <div className="max-w-7xl px-5 mx-auto xl:pb-24 pb-10 border-b border-grey-subnav">
         <div className="mx-auto py-0 xl:py-0 flex flex-col xl:grid xl:grid-cols-12 w-full "></div>
         <div className="flex flex-col-reverse col-span-12 justify-center lg:grid grid-cols-12 gap-6 xl:gap-10 md:px-0">
           <div className="col-span-4">
@@ -71,8 +81,8 @@ const PerfectForSection = () => {
           <div className="col-span-8">
             <div className="xl:text-xl pb-3">
               <div className="hidden md:block">
-                <h2 className="xl:font-50 text-2xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Outdoor movie theater perfect for</h2>
-                <h3 className="xl:font-35 txt-xl md:text-3xl pb-4 xl:pb-5 text-orange-1000 md:leading-none leading-c14">
+                <h2 className="xl:font-50 text-2xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Outdoor movie theater perfect for</h2>
+                <h3 className="xl:font-35 txt-xl md:text-3xl xl:text-35 pb-4 xl:pb-5 text-orange-1000 md:leading-none leading-c14">
                   Homeowners with a backyard who love the outdoors.
                 </h3>
               </div>

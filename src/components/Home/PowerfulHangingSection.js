@@ -17,7 +17,7 @@ const PowerfulHangingSection = () => {
               <p className="mb-4 max-w-full text-lg">
               The cinematic screen allows you to hang it from the frame system using two different methods: 
               </p>
-              <ol className="list-decimal pl-4">
+              <ol className="list-decimal ml-8">
                 <li className="text-lg mb-0">Hanging with screw hooks through the screen’s grommet holes, which are attached to the
                    inside of the frame system</li>
             <li className="text-lg mb-0">Running a black nylon cord (supplied with the screen), through the grommet holes attached
@@ -25,7 +25,7 @@ const PowerfulHangingSection = () => {
               </ol>            
 
               <p className="mb-11 text-lg max-w-full mb-11">
-                <WarnIcon className="h-4 mr-2 inline-flex" />
+                <WarnIcon className="h-4 mr-2 -mt-2 inline-flex" />
                 There are many options when buying your outdoor cinematic screen, as they are available in many 
                 different materials and sizes. The DIY guide covers which screens to stay away from, and which 
                 are the best ones to use. You’ll also need to make exact calculations in order to hang the screen 

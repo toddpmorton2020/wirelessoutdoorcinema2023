@@ -517,10 +517,9 @@ const FaqSection = () => {
         <div className="max-w-7xl px-5 mx-auto">
           <div className="mx-auto flex flex-col xl:grid xl:grid-cols-12 w-full">
             <div className="text-center xl:col-span-12 xl:text-xl">
-              <h2 className="hidden md:block text-2xl xl:text-50 md:text-4xl font-semibold md:pb-5">
+              <h2 className="text-2xl xl:text-50 md:text-4xl font-semibold pb-5">
                 Frequently asked questions
-              </h2>
-              <h2 className="md:hidden text-3xl md:text-4xl font-semibold pb-4">Faqs</h2>
+              </h2>             
               <h3 className="md:block hidden md:text-2xl pb-5 xl:text-35 xl:pb-7 text-orange-1000">
               Common questions on how-to build a professional outdoor movie theater
               </h3>
@@ -539,10 +538,10 @@ const FaqSection = () => {
                 if you have a question that isn't here.
               </p>
             </div>
-            <div className="col-span-12 grid grid-cols-12 gap-4 md:mt-12 mt-8">
+            <div className="col-span-12 grid grid-cols-12 gap-4 mt-12">
               {faqList.map(item => (
                 <div
-                  className="col-span-12 lg:col-span-4 border border-grey-subnav  rounded-md py-8 px-4 lg:py-15 orng-rollover-overlay rollover-svg-item"
+                  className="col-span-12 lg:col-span-4 border border-grey-subnav rounded-md py-8 px-4 lg:py-15 lg:mb-0 mb-8 orng-rollover-overlay rollover-svg-item"
                   key={item.id}
                 >
                   <div className="flex items-center pb-3">

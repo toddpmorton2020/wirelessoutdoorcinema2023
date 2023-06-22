@@ -1,9 +1,12 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
-import ImpressiveImage1 from "../../assets/images/screen-setup-photo-695px-x392px.jpg"
-import ImpressiveImage2 from "../../assets/images/strongest-frame-photo-695px-x-392px.jpg"
-import ImpressiveImage3 from "../../assets/images/projector-stand-photo-695px-x392px.jpg"
-import ImpressiveImage4 from "../../assets/images/year-round-photo-695px-x-392px.jpg"
+
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { useStaticQuery, graphql } from "gatsby"
+
+// import ImpressiveImage1 from "../../assets/images/screen-setup-photo-695px-x392px.jpg"
+// import ImpressiveImage2 from "../../assets/images/strongest-frame-photo-695px-x-392px.jpg"
+// import ImpressiveImage3 from "../../assets/images/projector-stand-photo-695px-x392px.jpg"
+// import ImpressiveImage4 from "../../assets/images/year-round-photo-695px-x-392px.jpg"
 
 
 import StopWatchIcon from "../../assets/images/icons/StopWatch"
@@ -13,115 +16,144 @@ import YearRoundIcon from "../../assets/images/icons/YearRoundIcon"
 
 
 const ImpressiveOutdoorSection = () => {
-    const gridItems = [
-      {
-        id: 0,
-        img: ImpressiveImage1,
-        icon: StopWatchIcon,
-        text: "2-minute setup time",
-        align: "start",
-      },
-      {
-        id: 1,
-        img: ImpressiveImage2,
-        icon: StrongIcon,
-        text: "Strongest frame system",
-        align: "end",
-      },
-      {
-        id: 2,
-        img: ImpressiveImage3,
-        icon: PencilIcon,
-        text: "Custom projector stand",
-        align: "start",
-      },
-      {
-        id: 3,
-        img: ImpressiveImage4,
-        icon: YearRoundIcon,
-        text: "Enjoy movies year-round",
-        align: "end",
-      },
-    ]
-  
-    return (
-      <div className="bg-gray-990 relative text-white border-grey-subnav pt-12 pb-4 xl:py-24">
-        <div className="max-w-7xl px-5 mx-auto">
-          <div className="mx-auto flex flex-col xl:grid xl:grid-cols-12 w-full">
-            <div className="md:text-center xl:col-span-12 xl:text-xl mb-11">
-              <h2 className="text-2xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-5 pb-2">
+
+  const { ImpressiveImage1, ImpressiveImage2, ImpressiveImage3, ImpressiveImage4 } = useStaticQuery(
+    graphql`
+      query {
+        ImpressiveImage1: file(relativePath: {eq: "screen-setup-photo-695px-x392px.jpg"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: CONSTRAINED)
+          }
+        }
+
+        ImpressiveImage2: file(relativePath: {eq: "strongest-frame-photo-695px-x-392px.jpg"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: CONSTRAINED)
+          }
+        }
+
+        ImpressiveImage3: file(relativePath: {eq: "projector-stand-photo-695px-x392px.jpg"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: CONSTRAINED)
+          }
+        }
+
+        ImpressiveImage4: file(relativePath: {eq: "year-round-photo-695px-x-392px.jpg"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: CONSTRAINED)
+          }
+        }
+      }
+    `
+  )
+
+  const gridItems = [
+    {
+      id: 0,
+      img: ImpressiveImage1,
+      icon: StopWatchIcon,
+      text: "2-minute setup time",
+      align: "start",
+    },
+    {
+      id: 1,
+      img: ImpressiveImage2,
+      icon: StrongIcon,
+      text: "Strongest frame system",
+      align: "end",
+    },
+    {
+      id: 2,
+      img: ImpressiveImage3,
+      icon: PencilIcon,
+      text: "Custom projector stand",
+      align: "start",
+    },
+    {
+      id: 3,
+      img: ImpressiveImage4,
+      icon: YearRoundIcon,
+      text: "Enjoy movies year-round",
+      align: "end",
+    },
+  ]
+
+  return (
+    <div className="bg-gray-990 relative text-white border-grey-subnav pt-16 pb-8 lg:py-24">
+      <div className="max-w-7xl px-5 mx-auto">
+        <div className="mx-auto flex flex-col xl:grid xl:grid-cols-12 w-full">
+          <div className="md:text-center xl:col-span-12 xl:text-xl mb-11">
+            <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold md:leading-none md:pb-5 pb-2">
               Time-saving and industry-leading features
-              </h2>  
-              
-              <h3 className="txt-xl md:text-2xl xl:text-35 pb-4 xl:pb-7 text-orange-1000">
-              Fastest setup. Strongest frame system. Custom equipment stand. Year-round use.
-              </h3>
-  
-              <p className="text-lg md:tet-2xl mb-0 max-w-full">
-              After researching and testing all of the outdoor movie theaters you can buy online, 
-              I found four main areas for improvement. My benchmark testing focused on setup time, 
-              the durability of frame systems, cinema equipment organization, and the ability to 
+            </h2>
+
+            <h3 className="txt-xl md:text-2xl xl:text-35 pb-4 xl:pb-7 text-orange-1000">
+              Fastest setup. Strongest frame system. Custom equipment stand. Year-round.
+            </h3>
+
+            <p className="text-lg md:tet-2xl mb-0 max-w-full">
+              After researching and testing all of the outdoor movie theaters you can buy online,
+              I found four main areas for improvement. My benchmark testing focused on setup time,
+              the durability of frame systems, cinema equipment organization, and the ability to
               use year-round in cold climates states like Maine. As a result, all of my Timberline
               Series Outdoor Movie Theaters have the following time-saving and industry-leading features:
-              </p>
-            </div>
-            <div className="col-span-12 grid grid-cols-12 lg:gap-2">
-              {gridItems.map(item => {
-                const Icon = item.icon
-                return (
-                  <div
-                    className="col-span-12 lg:col-span-6 mb-10 lg:mb-0"
-                    key={item.id}
-                  >
-                    <div className="text-center h-full relative block">
-                      <img
+            </p>
+          </div>
+          <div className="col-span-12 grid grid-cols-12 lg:gap-2">
+            {gridItems.map(item => {
+              const Icon = item.icon
+              return (
+                <div
+                  className="col-span-12 lg:col-span-6 mb-11 lg:mb-0"
+                  key={item.id}
+                >
+                  <div className="text-center h-full relative block">
+                    {/* <img
                         src={item.img}
                         alt={item.text}
                         className="grid-image mb-0 w-full"
-                      />
-  
-                      <div
-                        style={{
-                          bottom: "1rem",
-                        }}
-                        className={`bg-black/[.6] flex p-2 absolute lg:hidden items-center ${
-                          item.align === "start" ? "" : "right-0 flex-row-reverse"
+                      /> */}
+
+                    <GatsbyImage image={getImage(item.img)} alt={item.text} className="grid-image mb-0 w-full" />
+
+                    <div
+                      style={{
+                        bottom: "1rem",
+                      }}
+                      className={`bg-black/[.6] flex p-2 absolute lg:hidden items-center ${item.align === "start" ? "" : "right-0 flex-row-reverse"
                         }`}
-                      >
-                        <div>
-                          <Icon
-                            className={`h-6 ${
-                              item.align === "start" ? "mr-1" : "ml-1"
+                    >
+                      <div>
+                        <Icon
+                          className={`h-6 ${item.align === "start" ? "mr-1" : "ml-1"
                             }`}
-                          />
-                        </div>
-                        <div>{item.text}</div>
+                        />
                       </div>
-  
-                      <div
-                        className={`absolute w-full lg:flex justify-center hidden large-justify-${item.align} top-1/2 xl:py-24 py-12 lg:my-0`}
-                      >
-                        <div className="flex flex-row bg-opacity-gray items-center relative">
-                          <Icon
-                            className={`absolute lg:h-10 ${
-                              item.align === "start"
-                                ? "order-1 left-0 pl-4"
-                                : "order-2 right-0 pr-4"
+                      <div>{item.text}</div>
+                    </div>
+
+                    <div
+                      className={`absolute w-full lg:flex justify-center hidden large-justify-${item.align} top-1/2 xl:py-24 py-12 lg:my-0`}
+                    >
+                      <div className="flex flex-row bg-opacity-gray items-center relative">
+                        <Icon
+                          className={`absolute lg:h-10 ${item.align === "start"
+                              ? "order-1 left-0 pl-4"
+                              : "order-2 right-0 pr-4"
                             }`}
-                          />
-                          <p
-                            className={`tet-xl xl:tet-3xl p-3 mb-0 ${
-                              item.align === "start"
-                                ? "order-2 pl-20"
-                                : "order-1 pr-20"
+                        />
+                        <p
+                          className={`tet-xl xl:tet-3xl p-3 mb-0 ${item.align === "start"
+                              ? "order-2 pl-20"
+                              : "order-1 pr-20"
                             }`}
-                          >
-                            {item.text}
-                          </p>
-                        </div>
+                        >
+                          {item.text}
+                        </p>
                       </div>
                     </div>
-                    {/* <div className="text-center h-full relative block lg:hidden">
+                  </div>
+                  {/* <div className="text-center h-full relative block lg:hidden">
                       <img
                         src={item.imgM}
                         alt={item.text}
@@ -143,14 +175,14 @@ const ImpressiveOutdoorSection = () => {
                         </div>
                       </div>
                     </div> */}
-                  </div>
-                )
-              })}
-            </div>
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
+}
 
-  export default ImpressiveOutdoorSection
+export default ImpressiveOutdoorSection

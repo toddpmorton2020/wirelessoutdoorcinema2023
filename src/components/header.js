@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
-import { Link, StaticQuery } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 import { globalHistory } from "@reach/router"
 
 const Header = ({ siteTitle }) => {
@@ -11,14 +11,58 @@ const Header = ({ siteTitle }) => {
       if (action === "PUSH") setOpen(false)
     })
   }, [setOpen])
+
+  const { LogoImage, CellImg, CellOrangeImg, FacebookImg, FacebookOrangeImg, LinkedinWhiteImg, LinkedinOrangeImg } = useStaticQuery(
+    graphql`
+      query {
+        LogoImage: file(relativePath: {eq: "cinemalogo.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: CONSTRAINED, width:448, height: 82)
+          }
+        }
+        CellImg: file(relativePath: {eq: "icons/cell.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width:20, height: 22)
+          }
+        }
+        CellOrangeImg: file(relativePath: {eq: "icons/cellorange.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width:21, height: 24)
+          }
+        }
+        FacebookImg: file(relativePath: {eq: "icons/facebook.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width:12, height: 16)
+          }
+        }
+        FacebookOrangeImg: file(relativePath: {eq: "icons/facebookorange.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width:13, height: 24)
+          }
+        }
+        LinkedinWhiteImg: file(relativePath: {eq: "icons/linkedinwhite.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width:13, height: 16)
+          }
+        }
+        LinkedinOrangeImg: file(relativePath: {eq: "icons/linkedinorange.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width:24, height: 24)
+          }
+        }
+      }
+    `
+  )
+
   return (
     <>
       <header className="full-width bg-black py-4 xl:px-6">
         <div className="">
           <div className="">
-            <div className=" mx-auto lg:container px-5 flex items-center justify-between uppercase text-sm text-white relative">
+            <div className=" mx-auto lg:container px-5 flex gap-4 items-center justify-between uppercase text-sm text-white relative">
               <Link to="/" className="cursor-pointer">
-                <StaticImage src="../assets/images/cinemalogo.png" className="md:w-64 w-48" />
+                <GatsbyImage image={getImage(LogoImage)} alt={`The Wireless Outdoor Cinema Company`} loading="eager" className="md:w-64 w-48" />
+                {/* <StaticImage src="../assets/images/cinemalogo.png" className="md:w-64 w-48" /> */}
               </Link>
               <div
                 className="flex flex-col items-center w-8 cursor-pointer lg:hidden"
@@ -34,7 +78,8 @@ const Header = ({ siteTitle }) => {
                   <Link to="tel:2075952960"
                     className="cursor-pointer flex items-center no-underline"
                   >
-                    <StaticImage src="../assets/images/icons/cell.png" className="w-5" />
+                    <GatsbyImage image={getImage(CellImg)} alt="" className="w-5" />
+                    {/* <StaticImage src="../assets/images/icons/cell.png" className="w-5" /> */}
                     <span className="ml-2 text-white no-underline">(207) 647-8759</span>
                   </Link>
                   <div className="mx-6 bg-orange-500 w-px h-5"></div>
@@ -44,17 +89,19 @@ const Header = ({ siteTitle }) => {
                       target="_blank"
                       className="cursor-pointer hover:text-orange-500 no-underline"
                     >
-                      <StaticImage src="../assets/images/icons/facebook.svg" className="h-4 w-3 text-white no-underline" />
+                      <GatsbyImage image={getImage(FacebookImg)} alt="" className="h-4 w-3 text-white no-underline" />
+                      {/* <StaticImage src="../assets/images/icons/facebook.svg" className="h-3 w-3 text-white" /> */}
                     </Link>
                     <Link
                       to="https://www.linkedin.com/in/todd-morton-7851b1b"
                       target="_blank"
                       className="cursor-pointer hover:text-orange-500 no-underline"
                     >
-                      <StaticImage
+                      <GatsbyImage image={getImage(LinkedinWhiteImg)} alt="" className="ml-6 h-4 w-4 text-white" />
+                      {/* <StaticImage
                         src="../assets/images/icons/linkedinwhite.png"
-                        className="ml-6 h-5 w-4 text-white"
-                      />
+                        className="ml-6 h-4 w-4 text-white"
+                      /> */}
                     </Link>
                   </div>
                 </div>
@@ -78,31 +125,39 @@ const Header = ({ siteTitle }) => {
                       className="ml-2 h-2 w-2 transition-transform transform group-hover:rotate-180 duration-300"
                     />
                     <div className="bg-black w-80 z-50 absolute left-0 bottom-0 transform translate-y-full z-10 flex-col pt-6 pb-2 hidden group-hover:flex whitespace-no-wrap">
-                    <Link
+                      <Link
                         to="/comparison"
                         className="py-2 px-4 hover:text-orange-500 no-underline text-white"
                       >
                         How to build a professional outdoor movie theater
                       </Link>
-                      <Link
+                      {/* <Link
                         to="/comparison"
                         className="py-2 px-4 hover:text-orange-500 no-underline text-white"
                       >
                         Cinema Comparison
-                      </Link>
+                      </Link> */}
                       <Link
                         to="/comparison"
                         className="py-2 px-4 hover:text-orange-500 text-white no-underline"
                       >
                         Timberline Series
+
+                        <Link
+                          to="/timberline-cinema-packages/150-big-moose-cinema/"
+                          className="w-full float-left py-2 px-4 hover:text-orange-500 text-white no-underline uppercase"
+                        >
+                          150" big moose
+                        </Link>
+
                       </Link>
-                     
-                      <Link
+
+                      {/* <Link
                         to="/accessory"
                         className="py-2 px-4 cursor-pointer hover:text-orange-500 text-white no-underline"
                       >
                         Outdoor Cinema Accessories
-                      </Link>
+                      </Link> */}
                     </div>
                   </span>
                   <span
@@ -183,7 +238,7 @@ const Header = ({ siteTitle }) => {
       {open && (
         <div
           className="w-full bg-cover absolute z-30 lg:hidden mobile_bg"
-         
+
         >
           <div className="text-white text-xl flex flex-col">
             <Link to="/about" className="no-underline">
@@ -197,16 +252,22 @@ const Header = ({ siteTitle }) => {
               </span>
               {openW && (
                 <div className="flex flex-col text-orange-500 py-3 px-6">
-                  <Link to="/comparison" className="block text-orange-500 py-3 no-underline ">
+                  {/* <Link to="/comparison" className="block text-orange-500 py-3 no-underline ">
                     Cinema Comparison
-                  </Link>
+                  </Link> */}
                   <div class="w-full border border-b border-gray-600"></div>
                   <span className="py-3">Timberline Series</span>
-                 
-                  <div class="w-full border border-b border-gray-600 mt-3"></div>
-                  <Link to="/accessory" className="block py-3 no-underline text-orange-500">
+                  <Link
+                          to="/timberline-cinema-packages/150-big-moose-cinema/"
+                          className="w-full float-left py-2 px-4 hover:text-orange-500 text-white no-underline uppercase"
+                        >
+                          150" big moose
+                        </Link>
+
+                  {/* <div class="w-full border border-b border-gray-600 mt-3"></div> */}
+                  {/* <Link to="/accessory" className="block py-3 no-underline text-orange-500">
                     Outdoor Cinema Accessories
-                  </Link>
+                  </Link> */}
                 </div>
               )}
             </span>
@@ -215,21 +276,21 @@ const Header = ({ siteTitle }) => {
               <span className="block py-3 px-6 text-white">In the News</span>
             </Link>
             <div class="w-full border border-b border-gray-600"></div>
-            <Link to="/faq"  className="no-underline text-white">
+            <Link to="/faq" className="no-underline text-white">
               <span className="block py-3 px-6">
                 Frequently Asked Questions
               </span>
             </Link>
             <div class="w-full border border-b border-gray-600"></div>
-            <Link to="/connect"  className="no-underline text-white">
+            <Link to="/connect" className="no-underline text-white">
               <span className="block py-3 px-6">Connect</span>
             </Link>
             <div class="w-full border border-b border-gray-600"></div>
-            <Link to="/terms"  className="no-underline text-white">
+            <Link to="/terms" className="no-underline text-white">
               <span className="block py-3 px-6">Terms Of Use</span>
             </Link>
             <div class="w-full border border-b border-gray-600"></div>
-            <Link to="/privacy"  className="no-underline text-white">
+            <Link to="/privacy" className="no-underline text-white">
               <span className="block py-3 px-6">Privacy Policy</span>
             </Link>
             <div class="w-full border border-b border-gray-600"></div>
@@ -242,7 +303,8 @@ const Header = ({ siteTitle }) => {
                 to="tel:2075952960"
                 className="cursor-pointer flex items-center w-8/12 text-white no-underline"
               >
-                <StaticImage src="../assets/images/cellorange.png" className="h-6" />
+                <GatsbyImage image={getImage(CellOrangeImg)} alt="" className="h-6" />
+                {/* <StaticImage src="../assets/images/icons/cellorange.png" className="h-6" /> */}
                 <span className="ml-2">(207) 595-2960</span>
               </Link>
               <div className="flex items-center">
@@ -251,14 +313,16 @@ const Header = ({ siteTitle }) => {
                   target="_blank"
                   className="cursor-pointer hover:text-orange-500"
                 >
-                  <StaticImage src="../assets/images/icons/facebookOrange.png" className="" />
+                  <GatsbyImage image={getImage(FacebookOrangeImg)} alt="" />
+                  {/* <StaticImage src="../assets/images/icons/facebookOrange.png" className="" /> */}
                 </a>
                 <a
                   href="https://www.linkedin.com/in/todd-morton-7851b1b"
                   target="_blank"
                   className="cursor-pointer hover:text-orange-500"
                 >
-                  <StaticImage src="../assets/images/icons/linkedinOrange.png" className="ml-6" />
+                  <GatsbyImage image={getImage(LinkedinOrangeImg)} alt="" className="ml-6" />
+                  {/* <StaticImage src="../assets/images/icons/linkedinOrange.png" className="ml-6" /> */}
                 </a>
               </div>
             </div>

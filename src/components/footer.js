@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { Link, useStaticQuery, graphql} from "gatsby"
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 //import { Orange, QuoteContainerOr } from "../css/homepage"
 
 function Footer() {
@@ -25,6 +25,56 @@ function Footer() {
     setSubmitted(true)
   }
 
+  const { LogoImage, DeskformImg, MobileformImg, ArrowRight, CellImg, EmailImg, FacebookImg,  LinkedinWhiteImg } = useStaticQuery(
+    graphql`
+      query {
+        LogoImage: file(relativePath: {eq: "cinemalogo.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: CONSTRAINED, width:448, height: 82)
+          }
+        }
+        DeskformImg: file(relativePath: {eq: "desk-form.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: CONSTRAINED)
+          }
+        }
+        MobileformImg: file(relativePath: {eq: "mobile-form.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: CONSTRAINED)
+          }
+        }
+        ArrowRight: file(relativePath: {eq: "icons/arrowright.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width:12, height: 12)
+          }
+        } 
+        
+        CellImg: file(relativePath: {eq: "icons/cell.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width:20, height: 22)
+          }
+        } 
+        EmailImg: file(relativePath: {eq: "icons/icons/emailwhite.png.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width:24, height: 16)
+          }
+        } 
+               
+        FacebookImg: file(relativePath: {eq: "icons/facebook.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width:12, height: 16)
+          }
+        }        
+        LinkedinWhiteImg: file(relativePath: {eq: "icons/linkedinwhite.png"}) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width:13, height: 16)
+          }
+        }
+        
+      }
+    `
+  )
+
   return (
     <div>
       <form onSubmit={handleSubmit} ref={form}>
@@ -32,17 +82,12 @@ function Footer() {
 
           <div className="max-w-7xl mx-auto py-4 px-4">
             <div className="flex md:flex-row flex-col items-center md:items-start py-4 lg:py-0 orange-mob">
-              <StaticImage
-                src="../assets/images/desk-form.png"
-                alt=""
-                className="ml-3 hidden md:inline-block"
-              />
-              <StaticImage
-                src="../assets/images/mobile-form.png"
-                alt=""
-                className="inline-block md:hidden"
-                width="210px"
-              />
+           <div className="hidden md:inline-block">
+            <GatsbyImage image={getImage(DeskformImg)} alt="" className="ml-3" />
+            </div>
+            <div className="inline-block md:hidden">
+              <GatsbyImage image={getImage(MobileformImg)} alt="" />
+              </div>
               <div className="orange-signup flex flex-col pt-6 lg:pt-10 md:pl-10 lg:pl-16">
                 <h3 className="text-2xl font-medium text-white orange-box-heading-mob -mt-20 md:mt-0 text-center md:text-left leading-tight max-w-sm md:max-w-full">
                   Signup up to receive special <strong>promotions and new product announcements</strong>
@@ -107,31 +152,28 @@ function Footer() {
                   target="_blank"
                   className="cursor-pointer"
                 >
-                  <StaticImage src="../assets/images/icons/facebook.svg" className="w-4 text-white" />
+                  <GatsbyImage image={getImage(FacebookImg)} alt="" className="w-4 text-white" />
                 </Link>
                 <Link
                   to="https://www.linkedin.com/in/todd-morton-7851b1b"
                   target="_blank"
                   className="cursor-pointer"
                 >
-                  <StaticImage
-                    src="../assets/images/icons/linkedinwhite.png"
-                    className="ml-4 w-4 text-white"
-                  />
+                  <GatsbyImage image={getImage(LinkedinWhiteImg)} alt="" className="ml-4 w-4 text-white" />
                 </Link>
               </div>
               <Link
                 to="tel:2075952960"
                 className="cursor-pointer flex items-center mb-3 mt-4 no-underline"
               >
-                <StaticImage src="../assets/images/icons/cell.png" className="w-5" />
+                <GatsbyImage image={getImage(CellImg)} alt="" className="w-5" />
                 <span className="ml-2 text-white">(207) 595-2960</span>
               </Link>
               <Link
                 to="mailto:todd@wirelessoutdoorcinema.com"
                 className="cursor-pointer flex items-center no-underline text-white"
               >
-                <StaticImage src="../assets/images/icons/emailwhite.png" className="w-6 h-4" />
+                 <GatsbyImage image={getImage(EmailImg)} alt="" className="w-6 h-4" />
                 <span className="ml-2">todd@wirelessoutdoorcinema.com</span>
               </Link>
             </div>
@@ -213,7 +255,7 @@ function Footer() {
           <div class="flex-1 hidden lg:block">
             <div>
               <Link to="/" className="cursor-pointer">
-                <StaticImage src={`../assets/images/cinemalogo.png`} className="md:w-64 w-48 " />
+              <GatsbyImage image={getImage(LogoImage)} alt={`The Wireless Outdoor Cinema Company`} className="md:w-64 w-48 " />
               </Link>
               <p className="mt-3 pl-0 mb-0" style={{ textAlign: "left" }}>
                 Turn your backyard into an exciting outdoor movie theater. Watch
@@ -244,31 +286,31 @@ function Footer() {
                   Quick Links
                 </h5>            
                 <Link to="/about" className="flex items-center no-underline text-white">
-                <StaticImage src="../assets/images/icons/arrowright.png" className="h-3 mr-3" />
+                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   About
                 </Link>
                 <Link to="/comparison" className="flex items-center no-underline text-white">
-                <StaticImage src="../assets/images/icons/arrowright.png" className="h-3 mr-3" />
+                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   Cinema Packages
                 </Link>
                 <Link to="/about" className="flex items-center no-underline text-white">
-                <StaticImage src="../assets/images/icons/arrowright.png" className="h-3 mr-3" />
+                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                 How To Build an Outdoor Movie Theater
                 </Link>
                 {/* <Link to="/accessory" className="flex items-center no-underline text-white">
-                <StaticImage src="../assets/images/icons/arrowright.png" className="h-3 mr-3" />
+              <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   Outdoor Cinema Accessories
                 </Link> */}
                 <Link to="/in-the-news" className="flex items-center no-underline text-white">
-                <StaticImage src="../assets/images/icons/arrowright.png" className="h-3 mr-3" />
+                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   In the News
                 </Link>
                 <Link to="/faq" className="flex items-center no-underline text-white">
-                <StaticImage src="../assets/images/icons/arrowright.png" className="h-3 mr-3" />
+                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   FAQ
                 </Link>
                 <Link to="/connect" className="flex items-center no-underline text-white">
-                <StaticImage src="../assets/images/icons/arrowright.png" className="h-3 mr-3" />
+                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   Connect
                 </Link>
                 <div className="my-1 flex items-center">
@@ -276,7 +318,7 @@ function Footer() {
                     to="tel:2075952960"
                     className="cursor-pointer flex items-center no-underline text-white"
                   >
-                    <StaticImage src="../assets/images/icons/cell.png" className="w-5" />
+                    <GatsbyImage image={getImage(CellImg)} alt="" className="w-5" />
                     <span className="ml-2">(207) 595-2960</span>
                   </Link>
                   <div className="mx-6 bg-orange-500 w-px h-5"></div>
@@ -286,17 +328,14 @@ function Footer() {
                       target="_blank"
                       className="cursor-pointer no-underline text-white"
                     >
-                      <StaticImage src="../assets/images/icons/facebook.svg" className="h-5 w-3 text-white" />
+                      <GatsbyImage image={getImage(FacebookImg)} alt="" className="w-3 h-5 text-white" />
                     </Link>
                     <Link
                       to="https://www.linkedin.com/in/todd-morton-7851b1b"
                       target="_blank"
                       className="cursor-pointer no-underline text-white"
                     >
-                      <StaticImage
-                        src="../assets/images/icons/linkedinwhite.png"
-                        className="ml-6 h-5 w-5 text-white"
-                      />
+                      <GatsbyImage image={getImage(LinkedinWhiteImg)} alt="" className="ml-6 w-5 h-5 text-white" />
                     </Link>
                   </div>
                 </div>
@@ -305,7 +344,7 @@ function Footer() {
                     to="mailto:todd@wirelessoutdoorcinema.com"
                     className="cursor-pointer flex items-center no-underline text-white"
                   >
-                    <StaticImage src="../assets/images/icons/emailwhite.png" className="w-6 h-4" />
+                    <GatsbyImage image={getImage(EmailImg)} alt="" className="w-6 h-4" />
                     <span className="ml-2">todd@wirelessoutdoorcinema.com</span>
                   </Link>
                 </div>

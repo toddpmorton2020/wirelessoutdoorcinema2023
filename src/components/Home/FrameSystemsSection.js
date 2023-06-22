@@ -1,5 +1,6 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { useStaticQuery, graphql } from "gatsby"
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 import WarnIcon from "../../assets/images/icons/WarnIcon"
 import MovableIcon from "../../assets/images/icons/MovableIcon"
 import SturdyIcon from "../../assets/images/icons/SturdyIcon"
@@ -11,9 +12,26 @@ import FireIcon from "../../assets/images/icons/FireIcon"
 import BudgetIcon from "../../assets/images/icons/BudgetIcon"
 
 const FrameSystemsSection = () => {
+    const { FrameImg1, FrameImg2 } = useStaticQuery(
+        graphql`
+          query {
+            FrameImg1: file(relativePath: {eq: "timberline-movable-frame-1617px-x-750px.jpg"}) {
+              childImageSharp {
+                gatsbyImageData(quality: 100, layout: CONSTRAINED)
+              }
+            } 
+            FrameImg2: file(relativePath: {eq: "timberline-streamline-frame-1617px-x-750px.jpg"}) {
+                childImageSharp {
+                  gatsbyImageData(quality: 100, layout: CONSTRAINED)
+                }
+              }           
+          }
+        `
+    )
+
     return (
         <div
-            className="bg-gray-990 text-white  border-grey-subnav py-12 xl:py-24"
+            className="bg-gray-990 text-white  border-grey-subnav py-16 lg:py-24"
             id="framesystems"
         >
             <div className="max-w-7xl px-5 mx-auto">
@@ -32,9 +50,9 @@ const FrameSystemsSection = () => {
                             It is designed to be secured firmly in your preferred spot for movie-watching.
                         </p>
                     </div>
-                    <div className=" md:grid flex flex-col-reverse items-stretch gap-4 grid-cols-12 pb-12 xl:pb-10 xl:mb-10 relative">
-                        <div className="lg:col-span-4 md:col-span-5 md:text-left text-center">
-                            <h2 className="text-2xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Movable Frame</h2>
+                    <div className="md:grid flex flex-col-reverse items-stretch gap-4 grid-cols-12 pb-12 xl:pb-10 xl:mb-10 relative">
+                        <div className="lg:col-span-4 md:col-span-5 md:text-left text-center lg:mt-0 mt-12">
+                            <h2 className="text-3xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Movable Frame</h2>
                             <h3 className="txt-xl lg:text-3xl md:text-2xl pb-4 xl:pb-5 mb-0 max-w-full text-orange-1000">
                                 Perfect for flat lawns
                             </h3>
@@ -50,11 +68,9 @@ const FrameSystemsSection = () => {
                             </p>
                         </div>
                         <div className="lg:col-span-8 md:col-span-7">
-                            <StaticImage
-                                className="mx-auto w-full"
-                                src="../../assets/images/timberline-movable-frame-1617px-x-750px.jpg"
-                                alt=""
-                            />
+                            <GatsbyImage image={getImage(FrameImg1)} alt=""
+                                className="mx-auto w-full" />
+                          
                             <div className="py-3 flex sm:justify-around justify-between text-center sm:gap-0 gap-4 sm:flex-nowrap flex-wrap">
                                 <div>
                                     <MovableIcon className="w-full h-8 xl:h-12 p-1" />
@@ -78,11 +94,9 @@ const FrameSystemsSection = () => {
                     </div>
                     <div className="md:grid lg:gap-10 gap-4 items-stretch grid-cols-12 relative">
                         <div className="lg:col-span-8 md:col-span-7 text-center">
-                            <StaticImage
-                                className="mx-auto w-full"
-                                src="../../assets/images/timberline-streamline-frame-1617px-x-750px.jpg"
-                                alt=""
-                            />
+                            <GatsbyImage image={getImage(FrameImg2)} alt=""
+                                className="mx-auto w-full" />
+                           
                             <div className="bg-gray-990 py-3 flex sm:justify-around justify-between sm:gap-0 gap-4 sm:flex-nowrap flex-wrap">
                                 <div>
                                     <PermanentIcon className="w-full h-8 xl:h-12 p-1" />
@@ -101,13 +115,13 @@ const FrameSystemsSection = () => {
                                 <div>
                                     <BudgetIcon className="w-full h-8 xl:h-12 p-1" />
 
-                                    <p className="text-base mb-0">Budget-friendly</p>
+                                    <p className="text-base mb-0">Low-cost shopping</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:col-span-4 md:col-span-5 md:mt-0 mt-6 md:text-left text-center">
+                        <div className="lg:col-span-4 md:col-span-5 lg:mt-0 mt-12 md:text-left text-center">
                             <div>
-                                <h2 className="text-2xl md:text-4xl font-semibold md:pb-0 pb-2">Streamline Frame</h2>
+                                <h2 className="text-3xl md:text-4xl font-semibold md:pb-0 pb-2">Streamline Frame</h2>
                                 <h3 className="txt-xl lg:text-3xl md:text-2xl pb-4 xl:pb-5 mb-0 max-w-full text-orange-1000">
                                     Ideal for any backyard
                                 </h3>

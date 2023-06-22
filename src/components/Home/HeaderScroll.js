@@ -12,7 +12,7 @@ const HeaderScroll =() => {
             </div>
             <ul className="m-0 p-0 flex justify-between xl:justify-end text-xs xl:text-sm h-full items-center w-full xl:w-auto">
               <li className="mr-1 xl:mr-3 mb-0">
-                <Link to="#" className="no-underline text-white hover:text-orange-500">
+                <Link to="#whatyouget" className="no-underline text-white hover:text-orange-500">
                   <span>What You Get</span>
                 </Link>
               </li>
@@ -30,17 +30,17 @@ const HeaderScroll =() => {
                 <Link to="#" className="no-underline text-white hover:text-orange-500">Screens</Link>
               </li>
               <li className="mx-1 xl:mx-3 mb-0">
-                <Link to="#" className="no-underline text-white hover:text-orange-500">
+                <Link to="#projectorstand" className="no-underline text-white hover:text-orange-500">
                 Projector Stand
                 </Link>
               </li>
               <li className="mx-1 xl:mx-3 mb-0">
-                <Link to="#" className="no-underline text-white hover:text-orange-500">
+                <Link to="#features" className="no-underline text-white hover:text-orange-500">
                 Features
                 </Link>
               </li>
               <li className="mx-1 xl:mx-3 mb-0">
-                <Link to="#" className="no-underline text-white hover:text-orange-500">
+                <Link to="#comparison" className="no-underline text-white hover:text-orange-500">
                 Compare
                 </Link>
               </li>

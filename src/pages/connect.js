@@ -47,9 +47,9 @@ const ConnectPage = () => {
         setSubmitted(true)
     }
     return (
-        <Layout>
+        <Layout bgcolor="bg-gray-100">
             <Breadcrumbs />
-            <div className="bg-gray-100">
+            <div>
                 <div className="pt-5 overflow-hidden">
                     <div className="max-w-7xl px-5 mx-auto">
                         <div className="md:hidden w-full full-bleed-mobile relative mt-6 mb-6">
@@ -59,41 +59,41 @@ const ConnectPage = () => {
                             />
                         </div>
                         <div className="mt-8">
-                            <h1 className="text-orange-500 privacy-heading text-5xl leading-none relative">
+                            <h1 className="text-orange-500 privacy-heading text-4xl md:text-5xl xl:text-70 relative">
                                 Let&apos;s <span className="text-black">Connect</span>
                             </h1>
                         </div>
-                        <div className="mt-4 flex connect-padding">
+                        <div className="mt-4 flex">
                             <div className="md:w-7/12">
-                                <div className="max-w-xl padding-toAdd">
+                                <div className="max-w-xl">
                                     <div className="flex items-center mb-4 font-thin">
                                         <div className="w-16">
                                             <StaticImage src="../assets/images/icons/phoneicon.png" className="w-10" />
                                         </div>
                                         <div>
-                                            <p className="mb-0">
+                                            <p className="mb-0 text-lg max-w-full">
                                                 Phone:{" "}
-                                                <Link className="font-change no-underline" to="tel:207-647-8759">
+                                                <Link className="no-underline" to="tel:207-647-8759">
                                                     207-647-8759
                                                 </Link>
                                             </p>
-                                            <p className="mb-0">
+                                            <p className="mb-0 text-lg max-w-full">
                                                 Text:{" "}
-                                                <Link className="font-change no-underline" to="tel:207-595-2960">
+                                                <Link className="no-underline" to="tel:207-595-2960">
                                                     207-595-2960
                                                 </Link>
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="flex items-center mb-4 font-thin">
+                                    <div className="flex items-center mb-4">
                                         <div className="w-16">
                                             <StaticImage src="../assets/images/icons/emailicon.png" className="w-10" />
                                         </div>
                                         <div>
-                                            <p className="mb-0">
+                                            <p className="mb-0 text-lg max-w-full">
                                                 Email:{" "}
                                                 <Link
-                                                    className="font-change no-underline"
+                                                    className="no-underline"
                                                     to="mailto:todd@wirelessoutdoorcinema.com"
                                                 >
                                                     todd@wirelessoutdoorcinema.com
@@ -101,12 +101,12 @@ const ConnectPage = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="flex items-center mb-4 font-thin">
+                                    <div className="flex items-center mb-4">
                                         <div className="w-16">
                                             <StaticImage src="../assets/images/icons/homeicon.png" className="w-10 mb-0" />
                                         </div>
                                         <div>
-                                            <p className="font-change leading-tight">
+                                            <p className="text-lg max-w-full mb-0">
                                                 Wireless Outdoor Cinema Company
                                                 <br />
                                                 PO Box 752
@@ -115,17 +115,17 @@ const ConnectPage = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <h2 className="text-2xl sm:text-3xl mt-4 what-interested leading-tight news-subtitle-3">
+                                    <h2 className="text-2xl sm:text-3xl xl:text-50 lg:text-4xl mt-6">
                                         What are you interested in learning more about?
                                     </h2>
-                                    <p className="mt-4 what-interested">
+                                    <p className="mt-4 what-interested text-lg max-w-full mb-0">
                                         Take a moment to fill in the required fields and you will
                                         get a friendly response back within 24 hours or sooner.
                                         Looking forward to connecting.
                                     </p>
-                                    <form className="mt-6" onSubmit={handleSubmit} ref={form}>
+                                    <form className="mt-6 text-lg max-w-full" onSubmit={handleSubmit} ref={form}>
                                         <div className="grid sm:grid-cols-2 gap-4">
-                                            <div className="sm:py-4">
+                                            <div className="sm:py-4 ">
                                                 <label for="firstName">
                                                     First name<span className="text-orange-600">*</span>
                                                 </label>
@@ -234,7 +234,7 @@ const ConnectPage = () => {
                                             <input
                                                 type="submit"
                                                 value="Submit"
-                                                className="outline-none bg-orange-500 text-white py-3 px-12 uppercase font-bold rounded duration-300 transition hover:bg-orange-600"
+                                                className="cursor-pointer outline-none bg-orange-500 text-white py-3 px-12 uppercase font-bold rounded duration-300 transition hover:bg-orange-600"
                                             />
                                             {error && (
                                                 <p className="mt-4 text-sm text-red-600">{error}</p>
@@ -260,7 +260,7 @@ const ConnectPage = () => {
                                     {/* <span className="left-0 top-0 absolute text-6xl text-orange-500 leading-none">
                                         &ldquo;
                                     </span> */}
-                                    <p className=" relative quote-todd-orange text-2xl xl:text-3xl leading-tight px-8 xl:px-6">
+                                    <p className="relative quote-todd-orange text-2xl xl:text-3xl leading-tight px-8 xl:px-6">
                                         My wireless outdoor cinemas are designed to be used
                                         year-round and know you will love this experience as much as
                                         I do.

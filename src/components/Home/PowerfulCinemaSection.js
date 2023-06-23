@@ -151,11 +151,11 @@ const PowerfulCinemaSection = ({ className }) => {
       <div className="max-w-7xl px-5 mx-auto">
         <div className="flex flex-col xl:grid xl:grid-cols-12 w-full">
           <div className="text-left xl:col-span-12 xl:text-xl mb-11">
-            <h2 className="text-2xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Powerful wireless and wired cinema packages</h2>
-            <h3 className="txt-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 max-w-full mb-0 text-orange-1000">
+            <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold  md:leading-none md:pb-3 pb-2">Powerful wireless and wired cinema packages</h2>
+            <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 max-w-full mb-0 text-orange-1000">
               Go wireless with no extension cords. Go wired for unlimited options
             </h3>
-            <p className="text-lg max-w-full mb-0">
+            <p className="sm:text-lg text-base max-w-full mb-0">
               The Timberline Outdoor Movie Theaters come in two different packages: wireless and wired.
               The revolutionary wireless outdoor movie theater is powered by an off-grid battery,
               allowing you to watch your favorite entertainment without running extension cords from your
@@ -221,7 +221,7 @@ const PowerfulCinemaSection = ({ className }) => {
                       return (
                         <li className="flex items-center mb-5 gap-4" key={item.id}>
                           <Image className="white-svg p-0 h-8 pb-3 lg:pb-0 lg:w-10 lg:ml-0" />
-                          <span className="text-base">{item.text}</span>
+                          <span className="sm:text-lg text-base">{item.text}</span>
                         </li>
                       )
                     })}
@@ -287,7 +287,7 @@ const PowerfulCinemaSection = ({ className }) => {
                       <div>
                       <Image className="white-svg h-10 pb-3" />
                       </div>
-                      <span className="font-bold text-base">{item.text}</span>
+                      <span className="font-bold sm:text-lg text-base">{item.text}</span>
                     </li>
                   )
                 })}
@@ -312,7 +312,7 @@ const PowerfulCinemaSection = ({ className }) => {
                       return (
                         <li className="flex items-center mb-5 gap-4" key={item.id}>
                           <Image className="white-svg p-0 h-8 pb-3 lg:pb-0 lg:w-10 x-auto lg:ml-0" />
-                          <span className="text-base">{item.text}</span>
+                          <span className="sm:text-lg text-base">{item.text}</span>
                         </li>
                       )
                     })}

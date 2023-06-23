@@ -35,7 +35,7 @@ const PerfectForItem = ({ item }) => {
                 <p className="font-bold text-lg md:txt-2xl mb-3 rollover-color-title">
                     {item.title}
                 </p>
-                <p className="mb-3 text-sm">{item.text}</p>
+                <p className="mb-3 sm:text-lg text-base">{item.text}</p>
             </div>
         </div>
     )

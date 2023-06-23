@@ -517,7 +517,7 @@ const FaqSection = () => {
         <div className="max-w-7xl px-5 mx-auto">
           <div className="mx-auto flex flex-col xl:grid xl:grid-cols-12 w-full">
             <div className="text-center xl:col-span-12 xl:text-xl">
-              <h2 className="text-2xl xl:text-50 md:text-4xl font-semibold pb-5">
+              <h2 className="text-3xl xl:text-50 md:text-4xl font-semibold md:pb-5 pb-4">
                 Frequently asked questions
               </h2>             
               <h3 className="md:block hidden md:text-2xl pb-5 xl:text-35 xl:pb-7 text-orange-1000">
@@ -529,7 +529,7 @@ const FaqSection = () => {
                 movie theater
               </h3>
   
-              <p className="text-lg mb-0 max-w-full">
+              <p className="sm:text-lg text-base mb-0 max-w-full">
               Below are customers' most frequently asked questions, broken down by category to help you find the answers you need quickly.  Feel free to
               connect{" "}
                 <Link to="/connect" style={{ color: "#9647f7" }} className="no-underline">
@@ -546,7 +546,7 @@ const FaqSection = () => {
                 >
                   <div className="flex items-center pb-3">
                     {item.icon}
-                    <p className="text-lg md:txt-2xl px-3 text-orange-1000 font-semibold mb-0 max-w-full">
+                    <p className="sm:text-lg text-base md:txt-2xl px-3 text-orange-1000 font-semibold mb-0 max-w-full">
                       {item.text}
                     </p>
                   </div>
@@ -565,7 +565,7 @@ const FaqSection = () => {
                         </label>
                       </div>
                       <div className="faq-accordion-content">
-                        <p className="py-2 text-l mb-0 max-w-full">{qa.answer}</p>
+                        <p className="py-2 sm:text-lg text-base mb-0 max-w-full">{qa.answer}</p>
                       </div>
                     </article>
                   ))}

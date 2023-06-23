@@ -35,21 +35,21 @@ const PowerfulHangingSection = () => {
         <div className="max-w-7xl px-5 lg:pb-24 pb-16 mx-auto border-b border-grey-subnav">
           <div>
             <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold pb-3 mb-0">Cinematic screen-hanging methods</h2>
-            <h3 className="txt-xl xl:text-35 md:text-2xl pb-4 xl:pb-5 text-orange-1000">
+            <h3 className="text-xl xl:text-35 md:text-2xl pb-4 xl:pb-5 text-orange-1000">
             Hang the screen directly with hooks, or use rope for a straight-line look.
             </h3>
             <div>
-              <p className="mb-6 max-w-full text-lg">
+              <p className="mb-6 max-w-full sm:text-lg text-base">
               The cinematic screen allows you to hang it from the frame system using two different methods: 
               </p>
               <ol className="list-decimal ml-8">
-                <li className="text-lg mb-4">Hanging with screw hooks through the screen’s grommet holes, which are attached to the
+                <li className="sm:text-lg text-base mb-4">Hanging with screw hooks through the screen’s grommet holes, which are attached to the
                    inside of the frame system</li>
-            <li className="text-lg mb-4">Running a black nylon cord (supplied with the screen), through the grommet holes attached
+            <li className="sm:text-lg text-base mb-4">Running a black nylon cord (supplied with the screen), through the grommet holes attached
                to the screen, and tying off to the side posts.</li>
               </ol>            
 
-              <p className="text-lg max-w-full mb-11">
+              <p className="sm:text-lg text-base max-w-full mb-11">
                 <WarnIcon className="h-4 mr-2 -mt-2 inline-flex" />
                 There are many options when buying your outdoor cinematic screen, as they are available in many 
                 different materials and sizes. The DIY guide covers which screens to stay away from, and which 
@@ -73,7 +73,7 @@ const PowerfulHangingSection = () => {
                 <GatsbyImage image={getImage(StopwatchIcon)} alt=""
                 className="mx-auto w-16" />
                 
-                <span>Quick hanging method with hooks</span>
+                <span className="sm:text-lg text-base">Quick hanging method with hooks</span>
               </div>
             </div>
             <div className="col-span-6 relative">
@@ -87,7 +87,7 @@ const PowerfulHangingSection = () => {
                 }}
                 className="px-3 absolute flex items-center z-20 right-0 bg-black/[.5]"
               >
-                <span>Straight line method with rope</span>
+                <span className="sm:text-lg text-base">Straight line method with rope</span>
                 <RopeIcon className="h-10 ml-2" />
               </div>
             </div>

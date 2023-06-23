@@ -63,8 +63,8 @@ background-position: top left;background-repeat: no-repeat;width: 24px; height: 
 background-position: right bottom;background-repeat: no-repeat;width: 24px; height: 24px;position: absolute; padding-right: 30px;}
 
 
-.plusicon {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z'/%3E%3C/svg%3E"); background-position: right center; background-repeat: no-repeat;}
-.minusicon {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M0 10h24v4h-24z'/%3E%3C/svg%3E"); background-position: right center; background-repeat: no-repeat; }
+.plusicon {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z'/%3E%3C/svg%3E"); background-position: right 15px center; background-repeat: no-repeat;}
+.minusicon {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M0 10h24v4h-24z'/%3E%3C/svg%3E"); background-position: right 15px center; background-repeat: no-repeat; }
     
 .image-text-color {color: #5e5e5e;}
 
@@ -93,8 +93,10 @@ width: 40px; height: 40px; content: ''; position: absolute; background-repeat: n
 @media screen and (min-width: 1280px){
 .callout .xl\:text-6xl {font-size: 3.6rem;}
 .callout .xl\:text-2xl {font-size: 1.75rem; line-height: 1.8rem;}
-.xl\:text-50{font-size: 50px !important;}
+.xl\:text-50{font-size: 50px !important; line-height: 55px !important;}
 .xl\:text-35{font-size: 35px !important;}
+.xl\:text-70{font-size: 70px !important; line-height: 80px !important;}
+.quote_text.text-2xl{font-size: 1.6rem;;}
 }
 
 
@@ -103,7 +105,7 @@ width: 40px; height: 40px; content: ''; position: absolute; background-repeat: n
 .large-justify-start {justify-content: flex-start!important;}
 .large-justify-end {justify-content: flex-end!important;}
 
-.projectorstand{height: 600px;}
+.projectorstand{height: 550px;}
 
 }
 @media screen and (max-width: 1023px){
@@ -122,4 +124,7 @@ width: 40px; height: 40px; content: ''; position: absolute; background-repeat: n
 .rollover-svg-item:hover svg,
 .rollover-svg-item svg:hover{
     fill: #a6adb1;
+}
+@media screen and (max-width: 319px){
+.max-w-xs{max-width: 100%;}
 }

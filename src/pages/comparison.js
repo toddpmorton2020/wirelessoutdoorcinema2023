@@ -36,17 +36,15 @@ const ComparisonPage = () => {
     return (
         <Layout>
             <Breadcrumbs />
-
-
-            <div>
+            <div className="mt-12">
           <div>
             <div className="max-w-7xl px-5 mx-auto">
              <div className="">
-                <h1 className="md:text-5xl text-4xl privacy-heading text-center leading-none mt-6 mb-1">
+                <h1 className="xl:text-70 md:text-5xl sm:text-4xl text-3xl privacy-heading text-center mt-6 mb-1">
                   <span className="text-orange-500">Compare</span> Timberline
                   Outdoor Cinemas
                 </h1>
-                <p className="text-3xl sm:block hidden hide text-center max-w-full">
+                <h2 className="xl:text-50 text-3xl sm:block hidden hide text-center max-w-full">
                   Get help choosing which cinema is best for you.{" "}
                   <span
                     className="text-blu-100 cursor-pointer"
@@ -54,7 +52,7 @@ const ComparisonPage = () => {
                   >
                     Connect.
                   </span>
-                </p>
+                </h2>
               </div>
               <div className="hidden lg:grid grid-cols-3 gap-5 lg:pt-16 hide pt-8 lg:space-x-4 text-center items-center">
                 <div>
@@ -63,13 +61,13 @@ const ComparisonPage = () => {
                     alt=""
                     className="mx-auto"
                   />
-                  <h1 className="py-6 text-31 font-medium mb-0">
+                  <h2 className="py-6 text-31 font-medium mb-0">
                     <span className="text-orange-1000 mb-0">96" Jedi Bobcat</span>
                     <br /> Outdoor Gaming <br />
                     Cinema
-                  </h1>
+                  </h2>
                   <hr className="mx-12 border-gray-500" />
-                  <p className="text-2xl pb-6 mb-0">Just $2,499</p>
+                  <p className="text-2xl pb-6 mb-0 max-w-full">Just $2,499</p>
                   <button
                     className="text-2xl text-white bg-orange-1000 rounded-md px-10 py-1"
                     onClick={() =>
@@ -88,14 +86,14 @@ const ComparisonPage = () => {
                    
                     className="mx-auto"
                   />
-                  <h1 className="py-6 text-31 font-medium mb-0">
+                  <h2 className="py-6 text-31 font-medium mb-0">
                     <span className="text-purple-1000">120” Bella Bear</span>
                     <br />
                     Backyard Outdoor <br />
                     Cinema
-                  </h1>
+                  </h2>
                   <hr className="mx-12 border-gray-500" />
-                  <p className="text-2xl pb-6 mb-0">Starting at $2,399*</p>
+                  <p className="text-2xl pb-6 mb-0 max-w-full">Starting at $2,399*</p>
                   <button
                     className="text-2xl text-white bg-purple-1000 rounded-md px-10 py-1"
                     onClick={() =>
@@ -114,13 +112,13 @@ const ComparisonPage = () => {
                   
                     className="mx-auto"
                   />
-                  <h1 className="py-6 text-31 font-medium mb-0">
+                  <h2 className="py-6 text-31 font-medium mb-0">
                     <span className="text-orange-1000">150” Big Moose</span>
                     <br /> Premium Outdoor <br />
                     Cinema
-                  </h1>
+                  </h2>
                   <hr className="mx-12 border-gray-500" />
-                  <p className="text-2xl pb-6 mb-0">Starting at $2,899*</p>
+                  <p className="text-2xl pb-6 mb-0 max-w-full">Starting at $2,899*</p>
                   <button
                     className="text-2xl text-white bg-orange-1000 rounded-md px-10 py-1"
                     onClick={() =>
@@ -140,13 +138,13 @@ const ComparisonPage = () => {
                     alt=""
                     className="mx-auto"
                   />
-                  <h1 className="py-6 text-31 font-medium mb-0">
+                  <h2 className="py-6 text-31 font-medium mb-0">
                     <span className="text-orange-1000">96" Jedi Bobcat</span>
                     <br /> Outdoor Gaming <br />
                     Cinema
-                  </h1>
+                  </h2>
                   <hr className="mx-1 border-gray-500" />
-                  <p className="text-3xl mb-0">Just $2,499</p>
+                  <p className="text-3xl mb-4 max-w-full">Just $2,499</p>
                   <button
                     className="text-2xl text-white bg-orange-1000 rounded-md px-10 py-1"
                     onClick={() =>
@@ -160,24 +158,24 @@ const ComparisonPage = () => {
                   
                   <div className="hidden sm:block mt-4">
                     <div className="pt-6 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">Wooden Frame</h1>
+                      <h2 className="text-31 text-font pb-5 mb-0">Wooden Frame</h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">8’ ft. Wide Frame</p>
+                        <div className=" text-23">
+                          <p className="mb-0 text-lg max-w-full">8’ ft. Wide Frame</p>
                           <br />
-                          <p className="mb-0">Actual size: 87.5” High x 96” Wide</p>
+                          <p className="mb-0 text-lg max-w-full">Actual size: 87.5” High x 96” Wide</p>
                         </div>
                       </div>
                     </div>
                     <div className="pt-8 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Cinematic Screen
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             96” Diagonal Screen
                             <br />
                             <br />
@@ -191,11 +189,11 @@ const ComparisonPage = () => {
                       </div>
                     </div>
                     <div className="pt-8 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">Wired Option</h1>
+                      <h2 className="text-31 text-font pb-5 mb-0">Wired Option</h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             Wired option is only available for the Jedi Bobcat
                             Outdoor Gaming Cinema
                             <br />
@@ -210,11 +208,11 @@ const ComparisonPage = () => {
                       </div>
                     </div>
                     <div className="pt-8 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">Projector</h1>
+                      <h2 className="text-31 text-font pb-5 mb-0">Projector</h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             HD 1080p LED Projector with 4,000 Lumens
                             Brightness
                           </p>
@@ -222,11 +220,11 @@ const ComparisonPage = () => {
                       </div>
                     </div>
                     <div className="pt-8 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">Speakers</h1>
+                      <h2 className="text-31 text-font pb-5 mb-0">Speakers</h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             Wired option only: Rockville 8” Dual Powered PA
                             System Speakers with Tripod Stands
                           </p>
@@ -234,37 +232,37 @@ const ComparisonPage = () => {
                       </div>
                     </div>
                     <div className="pt-8 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Digital FM Transmitter
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p  className="mb-0">
+                        <div className="">
+                          <p  className="mb-0 text-lg max-w-full">
                             Wired option only: Rolls Digital FM Transmitter
                           </p>
                         </div>
                       </div>
                     </div>
                     <div className="pt-8 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Digital FM Tuner
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">Wired option only: Rolls Digital FM Tuner</p>
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">Wired option only: Rolls Digital FM Tuner</p>
                         </div>
                       </div>
                     </div>
                     <div className="pt-8 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Roku 4k Player
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             Roku Express 4k player with voice control to
                             access movies and apps
                           </p>
@@ -272,13 +270,13 @@ const ComparisonPage = () => {
                       </div>
                     </div>
                     <div className="pt-8 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Battery Station
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             Wireless option only: chargeable off-grid battery
                             station
                           </p>
@@ -286,13 +284,13 @@ const ComparisonPage = () => {
                       </div>
                     </div>
                     <div className="pt-8 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Projector Stand
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             Comes with wireless and wired options: Custom,
                             light-weight cedar wood projector and equipment
                             stand
@@ -301,13 +299,13 @@ const ComparisonPage = () => {
                       </div>
                     </div>
                     <div className="pt-8 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Miscellaneous
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             Wired Option Only: 25’ ft. green extension cord
                             and waterproof surge protector power strip
                           </p>
@@ -315,11 +313,11 @@ const ComparisonPage = () => {
                       </div>
                     </div>
                     <div className="pt-8 pb-6 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">Installation</h1>
+                      <h2 className="text-31 text-font pb-5 mb-0">Installation</h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             Comes with wireless and wired options:
                             professional and friendly installation of frame,
                             projector stand, equipment setup, review on how to
@@ -330,13 +328,13 @@ const ComparisonPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="block sm:hidden py-1 included-btn mt-6 mb-4 comparison-details mx-auto rounded-md border border-orange-1000 comparison-detail-border text-left">
+                  <div className="block sm:hidden py-1 mt-6 mb-4 mx-auto rounded-md border border-orange-1000 text-left">
                     <div className="">
                       <div
-                        className="w-full px-3"
+                        className="w-full "
                         onClick={() => setOpen(!open)}
                       >
-                        <h2 className={`text-2xl text-orange-1000 flex-grow text-center  ${open ? 'minusicon' : 'plusicon'} `}>
+                        <h2 className={`text-2xl text-orange-1000 flex-grow text-center py-1.5  ${open ? 'minusicon' : 'plusicon'} `}>
                           What's included?
                         </h2>
                         {/* <img
@@ -346,25 +344,22 @@ const ComparisonPage = () => {
                       </div>
                     </div>
                     <div className={answerClassName}>
-                      <div className="px-3 pt-6 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">Wooden Frame</h1>
+                      <div className="pt-6 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">Wooden Frame</h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">8’ ft. Wide Frame</p>
+                            <p className="mb-0 text-base max-w-full">8’ ft. Wide Frame</p>
                             <br />
-                            <p className="mb-0">Actual size: 87.5” High x 96” Wide</p>
+                            <p className="mb-0 text-base max-w-full">Actual size: 87.5” High x 96” Wide</p>
                           </div>
-                        </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Cinematic Screen
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               96” Diagonal Screen
                               <br />
                               <br />
@@ -374,15 +369,13 @@ const ComparisonPage = () => {
                               Wrinkle-free, double layer cinematic screen with
                               black backing to prevent light transmission
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">Wired Option</h1>
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">Wired Option</h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Wired option is only available for the Jedi Bobcat
                               Outdoor Gaming Cinema
                               <br />
@@ -393,120 +386,102 @@ const ComparisonPage = () => {
                               power consumption limitations on the Battery
                               Station
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">Projector</h1>
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">Projector</h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               HD 1080p LED Projector with 4,000 Lumens
                               Brightness
                             </p>
                           </div>
-                        </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">Speakers</h1>
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">Speakers</h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Wired option only: Rockville 8” Dual Powered PA
                               System Speakers with Tripod Stands
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Digital FM Transmitter
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Wired option only: Rolls Digital FM Transmitter
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Digital FM Tuner
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">Wired option only: Rolls Digital FM Tuner</p>
+                            <p className="mb-0 text-base max-w-full">Wired option only: Rolls Digital FM Tuner</p>
                           </div>
                         </div>
-                      </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Roku 4k Player
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Roku Express 4k player with voice control to
                               access movies and apps
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Battery Station
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Wireless option only: chargeable off-grid battery
                               station
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Projector Stand
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Comes with wireless and wired options: Custom,
                               light-weight cedar wood projector and equipment
                               stand
                             </p>
                           </div>
-                        </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Miscellaneous
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Wired Option Only: 25’ ft. green extension cord
                               and waterproof surge protector power strip
                             </p>
                           </div>
-                        </div>
                       </div>
-                      <div className="pt-8 pb-6 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">Installation</h1>
+                      <div className="pt-8 pb-6 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">Installation</h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Comes with wireless and wired options:
                               professional and friendly installation of frame,
                               projector stand, equipment setup, review on how to
@@ -514,7 +489,6 @@ const ComparisonPage = () => {
                               properly{" "}
                             </p>
                           </div>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -525,14 +499,14 @@ const ComparisonPage = () => {
                     alt=""                   
                     className="mx-auto"
                   />
-                  <h1 className="py-6 text-31 font-medium mb-0">
+                  <h2 className="py-6 text-31 font-medium mb-0">
                     <span className="text-purple-1000 ">120” Bella Bear</span>
                     <br />
                     Backyard Outdoor <br />
                     Cinema
-                  </h1>
+                  </h2>
                   <hr className="mx-1 border-gray-500 mb-0" />
-                  <p className="text-3xl py-6 mb-0">Starting at $2,399*</p>
+                  <p className="sm:text-3xl text-2xl py-6 mb-0 max-w-full">Starting at $2,399*</p>
                   <button
                     className="text-2xl text-white bg-purple-1000 rounded-md px-10 py-1"
                     onClick={() =>
@@ -544,25 +518,25 @@ const ComparisonPage = () => {
                     Learn more
                   </button>
                   <div className="hidden sm:block mt-4">
-                    <div className="px-3 pt-6 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">Wooden Frame</h1>
+                    <div className=" pt-6 text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">Wooden Frame</h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">10’ ft. Wide Frame</p>
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">10’ ft. Wide Frame</p>
                           <br />
                           <p className="mb-0">Actual size: 87.5” High x 120” Wide</p>
                         </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                    <div className="pt-8  text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Cinematic Screen
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             120” Diagonal Screen
                             <br />
                             <br />
@@ -575,14 +549,14 @@ const ComparisonPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                    <div className="pt-8  text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Wireless or Wired Option
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             This cinema allows you to choose from either
                             Wireless or Wired packages
                             <br />
@@ -596,23 +570,23 @@ const ComparisonPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">Projector</h1>
+                    <div className="pt-8  text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">Projector</h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             HD 1080p LED Projector with 4,000 Lumens
                             Brightness
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">Speakers</h1>
+                    <div className="pt-8  text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">Speakers</h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <p className="font-extralight text-23 mb-0">
+                        <p className=" mb-0 text-lg max-w-full">
                           Wireless option: Avantree Bluetooth Soundbar Speaker
                           <br />
                           <br />
@@ -621,66 +595,66 @@ const ComparisonPage = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                    <div className="pt-8  text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Digital FM Transmitter
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             Wired option only: Rolls Digital FM Transmitter
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
+                    <div className="pt-8  text-left">
                       <h1 className="text-31 text-font pb-5 mb-0">
                         Digital FM Tuner
                       </h1>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">Wired option only: Rolls Digital FM Tuner</p>
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">Wired option only: Rolls Digital FM Tuner</p>
                         </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                    <div className="pt-8  text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Roku 4k Player
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             Roku Express 4k player with voice control to
                             access movies and apps
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                    <div className="pt-8  text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Battery Station
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             Wireless option only: chargeable off-grid battery
                             station
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                    <div className="pt-8  text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Projector Stand
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className=" ">
+                          <p className="mb-0 text-lg max-w-full">
                             Comes with wireless and wired options: Custom,
                             light-weight cedar wood projector and equipment
                             stand
@@ -688,26 +662,26 @@ const ComparisonPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                    <div className="pt-8  text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Miscellaneous
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             Wired Option Only: 25’ ft. green extension cord
                             and waterproof surge protector power strip
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="pt-8 pb-6 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">Installation</h1>
+                    <div className="pt-8 pb-6  text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">Installation</h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                        <div className="">
+                          <p className="mb-0 text-lg max-w-full">
                             Comes with wireless and wired options:
                             professional and friendly installation of frame,
                             projector stand, equipment setup, review on how to
@@ -718,13 +692,13 @@ const ComparisonPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="block sm:hidden py-1 included-btn mt-6 mb-4 comparison-details border border-orange-1000 mx-auto rounded-md comparison-detail-border-p text-left">
+                  <div className="block sm:hidden py-1 mt-6 mb-4 border border-purple-1000 mx-auto rounded-md text-left">
                     <div className="">                    
                       <div
-                        className="w-full px-3"
+                        className="w-full "
                         onClick={() => setOpen1(!open1)}
                       >
-                        <h2 className={`text-2xl text-purple-1000 flex-grow text-center  ${open1 ? 'minusicon' : 'plusicon'} `}>
+                        <h2 className={`text-2xl text-purple-1000 flex-grow text-center py-1.5  ${open1 ? 'minusicon' : 'plusicon'} `}>
                           What's included?
                         </h2>
                         {/* <img
@@ -734,25 +708,22 @@ const ComparisonPage = () => {
                       </div>
                     </div>
                     <div className={answerClassName1}>
-                      <div className="px-3 pt-6 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">Wooden Frame</h1>
+                      <div className="px-4 pt-6 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">Wooden Frame</h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">10’ ft. Wide Frame</p>
+                            <p className="mb-0 text-base max-w-full">10’ ft. Wide Frame</p>
                             <br />
-                            <p>Actual size: 87.5” High x 120” Wide</p>
+                            <p className="text-base max-w-full mb-0">Actual size: 87.5” High x 120” Wide</p>
                           </div>
-                        </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="px-4 pt-8 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Cinematic Screen
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               120” Diagonal Screen
                               <br />
                               <br />
@@ -763,16 +734,14 @@ const ComparisonPage = () => {
                               black backing to prevent light transmission
                             </p>
                           </div>
-                        </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Wireless or Wired Option
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               This cinema allows you to choose from either
                               Wireless or Wired packages
                               <br />
@@ -783,26 +752,23 @@ const ComparisonPage = () => {
                               to power consumption limitations on the Battery
                               Station
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">Projector</h1>
+                      <div className="pt-8 px-4 text-left">
+                        <h1 className="text-2xl pb-5 mb-0">Projector</h1>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                          <p className="text-base max-w-full mb-0">
                               HD 1080p LED Projector with 4,000 Lumens
                               Brightness
                             </p>
                           </div>
-                        </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">Speakers</h1>
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">Speakers</h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <p className="font-extralight text-23 mb-0">
+                          <p className="mb-0 text-base max-w-full">
                             Wireless option: Avantree Bluetooth Soundbar Speaker
                             <br />
                             <br />
@@ -811,93 +777,80 @@ const ComparisonPage = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Digital FM Transmitter
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Wired option only: Rolls Digital FM Transmitter
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Digital FM Tuner
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p>Wired option only: Rolls Digital FM Tuner</p>
+                            <p className="text-base max-w-full mb-0">Wired option only: Rolls Digital FM Tuner</p>
                           </div>
-                        </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h1 className="text-2xl pb-5 mb-0">
                           Roku 4k Player
                         </h1>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
                             <p className="mb-0">
                               Roku Express 4k player with voice control to
                               access movies and apps
                             </p>
                           </div>
-                        </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Battery Station
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Wireless option only: chargeable off-grid battery
                               station
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Projector Stand
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Comes with wireless and wired options: Custom,
                               light-weight cedar wood projector and equipment
                               stand
                             </p>
                           </div>
-                        </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Miscellaneous
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Wired Option Only: 25’ ft. green extension cord
                               and waterproof surge protector power strip
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 pb-6 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">Installation</h1>
+                      <div className="pt-8 pb-6 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">Installation</h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Comes with wireless and wired options:
                               professional and friendly installation of frame,
                               projector stand, equipment setup, review on how to
@@ -905,7 +858,6 @@ const ComparisonPage = () => {
                               properly{" "}
                             </p>
                           </div>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -916,13 +868,13 @@ const ComparisonPage = () => {
                     alt=""
                     className="mx-auto"
                   />
-                  <h1 className="py-6 text-31 font-medium mb-0">
+                  <h2 className="py-6 text-31 font-medium mb-0">
                     <span className="text-orange-1000 mb-0">150” Big Moose</span>
                     <br /> Premium Outdoor <br />
                     Cinema
-                  </h1>
+                  </h2>
                   <hr className="mx-1 border-gray-500 mb-0" />
-                  <p className="text-3xl py-6 mb-0">Starting at $2,899*</p>
+                  <p className="sm:text-3xl text-2xl py-6 mb-0 max-w-full">Starting at $2,899*</p>
                   <button
                     className="text-2xl text-white bg-orange-1000 rounded-md px-10 py-1"
                     onClick={() =>
@@ -934,25 +886,22 @@ const ComparisonPage = () => {
                     Learn more
                   </button>
                   <div className="hidden sm:block mt-4">
-                    <div className="px-3 pt-6 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">Wooden Frame</h1>
+                    <div className=" pt-6 text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">Wooden Frame</h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">12’ ft. Wide Frame</p>
+                          <p className="mb-0 text-lg max-w-full">12’ ft. Wide Frame</p>
                           <br />
-                          <p className="mb-0">Actual size: 120” High x 150” Wide</p>
-                        </div>
+                          <p className="mb-0 text-lg max-w-full">Actual size: 120” High x 150” Wide</p>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                    <div className="pt-8  text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Cinematic Screen
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                          <p className="mb-0 text-lg max-w-full">
                             150” Diagonal Screen
                             <br />
                             <br />
@@ -962,17 +911,15 @@ const ComparisonPage = () => {
                             Wrinkle-free, double layer cinematic screen with
                             black backing to prevent light transmission
                           </p>
-                        </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                    <div className="pt-8  text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Wireless or Wired Option
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                          <p className="mb-0 text-lg max-w-full">
                             This cinema allows you to choose from either
                             Wireless or Wired packages
                             <br />
@@ -983,26 +930,23 @@ const ComparisonPage = () => {
                             to power consumption limitations on the Battery
                             Station
                           </p>
-                        </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">Projector</h1>
+                    <div className="pt-8 text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">Projector</h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                          <p className="mb-0 text-lg max-w-full">
                             HD 1080p LED Projector with 4,000 Lumens
                             Brightness
                           </p>
-                        </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">Speakers</h1>
+                    <div className="pt-8 text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">Speakers</h2>
                       <hr class="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <p className="font-extralight text-23 mb-0">
+                        <p className=" text-23 mb-0">
                           Wireless option: Avantree Bluetooth Soundbar Speaker
                           <br />
                           <br />
@@ -1011,110 +955,96 @@ const ComparisonPage = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                    <div className="pt-8 text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Digital FM Transmitter
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                          <p className="mb-0 text-lg max-w-full">
                             Wired option only: Rolls Digital FM Transmitter
                           </p>
                         </div>
-                      </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                    <div className="pt-8 text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Digital FM Tuner
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">Wired option only: Rolls Digital FM Tuner</p>
-                        </div>
+                          <p className="mb-0 text-lg max-w-full">Wired option only: Rolls Digital FM Tuner</p>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                    <div className="pt-8 text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Roku 4k Player
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                          <p className="mb-0 text-lg max-w-full">
                             Roku Express 4k player with voice control to
                             access movies and apps
                           </p>
-                        </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                    <div className="pt-8 text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Battery Station
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                          <p className="mb-0 text-lg max-w-full">
                             Wireless option only: chargeable off-grid battery
                             station
                           </p>
-                        </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
-                      <h1 className="text-31 text-font pb-5 mb-0">
+                    <div className="pt-8 text-left">
+                      <h2 className="text-31 text-font pb-5 mb-0">
                         Projector Stand
-                      </h1>
+                      </h2>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                          <p className="mb-0 text-lg max-w-full">
                             Comes with wireless and wired options: Custom,
                             light-weight cedar wood projector and equipment
                             stand
                           </p>
-                        </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 text-left">
+                    <div className="pt-8 text-left">
                       <h1 className="text-31 text-font pb-5 mb-0">
                         Miscellaneous
                       </h1>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                          <p className="mb-0 text-lg max-w-full">
                             Wired Option Only: 25’ ft. green extension cord
                             and waterproof surge protector power strip
                           </p>
-                        </div>
                       </div>
                     </div>
-                    <div className="pt-8 px-3 pb-6 text-left">
+                    <div className="pt-8 pb-6 text-left">
                       <h1 className="text-31 text-font pb-5 mb-0">Installation</h1>
                       <hr className="border-gray-500 mb-0" />
                       <div className="pt-5">
-                        <div className="font-extralight text-23">
-                          <p className="mb-0">
+                          <p className="mb-0 text-lg max-w-full">
                             Comes with wireless and wired options:
                             professional and friendly installation of frame,
                             projector stand, equipment setup, review on how to
                             use, and testing to ensure everything works
                             properly{" "}
                           </p>
-                        </div>
                       </div>
                     </div>
                   </div>
-                  <div className="block sm:hidden py-1 included-btn mt-6 mb-4 comparison-details mx-auto rounded-md border-orange-1000 border comparison-detail-border text-left">
+                  <div className="block sm:hidden py-1 mt-6 mb-4 mx-auto rounded-md border-orange-1000 border text-left">
                     <div className="">                     
                       <div
-                        className="w-full px-3"
+                        className="w-full "
                         onClick={() => setOpen2(!open2)}
                       >
-                        <h2 className={`text-2xl text-orange-1000 flex-grow text-center  ${open2 ? 'minusicon' : 'plusicon'} `}>
+                        <h2 className={`text-2xl text-orange-1000 flex-grow text-center py-1.5  ${open2 ? 'minusicon' : 'plusicon'} `}>
                           What's included?
                         </h2>
                         {/* <img
@@ -1125,25 +1055,22 @@ const ComparisonPage = () => {
                       
                     </div>
                     <div className={answerClassName2}>
-                      <div className="px-3 pt-6 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">Wooden Frame</h1>
+                      <div className="px-4 pt-6 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">Wooden Frame</h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">12’ ft. Wide Frame</p>
+                            <p className="mb-0 text-base max-w-full">12’ ft. Wide Frame</p>
                             <br />
                             <p className="mb-0">Actual size: 120” High x 150” Wide</p>
                           </div>
-                        </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Cinematic Screen
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               150” Diagonal Screen
                               <br />
                               <br />
@@ -1154,16 +1081,14 @@ const ComparisonPage = () => {
                               black backing to prevent light transmission
                             </p>
                           </div>
-                        </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Wireless or Wired Option
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               This cinema allows you to choose from either
                               Wireless or Wired packages
                               <br />
@@ -1174,26 +1099,23 @@ const ComparisonPage = () => {
                               to power consumption limitations on the Battery
                               Station
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">Projector</h1>
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">Projector</h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               HD 1080p LED Projector with 4,000 Lumens
                               Brightness
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">Speakers</h1>
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">Speakers</h2>
                         <hr class="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <p className="font-extralight text-23 mb-0">
+                          <p className="mb-0 text-base max-w-full">
                             Wireless option: Avantree Bluetooth Soundbar Speaker
                             <br />
                             <br />
@@ -1202,93 +1124,80 @@ const ComparisonPage = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Digital FM Transmitter
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Wired option only: Rolls Digital FM Transmitter
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        -<h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Digital FM Tuner
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">Wired option only: Rolls Digital FM Tuner</p>
+                            <p className="mb-0 text-base max-w-full">Wired option only: Rolls Digital FM Tuner</p>
                           </div>
-                        </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h1 className="text-2xl pb-5 mb-0">
                           Roku 4k Player
                         </h1>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Roku Express 4k player with voice control to
                               access movies and apps
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Battery Station
-                        </h1>
-                        <hr className="border-gray-500 mb-0 " />
+                        </h2>
+                        <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Wireless option only: chargeable off-grid battery
                               station
                             </p>
                           </div>
-                        </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Projector Stand
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Comes with wireless and wired options: Custom,
                               light-weight cedar wood projector and equipment
                               stand
                             </p>
-                          </div>
                         </div>
                       </div>
-                      <div className="pt-8 px-3 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">
+                      <div className="pt-8 px-4 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">
                           Miscellaneous
-                        </h1>
+                        </h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Wired Option Only: 25’ ft. green extension cord
                               and waterproof surge protector power strip
                             </p>
                           </div>
                         </div>
-                      </div>
-                      <div className="pt-8 px-3 pb-6 text-left">
-                        <h1 className="text-31 text-font pb-5 mb-0">Installation</h1>
+                      <div className="pt-8 px-4 pb-6 text-left">
+                        <h2 className="text-2xl pb-5 mb-0">Installation</h2>
                         <hr className="border-gray-500 mb-0" />
                         <div className="pt-5">
-                          <div className="font-extralight text-23">
-                            <p className="mb-0">
+                            <p className="mb-0 text-base max-w-full">
                               Comes with wireless and wired options:
                               professional and friendly installation of frame,
                               projector stand, equipment setup, review on how to
@@ -1297,12 +1206,11 @@ const ComparisonPage = () => {
                             </p>
                           </div>
                         </div>
-                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="mt-8 mb-6">
-                  <p className="text-left mb-0">
+                  <p className="text-left mb-0 text-lg max-w-full">
                     * Starting price for wireless option on 120" Bella Bear and
                     150" Big Moose Cinemas.
                   </p>
@@ -1310,32 +1218,29 @@ const ComparisonPage = () => {
               </div>
               <div className="pt-20 pb-10 hidden lg:block">
                 <div className="">
-                  <h1 className="text-31 pb-5 mb-0">Wooden Frame size</h1>
+                  <h2 className="xl:text-50 lg:text-4xl text-31 pb-5 mb-0">Wooden Frame size</h2>
                   <hr class="border-gray-500 mb-0" />
-                  <div className="comparison-col lg:flex lg:space-x-16 xl:space-x-32 pt-5">
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">8’ ft. Wide Frame</p>
-                      <br />
-                      <p className="mb-0">Actual size: 87.5” High x 96” Wide</p>
+                  <div className="lg:flex lg:space-x-16 xl:space-x-32 pt-5">
+                    <div className="">
+                      <p className="mb-5 text-lg max-w-full">8’ ft. Wide Frame</p>
+                      <p className="mb-0 text-lg max-w-full">Actual size: 87.5” High x 96” Wide</p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">10’ ft. Wide Frame</p>
-                      <br />
+                    <div className="">
+                      <p className="mb-5 text-lg max-w-full">10’ ft. Wide Frame</p>
                       <p className="mb-0">Actual size: 87.5” High x 120” Wide</p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">12’ ft. Wide Frame</p>
-                      <br />
+                    <div className="">
+                      <p className="mb-5 text-lg max-w-full">12’ ft. Wide Frame</p>
                       <p className="mb-0">Actual size: 120” High x 150” Wide</p>
                     </div>
                   </div>
                 </div>
                 <div className="pt-16">
-                  <h1 className="text-31 pb-5 mb-0">Cinematic Screen size</h1>
+                  <h1 className="xl:text-50 lg:text-4xl text-31 pb-5 mb-0">Cinematic Screen size</h1>
                   <hr class="border-gray-500 mb-0" />
                   <div className="comparison-col lg:flex lg:space-x-16 xl:space-x-32 pt-5">
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         96” Diagonal Screen
                         <br />
                         <br />
@@ -1346,8 +1251,8 @@ const ComparisonPage = () => {
                         backing to prevent light transmission
                       </p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         120” Diagonal Screen
                         <br />
                         <br />
@@ -1358,8 +1263,8 @@ const ComparisonPage = () => {
                         backing to prevent light transmission
                       </p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         150” Diagonal Screen
                         <br />
                         <br />
@@ -1373,11 +1278,11 @@ const ComparisonPage = () => {
                   </div>
                 </div>
                 <div className="pt-16">
-                  <h1 className="text-31 pb-5 mb-0">Wireless or Wired Option</h1>
+                  <h1 className="xl:text-50 lg:text-4xl text-31 pb-5 mb-0">Wireless or Wired Option</h1>
                   <hr class="border-gray-500 mb-0" />
-                  <div className="comparison-col lg:flex lg:space-x-16 xl:space-x-32 pt-5">
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                  <div className="lg:flex lg:space-x-16 xl:space-x-32 pt-5">
+                    <div className=" ">
+                      <p className="mb-0 text-lg max-w-full">
                         Wired option is only available for the Jedi Bobcat
                         Outdoor Gaming Cinema
                         <br />
@@ -1388,8 +1293,8 @@ const ComparisonPage = () => {
                         limitations on the Battery Station
                       </p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         This cinema allows you to choose from either Wireless or
                         Wired packages
                         <br />
@@ -1400,8 +1305,8 @@ const ComparisonPage = () => {
                         limitations on the Battery Station
                       </p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         This cinema allows you to choose from either Wireless or
                         Wired packages
                         <br />
@@ -1415,38 +1320,38 @@ const ComparisonPage = () => {
                   </div>
                 </div>
                 <div className="pt-16">
-                  <h1 className="text-31 pb-5 mb-0">Projector</h1>
+                  <h2 className="xl:text-50 lg:text-4xl text-31 pb-5 mb-0">Projector</h2>
                   <hr class="border-gray-500 mb-0" />
-                  <div className="comparison-col lg:flex lg:space-x-16 xl:space-x-32 pt-5">
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">HD 1080p LED Projector with 4,000 Lumens Brightness</p>
+                  <div className="lg:flex lg:space-x-16 xl:space-x-32 pt-5">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">HD 1080p LED Projector with 4,000 Lumens Brightness</p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">HD 1080p LED Projector with 4,000 Lumens Brightness</p>
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">HD 1080p LED Projector with 4,000 Lumens Brightness</p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">HD 1080p LED Projector with 4,000 Lumens Brightness</p>
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">HD 1080p LED Projector with 4,000 Lumens Brightness</p>
                     </div>
                   </div>
                 </div>
                 <div className="pt-16">
-                  <h1 className="text-31 pb-5 mb-0">Speakers</h1>
+                  <h1 className="xl:text-50 lg:text-4xl text-31 pb-5 mb-0">Speakers</h1>
                   <hr class="border-gray-500 mb-0" />
-                  <div className="comparison-col lg:flex lg:space-x-16 xl:space-x-32 pt-5">
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                  <div className="lg:flex lg:space-x-16 xl:space-x-32 pt-5">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Wired option only: Rockville 8” Dual Powered PA System
                         Speakers with Tripod Stands
                       </p>
                     </div>
-                    <p className="font-extralight text-23 mb-0">
+                    <p className=" mb-0 text-lg max-w-full">
                       Wireless option: Avantree Bluetooth Soundbar Speaker
                       <br />
                       <br />
                       Wired option: Rockville 8” Dual Powered PA System Speakers
                       with Tripod Stands
                     </p>
-                    <p className="font-extralight text-23 mb-0">
+                    <p className=" mb-0 text-lg max-w-full">
                       Wireless option: Avantree Bluetooth Soundbar Speaker
                       <br />
                       <br />
@@ -1456,53 +1361,53 @@ const ComparisonPage = () => {
                   </div>
                 </div>
                 <div className="pt-16">
-                  <h1 className="text-31 pb-5 mb-0">Digital FM Transmitter</h1>
+                  <h1 className="xl:text-50 lg:text-4xl text-31 pb-5 mb-0">Digital FM Transmitter</h1>
                   <hr class="border-gray-500 mb-0" />
-                  <div className="comparison-col lg:flex lg:space-x-16 xl:space-x-32 pt-5">
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">Wired option only: Rolls Digital FM Transmitter</p>
+                  <div className="lg:flex lg:space-x-16 xl:space-x-32 pt-5">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">Wired option only: Rolls Digital FM Transmitter</p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">Wired option only: Rolls Digital FM Transmitter</p>
+                    <div className=" ">
+                      <p className="mb-0 text-lg max-w-full">Wired option only: Rolls Digital FM Transmitter</p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">Wired option only: Rolls Digital FM Transmitter</p>
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">Wired option only: Rolls Digital FM Transmitter</p>
                     </div>
                   </div>
                 </div>
                 <div className="pt-16">
-                  <h1 className="text-31 pb-5 mb-0">Digital FM Tuner</h1>
+                  <h1 className="xl:text-50 lg:text-4xl text-31 pb-5 mb-0">Digital FM Tuner</h1>
                   <hr class="border-gray-500 mb-0" />
-                  <div className="comparison-col lg:flex lg:space-x-16 xl:space-x-32 pt-5">
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">Wired option only: Rolls Digital FM Tuner</p>
+                  <div className="lg:flex lg:space-x-16 xl:space-x-32 pt-5">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">Wired option only: Rolls Digital FM Tuner</p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">Wired option only: Rolls Digital FM Tuner</p>
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">Wired option only: Rolls Digital FM Tuner</p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">Wired option only: Rolls Digital FM Tuner</p>
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">Wired option only: Rolls Digital FM Tuner</p>
                     </div>
                   </div>
                 </div>
                 <div className="pt-16">
-                  <h1 className="text-31 pb-5 mb-0">Roku Express 4k Player</h1>
+                  <h1 className="xl:text-50 lg:text-4xl text-31 pb-5 mb-0">Roku Express 4k Player</h1>
                   <hr class="border-gray-500 mb-0" />
-                  <div className="comparison-col lg:flex lg:space-x-16 xl:space-x-32 pt-5">
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                  <div className="lg:flex lg:space-x-16 xl:space-x-32 pt-5">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Roku Express 4k player with voice control to access
                         movies and apps
                       </p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Roku Express 4k player with voice control to access
                         movies and apps
                       </p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Roku Express 4k player with voice control to access
                         movies and apps
                       </p>
@@ -1510,23 +1415,23 @@ const ComparisonPage = () => {
                   </div>
                 </div>
                 <div className="pt-16">
-                  <h1 className="text-31 pb-5 mb-0">Battery Station</h1>
+                  <h1 className="xl:text-50 lg:text-4xl text-31 pb-5 mb-0">Battery Station</h1>
                   <hr class="border-gray-500 mb-0" />
-                  <div className="comparison-col lg:flex lg:space-x-16 xl:space-x-32 pt-5">
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                  <div className="lg:flex lg:space-x-16 xl:space-x-32 pt-5">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Wireless option only: chargeable off-grid battery
                         station
                       </p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Wireless option only: chargeable off-grid battery
                         station
                       </p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Wireless option only: chargeable off-grid battery
                         station
                       </p>
@@ -1534,23 +1439,23 @@ const ComparisonPage = () => {
                   </div>
                 </div>
                 <div className="pt-16">
-                  <h1 className="text-31 pb-5 mb-0">Projector Stand</h1>
+                  <h1 className="xl:text-50 lg:text-4xl text-31 pb-5 mb-0">Projector Stand</h1>
                   <hr class="border-gray-500 mb-0" />
-                  <div className="comparison-col lg:flex lg:space-x-16 xl:space-x-32 pt-5">
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                  <div className="lg:flex lg:space-x-16 xl:space-x-32 pt-5">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Comes with wireless and wired options: Custom,
                         light-weight cedar wood projector and equipment stand
                       </p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Comes with wireless and wired options: Custom,
                         light-weight cedar wood projector and equipment stand
                       </p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Comes with wireless and wired options: Custom,
                         light-weight cedar wood projector and equipment stand
                       </p>
@@ -1558,23 +1463,23 @@ const ComparisonPage = () => {
                   </div>
                 </div>
                 <div className="pt-16">
-                  <h1 className="text-31 pb-5 mb-0">Miscellaneous</h1>
+                  <h1 className="xl:text-50 lg:text-4xl text-31 pb-5 mb-0">Miscellaneous</h1>
                   <hr class="border-gray-500 mb-0" />
-                  <div className="comparison-col lg:flex lg:space-x-16 xl:space-x-32 pt-5">
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                  <div className="lg:flex lg:space-x-16 xl:space-x-32 pt-5">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Wired Option Only: 25’ ft. green extension cord and
                         waterproof surge protector power strip
                       </p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Wired option only: 25’ ft. green extension cord and
                         waterproof surge protector power strip
                       </p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Wired option only: 25’ ft. green extension cord and
                         waterproof surge protector power strip
                       </p>
@@ -1582,27 +1487,27 @@ const ComparisonPage = () => {
                   </div>
                 </div>
                 <div className="pt-16">
-                  <h1 className="text-31 pb-5 mb-0">Professional Installation</h1>
+                  <h1 className="xl:text-50 lg:Text-4xl text-31 pb-5 mb-0">Professional Installation</h1>
                   <hr class="border-gray-500 mb-0" />
-                  <div className="comparison-col lg:flex lg:space-x-16 xl:space-x-32 pt-5">
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                  <div className="lg:flex lg:space-x-16 xl:space-x-32 pt-5">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Comes with wireless and wired options: professional and
                         friendly installation of frame, projector stand,
                         equipment setup, review on how to use, and testing to
                         ensure everything works properly{" "}
                       </p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Comes with wireless and wired options: professional and
                         friendly installation of frame, projector stand,
                         equipment setup, review on how to use, and testing to
                         ensure everything works properly{" "}
                       </p>
                     </div>
-                    <div className="font-extralight text-23">
-                      <p className="mb-0">
+                    <div className="">
+                      <p className="mb-0 text-lg max-w-full">
                         Comes with wireless and wired options: professional and
                         friendly installation of frame, projector stand,
                         equipment setup, review on how to use, and testing to
@@ -1612,7 +1517,7 @@ const ComparisonPage = () => {
                   </div>
                 </div>
                 <div className="pt-16">
-                  <p className="mb-0 max-w-full">
+                  <p className="mb-0 text-lg max-w-full">
                     * Starting price for the Bella Bear and Big Moose Timberline
                     Outdoor Cinemas are the wireless package option.
                   </p>

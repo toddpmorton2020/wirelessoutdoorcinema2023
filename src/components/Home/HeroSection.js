@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useStaticQuery, graphql} from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
@@ -26,35 +26,35 @@ const HeroSection = () => {
               }           
           }
         `
-      )
+    )
     return (
         <>
-        {/* <HeaderScroll /> */}
+            {/* <HeaderScroll /> */}
             <div className="bg-black relative text-white sm:top-0 ">
                 <div className="hidden lg:block">
-                <GatsbyImage image={getImage(HeroImg)} alt="" loading="eager" 
-                className="mx-auto w-full max-w-2400 pb-6" />               
+                    <GatsbyImage image={getImage(HeroImg)} alt="" loading="eager"
+                        className="mx-auto w-full max-w-2400 py-6" />
                 </div>
                 <div className="lg:hidden">
-                <div className="sm:block hidden">
-            <GatsbyImage image={getImage(TabletHeroImg)} alt=""
-              className="mx-auto w-full" />
-          </div>
-          <div className="sm:hidden">
-            <GatsbyImage image={getImage(MobileHeroImg)} alt=""
-              className="mx-auto w-full" />
-          </div>
-                {/* <GatsbyImage image={getImage(MobileHeroImg)} alt="" loading="eager" 
+                    <div className="sm:block hidden">
+                        <GatsbyImage image={getImage(TabletHeroImg)} alt=""
+                            className="mx-auto w-full" />
+                    </div>
+                    <div className="sm:hidden">
+                        <GatsbyImage image={getImage(MobileHeroImg)} alt=""
+                            className="mx-auto w-full" />
+                    </div>
+                    {/* <GatsbyImage image={getImage(MobileHeroImg)} alt="" loading="eager" 
                 className="mx-auto w-full" /> */}
                 </div>
                 {/* <div class="absolute inset-0 bg-black opacity-50"></div> */}
                 <div className="lg:container pb-4 xl:pb-16 mx-auto px-5">
-                    <div className="lg:absolute xl:mt-16 2xl:pt-10 sm:top-0">
+                    <div className="lg:absolute xl:mt-6 2xl:pt-10 sm:top-0">
                         <div className="relative lg:w-3/5 xl:w-2/4 2xl:w-3/6 z-20 mt-8 xl:mt-0">
-                            <p className="font-semibold text-xl md:text-3xl mb-0 max-w-full">
-                                Get the only <span className="text-orange-1000">DIY</span> on
+                            <p className="font-semibold text-xl sm:text-2xl md:text-4xl mb-0 max-w-full">
+                                Get the only <span className="text-orange-1000">DIY</span> guide on
                             </p>
-                            <h1 className="xl::text-6xl lg:text-5xl text-3xl mb-4 font-semibold leading-9 md:leading-none ">
+                            <h1 className="xl:text-70 md:text-5xl md:leading-tight sm:text-4xl text-3xl mb-4 font-semibold">
                                 <span className="text-orange-1000">How-to build a</span> professional
                                 outdoor movie theater
                                 <sup
@@ -69,20 +69,20 @@ const HeroSection = () => {
 
                             <div className="lg:flex-col-reverse flex-col flex">
                                 <div>
-                                    <p className="tet-xl md:text-2xl xl:leading-8 leading-7 mb-0 max-w-full">
-                                    DIY guide bundle valued at $3,000
+                                    <p className="text-lg sm:text-xl xl:text-3xl md:text-2xl mb-1 max-w-full">
+                                        DIY guide bundle valued at $3,000
                                     </p>
-                                    <p className="tet-xl md:text-2xl xl:leading-8 leading-7 mb-0 max-w-full">
-                                    On sale now for $99* (Reg. price $199. 50% off)
+                                    <p className="text-lg sm:text-xl xl:text-3xl md:text-2xl mb-0 max-w-full">
+                                        On sale now for $99* (Reg. price $199. 50% off)
                                     </p>
                                 </div>
                                 <div>
-                                    <p className="my-4 text-lg md:text-2xl xl:my-4">
+                                    <p className="lg:mb-5 mt-5 lg:mt-0 text-lg md:text-2xl">
                                         <Link
                                             to="#"
-                                            className="px-8 py-1 xl:px-16 xl:py-2 bg-orange-1000 no-underline text-white rounded-md"
+                                            className="px-6 py-1.5 xl:px-10 xl:py-2 bg-orange-1000 no-underline text-white rounded-md"
                                         >
-                                            Get the DIY guide now 
+                                            Get the DIY guide now
                                         </Link>
                                     </p>
                                 </div>

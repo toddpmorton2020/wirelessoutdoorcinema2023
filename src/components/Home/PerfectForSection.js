@@ -84,23 +84,23 @@ const PerfectForSection = () => {
           <div className="xl:col-span-8 col-span-7">
             <div className="xl:text-xl">
               <div className="hidden md:block lg:text-left text-center">
-                <h2 className="xl:font-50 text-2xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Outdoor movie theater perfect for</h2>
-                <h3 className="xl:font-35 txt-xl md:text-3xl xl:text-35 pb-4 xl:pb-5 text-orange-1000 md:leading-none leading-c14">
+                <h2 className="md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Outdoor movie theater perfect for</h2>
+                <h3 className="md:text-3xl xl:text-35 pb-4 xl:pb-5 text-orange-1000 md:leading-none leading-c14">
                   Homeowners with a backyard who love the outdoors.
                 </h3>
               </div>
 
               <div className="block md:hidden text-center">
                 <h2 className="text-3xl font-semibold leading-c18 pb-3">Perfect for</h2>
-                <h3 className="txt-xl pb-4 text-orange-1000 leading-c14">
+                <h3 className="text-xl pb-4 text-orange-1000">
                   Homeowners with a backyard who loves the outdoors.
                 </h3>
               </div>
-              <p className="text-lg md:txt-2xl mb-4 max-w-full lg:text-left text-center">
+              <p className="sm:text-lg text-base mb-4 max-w-full lg:text-left text-center">
                 The Timberline Outdoor Movie Theater is designed to be an extension of your living room, allowing you to enjoy your favorite movies, streaming shows, sporting events, and more outside, thanks to a fast and easy setup every time. The cinema equipment stays on the custom projector stand and never has to be broken down or boxed up—just like your entertainment center inside your home.
               </p>
 
-              <p className="text-lg md:txt-2xl max-w-full mb-0 lg:text-left text-center">
+              <p className="sm:text-lg text-base  max-w-full mb-0 lg:text-left text-center">
                 Designed with convenience in mind, the frame system stays up on your property year-round-- just hang the cinematic screen whenever you want to watch movies, enjoy sporting events, stream your favorite shows, or play video games outside. When the nightly entertainment is over, simply pick up the portable projector stand and bring it inside to protect the equipment from moisture and rain.
               </p>
             </div>

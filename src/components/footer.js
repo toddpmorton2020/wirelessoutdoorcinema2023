@@ -79,7 +79,6 @@ function Footer() {
     <div>
       <form onSubmit={handleSubmit} ref={form}>
         <div className="bg-orange-1000">
-
           <div className="max-w-7xl mx-auto py-4 px-4">
             <div className="flex md:flex-row flex-col items-center md:items-start py-4 lg:py-0 orange-mob">
            <div className="hidden md:inline-block">
@@ -116,12 +115,12 @@ function Footer() {
                   />
                 </div>
                 {error && (
-                  <p className="md:mt-3 md:ml-3 -mt-2 md:pb-0 pb-2 text-sm text-red-1000">
+                  <p className="md:mt-3 md:ml-3 -mt-2 md:pb-0 pb-2 sm:text-lg text-base max-w-full text-red-1000">
                     {error}
                   </p>
                 )}
                 {submitted && (
-                  <p className="md:mt-3 md:ml-3 mt-2 md:pb-0 pb-2 text-sm text-green-800">
+                  <p className="md:mt-3 md:ml-3 mt-2 md:pb-0 pb-2 sm:text-lg text-base max-w-full text-green-800">
                     Your submission has been sent. We will get back to you as
                     soon as possible.
                   </p>
@@ -133,7 +132,7 @@ function Footer() {
       </form>
       <div className="full-width footer-padding bg-black pt-8 lg:py-12 text-white relative">
         <div className="max-w-7xl px-5 mx-auto lg:flex">
-          <div className="block lg:hidden text-sm">
+          <div className="block lg:hidden text-base">
             <div className="mb-3">
               <h5 className="text-orange-500 uppercase mb-2">
                 The Wireless Outdoor Cinema Company
@@ -285,15 +284,15 @@ function Footer() {
                 <h5 className="text-left text-orange-500 font-bold uppercase mb-1">
                   Quick Links
                 </h5>            
-                <Link to="/about" className="flex items-center no-underline text-white">
+                <Link to="/about" className="flex items-center no-underline text-white font-normal">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   About
                 </Link>
-                <Link to="/comparison" className="flex items-center no-underline text-white">
+                <Link to="/comparison" className="flex items-center no-underline text-white font-normal">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   Cinema Packages
                 </Link>
-                <Link to="/about" className="flex items-center no-underline text-white">
+                <Link to="/about" className="flex items-center no-underline text-white font-normal">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                 How To Build an Outdoor Movie Theater
                 </Link>
@@ -301,22 +300,22 @@ function Footer() {
               <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   Outdoor Cinema Accessories
                 </Link> */}
-                <Link to="/in-the-news" className="flex items-center no-underline text-white">
+                <Link to="/in-the-news" className="flex items-center no-underline text-white font-normal">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   In the News
                 </Link>
-                <Link to="/faq" className="flex items-center no-underline text-white">
+                <Link to="/faq" className="flex items-center no-underline text-white font-normal">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   FAQ
                 </Link>
-                <Link to="/connect" className="flex items-center no-underline text-white">
+                <Link to="/connect" className="flex items-center no-underline text-white font-normal">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   Connect
                 </Link>
                 <div className="my-1 flex items-center">
                   <Link
                     to="tel:2075952960"
-                    className="cursor-pointer flex items-center no-underline text-white"
+                    className="cursor-pointer flex items-center no-underline text-white font-normal"
                   >
                     <GatsbyImage image={getImage(CellImg)} alt="" className="w-5" />
                     <span className="ml-2">(207) 595-2960</span>
@@ -359,12 +358,12 @@ function Footer() {
             &copy;2020-{new Date().getFullYear()} The Wireless Outdoor Cinema
             Company. All Rights Reserved.{" "}
             <span className="hidden lg:inline">
-              <Link className="ml-1 text-white no-underline" to="/terms">
+              <Link className="ml-1 text-white no-underline font-normal" to="/terms">
                 Terms of Use
               </Link>{" "}
-              <span className="mx-1">|</span> <Link to="/privacy" className="text-white no-underline">Privacy</Link>{" "}
+              <span className="mx-1">|</span> <Link to="/privacy" className="text-white no-underline font-normal">Privacy</Link>{" "}
               <span className="mx-1">|</span>{" "}
-              <Link to="/sitemap" className="text-white no-underline">Site Map</Link>
+              <Link to="/sitemap" className="text-white no-underline font-normal">Site Map</Link>
             </span>
           </div>
           <div className="flex items-center justify-center hidden lg:hidden">

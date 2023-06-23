@@ -87,11 +87,11 @@ const ImpressiveOutdoorSection = () => {
               Time-saving and industry-leading features
             </h2>
 
-            <h3 className="txt-xl md:text-2xl xl:text-35 pb-4 xl:pb-7 text-orange-1000">
+            <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-7 text-orange-1000">
               Fastest setup. Strongest frame system. Custom equipment stand. Year-round.
             </h3>
 
-            <p className="text-lg md:tet-2xl mb-0 max-w-full">
+            <p className="sm:text-lg text-base mb-0 max-w-full">
               After researching and testing all of the outdoor movie theaters you can buy online,
               I found four main areas for improvement. My benchmark testing focused on setup time,
               the durability of frame systems, cinema equipment organization, and the ability to
@@ -129,7 +129,7 @@ const ImpressiveOutdoorSection = () => {
                             }`}
                         />
                       </div>
-                      <div>{item.text}</div>
+                      <div className="sm:text-lg text-base">{item.text}</div>
                     </div>
 
                     <div
@@ -143,7 +143,7 @@ const ImpressiveOutdoorSection = () => {
                             }`}
                         />
                         <p
-                          className={`tet-xl xl:tet-3xl p-3 mb-0 ${item.align === "start"
+                          className={`sm:text-lg text-base p-3 mb-0 ${item.align === "start"
                               ? "order-2 pl-20"
                               : "order-1 pr-20"
                             }`}

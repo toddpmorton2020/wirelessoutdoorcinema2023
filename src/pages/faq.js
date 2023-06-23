@@ -58,7 +58,7 @@ function FAQQuestion({ question, answer }) {
         "w-4 transition-transform transform duration-300 translate-y-1"
     if (!open) arrowClassName += " -rotate-90"
     else arrowClassName += " rotate-0"
-    let answerClassName = "transform duration-300 overflow-hidden mb-0 max-w-full"
+    let answerClassName = "transform duration-300 overflow-hidden mb-0 max-w-full sm:text-lg text-base"
     if (open) answerClassName += " open-answer pb-6"
     else answerClassName += " closed-answer closed-ps pb-0"
     return (
@@ -81,22 +81,20 @@ function FAQQuestion({ question, answer }) {
 const FaqPage = () => {
 
     return (
-        <Layout>
+        <Layout bgcolor="bg-gray-100">
             <Breadcrumbs />
-
-            <div className="bg-gray-100 pb-8">
+            <div className="pb-8">
                 <div className="pt-5 overflow-hidden">
                     <div className="max-w-7xl px-5 mx-auto">
-
                         <div
                             className="about-image full-bleed-mobile w-full relative bg-cover bg-bottom mobile bg-center first-image mb-6"
                         //   style={{ backgroundImage: `url(${faqImage})` }}
                         />
                         <div className="text-center sm:text-left">
-                            <h1 className="text-orange-500 mb-0 privacy-heading text-3xl sm:text-5xl leading-none uppercase relative mt-8">
+                            <h1 className="text-orange-500 mb-0 privacy-heading text-3xl sm:text-5xl xl:text-70 uppercase relative mt-8">
                                 FAQ
                             </h1>
-                            <h2 className="text-2xl sm:text-3xl xl:mt-3 sitemap-sub">
+                            <h2 className="xl:text-50 text-2xl sm:text-3xl xl:mt-3 sitemap-sub">
                                 Search the knowledge base
                             </h2>
                         </div>
@@ -104,17 +102,7 @@ const FaqPage = () => {
                 </div>
                 <div className="max-w-7xl px-5 mx-auto">
                     <div className="md:px-8 py-6">
-                        <div className="sm:mt-8">
-                            {/* <div className="text-center hidden sm:block">
-                <h1 className="text-3xl text-gray-800 font-bold">FAQS</h1>
-                <p className="text-lg">
-                  If you can't find what you&apos;re looking for, try{" "}
-                  <Link to="/connect" className="link">
-                    here
-                  </Link>
-                  .
-                </p>
-              </div> */}
+                        <div className="sm:mt-8">                          
                             <div className="sm:mt-8 mx-auto w-full max-w-screen-lg">
                                 {questions.map((q, index) => (
                                     <FAQQuestion

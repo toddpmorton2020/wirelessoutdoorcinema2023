@@ -4,8 +4,8 @@ import { Link } from "gatsby"
 function Cookies({ setCookies }) {
   return (
     <div className="reative w-full bottom-0 py-3 cookie-back text-white">
-      <div className="container mx-auto max-w-4xl flex flex-col sm:flex-row flex-wrap items-center px-2">
-        <h3 className="text-lg font-thin">
+      <div className="max-w-7xl mx-auto max-w-4xl flex flex-col sm:flex-row flex-wrap items-center justify-center lg:px-0 px-5">
+        <h3 className="sm:text-lg text-base text-center lg:mb-0 mb-3">
           This website uses cookies to ensure you get the best experience on our
           website.{" "}
           <Link to="/privacy" className="cursor-pointer text-orange-500 no-underline">

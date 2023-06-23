@@ -107,16 +107,16 @@ const WhatyougetSection = () => {
           </div>
 
           <div className="text-center xl:col-span-7 lg:col-span-6 lg:text-left xl:text-xl pt-10 lg:pt-16 ">
-            <h2 className="text-2xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Here's what you get</h2>
-            <h3 className="txt-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 mb-0 text-orange-1000">
+            <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Here's what you get</h2>
+            <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 mb-0 text-orange-1000">
               Timberline Big Moose
               <span className="text-white"> DIY </span>{" "} Guide.
             </h3>
 
             <div className="lg:max-w-xl text-center lg:text-justify">
-              <p className="text-lg mb-4 max-w-full">
+              <p className="sm:text-lg text-base mb-4 max-w-full">
                 Introducing the only professional DIY guide on how to build an outdoor movie theater, created just for homeowners. Jam-packed with valuable information, this how-to guide contains detailed diagrams, photographs, access to assembly and installation videos, recommended materials, tools, and equipment lists, wireless and wired cinema setups, different frame styles, tips and techniques, and bonus content.               </p>
-              <p className="text-lg max-w-full mb-0">
+              <p className="sm:text-lg text-base max-w-full mb-0">
                 Get your professional DIY content and video bundle for just $99 (regularly $199, valued at $3,000), available at this price only until September 15, 2023.
               </p>
             </div>

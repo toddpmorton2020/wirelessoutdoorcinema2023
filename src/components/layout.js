@@ -13,7 +13,7 @@ import Footer from "./footer"
 import Cookies from "./cookies"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, bgcolor='bg-white' }) => {
   const [showCookie, setShowCookie] = useState(true)
   const [cookie, setCookie] = useState(undefined)
   useEffect(() => {
@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
      
-        <main>{children}</main>
+        <main className={`${bgcolor}`}>{children}</main>
 
         {!cookie && showCookie ? (
         <Cookies

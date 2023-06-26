@@ -15,7 +15,7 @@ function ProductSection({ title, content }) {
           className="flex justify-between md:justify-start items-center"
           onClick={() => setOpen(!open)}
         >
-          <h2 className={`text-xl md:text-3xl pr-10 flex-1 sm:flex-initial ${open ? 'minusicon' : 'plusicon'}`}>
+          <h2 className={`text-2xl lg:text-4xl md:text-3xl pr-10 flex-1 sm:flex-initial md:w-auto w-full  ${open ? 'minusicon' : 'plusicon'}`}>
             {title}
           </h2>
           {/* <img

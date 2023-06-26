@@ -50,7 +50,7 @@ const ConnectPage = () => {
         <Layout bgcolor="bg-gray-100">
             <Breadcrumbs />
             <div>
-                <div className="pt-5 overflow-hidden">
+                <div className="pt-5 overflow-hidden md:pb-20 pb-10">
                     <div className="max-w-7xl px-5 mx-auto">
                         <div className="md:hidden w-full full-bleed-mobile relative mt-6 mb-6">
                             <StaticImage
@@ -59,27 +59,27 @@ const ConnectPage = () => {
                             />
                         </div>
                         <div className="mt-8">
-                            <h1 className="text-orange-500 privacy-heading text-4xl md:text-5xl xl:text-70 relative">
+                            <h1 className="text-orange-500 mb-6 text-4xl md:text-5xl xl:text-70 relative">
                                 Let&apos;s <span className="text-black">Connect</span>
                             </h1>
                         </div>
                         <div className="mt-4 flex">
                             <div className="md:w-7/12">
-                                <div className="max-w-xl">
+                                <div className="md:max-w-xl">
                                     <div className="flex items-center mb-4 font-thin">
                                         <div className="w-16">
                                             <StaticImage src="../assets/images/icons/phoneicon.png" className="w-10" />
                                         </div>
                                         <div>
-                                            <p className="mb-0 text-lg max-w-full">
+                                            <p className="mb-0 sm:text-lg text-base max-w-full">
                                                 Phone:{" "}
-                                                <Link className="no-underline" to="tel:207-647-8759">
+                                                <Link className="no-underline text-neutral-600 font-normal" to="tel:207-647-8759">
                                                     207-647-8759
                                                 </Link>
                                             </p>
-                                            <p className="mb-0 text-lg max-w-full">
+                                            <p className="mb-0 sm:text-lg text-base max-w-full">
                                                 Text:{" "}
-                                                <Link className="no-underline" to="tel:207-595-2960">
+                                                <Link className="no-underline text-neutral-600 font-normal" to="tel:207-595-2960">
                                                     207-595-2960
                                                 </Link>
                                             </p>
@@ -90,10 +90,10 @@ const ConnectPage = () => {
                                             <StaticImage src="../assets/images/icons/emailicon.png" className="w-10" />
                                         </div>
                                         <div>
-                                            <p className="mb-0 text-lg max-w-full">
+                                            <p className="mb-0 sm:text-lg text-base max-w-full">
                                                 Email:{" "}
                                                 <Link
-                                                    className="no-underline"
+                                                    className="no-underline text-neutral-600 font-normal"
                                                     to="mailto:todd@wirelessoutdoorcinema.com"
                                                 >
                                                     todd@wirelessoutdoorcinema.com
@@ -106,7 +106,7 @@ const ConnectPage = () => {
                                             <StaticImage src="../assets/images/icons/homeicon.png" className="w-10 mb-0" />
                                         </div>
                                         <div>
-                                            <p className="text-lg max-w-full mb-0">
+                                            <p className="sm:text-lg text-base max-w-full mb-0">
                                                 Wireless Outdoor Cinema Company
                                                 <br />
                                                 PO Box 752
@@ -118,12 +118,12 @@ const ConnectPage = () => {
                                     <h2 className="text-2xl sm:text-3xl xl:text-50 lg:text-4xl mt-6">
                                         What are you interested in learning more about?
                                     </h2>
-                                    <p className="mt-4 what-interested text-lg max-w-full mb-0">
+                                    <p className="mt-4 what-interested sm:text-lg text-base max-w-full mb-0">
                                         Take a moment to fill in the required fields and you will
                                         get a friendly response back within 24 hours or sooner.
                                         Looking forward to connecting.
                                     </p>
-                                    <form className="mt-6 text-lg max-w-full" onSubmit={handleSubmit} ref={form}>
+                                    <form className="mt-6 sm:text-lg text-base max-w-full" onSubmit={handleSubmit} ref={form}>
                                         <div className="grid sm:grid-cols-2 gap-4">
                                             <div className="sm:py-4 ">
                                                 <label for="firstName">
@@ -276,14 +276,14 @@ const ConnectPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mt-12">
-                    {/* <MyMapComponent
+                {/* <div className="mt-12">
+                    <MyMapComponent
             googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3JtmXYkylvqwlYq43BFLXVRxds3fyFHM&v=3.exp&libraries=geometry,drawing,places"
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div style={{ height: `400px` }} />}
             mapElement={<div style={{ height: `100%` }} />}
-          /> */}
-                </div>
+          />
+                </div> */}
             </div>
 
         </Layout>

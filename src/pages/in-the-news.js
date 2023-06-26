@@ -11,7 +11,7 @@ const IntheNewsPage = () => {
         <Layout bgcolor="bg-gray-100">
             <>
                 <Breadcrumbs />
-                <div className="pb-20">
+                <div className="md:pb-20 pb-12">
                     <div className="max-w-7xl px-5 mx-auto">
                         <div className="pt-5">
                             <div className="mt-8 md:text-left">
@@ -20,7 +20,7 @@ const IntheNewsPage = () => {
                                 </h1>
                             </div>
                             <div className="mt-8 hidden md:flex">
-                                <div className="w-7/12 pr-12 block">
+                                <div className="w-7/12 lg:pr-12 pr-6 block">
                                     <div
                                         className="cursor-pointer frame-width"
                                         onClick={() =>
@@ -57,10 +57,10 @@ const IntheNewsPage = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex-1 md:pl-12 md:border-l border-gray-400">
-                                    <h1 className="news-archive-heading leading-none font-medium">
+                                <div className="flex-1 lg:pl-12 pl-6 md:border-l border-gray-400">
+                                    <h3 className="xl:text-35 text-3xl font-medium">
                                         News archive
-                                    </h1>
+                                    </h3>
                                     <div className="mt-1">
                                         <Link
                                             className="flex items-stretch no-underline py-6 border-b border-gray-400 cursor-pointer"
@@ -115,7 +115,7 @@ const IntheNewsPage = () => {
                                                 <h3 className="text-gray-800 font-bold press-release-lineHeight">
                                                     Winner Announcement for Fastasy Pro Football ...
                                                 </h3>
-                                                <h4 className="text-gray-600 font-thin">
+                                                <h4 className="text-gray-600 mb-0">
                                                     January 4, 2021
                                                 </h4>
                                             </div>
@@ -241,7 +241,7 @@ const IntheNewsPage = () => {
                                         <p className="text-xl font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
                                             Winner announcement of Fantasy Pro Football Challenge
                                         </p>
-                                        <p className="text-gray-600 pt-1 pb-3 text-lg">January 4, 2021</p>
+                                        <p className="text-gray-600 pt-1 pb-3 text-lg mb-0">January 4, 2021</p>
                                     </div>
                                 </Link>
                                 <Link

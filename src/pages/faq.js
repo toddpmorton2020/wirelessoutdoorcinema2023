@@ -91,10 +91,10 @@ const FaqPage = () => {
                         //   style={{ backgroundImage: `url(${faqImage})` }}
                         />
                         <div className="text-center sm:text-left">
-                            <h1 className="text-orange-500 mb-0 privacy-heading text-3xl sm:text-5xl xl:text-70 uppercase relative mt-8">
+                            <h1 className="text-orange-500 mb-0 text-3xl sm:text-5xl xl:text-70 uppercase relative mt-8">
                                 FAQ
                             </h1>
-                            <h2 className="xl:text-50 text-2xl sm:text-3xl xl:mt-3 sitemap-sub">
+                            <h2 className="xl:text-50 text-2xl sm:text-3xl mt-3">
                                 Search the knowledge base
                             </h2>
                         </div>

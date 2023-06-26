@@ -34,7 +34,22 @@ const OptionTwoslider = () => {
         centerMode: true,
         swipeToSlide: true,
         focusOnSelect: true,
-        centerPadding: '10px'
+        centerPadding: '10px',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
     };
 
     return (
@@ -46,7 +61,7 @@ const OptionTwoslider = () => {
                     ref={slider => (setSlider1(slider))}
                 >
                     <div>
-                        <StaticImage src='../../assets/images/wiredMain.png' />
+                        <StaticImage src='../../assets/images/wiredMain.png' />                        
                     </div>
                     <div>
                         <StaticImage src='../../assets/images/digitalTransmitter.png' />

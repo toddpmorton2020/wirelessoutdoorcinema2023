@@ -54,7 +54,7 @@ function Footer() {
             gatsbyImageData(quality: 100, layout: FIXED, width:20, height: 22)
           }
         } 
-        EmailImg: file(relativePath: {eq: "icons/icons/emailwhite.png.png"}) {
+        EmailImg: file(relativePath: {eq: "icons/emailwhite.png"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FIXED, width:24, height: 16)
           }
@@ -137,7 +137,7 @@ function Footer() {
               <h5 className="text-orange-500 uppercase mb-2">
                 The Wireless Outdoor Cinema Company
               </h5>
-              <p className="sm:leading-none">
+              <p className="sm:text-lg text-base">
                 PO Box 752
                 <br />
                 Bridgton, ME 04009
@@ -149,45 +149,45 @@ function Footer() {
                 <Link
                   to="https://www.facebook.com/The-Wireless-Outdoor-Cinema-Company-112773330512496"
                   target="_blank"
-                  className="cursor-pointer"
+                  className="cursor-pointer font-normal"
                 >
                   <GatsbyImage image={getImage(FacebookImg)} alt="" className="w-4 text-white" />
                 </Link>
                 <Link
                   to="https://www.linkedin.com/in/todd-morton-7851b1b"
                   target="_blank"
-                  className="cursor-pointer"
+                  className="cursor-pointer font-normal"
                 >
                   <GatsbyImage image={getImage(LinkedinWhiteImg)} alt="" className="ml-4 w-4 text-white" />
                 </Link>
               </div>
               <Link
                 to="tel:2075952960"
-                className="cursor-pointer flex items-center mb-3 mt-4 no-underline"
+                className="cursor-pointer flex items-center mb-3 mt-4 no-underline font-normal sm:text-lg text-base"
               >
                 <GatsbyImage image={getImage(CellImg)} alt="" className="w-5" />
                 <span className="ml-2 text-white">(207) 595-2960</span>
               </Link>
               <Link
                 to="mailto:todd@wirelessoutdoorcinema.com"
-                className="cursor-pointer flex items-center no-underline text-white"
+                className="cursor-pointer flex gap-2 items-center no-underline text-white font-normal sm:text-lg text-base sm:flex-nowrap flex-wrap"
               >
-                 <GatsbyImage image={getImage(EmailImg)} alt="" className="w-6 h-4" />
-                <span className="ml-2">todd@wirelessoutdoorcinema.com</span>
+                 <div><GatsbyImage image={getImage(EmailImg)} alt="" className="w-4 h-4" /></div>
+                <span>todd@wirelessoutdoorcinema.com</span>
               </Link>
             </div>
             <div className="mb-4">
               <h5 className="text-orange-500 uppercase">Links</h5>
               <div className="flex flex-col">
-                <Link to="/about" className="flex items-center py-2 no-underline text-white">
+                <Link to="/about" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-600 mr-2">&gt;</span>
                   About
                 </Link>
-                <Link to="/comparison" className="flex items-center py-2 no-underline text-white">
+                <Link to="/comparison" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Outdoor Cinemas
                 </Link>
-                <Link to="/how-to-build-an-outdoor-movie-theater" className="flex items-center py-2 no-underline text-white">
+                <Link to="/how-to-build-an-outdoor-movie-theater" className="flex items-center py-2 no-underline text-white font-normal">
                 <span className="text-orange-500 mr-2">&gt;</span>
                 How To Build an Outdoor Movie Theater
                 </Link>
@@ -195,27 +195,27 @@ function Footer() {
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Outdoor Cinema Accessories
                 </Link> */}
-                <Link to="/in-the-news" className="flex items-center py-2 no-underline text-white">
+                <Link to="/in-the-news" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-500 mr-2">&gt;</span>
                   In the News
                 </Link>
-                <Link to="/faq" className="flex items-center py-2 no-underline text-white">
+                <Link to="/faq" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-500 mr-2">&gt;</span>
                   FAQ
                 </Link>
-                <Link to="/connect" className="flex items-center py-2 no-underline text-white">
+                <Link to="/connect" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Connect
                 </Link>
-                <Link to="/terms" className="flex items-center py-2 no-underline text-white">
+                <Link to="/terms" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Terms Of Use
                 </Link>
-                <Link to="/privacy" className="flex items-center py-2 no-underline text-white">
+                <Link to="/privacy" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Privacy Policy
                 </Link>
-                <Link to="/sitemap" className="flex items-center py-2 no-underline text-white">
+                <Link to="/sitemap" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Sitemap
                 </Link>
@@ -224,12 +224,12 @@ function Footer() {
             <div className="mb-4">
               <Link
                 to="/connect"
-                className="text-orange-500 uppercase flex items-center no-underline"
+                className="text-orange-500 uppercase flex items-center no-underline font-normal"
               >
                 Media Inquires
-                <span className=" ml-2">&gt;</span>
+                <span className="ml-2">&gt;</span>
               </Link>
-              <p className="sm:leading-none mb-0">
+              <p className="mb-0">
                 The Wireless Outdoor Cinema Company, LLC. welcomes members of
                 the press...
               </p>
@@ -237,12 +237,12 @@ function Footer() {
             <div className="mb-4">
               <Link
                 to="/connect"
-                className="text-orange-500 uppercase flex items-center no-underline"
+                className="text-orange-500 uppercase flex items-center no-underline font-normal"
               >
                 Customer Support
                 <span className=" ml-2">&gt;</span>
               </Link>
-              <p className="sm:leading-none mb-0">
+              <p className="mb-0">
                 Please get in touch with any questions you may have with your
                 wireless cinema...
               </p>
@@ -253,7 +253,7 @@ function Footer() {
         <div className="mx-auto container lg:px-12 flex">
           <div class="flex-1 hidden lg:block">
             <div>
-              <Link to="/" className="cursor-pointer">
+              <Link to="/" className="cursor-pointer font-normal">
               <GatsbyImage image={getImage(LogoImage)} alt={`The Wireless Outdoor Cinema Company`} className="md:w-64 w-48 " />
               </Link>
               <p className="mt-3 pl-0 mb-0" style={{ textAlign: "left" }}>
@@ -325,7 +325,7 @@ function Footer() {
                     <Link
                       to="https://www.facebook.com/The-Wireless-Outdoor-Cinema-Company-112773330512496"
                       target="_blank"
-                      className="cursor-pointer no-underline text-white"
+                      className="cursor-pointer no-underline text-white font-normal"
                     >
                       <GatsbyImage image={getImage(FacebookImg)} alt="" className="w-3 h-5 text-white" />
                     </Link>
@@ -341,7 +341,7 @@ function Footer() {
                 <div className="mt-1 flex items-center">
                   <Link
                     to="mailto:todd@wirelessoutdoorcinema.com"
-                    className="cursor-pointer flex items-center no-underline text-white"
+                    className="cursor-pointer flex items-center no-underline text-white font-normal"
                   >
                     <GatsbyImage image={getImage(EmailImg)} alt="" className="w-6 h-4" />
                     <span className="ml-2">todd@wirelessoutdoorcinema.com</span>
@@ -353,8 +353,8 @@ function Footer() {
           <div></div>
         </div>
 
-        <div className="text-left lg:text-center text-sm mt-2 lg:mt-6 py-3 px-6 lg:px-0 lg:py-0 border-t border-gray-800 lg:border-none">
-          <div className="flex items-center lg:justify-center lg:mb-2">
+        <div className="text-left lg:text-center text-sm mt-2 lg:mt-6 py-4 px-6 lg:px-0 lg:py-0 border-t border-gray-800 lg:border-none">
+          <div className="flex items-center justify-center lg:mb-2">
             &copy;2020-{new Date().getFullYear()} The Wireless Outdoor Cinema
             Company. All Rights Reserved.{" "}
             <span className="hidden lg:inline">

@@ -159,9 +159,9 @@ const October10PressRelease = () => {
                         </div>
                         <div className="pt-8 sm:text-black text-white">
                             <div className="border-b border-gray-400" />
-                            <h2 className="sm:text-31 text-2xl sm:pb-5 pb-4 sm:pt-5 pt-8">
+                            <h3 className="sm:text-31 text-2xl sm:pb-5 pb-4 sm:pt-5 pt-8">
                                 Press Contact
-                            </h2>
+                            </h3>
                             <p className="max-w-full mb-0 sm:text-lg text-base">
                                 Wireless Outdoor Cinema Company
                                 <br />

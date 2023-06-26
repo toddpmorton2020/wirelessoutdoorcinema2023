@@ -17,9 +17,9 @@ const June30PressRelease = () => {
                             <p className="text-grey-100 pt-6 text-base mb-0 max-w-full">
                                 Press Release | June 30, 2021
                             </p>
-                            <h2 className="text-3xl pt-5 text-white font-extrabold pb-3">
+                            <h3 className="text-3xl pt-5 text-white font-extrabold pb-3">
                                 Wireless Outdoor Cinema Company Brings to Market the First Outdoor Cinema Projector Stand
-                            </h2>
+                            </h3>
                         </div>
                         <div className="sm:hidden full-bleed-mobile relative mt-6 bg-center">
                             <StaticImage

@@ -34,7 +34,22 @@ const OptionOneslider = () => {
         centerMode: true,
         swipeToSlide: true,
         focusOnSelect: true,
-        centerPadding: '10px'
+        centerPadding: '10px',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
     };
 
     return (

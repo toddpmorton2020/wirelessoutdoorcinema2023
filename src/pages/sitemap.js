@@ -11,7 +11,7 @@ const SitemapPage = () => {
         <Layout bgcolor="bg-gray-100">
              <Breadcrumbs />
             <>
-                <div className="pb-24">
+                <div className="md:pb-24 pb-10">
                     <div className="max-w-7xl px-5 mx-auto">
                         <div className="py-5">                           
                             <div className="md:hidden relative mt-6 mb-6">
@@ -23,7 +23,7 @@ const SitemapPage = () => {
                                 </h1>
                             </div>
                             <div className="mt-2">
-                                <div className="text-2xl xl:text-3xl sitemap-sub site-map-sub">
+                                <div className="text-center md:text-left text-2xl xl:text-3xl">
                                     <h3>Search Engines Crawl Away</h3>
                                 </div>
                                 <div className="mt-6">
@@ -40,7 +40,7 @@ const SitemapPage = () => {
                                         <Link to="/comparison" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
                                             Cinema Comparison
                                         </Link>
-                                        <Link
+                                        {/* <Link
                                             to="/timberline-cinema-packages/96-jedi-bobcat-cinema"
                                             className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1"
                                         >
@@ -51,7 +51,7 @@ const SitemapPage = () => {
                                             className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1"
                                         >
                                             120" Bella Bear Wireless Outdoor Cinema
-                                        </Link>
+                                        </Link> */}
                                         <Link
                                             to="/timberline-cinema-packages/150-big-moose-cinema"
                                             className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1"
@@ -70,6 +70,9 @@ const SitemapPage = () => {
 
                                         <Link to="/in-the-news" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
                                             In the News
+                                        </Link>
+                                        <Link to="/october-10-sun-journal-news-article" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
+                                            {">"} october 11, 2021 News Article
                                         </Link>
                                         <Link to="/august-28-press-release" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
                                             {">"} August 28, 2021 Press Release

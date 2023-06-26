@@ -156,8 +156,7 @@ const PrivacyPage = () => {
                                         Subject to certain exceptions set out below, on receipt of a
                                         verifiable request from you, we will:
                                     </p>
-                                    <p className="mb-6 max-w-full sm:text-lg text-base">
-                                        <ul className="list-outside list-disc pl-12">
+                                        <ul className="list-outside list-disc md:pl-12 pl-4">
                                             <li className="sm:text-lg text-base">
                                                 Delete your personal information from our records; and
                                             </li>
@@ -166,13 +165,11 @@ const PrivacyPage = () => {
                                                 information from their records.
                                             </li>
                                         </ul>
-                                    </p>
                                     <p className="mb-6 max-w-full sm:text-lg text-base">
                                         Please note that we may not be able to comply with requests to
                                         delete your personal information if it is necessary to:
                                     </p>
-                                    <p className="mb-6 max-w-full sm:text-lg text-base">
-                                        <ul className="list-outside list-disc pl-12">
+                                        <ul className="list-disc md:pl-12 pl-4">
                                             <li className="sm:text-lg text-base">
                                                 Complete the transaction for which the personal
                                                 information was collected, fulfill the terms of a written
@@ -219,7 +216,6 @@ const PrivacyPage = () => {
                                                 you provided the information.
                                             </li>
                                         </ul>
-                                    </p>
                                     <p className="mb-6 max-w-full sm:text-lg text-base">
                                         <b>Children Under Thirteen</b>
                                         <br />

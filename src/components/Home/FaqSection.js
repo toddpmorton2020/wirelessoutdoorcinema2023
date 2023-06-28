@@ -511,7 +511,7 @@ const FaqSection = () => {
   
     return (
       <div
-        className="bg-black relative text-white  border-grey-subnav py-12 xl:py-24"
+        className="bg-black relative text-white  border-grey-subnav pt-16 pb-10 xl:py-24"
         id="faq"
       >
         <div className="max-w-7xl px-5 mx-auto">
@@ -538,7 +538,7 @@ const FaqSection = () => {
                 if you have a question that isn't here.
               </p>
             </div>
-            <div className="col-span-12 grid grid-cols-12 gap-4 mt-12">
+            <div className="col-span-12 grid grid-cols-12 gap-4 lg:mt-12 mt-10">
               {faqList.map(item => (
                 <div
                   className="col-span-12 lg:col-span-4 border border-grey-subnav rounded-md py-8 px-4 lg:py-15 lg:mb-0 mb-8 orng-rollover-overlay rollover-svg-item"

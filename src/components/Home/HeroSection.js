@@ -48,7 +48,7 @@ const HeroSection = () => {
                 className="mx-auto w-full" /> */}
                 </div>
                 {/* <div class="absolute inset-0 bg-black opacity-50"></div> */}
-                <div className="lg:container pb-4 xl:pb-16 mx-auto px-5">
+                <div className="lg:container pb-8 xl:pb-16 mx-auto px-5">
                     <div className="lg:absolute xl:mt-6 2xl:pt-10 sm:top-0">
                         <div className="relative lg:w-3/5 xl:w-2/4 2xl:w-3/6 z-20 mt-8 xl:mt-0">
                             <p className="font-semibold text-xl sm:text-2xl md:text-4xl mb-0 max-w-full">
@@ -77,7 +77,7 @@ const HeroSection = () => {
                                     </p>
                                 </div>
                                 <div>
-                                    <p className="lg:mb-5 mt-5 lg:mt-0 text-lg md:text-2xl">
+                                    <p className="lg:mb-5 mt-5 lg:mt-0 mb-0 text-lg md:text-2xl">
                                         <Link
                                             to="#"
                                             className="px-6 py-1.5 xl:px-10 xl:py-2 bg-orange-1000 no-underline text-white rounded-md"

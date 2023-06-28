@@ -85,7 +85,7 @@ const ComparisonSection = () => {
                 <hr className="mx-4 border-gray-500 mb-0 hr_brd" />
               </div>
             </div>
-            <div className="py-5 border-b border-gray-500">
+            <div className="lg:py-5 pt-5 pb-10 border-b border-gray-500">
               <div className="grid grid-cols-12 my-6 text-center items-center">
                 <div className="col-span-6 font-extralight">
                   <h6 className="sm:text-base text-sm font-medium text-center mb-0">Frame System Size</h6>

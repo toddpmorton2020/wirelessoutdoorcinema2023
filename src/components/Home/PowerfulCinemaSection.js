@@ -264,11 +264,11 @@ const PowerfulCinemaSection = ({ className }) => {
             <div>
             <div className="sm:block hidden">
             <GatsbyImage image={getImage(TabletWiredImg)} alt=""
-              className="mx-auto w-full mb-3" />
+              className="mx-auto w-full" />
           </div>
           <div className="sm:hidden">
             <GatsbyImage image={getImage(MobileWiredImg)} alt=""
-              className="mx-auto w-full mb-3" />
+              className="mx-auto w-full" />
           </div>
               {/* <GatsbyImage image={getImage(MobileWiredImg)} alt=""
                 className="mx-auto w-full mb-3" /> */}

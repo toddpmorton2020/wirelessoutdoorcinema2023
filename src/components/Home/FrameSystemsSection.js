@@ -50,8 +50,8 @@ const FrameSystemsSection = () => {
                             It is designed to be secured firmly in your preferred spot for movie-watching.
                         </p>
                     </div>
-                    <div className="md:grid flex flex-col-reverse items-stretch gap-4 grid-cols-12 pb-12 xl:pb-10 xl:mb-10 relative">
-                        <div className="lg:col-span-4 md:col-span-5 md:text-left text-center lg:mt-0 mt-12">
+                    <div className="md:grid flex flex-col-reverse items-stretch gap-4 grid-cols-12 pb-10 xl:mb-10 relative">
+                        <div className="lg:col-span-4 md:col-span-5 md:text-left text-center lg:mt-0 mt-8">
                             <h2 className="text-3xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Movable Frame</h2>
                             <h3 className="text-xl lg:text-3xl md:text-2xl pb-4 xl:pb-5 mb-0 max-w-full text-orange-1000">
                                 Perfect for flat lawns
@@ -119,7 +119,7 @@ const FrameSystemsSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:col-span-4 md:col-span-5 lg:mt-0 mt-12 md:text-left text-center">
+                        <div className="lg:col-span-4 md:col-span-5 lg:mt-0 mt-8 md:text-left text-center">
                             <div>
                                 <h2 className="text-3xl md:text-4xl font-semibold md:pb-0 pb-2">Streamline Frame</h2>
                                 <h3 className="text-xl lg:text-3xl md:text-2xl pb-4 xl:pb-5 mb-0 max-w-full text-orange-1000">

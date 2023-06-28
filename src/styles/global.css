@@ -116,6 +116,7 @@ width: 40px; height: 40px; content: ''; position: absolute; background-repeat: n
 @media screen and (max-width: 767px){
 .bonus-banner-image { margin-left: -13px; margin-top: -8px;}
 .quote_img{display: none !important;}
+.item_box{width: 250px;}
 }
 
 .rollover-svg-item svg{
@@ -126,5 +127,5 @@ width: 40px; height: 40px; content: ''; position: absolute; background-repeat: n
     fill: #a6adb1;
 }
 @media screen and (max-width: 319px){
-.max-w-xs{max-width: 100%;}
+.item_box{width: 100%;}
 }

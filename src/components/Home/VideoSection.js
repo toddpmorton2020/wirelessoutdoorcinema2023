@@ -5,7 +5,7 @@ import PlayIcon from "../../assets/images/icons/PlayIcon"
 
 const VideoSection=() =>{
     return(
-        <div className="bg-black pt-9 xl:pt-10 xl:pb-36 lg:pb-24 pb-16">
+        <div className="bg-black pt-9 xl:pt-10 xl:pb-36 lg:pb-24 pb-14">
         <div className="max-w-5xl mx-auto px-5">
           <div className="flex lg:flex-col flex-col-reverse how-to">
             <div className="lg:pb-11 text-white lg:pt-0 pt-11">

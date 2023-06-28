@@ -46,7 +46,7 @@ const WhatyougetItem = ({ item }) => {
           className='bonus-banner-image'
         />
       )}
-      <div className='border wblock rounded-md border-grey-theater p-2 text-center h-full flex flex-col justify-start'>
+      <div className='border item_box rounded-md border-grey-theater md:p-2 p-4 text-center h-full flex flex-col justify-start'>
         <div className='flex justify-center'>
           <div>
             <Image

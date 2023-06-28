@@ -79,7 +79,7 @@ const ImpressiveOutdoorSection = () => {
   ]
 
   return (
-    <div className="bg-gray-990 relative text-white border-grey-subnav pt-16 pb-8 lg:py-24">
+    <div className="bg-gray-990 relative text-white border-grey-subnav pt-16 pb-6 lg:py-24">
       <div className="max-w-7xl px-5 mx-auto">
         <div className="mx-auto flex flex-col xl:grid xl:grid-cols-12 w-full">
           <div className="md:text-center xl:col-span-12 xl:text-xl mb-11">

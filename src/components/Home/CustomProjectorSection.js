@@ -85,7 +85,7 @@ const CustomProjectorSection = () => {
 
   return (
     <div
-      className="bg-black relative text-white border-grey-subnav py-16 lg:py-24"
+      className="bg-black relative text-white border-grey-subnav pt-16 pb-12 lg:py-24"
       id="projectorstand"
     >
       <div className="max-w-7xl px-5 mx-auto">
@@ -119,11 +119,11 @@ const CustomProjectorSection = () => {
         <div className="lg:hidden">
           <div className="sm:block hidden">
             <GatsbyImage image={getImage(TabletProjectorstandImage)} alt=""
-              className="mx-auto w-full mb-4" />
+              className="mx-auto w-full" />
           </div>
           <div className="sm:hidden">
             <GatsbyImage image={getImage(MobileProjectorstandImage)} alt=""
-              className="mx-auto mb-4 w-full" />
+              className="mx-auto w-full" />
           </div>
           <div className="lg:mt-0 mt-10">
             <h2 className="text-3xl md:text-4xl font-semibold md:leading-none md:pb-3 pb-2">Custom projector stand</h2>

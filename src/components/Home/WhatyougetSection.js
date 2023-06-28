@@ -126,7 +126,7 @@ const WhatyougetSection = () => {
                 className="mx-auto mb-5 xl:pb-0 w-full" />            
           </div>
 
-          <div className="col-span-12 justify-center grid grid-cols-12 gap-6 lg:mt-4 mt-11 xl:max-w-full md:max-w-2xl max-w-xs mx-auto">
+          <div className="col-span-12 justify-center grid grid-cols-12 gap-6 lg:mt-4 mt-11 xl:max-w-full md:max-w-lg mx-auto">
           {gridItems.map(item => <WhatyougetItem item={item}/>)}
             {/* {gridItems.map(item => {
               const Image = item.img

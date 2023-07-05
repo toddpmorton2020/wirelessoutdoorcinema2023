@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link, useStaticQuery, graphql} from "gatsby"
-import {StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import { DesignPlanIcon } from "../../assets/images/icons/design-plan-icon"
 import { MaterialListIcon } from "../../assets/images/icons/material-list-icon"
@@ -18,9 +18,10 @@ import { HowVideoIconHover } from "../../assets/images/icons/how-to-video-icon-h
 import { TipsTechniquesIconHover } from "../../assets/images/icons/tips-and-techniques-icon-hover"
 
 import WhatyougetItem from './WhatyougetItem'
+
 const WhatyougetSection = () => {
   const [activeImage, setActiveImage] = useState("gatsby");
-  const { MooseImg, BonusImg} = useStaticQuery(
+  const { MooseImg, BonusImg } = useStaticQuery(
     graphql`
       query {
         MooseImg: file(relativePath: {eq: "timberline-big-moose-791px-x-755px.png"}) {
@@ -96,24 +97,24 @@ const WhatyougetSection = () => {
 
   return (
     <div
-      className="bg-gray-990 relative text-white pb-12 lg:pb-24 lg:pt-0 pt-16"
+      className="bg-gray-990 relative text-white pb-14 lg:pb-24 lg:pt-0 pt-16"
       id="whatyouget"
     >
       <div className="max-w-7xl px-5 mx-auto">
         <div className="flex flex-col lg:grid lg:grid-cols-12 w-full lg:gap-8">
           <div className="col-span-5 lg:hidden sm:max-w-2xl mx-auto">
-          <GatsbyImage image={getImage(MooseImg)} alt="" 
-                className="mx-auto px-10 xl:px-0 pb-20 mb-4 xl:pb-0 w-full" />            
+            <GatsbyImage image={getImage(MooseImg)} alt=""
+              className="mx-auto px-10 xl:px-0 pb-20 mb-4 xl:pb-0 w-full" />
           </div>
 
-          <div className="text-center xl:col-span-7 lg:col-span-6 lg:text-left xl:text-xl pt-10 lg:pt-16 ">
+          <div className="text-center xl:col-span-7 lg:col-span-6 lg:text-left xl:text-xl pt-6 lg:pt-16 ">
             <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Here's what you get</h2>
             <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 mb-0 text-orange-1000">
               Timberline Big Moose
               <span className="text-white"> DIY </span>{" "} Guide.
             </h3>
 
-            <div className="lg:max-w-xl text-center lg:text-justify">
+            <div className="lg:max-w-xl text-center lg:text-left">
               <p className="sm:text-lg text-base mb-4 max-w-full">
                 Introducing the only professional DIY guide on how to build an outdoor movie theater, created just for homeowners. Jam-packed with valuable information, this how-to guide contains detailed diagrams, photographs, access to assembly and installation videos, recommended materials, tools, and equipment lists, wireless and wired cinema setups, different frame styles, tips and techniques, and bonus content.               </p>
               <p className="sm:text-lg text-base max-w-full mb-0">
@@ -122,12 +123,12 @@ const WhatyougetSection = () => {
             </div>
           </div>
           <div className="xl:col-span-5 lg:col-span-6 hidden lg:block lg:-mt-10">
-          <GatsbyImage image={getImage(MooseImg)} alt="" 
-                className="mx-auto mb-5 xl:pb-0 w-full" />            
+            <GatsbyImage image={getImage(MooseImg)} alt=""
+              className="mx-auto mb-5 xl:pb-0 w-full" />
           </div>
 
-          <div className="col-span-12 justify-center grid grid-cols-12 gap-6 lg:mt-4 mt-11 xl:max-w-full md:max-w-lg mx-auto">
-          {gridItems.map(item => <WhatyougetItem item={item}/>)}
+          <div className="col-span-12 justify-center grid grid-cols-12 gap-5 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto">
+            {gridItems.map(item => <WhatyougetItem item={item} />)}
             {/* {gridItems.map(item => {
               const Image = item.img
               return (

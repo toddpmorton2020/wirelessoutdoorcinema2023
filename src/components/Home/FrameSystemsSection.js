@@ -34,9 +34,9 @@ const FrameSystemsSection = () => {
             className="bg-gray-990 text-white  border-grey-subnav py-16 lg:py-24"
             id="framesystems"
         >
-            <div className="max-w-7xl px-5 mx-auto">
+            <div className="max-w-7xl md:px-5 px-0 mx-auto">
                 <div className="">
-                    <div className="text-center md:text-left xl:text-xl mb-11">
+                    <div className="text-center md:text-left xl:text-xl mb-11 md:px-0 px-5">
                         <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold md:leading-none md:pb-3 pb-2">Durable and long-lasting frame systems</h2>
                         <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 text-orange-1000">
                             Introducing the Timberline Movable and Streamline Frame Systems.
@@ -51,7 +51,7 @@ const FrameSystemsSection = () => {
                         </p>
                     </div>
                     <div className="md:grid flex flex-col-reverse items-stretch gap-4 grid-cols-12 pb-10 xl:mb-10 relative">
-                        <div className="lg:col-span-4 md:col-span-5 md:text-left text-center lg:mt-0 mt-8">
+                        <div className="lg:col-span-4 md:col-span-5 md:text-left text-center lg:mt-0 mt-8 md:px-0 px-5">
                             <h2 className="text-3xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Movable Frame</h2>
                             <h3 className="text-xl lg:text-3xl md:text-2xl pb-4 xl:pb-5 mb-0 max-w-full text-orange-1000">
                                 Perfect for flat lawns
@@ -71,23 +71,23 @@ const FrameSystemsSection = () => {
                             <GatsbyImage image={getImage(FrameImg1)} alt=""
                                 className="mx-auto w-full" />
 
-                            <div className="py-3 flex sm:justify-around justify-between text-center sm:gap-0 gap-4 sm:flex-nowrap flex-wrap">
+                            <div className="py-3 flex md:px-0 px-3 justify-around text-center sm:gap-0 gap-2">
                                 <div>
-                                    <MovableIcon className="w-full h-8 xl:h-12 p-1" />
+                                    <MovableIcon className="w-full h-7 sm:h-8 xl:h-12 p-1" />
 
-                                    <p className="sm:text-lg text-base mb-0">Movable</p>
+                                    <p className="md:text-lg sm:text-base text-sm mb-0">Movable</p>
                                 </div>
                                 <div>
-                                    <SturdyIcon className="w-full h-8 xl:h-12 p-1" />
-                                    <p className="sm:text-lg text-base mb-0">Sturdy</p>
+                                    <SturdyIcon className="w-full h-7 sm:h-8 xl:h-12 p-1" />
+                                    <p className="md:text-lg sm:text-base text-sm mb-0">Sturdy</p>
                                 </div>
                                 <div>
-                                    <YearRoundIcon className="w-full h-8 xl:h-12 p-1" />
-                                    <p className="sm:text-lg text-base mb-0">Year-round</p>
+                                    <YearRoundIcon className="w-full h-7 sm:h-8 xl:h-12 p-1" />
+                                    <p className="md:text-lg sm:text-base text-sm mb-0">Year-round</p>
                                 </div>
                                 <div>
-                                    <AffordableIcon className="w-full h-8 xl:h-12 p-1" />
-                                    <p className="sm:text-lg text-base mb-0">Affordable</p>
+                                    <AffordableIcon className="w-full h-7 sm:h-8 xl:h-12 p-1" />
+                                    <p className="md:text-lg sm:text-base text-sm mb-0">Affordable</p>
                                 </div>
                             </div>
                         </div>
@@ -97,29 +97,29 @@ const FrameSystemsSection = () => {
                             <GatsbyImage image={getImage(FrameImg2)} alt=""
                                 className="mx-auto w-full" />
 
-                            <div className="bg-gray-990 py-3 flex sm:justify-around justify-between sm:gap-0 gap-4 sm:flex-nowrap flex-wrap">
+                            <div className="bg-gray-990 md:px-0 px-3 py-3 flex justify-around sm:gap-0 gap-2">
                                 <div>
-                                    <PermanentIcon className="w-full h-8 xl:h-12 p-1" />
+                                    <PermanentIcon className="w-full h-7 sm:h-8 xl:h-12 p-1" />
 
-                                    <p className="sm:text-lg text-base mb-0">Permanent</p>
+                                    <p className="md:text-lg sm:text-base text-sm mb-0">Permanent</p>
                                 </div>
                                 <div>
-                                    <FireIcon className="w-full h-8 xl:h-12 p-1" />
-                                    <p className="sm:text-lg text-base mb-0">Attractive</p>
+                                    <FireIcon className="w-full h-7 sm:h-8 xl:h-12 p-1" />
+                                    <p className="md:text-lg sm:text-base text-sm mb-0">Attractive</p>
                                 </div>
                                 <div>
-                                    <BuiltIcon className="w-full h-8 xl:h-12 p-1" />
+                                    <BuiltIcon className="w-full h-7 sm:h-8 xl:h-12 p-1" />
 
-                                    <p className="sm:text-lg text-base mb-0">Built-to-last</p>
+                                    <p className="md:text-lg sm:text-base text-sm mb-0">Built-to-last</p>
                                 </div>
                                 <div>
-                                    <BudgetIcon className="w-full h-8 xl:h-12 p-1" />
+                                    <BudgetIcon className="w-full h-7 sm:h-8 xl:h-12 p-1" />
 
-                                    <p className="sm:text-lg text-base mb-0">Low-cost</p>
+                                    <p className="md:text-lg sm:text-base text-sm mb-0">Low-cost</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:col-span-4 md:col-span-5 lg:mt-0 mt-8 md:text-left text-center">
+                        <div className="lg:col-span-4 md:col-span-5 lg:mt-0 mt-8 md:text-left text-center md:px-0 px-5">
                             <div>
                                 <h2 className="text-3xl md:text-4xl font-semibold md:pb-0 pb-2">Streamline Frame</h2>
                                 <h3 className="text-xl lg:text-3xl md:text-2xl pb-4 xl:pb-5 mb-0 max-w-full text-orange-1000">

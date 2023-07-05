@@ -64,7 +64,6 @@ const PowerfulCinemaSection = ({ className }) => {
   const imageData = WirelesscinemaImage.childImageSharp.fluid
   const imageData2 = WiredcinemaImg.childImageSharp.fluid
 
-
   const gridItems = [
     {
       id: 0,
@@ -145,12 +144,12 @@ const PowerfulCinemaSection = ({ className }) => {
 
   return (
     <div
-      className="bg-black relative text-white border-grey-subnav pt-16 pb-14 lg:py-24"
+      className="bg-black relative text-white border-grey-subnav pt-16 pb-12 lg:py-24"
       id="features"
     >
-      <div className="max-w-7xl px-5 mx-auto">
+      <div className="max-w-7xl md:px-5 px-0 mx-auto">
         <div className="flex flex-col xl:grid xl:grid-cols-12 w-full">
-          <div className="text-left xl:col-span-12 xl:text-xl mb-11">
+          <div className="text-left xl:col-span-12 xl:text-xl mb-11 md:px-0 px-5">
             <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold  md:leading-none md:pb-3 pb-2">Powerful wireless and wired cinema packages</h2>
             <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 max-w-full mb-0 text-orange-1000">
               Go wireless with no extension cords. Go wired for unlimited options
@@ -170,19 +169,19 @@ const PowerfulCinemaSection = ({ className }) => {
             <div>
               {" "}
               <div className="sm:block hidden">
-            <GatsbyImage image={getImage(TabletWirelessImg)} alt=""
-              className="mx-auto w-full mb-3" />
-          </div>
-          <div className="sm:hidden">
-            <GatsbyImage image={getImage(MobileWirelessImg)} alt=""
-              className="mx-auto w-full mb-3" />
-          </div>
+                <GatsbyImage image={getImage(TabletWirelessImg)} alt=""
+                  className="mx-auto w-full mb-3" />
+              </div>
+              <div className="sm:hidden">
+                <GatsbyImage image={getImage(MobileWirelessImg)} alt=""
+                  className="mx-auto w-full mb-3" />
+              </div>
               {/* <GatsbyImage image={getImage(MobileWirelessImg)} alt=""
                 className="mx-auto w-full mb-3" /> */}
             </div>
-            <div className="mt-10">
-              <h3 className="text-2xl font-bold ">Go Wireless</h3>
-              <h4 className="font-bold text-lg my-2">
+            <div className="mt-8 md:px-0 px-5">
+              <h3 className="text-3xl font-bold ">Go Wireless</h3>
+              <h4 className="text-lg my-2">
                 No extensions cords. Fast setup every time.{" "}
               </h4>
 
@@ -191,11 +190,11 @@ const PowerfulCinemaSection = ({ className }) => {
                 {gridItems.map(item => {
                   const Image = item.img
                   return (
-                    <li className="flex items-center my-4 gap-3" key={item.id}>
-                    <div>
-                      <Image className="white-svg h-10 pb-3" />
+                    <li className="flex items-center my-5 gap-4" key={item.id}>
+                      <div className="w-8 h-8">
+                        <Image className="white-svg" />
                       </div>
-                      <span className="font-bold text-base">{item.text}</span>
+                      <span className="sm:text-lg text-base">{item.text}</span>
                     </li>
                   )
                 })}
@@ -208,8 +207,8 @@ const PowerfulCinemaSection = ({ className }) => {
             className='col-span-12 mx-auto w-full text-center relative hidden lg:block mb-24'
             fluid={imageData}
           >
-            <div className="relative w-full mx-auto flex flex-start">
-              <div className="block text-left pt-5 pb-10 px-10 bg-black/[.6]">
+            <div className="relative w-full mx-auto flex flex-start md:px-0 px-5">
+              <div className="block text-left pt-5 pb-10 px-10 bg-black/[.6] ">
                 <div className="container mx-auto">
                   <h3 className="text-4xl">Go Wireless</h3>
                   <h4 className="sub_heading text-3xl">No extensions cords. </h4>
@@ -262,20 +261,20 @@ const PowerfulCinemaSection = ({ className }) => {
         <div className="">
           <div className="block lg:hidden col-span-12 ">
             <div>
-            <div className="sm:block hidden">
-            <GatsbyImage image={getImage(TabletWiredImg)} alt=""
-              className="mx-auto w-full" />
-          </div>
-          <div className="sm:hidden">
-            <GatsbyImage image={getImage(MobileWiredImg)} alt=""
-              className="mx-auto w-full" />
-          </div>
+              <div className="sm:block hidden">
+                <GatsbyImage image={getImage(TabletWiredImg)} alt=""
+                  className="mx-auto w-full" />
+              </div>
+              <div className="sm:hidden">
+                <GatsbyImage image={getImage(MobileWiredImg)} alt=""
+                  className="mx-auto w-full" />
+              </div>
               {/* <GatsbyImage image={getImage(MobileWiredImg)} alt=""
                 className="mx-auto w-full mb-3" /> */}
             </div>
-            <div className="mt-10">
-              <h3 className="text-2xl font-bold ">Go Wired</h3>
-              <h4 className="font-bold text-lg my-2">
+            <div className="mt-10 md:px-0 px-5">
+              <h3 className="text-3xl font-bold ">Go Wired</h3>
+              <h4 className="text-lg my-2">
                 Unlimited connection options. Play video games{" "}
               </h4>
               <p className="text-orange-1000 mb-0 text-lg">Connect to: </p>
@@ -283,11 +282,11 @@ const PowerfulCinemaSection = ({ className }) => {
                 {gridItems2.map(item => {
                   const Image = item.img
                   return (
-                    <li className="flex items-center my-4 gap-3" key={item.id}>
-                      <div>
-                      <Image className="white-svg h-10 pb-3" />
+                    <li className="flex items-center my-5 gap-4" key={item.id}>
+                      <div className="w-8 h-7">
+                        <Image className="white-svg" />
                       </div>
-                      <span className="font-bold sm:text-lg text-base">{item.text}</span>
+                      <span className="sm:text-lg text-base">{item.text}</span>
                     </li>
                   )
                 })}
@@ -301,7 +300,7 @@ const PowerfulCinemaSection = ({ className }) => {
           >
             <div className="reltive w-fill mx-auto flex justify-end">
               <div className="block text-left pt-5 pb-10 px-10 bg-blck-size-128 bg-black/[.6]">
-                <div className="cotainer mx-auo">
+                <div className="cotainer mx-auto">
                   <h3 className="text-4xl">Go Wired</h3>
                   <h4 className="sub_heading text-3xl">Unlimited connection options. </h4>
                   <h4 className="sub_heading text-3xl">Play video games and more. </h4>

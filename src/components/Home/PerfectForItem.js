@@ -15,24 +15,24 @@ const PerfectForItem = ({ item }) => {
     return (
         <div
             id={item.id}
-            className='rollover-svg-item w-full mx-auto col-span-2 lg:mb-0 mb-4'
+            className='rollover-svg-item w-full mx-auto col-span-2 lg:mb-0 mb-3'
             ref={boxRef}
             onMouseOver={() => handleMouseEnter(item.id)}
             onMouseOut={() => handleMouseEnter('')}
         >
 
-            <div className='border item_box rounded-md border-grey-theater md:p-2 p-4 text-center h-full flex flex-col justify-start'>
+            <div className='border item_box rounded-md border-grey-theater md:p-2 px-3 py-2 text-center h-full flex flex-col justify-start'>
                 <div className='flex justify-center'>
                     <div>
                         <Image
                             style={{
                                 maxWidt: ''
                             }}
-                            className='my-3 pb-3 lg:pb-0 md:w-auto lg:h-9 h-16 mx-auto dynamic-svg design-plan-svg'
+                            className='my-2 md:w-auto lg:h-9 h-14 mx-auto'
                         />
                     </div>
                 </div>
-                <p className="font-bold text-lg md:txt-2xl mb-3 rollover-color-title">
+                <p className="font-bold text-lg mb-1 rollover-color-title">
                     {item.title}
                 </p>
                 <p className="mb-3 sm:text-lg text-base">{item.text}</p>

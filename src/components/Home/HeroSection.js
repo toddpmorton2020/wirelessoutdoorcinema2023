@@ -29,11 +29,11 @@ const HeroSection = () => {
     )
     return (
         <>
-            {/* <HeaderScroll /> */}
-            <div className="bg-black relative text-white sm:top-0 ">
+            <HeaderScroll />
+            <div className="bg-black relative text-white sm:top-0 sm:-mt-12 herosection">
                 <div className="hidden lg:block">
                     <GatsbyImage image={getImage(HeroImg)} alt="" loading="eager"
-                        className="mx-auto w-full max-w-2400 py-6" />
+                        className="mx-auto w-full max-w-2400 py-10" />
                 </div>
                 <div className="lg:hidden">
                     <div className="sm:block hidden">
@@ -49,12 +49,12 @@ const HeroSection = () => {
                 </div>
                 {/* <div class="absolute inset-0 bg-black opacity-50"></div> */}
                 <div className="lg:container pb-8 xl:pb-16 mx-auto px-5">
-                    <div className="lg:absolute xl:mt-6 2xl:pt-10 sm:top-0">
-                        <div className="relative lg:w-3/5 xl:w-2/4 2xl:w-3/6 z-20 mt-8 xl:mt-0">
+                    <div className="lg:absolute xl:mt-16 2xl:pt-18 sm:top-0">
+                        <div className="relative lg:w-3/5 xl:w-2/4 2xl:w-3/6 z-20 xl:mt-0 lg:mt-20 mt-8 xl:mt-0">
                             <p className="font-semibold text-xl sm:text-2xl md:text-4xl mb-0 max-w-full">
                                 Get the only <span className="text-orange-1000">DIY</span> guide on
                             </p>
-                            <h1 className="xl:text-70 md:text-5xl md:leading-tight sm:text-4xl text-3xl mb-4 font-semibold">
+                            <h1 className="lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl md:leading-tight text-4xl mb-4 font-semibold">
                                 <span className="text-orange-1000">How-to build a</span> professional
                                 outdoor movie theater
                                 <sup

@@ -60,7 +60,7 @@ const ComparisonSection = () => {
                 <h1 className="md:py-3 text-base sm:text-2xl md:text-31 font-medium mb-0">
                   <p className="mb-0">Aluminum System</p>
                 </h1>
-                <p className="text-xs sm:text-sm md:text-xl text-grey-bdbbba mb-0">
+                <p className="text-sm md:text-xl text-grey-bdbbba mb-0 py-1">
                   Cinema equipment included
                 </p>
                 <p className="text-sm md:text-xl md:pt-3 pb-6 mb-0">
@@ -76,7 +76,7 @@ const ComparisonSection = () => {
                     Timberline Big Moose
                   </p>
                 </h1>
-                <p className="text-xs sm:text-sm md:text-xl text-grey-bdbbba mb-0">
+                <p className="text-sm md:text-xl text-grey-bdbbba mb-0 py-1">
                   Cinema equipment included
                 </p>
                 <p className="text-sm md:text-xl md:pt-3 pb-6 mb-0">
@@ -246,7 +246,7 @@ const ComparisonSection = () => {
                 <h1 className="text-base sm:text-2xl md:py-3 md:text-31 font-medium mb-0">
                   <p className="mb-0">Inflatable Air Screen</p>
                 </h1>
-                <p className="text-xs sm:text-sm md:text-xl text-grey-bdbbba mb-0">
+                <p className="text-sm md:text-xl text-grey-bdbbba mb-0 py-1">
                   Cinema equipment included
                 </p>
                 <p className="text-sm md:text-xl md:pt-3 pb-6 mb-0">
@@ -262,7 +262,7 @@ const ComparisonSection = () => {
                     Timberline Big Moose
                   </p>
                 </h1>
-                <p className="text-xs sm:text-sm md:text-xl text-grey-bdbbba mb-0">
+                <p className="text-sm md:text-xl text-grey-bdbbba mb-0 py-1">
                   Cinema equipment included
                 </p>
                 <p className="text-sm md:text-xl md:pt-3 pb-6 mb-0">

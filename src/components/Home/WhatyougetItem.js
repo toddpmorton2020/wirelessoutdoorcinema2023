@@ -46,18 +46,18 @@ const WhatyougetItem = ({ item }) => {
           className='bonus-banner-image'
         />
       )}
-      <div className='border item_box rounded-md border-grey-theater md:p-2 p-4 text-center h-full flex flex-col justify-start'>
+      <div className='border item_box rounded-md border-grey-theater md:p-2 px-3 py-2 text-center h-full flex flex-col justify-start'>
         <div className='flex justify-center'>
           <div>
             <Image
               style={{
                 maxWidt: ''
               }}
-              className='my-3 pb-3 lg:pb-0 md:w-auto lg:h-10 h-16 mx-auto dynamic-svg design-plan-svg'
+              className='my-2 md:w-auto lg:h-10 h-16 mx-auto'
             />
           </div>
         </div>
-        <p className='font-bold text-lg md:text-xl mb-3 rollover-color-title'>
+        <p className='font-bold text-lg md:text-xl mb-1.5 rollover-color-title'>
           {item.title}
         </p>
         <p className='mb-3 sm:text-lg text-base'>{item.text}</p>

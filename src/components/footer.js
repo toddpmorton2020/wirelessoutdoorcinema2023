@@ -87,8 +87,8 @@ function Footer() {
             <div className="inline-block md:hidden">
               <GatsbyImage image={getImage(MobileformImg)} alt="" />
               </div>
-              <div className="orange-signup flex flex-col pt-6 lg:pt-10 md:pl-10 lg:pl-16">
-                <h3 className="text-2xl font-medium text-white orange-box-heading-mob -mt-20 md:mt-0 text-center md:text-left leading-tight max-w-sm md:max-w-full">
+              <div className="orange-signup flex flex-col pt-6 lg:pt-10 md:pl-10 lg:pl-16 z-30">
+                <h3 className="text-2xl font-medium text-white -mt-20 md:mt-0 text-center md:text-left leading-tight max-w-sm md:max-w-full">
                   Signup up to receive special <strong>promotions and new product announcements</strong>
                 </h3>
                 <div className="flex md:flex-row md:gap-6 flex-col items-center md:items-stretch pt-4 md:ml-1 input-div">
@@ -97,15 +97,15 @@ function Footer() {
                       type="text"
                       name="firstName"
                       placeholder="First Name"
-                      className="py-2 px-4 placeholder:text-orange-500 orange-input name-input-setting-mob w-full text-center md:text-left"
+                      className="py-2 px-4 placeholder:text-orange-500 orange-input bg-white w-full text-center md:text-left"
                     />
                   </div>
-                  <div className="email-input-setting md:w-3/5 w-64 mb-3 md:mb-0">
+                  <div className="md:w-3/5 w-64 mb-3 md:mb-0">
                     <input
                       type="email"
                       name="email"
                       placeholder="Email Address"
-                      className="py-2 px-4 w-full orange-input placeholder:text-orange-500 email-settings email-settings-mob text-center md:text-left"
+                      className="py-2 px-4 w-full orange-input placeholder:text-orange-500 bg-white text-center md:text-left"
                     />
                   </div>
                   <input
@@ -183,7 +183,7 @@ function Footer() {
                   <span className="text-orange-600 mr-2">&gt;</span>
                   About
                 </Link>
-                <Link to="/comparison" className="flex items-center py-2 no-underline text-white font-normal">
+                <Link to="/timberline-cinema-packages/150-big-moose-cinema/" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Outdoor Cinemas
                 </Link>
@@ -292,7 +292,7 @@ function Footer() {
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   Cinema Packages
                 </Link>
-                <Link to="/about" className="flex items-center no-underline text-white font-normal">
+                <Link to="/how-to-build-an-outdoor-movie-theater/" className="flex items-center no-underline text-white font-normal">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                 How To Build an Outdoor Movie Theater
                 </Link>

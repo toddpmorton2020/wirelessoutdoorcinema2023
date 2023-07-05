@@ -31,9 +31,9 @@ const PowerfulHangingSection = () => {
     `
   )
     return (
-      <div className="bg-black text-white pt-16 lg:pt-24">
-        <div className="max-w-7xl px-5 lg:pb-24 pb-16 mx-auto border-b border-grey-subnav">
-          <div>
+      <div id="screens" className="bg-black text-white pt-16 lg:pt-24">
+        <div className="max-w-7xl md:px-5 px-0 lg:pb-24 pb-16 mx-auto border-b border-grey-subnav">
+          <div className="md:px-0 px-5">
             <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold pb-3 mb-0">Cinematic screen-hanging methods</h2>
             <h3 className="text-xl xl:text-35 md:text-2xl pb-4 xl:pb-5 text-orange-1000">
             Hang the screen directly with hooks, or use rope for a straight-line look.
@@ -67,13 +67,13 @@ const PowerfulHangingSection = () => {
                 style={{
                   bottom: "8%",
                 }}
-                className="px-3 absolute flex items-center z-20 left-0 bg-black/[.5]"
+                className="px-3 absolute flex items-center z-20 left-0 bg-black/[.5] h-8"
               >
                 
                 <GatsbyImage image={getImage(StopwatchIcon)} alt=""
                 className="mx-auto w-16" />
                 
-                <span className="sm:text-lg text-base">Quick hanging method with hooks</span>
+                <span className="sm:text-lg text-sm">Quick hanging method with hooks</span>
               </div>
             </div>
             <div className="col-span-6 relative">
@@ -85,9 +85,9 @@ const PowerfulHangingSection = () => {
                 style={{
                   bottom: "8%",
                 }}
-                className="px-3 absolute flex items-center z-20 right-0 bg-black/[.5]"
+                className="px-3 absolute flex items-center z-20 right-0 bg-black/[.5] h-8"
               >
-                <span className="sm:text-lg text-base">Straight line method with rope</span>
+                <span className="sm:text-lg text-sm">Straight line method with rope</span>
                 <RopeIcon className="h-10 ml-2" />
               </div>
             </div>

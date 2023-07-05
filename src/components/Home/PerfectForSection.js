@@ -56,7 +56,7 @@ const PerfectForSection = () => {
       <div className="max-w-7xl px-5 mx-auto lg:pb-24 pb-14 border-b border-grey-subnav">
         <div className="mx-auto py-0 xl:py-0 flex flex-col xl:grid xl:grid-cols-12 w-full "></div>
         <div className="flex flex-col-reverse col-span-12 justify-center lg:grid grid-cols-12 gap-6 xl:gap-8 md:px-0">
-          <div className="xl:col-span-4 col-span-5 lg:max-w-full md:max-w-lg mx-auto lg:mt-0 mt-6">
+          <div className="xl:col-span-4 col-span-5 lg:max-w-full md:max-w-lg mx-auto lg:mt-0 mt-5">
             <div className="grid md:grid-cols-4 gap-6">
               {gridItems.map(item => <PerfectForItem item={item}/>)}
               {/* {gridItems.map(item => {

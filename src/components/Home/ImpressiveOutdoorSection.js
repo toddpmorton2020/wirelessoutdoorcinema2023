@@ -80,9 +80,9 @@ const ImpressiveOutdoorSection = () => {
 
   return (
     <div className="bg-gray-990 relative text-white border-grey-subnav pt-16 pb-6 lg:py-24">
-      <div className="max-w-7xl px-5 mx-auto">
+      <div className="max-w-7xl md:px-5 px-0 mx-auto">
         <div className="mx-auto flex flex-col xl:grid xl:grid-cols-12 w-full">
-          <div className="md:text-center xl:col-span-12 xl:text-xl mb-11">
+          <div className="md:text-center xl:col-span-12 xl:text-xl mb-11 md:px-0 px-5">
             <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold md:leading-none md:pb-5 pb-2">
               Time-saving and industry-leading features
             </h2>
@@ -104,7 +104,7 @@ const ImpressiveOutdoorSection = () => {
               const Icon = item.icon
               return (
                 <div
-                  className="col-span-12 lg:col-span-6 mb-11 lg:mb-0"
+                  className="col-span-12 lg:col-span-6 mb-10 lg:mb-0"
                   key={item.id}
                 >
                   <div className="text-center h-full relative block">
@@ -120,22 +120,22 @@ const ImpressiveOutdoorSection = () => {
                       style={{
                         bottom: "1rem",
                       }}
-                      className={`bg-black/[.6] flex p-2 absolute lg:hidden items-center ${item.align === "start" ? "" : "right-0 flex-row-reverse"
+                      className={`bg-black/[.6] flex p-2 absolute lg:hidden items-center gap-2 h-8 ${item.align === "start" ? "pr-8" : "right-0 flex-row-reverse pl-8"
                         }`}
                     >
                       <div>
                         <Icon
-                          className={`h-6 ${item.align === "start" ? "mr-1" : "ml-1"
+                          className={`h-10 ${item.align === "start" ? "mr-1" : "ml-1"
                             }`}
                         />
                       </div>
-                      <div className="sm:text-lg text-base">{item.text}</div>
+                      <div className="sm:text-lg text-sm">{item.text}</div>
                     </div>
 
                     <div
                       className={`absolute w-full lg:flex justify-center hidden large-justify-${item.align} top-1/2 xl:py-24 py-12 lg:my-0`}
                     >
-                      <div className="flex flex-row bg-opacity-gray items-center relative">
+                      <div className="flex flex-row bg-opacity-gray items-center relative h-10 gap-4">
                         <Icon
                           className={`absolute lg:h-10 ${item.align === "start"
                               ? "order-1 left-0 pl-4"

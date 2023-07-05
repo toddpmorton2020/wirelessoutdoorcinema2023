@@ -13,7 +13,7 @@ const FaqSection = () => {
     const faqList = [
       {
         id: 0,
-        icon: <PriceTagIcon className="h-11 w-11 mr-2" />,
+        icon: <PriceTagIcon className="sm:h-11 h-10 sm:w-11 w-10  mr-2" />,
         text: "Outdoor Movie Theater Costs",
         questions: [
           {
@@ -127,7 +127,7 @@ const FaqSection = () => {
       },
       {
         id: 1,
-        icon: <FrameIcon className="h-11 w-11 mr-2" />,
+        icon: <FrameIcon className="sm:h-11 h-10 sm:w-11 w-10  mr-2" />,
         text: "Frame System",
         questions: [
           {
@@ -201,7 +201,7 @@ const FaqSection = () => {
       },
       {
         id: 2,
-        icon: <ScreenIcon className="h-11 w-11" />,
+        icon: <ScreenIcon className="sm:h-11 h-10 sm:w-11 w-10 " />,
         text: "Cinematic Screen",
         questions: [
           {
@@ -280,7 +280,7 @@ const FaqSection = () => {
       },
       {
         id: 3,
-        icon: <EquipmentStandIcon className="h-11 w-11" />,
+        icon: <EquipmentStandIcon className="sm:h-11 h-10 sm:w-11 w-10 " />,
         text: "Custom Projector Stand",
         questions: [
           {
@@ -359,7 +359,7 @@ const FaqSection = () => {
       },
       {
         id: 4,
-        icon: <EquipmentListIcon className="h-11 w-11" />,
+        icon: <EquipmentListIcon className="sm:h-11 h-10 sm:w-11 w-10 " />,
         text: "Cinema Equipment",
         questions: [
           {
@@ -430,7 +430,7 @@ const FaqSection = () => {
       },
       {
         id: 5,
-        icon: <AssemblyIcon className="h-11 w-11" />,
+        icon: <AssemblyIcon className="sm:h-11 h-10 sm:w-11 w-10 " />,
         text: "Assembly and Installation",
         questions: [
           {
@@ -541,12 +541,12 @@ const FaqSection = () => {
             <div className="col-span-12 grid grid-cols-12 gap-4 lg:mt-12 mt-10">
               {faqList.map(item => (
                 <div
-                  className="col-span-12 lg:col-span-4 border border-grey-subnav rounded-md py-8 px-4 lg:py-15 lg:mb-0 mb-8 orng-rollover-overlay rollover-svg-item"
+                  className="col-span-12 lg:col-span-4 border border-grey-subnav rounded-md py-8 px-4 lg:py-15 lg:mb-0 mb-5 orng-rollover-overlay rollover-svg-item"
                   key={item.id}
                 >
                   <div className="flex items-center pb-3">
-                    {item.icon}
-                    <p className="sm:text-lg text-base md:txt-2xl px-3 text-orange-1000 font-semibold mb-0 max-w-full">
+                    <div>{item.icon}</div>
+                    <p className="text-xl md:txt-2xl px-3 text-orange-1000 font-semibold mb-0 max-w-full">
                       {item.text}
                     </p>
                   </div>
@@ -559,13 +559,13 @@ const FaqSection = () => {
                       />
                       <div className="faq-accordion-title">
                         <label htmlFor={`tgg-title-${qa.id}`}>
-                          <p className="faq-accordion-header p1 text-lg mb-0 max-w-full">
+                          <p className="faq-accordion-header p1 sm:text-lg text-base mb-0 max-w-full">
                             {qa.question}
                           </p>
                         </label>
                       </div>
                       <div className="faq-accordion-content">
-                        <p className="py-2 sm:text-lg text-base mb-0 max-w-full">{qa.answer}</p>
+                        <p className="py-2 sm:text-lg text-sm mb-0 max-w-full">{qa.answer}</p>
                       </div>
                     </article>
                   ))}

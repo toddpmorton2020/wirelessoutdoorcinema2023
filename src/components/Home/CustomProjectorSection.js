@@ -88,9 +88,9 @@ const CustomProjectorSection = () => {
       className="bg-black relative text-white border-grey-subnav pt-16 pb-12 lg:py-24"
       id="projectorstand"
     >
-      <div className="max-w-7xl px-5 mx-auto">
+      <div className="max-w-7xl md:px-5 px-0 mx-auto">
         <div className="">
-          <div className="text-left xl:col-span-12 xl:text-xl mb-11">
+          <div className="text-left xl:col-span-12 xl:text-xl mb-11 md:px-0 px-5">
             <h2 className="hidden md:block xl:text-50 md:text-4xl font-semibold md:leading-none md:pb-3">
               Timberline custom projector stand built just for you
             </h2>
@@ -125,7 +125,7 @@ const CustomProjectorSection = () => {
             <GatsbyImage image={getImage(MobileProjectorstandImage)} alt=""
               className="mx-auto w-full" />
           </div>
-          <div className="lg:mt-0 mt-10">
+          <div className="lg:mt-0 mt-10 md:px-0 px-5">
             <h2 className="text-3xl md:text-4xl font-semibold md:leading-none md:pb-3 pb-2">Custom projector stand</h2>
             <h3 className="text-xl md:text-2xl pb-4 xl:pb-5 text-orange-1000">
               A light-weight portable entertainment center
@@ -139,10 +139,10 @@ const CustomProjectorSection = () => {
                       }`}
                     key={item.id}
                   >
-                    <div>
-                    <Image className="white-svg h-8 p-1" />
+                    <div className="w-8 h-8">
+                    <Image className="white-svg" />
                     </div>
-                    <span className="ml-2 font-bold sm:text-lg text-base">{item.text}</span>
+                    <span className="ml-2 sm:text-lg text-base">{item.text}</span>
                   </li>
                 )
               })}
@@ -155,7 +155,7 @@ const CustomProjectorSection = () => {
           className='mx-auto w-full relative hidden lg:block projectorstand'
           fluid={imageData}
         >
-          <div className="reltive w-fill mx-auto  flex justify-end h-full">
+          <div className="reltive w-fill mx-auto flex justify-end h-full">
             <div className="block text-left pt-5 pb-10 px-10 bg-blck-size-128 bg-black/[.6]">
               <div>
                 <h3 className="text-4xl">Projector Stand </h3>

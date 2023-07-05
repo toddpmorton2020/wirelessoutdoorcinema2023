@@ -73,7 +73,7 @@ const Header = ({ siteTitle }) => {
           <div className="hidden lg:flex flex-col items-end">
             <div className="flex items-center">
               <Link to="tel:2075952960"
-                className="cursor-pointer flex items-center no-underline"
+                className="cursor-pointer flex items-center no-underline font-normal"
               >
                 <GatsbyImage image={getImage(CellImg)} alt="" className="w-5" />
                 <span className="ml-2 text-white no-underline">(207) 647-8759</span>
@@ -100,7 +100,7 @@ const Header = ({ siteTitle }) => {
             <div className="flex items-center mt-3">
               <Link
                 to="/about"
-                className="cursor-pointer hover:text-orange-500 text-white no-underline"
+                className="cursor-pointer hover:text-orange-500 text-white no-underline font-normal"
               >
                 About
               </Link>
@@ -108,7 +108,7 @@ const Header = ({ siteTitle }) => {
                 to="#"
                 className="cursor-pointer ml-12 flex items-center relative group"
               >
-                <Link to="/comparison" className="hover:text-orange-500 text-white no-underline">
+                <Link to="/comparison" className="hover:text-orange-500 text-white no-underline font-normal">
                   OUTDOOR CINEMAS
                 </Link>{" "}
                 <StaticImage
@@ -117,8 +117,8 @@ const Header = ({ siteTitle }) => {
                 />
                 <div className="bg-black w-80 z-50 absolute left-0 bottom-0 transform translate-y-full z-10 flex-col pt-6 pb-2 hidden group-hover:flex whitespace-no-wrap">
                   <Link
-                    to="/comparison"
-                    className="py-2 px-4 hover:text-orange-500 no-underline text-white"
+                    to="/how-to-build-an-outdoor-movie-theater/"
+                    className="py-2 px-4 hover:text-orange-500 no-underline text-white font-normal"
                   >
                     How to build a professional outdoor movie theater
                   </Link>
@@ -130,13 +130,13 @@ const Header = ({ siteTitle }) => {
                       </Link> */}
                   <Link
                     to="/comparison"
-                    className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                    className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
                   >
                     Timberline Series
 
                     <Link
                       to="/timberline-cinema-packages/150-big-moose-cinema/"
-                      className="w-full float-left py-2 px-4 hover:text-orange-500 text-white no-underline uppercase"
+                      className="w-full float-left py-2 px-4 hover:text-orange-500 font-normal text-white no-underline capitalize"
                     >
                       150" big moose
                     </Link>
@@ -155,7 +155,7 @@ const Header = ({ siteTitle }) => {
                 to="#"
                 className="cursor-pointer ml-12 flex items-center relative group"
               >
-                <Link to="/in-the-news" className="hover:text-orange-500 text-white no-underline">
+                <Link to="/in-the-news" className="hover:text-orange-500 text-white no-underline font-normal">
                   In The News
                 </Link>{" "}
                 <StaticImage
@@ -165,43 +165,43 @@ const Header = ({ siteTitle }) => {
                 <div className="bg-black w-60 absolute z-50 left-0 bottom-0 transform translate-y-full z-10 flex-col pt-6 pb-2 hidden group-hover:flex whitespace-no-wrap">
                   <Link
                     to="/october-10-sun-journal-news-article"
-                    className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                    className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
                   >
                     Oct 11 2021 News Article
                   </Link>
                   <Link
                     to="/august-28-press-release"
-                    className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                    className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
                   >
                     Aug 28 2021 Press Release
                   </Link>
                   <Link
                     to="/june-30-press-release"
-                    className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                    className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
                   >
                     June 30 2021 Press Release
                   </Link>
                   <Link
                     to="/january-04-press-release"
-                    className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                    className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
                   >
                     Jan 04 2021 Press Release
                   </Link>
                   <Link
                     to="/september-10-press-release"
-                    className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                    className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
                   >
                     Sept 10 2020 Press Release
                   </Link>
                   <Link
                     to="/june-25-bridgton-news-article"
-                    className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                    className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
                   >
                     June 25 2020 Press Release
                   </Link>
                   <Link
                     to="/june-08-press-release"
-                    className="py-2 px-4 hover:text-orange-500 text-white no-underline"
+                    className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
                   >
                     June 08 2020 Press Release
                   </Link>
@@ -209,13 +209,13 @@ const Header = ({ siteTitle }) => {
               </span>
               <Link
                 to="/faq"
-                className="cursor-pointer ml-12 hover:text-orange-500 text-white no-underline"
+                className="cursor-pointer ml-12 hover:text-orange-500 text-white no-underline font-normal"
               >
                 FAQ
               </Link>
               <Link
                 to="/connect"
-                className="cursor-pointer ml-12 hover:text-orange-500 text-white no-underline"
+                className="cursor-pointer ml-12 hover:text-orange-500 text-white no-underline font-normal"
               >
                 Connect
               </Link>
@@ -226,12 +226,12 @@ const Header = ({ siteTitle }) => {
 
       {open && (
         <div
-          className="w-full bg-cover absolute z-30 lg:hidden mobile_bg"
+          className="w-full bg-cover absolute z-40 lg:hidden mobile_bg"
 
         >
           <div className="text-white text-xl flex flex-col">
             <Link to="/about" className="no-underline">
-              <span className="block py-3 px-6 text-white">About</span>
+              <span className="block py-3 px-6 text-white font-normal">About</span>
             </Link>
             <div class="w-full border border-b border-gray-600"></div>
             <span onClick={() => setOpenW(!openW)} className="cursor-pointer">
@@ -240,15 +240,22 @@ const Header = ({ siteTitle }) => {
                 <span>&#9660;</span>
               </span>
               {openW && (
-                <div className="flex flex-col text-orange-500 py-3 px-6">
+                <div className="flex flex-col text-orange-500 pb-3 px-6">
                   {/* <Link to="/comparison" className="block text-orange-500 py-3 no-underline ">
                     Cinema Comparison
-                  </Link> */}
+                  </Link> */} 
+                  <Link
+                    to="/how-to-build-an-outdoor-movie-theater/"
+                    className="py-2 px-4 hover:text-orange-500 no-underline text-white pb-4 font-normal"
+                  >
+                    How to build a professional outdoor movie theater
+                  </Link>
+
                   <div class="w-full border border-b border-gray-600"></div>
                   <span className="py-3">Timberline Series</span>
                   <Link
                     to="/timberline-cinema-packages/150-big-moose-cinema/"
-                    className="w-full float-left py-2 px-4 hover:text-orange-500 text-white no-underline uppercase"
+                    className="w-full float-left py-2 px-4 hover:text-orange-500 font-normal text-white no-underline capitalize"
                   >
                     150" big moose
                   </Link>
@@ -262,28 +269,28 @@ const Header = ({ siteTitle }) => {
             </span>
             <div class="w-full border border-b border-gray-600"></div>
             <Link to="/in-the-news" className="no-underline">
-              <span className="block py-3 px-6 text-white">In the News</span>
+              <span className="block py-3 px-6 text-white font-normal">In the News</span>
             </Link>
             <div class="w-full border border-b border-gray-600"></div>
-            <Link to="/faq" className="no-underline text-white">
+            <Link to="/faq" className="no-underline text-white font-normal">
               <span className="block py-3 px-6">
                 Frequently Asked Questions
               </span>
             </Link>
             <div class="w-full border border-b border-gray-600"></div>
-            <Link to="/connect" className="no-underline text-white">
+            <Link to="/connect" className="no-underline text-white font-normal">
               <span className="block py-3 px-6">Connect</span>
             </Link>
             <div class="w-full border border-b border-gray-600"></div>
-            <Link to="/terms" className="no-underline text-white">
+            <Link to="/terms" className="no-underline text-white font-normal">
               <span className="block py-3 px-6">Terms Of Use</span>
             </Link>
             <div class="w-full border border-b border-gray-600"></div>
-            <Link to="/privacy" className="no-underline text-white">
+            <Link to="/privacy" className="no-underline text-white font-normal">
               <span className="block py-3 px-6">Privacy Policy</span>
             </Link>
             <div class="w-full border border-b border-gray-600"></div>
-            <Link to="/sitemap" className="no-underline text-white">
+            <Link to="/sitemap" className="no-underline text-white font-normal">
               <span className="block py-3 px-6">Sitemap</span>
             </Link>
             <div class="w-full border border-b border-gray-600"></div>

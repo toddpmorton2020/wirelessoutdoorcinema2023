@@ -97,7 +97,7 @@ const WhatyougetSection = () => {
 
   return (
     <div
-      className="bg-gray-990 relative text-white pb-14 lg:pb-24 lg:pt-0 pt-16"
+      className="bg-gray-990 relative text-white pb-14 lg:pb-24 lg:pt-0 pt-16 -mb-0.5"
       id="whatyouget"
     >
       <div className="max-w-7xl px-5 mx-auto">

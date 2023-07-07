@@ -11,7 +11,7 @@ h1,h2,h3,h4,h5,h6,p{margin: 0; letter-spacing: 0;}
 p{font-weight: 400;}
 
 .cookie-back{background-color: #353535;}
-.bg-gray-990 {background-color: #080808;}
+.bg-gray-990 {background-color: #111;}
 
 .desktop-subnav {background-color: rgba(0,0,0,.8);}
 .border-grey-subnav {border-color: hsla(0,0%,100%,.24);}
@@ -121,6 +121,7 @@ transition: transform .3s ease-in-out;}
 width: 15px;height: 15px;}
 .quote-todd:after {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z'/%3E%3C/svg%3E");
 width: 15px;height: 15px;}
+.herosection h1{font-size: 2.5rem;line-height: 2.8rem;}
 }
 @media screen and (min-width: 640px) and (max-width: 767px){
 .herosection .w-4\/5 {width: 55%;}
@@ -128,11 +129,14 @@ width: 15px;height: 15px;}
 @media screen and (min-width: 550px) and (max-width: 639px){
 .herosection .w-4\/5 {width: 70%;}
 }
+@media screen and (max-width:549px){
+.herosection .w-4\/5 {width: 100%;}
+
+}
 @media screen and (max-width:479px){
 .faq-accordion-header{padding-left: 2.5rem;}
 .faq-accordion-header:after, .faq-accordion-header:before{margin-top: -5px; width: 18px;height: 3px;}
-.herosection .w-4\/5 {width: 100%;}
-.herosection .text-4xl {font-size: 1.875rem;line-height: 2.25rem;}
+.herosection .text-4xl {font-size: 1.75rem;line-height: 2rem;}
 }
 @media screen and (max-width: 319px){
 .item_box{width: 100%;}

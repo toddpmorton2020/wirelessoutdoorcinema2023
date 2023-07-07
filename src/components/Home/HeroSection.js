@@ -69,10 +69,10 @@ const HeroSection = () => {
 
                             <div className="lg:flex-col-reverse flex-col flex">
                                 <div>
-                                    <p className="text-lg sm:text-xl xl:text-3xl md:text-2xl mb-1 max-w-full">
+                                    <p className="text-lg leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-1 max-w-full">
                                         DIY guide bundle valued at $3,000
                                     </p>
-                                    <p className="text-lg sm:text-xl xl:text-3xl md:text-2xl mb-0 max-w-full">
+                                    <p className="text-lg leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0 max-w-full">
                                         On sale now for $99* (Reg. price $199. 50% off)
                                     </p>
                                 </div>

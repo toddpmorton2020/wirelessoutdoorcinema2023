@@ -44,7 +44,7 @@ const PowerfulHangingSection = () => {
               </p>
               <ol className="list-decimal ml-8">
                 <li className="sm:text-lg text-base mb-4">Hanging with screw hooks through the screen’s grommet holes, which are attached to the
-                   inside of the frame system</li>
+                   inside of the frame system.</li>
             <li className="sm:text-lg text-base mb-4">Running a black nylon cord (supplied with the screen), through the grommet holes attached
                to the screen, and tying off to the side posts.</li>
               </ol>            
@@ -88,7 +88,7 @@ const PowerfulHangingSection = () => {
                 className="px-3 absolute flex items-center z-20 right-0 bg-black/[.5] h-8"
               >
                 <span className="sm:text-lg text-sm">Straight line method with rope</span>
-                <RopeIcon className="h-10 ml-2" />
+                <RopeIcon className="h-9 ml-2" />
               </div>
             </div>
           </div>

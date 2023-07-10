@@ -236,7 +236,7 @@ const Header = ({ siteTitle }) => {
             <div class="w-full border border-b border-gray-600"></div>
             <span onClick={() => setOpenW(!openW)} className="cursor-pointer">
               <span className="block py-3 px-6 flex items-center justify-between">
-                <span>Outdoor Cinemas</span>
+                <span>Outdoor Movie Theaters</span>
                 <span>&#9660;</span>
               </span>
               {openW && (
@@ -250,14 +250,11 @@ const Header = ({ siteTitle }) => {
                   >
                     How to build a professional outdoor movie theater
                   </Link>
-
-                  <div class="w-full border border-b border-gray-600"></div>
-                  <span className="py-3">Timberline Series</span>
                   <Link
                     to="/timberline-cinema-packages/150-big-moose-cinema/"
                     className="w-full float-left py-2 px-4 hover:text-orange-500 font-normal text-white no-underline capitalize"
                   >
-                    150" big moose
+                    150” Big Moose Outdoor Movie Theater
                   </Link>
 
                   {/* <div class="w-full border border-b border-gray-600 mt-3"></div> */}

@@ -20,7 +20,7 @@ const PerfectForSection = () => {
       imghover: BackyardIconHover,
 
       title: "Streaming Shows",
-      text: "Stream your favorite shows outside on the apps you watch inside",
+      text: "Stream your favorite shows outside on the apps you watch inside.",
 
     },
     {
@@ -29,7 +29,7 @@ const PerfectForSection = () => {
       imghover: FamilyMovieIconHover,
       title: "Movie Night",
       text:
-        "Enjoy a blockbuster movie on the big screen with family and friends",
+        "Enjoy a blockbuster movie on the big screen with family and friends.",
     },
     {
       id: 3,
@@ -47,10 +47,9 @@ const PerfectForSection = () => {
       text: "Play life-size video games on a massive cinematic screen.",
     },
   ]
-
   return (
     <div
-      className="bg-black relative text-white pt-16 lg:pt-24"
+      className="bg-black relative text-white pt-16 lg:pt-24tt"
       id="cnemauses"
     >
       <div className="max-w-7xl px-5 mx-auto lg:pb-24 pb-14 border-b border-grey-subnav">
@@ -93,7 +92,7 @@ const PerfectForSection = () => {
               <div className="block md:hidden text-center">
                 <h2 className="text-3xl font-semibold leading-c18 pb-3">Perfect for</h2>
                 <h3 className="text-xl pb-4 text-orange-1000">
-                  Homeowners with a backyard who loves the outdoors.
+                  Homeowners with a backyard who love the outdoors.
                 </h3>
               </div>
               <p className="sm:text-lg text-base mb-4 max-w-full lg:text-left text-center">

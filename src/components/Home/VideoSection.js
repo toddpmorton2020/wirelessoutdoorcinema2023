@@ -17,7 +17,7 @@ const VideoSection = () => {
               Outdoor Movie Theater
             </h2>
             <h3 className="xl:text-35 text-xl md:text-2xl pb-4 xl:pb-5 mb-0 text-orange-1000 ">
-              Enjoy the magic of the movies nightly under the stars
+              Enjoy the magic of the movies nightly under the stars.
             </h3>
             <p className="mb-0 max-w-full sm:text-lg text-base">
               This revolutionary outdoor movie theater has the fastest setup time, the most durable frame system, never has to be broken down, and is built to be used year-round. Transform your backyard into an entertainment destination.

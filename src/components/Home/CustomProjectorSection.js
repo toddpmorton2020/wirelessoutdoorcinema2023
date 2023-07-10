@@ -125,21 +125,21 @@ const CustomProjectorSection = () => {
             <GatsbyImage image={getImage(MobileProjectorstandImage)} alt=""
               className="mx-auto w-full" />
           </div>
-          <div className="lg:mt-0 mt-10 md:px-0 px-5">
+          <div className="lg:mt-0 mt-8 md:px-0 px-5">
             <h2 className="text-3xl md:text-4xl font-semibold md:leading-none md:pb-3 pb-2">Custom projector stand</h2>
             <h3 className="text-xl md:text-2xl pb-4 xl:pb-5 text-orange-1000">
-              A light-weight portable entertainment center
+              A light-weight portable entertainment center.
             </h3>
             <ul className="m-0 p-0">
               {gridItems.map((item, index) => {
                 const Image = item.img
                 return (
                   <li
-                    className={`flex items-center mb-4 gap-3 ${index === 0 ? "mt-4" : ""
+                    className={`flex items-center mb-5 gap-3 ${index === 0 ? "mt-5" : ""
                       }`}
                     key={item.id}
                   >
-                    <div className="w-8 h-8">
+                    <div className="w-8 h-7">
                     <Image className="white-svg" />
                     </div>
                     <span className="ml-2 sm:text-lg text-base">{item.text}</span>

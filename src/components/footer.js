@@ -185,7 +185,7 @@ function Footer() {
                 </Link>
                 <Link to="/timberline-cinema-packages/150-big-moose-cinema/" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-500 mr-2">&gt;</span>
-                  Outdoor Cinemas
+                  150” Big Moose Outdoor Movie Theater
                 </Link>
                 <Link to="/how-to-build-an-outdoor-movie-theater" className="flex items-center py-2 no-underline text-white font-normal">
                 <span className="text-orange-500 mr-2">&gt;</span>

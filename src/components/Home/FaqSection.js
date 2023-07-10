@@ -5,7 +5,7 @@ import { AssemblyIcon } from "../../assets/images/icons/assembly-icon"
 import { EquipmentStandIcon } from "../../assets/images/icons/equipment-stand-icon"
 import { FrameIcon } from "../../assets/images/icons/frame-icon"
 import { ScreenIcon } from "../../assets/images/icons/screen-icon"
-import { EquipmentListIcon } from "../../assets/images/icons/equipment-list-icon"
+import { EquipmentListIcon } from "../../assets/images/icons/equipment-list-icon2"
 
 
 
@@ -530,12 +530,7 @@ const FaqSection = () => {
               </h3>
   
               <p className="sm:text-lg text-base mb-0 max-w-full">
-              Below are customers' most frequently asked questions, broken down by category to help you find the answers you need quickly.  Feel free to
-              connect{" "}
-                <Link to="/connect" style={{ color: "#9647f7" }} className="no-underline">
-                  connect
-                </Link>{" "}
-                if you have a question that isn't here.
+              Below are customers' most frequently asked questions, broken down by category to help you find the answers you need quickly.
               </p>
             </div>
             <div className="col-span-12 grid grid-cols-12 gap-4 lg:mt-12 mt-10">
@@ -546,7 +541,7 @@ const FaqSection = () => {
                 >
                   <div className="flex items-center pb-3">
                     <div>{item.icon}</div>
-                    <p className="text-xl md:txt-2xl px-3 text-orange-1000 font-semibold mb-0 max-w-full">
+                    <p className="text-xl md:txt-2xl px-3 text-orange-1000 mb-0 max-w-full">
                       {item.text}
                     </p>
                   </div>
@@ -565,7 +560,7 @@ const FaqSection = () => {
                         </label>
                       </div>
                       <div className="faq-accordion-content">
-                        <p className="py-2 sm:text-lg text-sm mb-0 max-w-full">{qa.answer}</p>
+                        <p className="py-2 sm:text-lg text-base mb-0 max-w-full">{qa.answer}</p>
                       </div>
                     </article>
                   ))}

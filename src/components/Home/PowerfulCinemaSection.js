@@ -152,7 +152,7 @@ const PowerfulCinemaSection = ({ className }) => {
           <div className="text-left xl:col-span-12 xl:text-xl mb-11 md:px-0 px-5">
             <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold  md:leading-none md:pb-3 pb-2">Powerful wireless and wired cinema packages</h2>
             <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 max-w-full mb-0 text-orange-1000">
-              Go wireless with no extension cords. Go wired for unlimited options
+              Go wireless with no extension cords. Go wired for unlimited options.
             </h3>
             <p className="sm:text-lg text-base max-w-full mb-0">
               The Timberline Outdoor Movie Theaters come in two different packages: wireless and wired.
@@ -170,16 +170,16 @@ const PowerfulCinemaSection = ({ className }) => {
               {" "}
               <div className="sm:block hidden">
                 <GatsbyImage image={getImage(TabletWirelessImg)} alt=""
-                  className="mx-auto w-full mb-3" />
+                  className="mx-auto w-full" />
               </div>
               <div className="sm:hidden">
                 <GatsbyImage image={getImage(MobileWirelessImg)} alt=""
-                  className="mx-auto w-full mb-3" />
+                  className="mx-auto w-full" />
               </div>
               {/* <GatsbyImage image={getImage(MobileWirelessImg)} alt=""
                 className="mx-auto w-full mb-3" /> */}
             </div>
-            <div className="mt-8 md:px-0 px-5">
+            <div className="mt-6 md:px-0 px-5">
               <h3 className="text-3xl font-bold ">Go Wireless</h3>
               <h4 className="text-lg my-2">
                 No extensions cords. Fast setup every time.{" "}
@@ -191,7 +191,7 @@ const PowerfulCinemaSection = ({ className }) => {
                   const Image = item.img
                   return (
                     <li className="flex items-center my-5 gap-4" key={item.id}>
-                      <div className="w-8 h-8">
+                      <div className="w-8 h-7">
                         <Image className="white-svg" />
                       </div>
                       <span className="sm:text-lg text-base">{item.text}</span>
@@ -272,10 +272,10 @@ const PowerfulCinemaSection = ({ className }) => {
               {/* <GatsbyImage image={getImage(MobileWiredImg)} alt=""
                 className="mx-auto w-full mb-3" /> */}
             </div>
-            <div className="mt-10 md:px-0 px-5">
+            <div className="mt-6 md:px-0 px-5">
               <h3 className="text-3xl font-bold ">Go Wired</h3>
               <h4 className="text-lg my-2">
-                Unlimited connection options. Play video games{" "}
+                Unlimited connection options. Play video games{" "}.
               </h4>
               <p className="text-orange-1000 mb-0 text-lg">Connect to: </p>
               <ul className="m-0 p-0">

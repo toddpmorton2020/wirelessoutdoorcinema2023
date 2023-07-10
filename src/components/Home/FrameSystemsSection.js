@@ -50,11 +50,11 @@ const FrameSystemsSection = () => {
                             It is designed to be secured firmly in your preferred spot for movie-watching.
                         </p>
                     </div>
-                    <div className="md:grid flex flex-col-reverse items-stretch gap-4 grid-cols-12 pb-10 xl:mb-10 relative">
-                        <div className="lg:col-span-4 md:col-span-5 md:text-left text-center lg:mt-0 mt-8 md:px-0 px-5">
+                    <div className="md:grid flex flex-col-reverse items-stretch lg:gap-4 grid-cols-12 pb-10 xl:mb-10 relative">
+                        <div className="lg:col-span-4 md:col-span-5 md:text-left text-center lg:mt-0 mt-6 md:px-0 px-5">
                             <h2 className="text-3xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Movable Frame</h2>
                             <h3 className="text-xl lg:text-3xl md:text-2xl pb-4 xl:pb-5 mb-0 max-w-full text-orange-1000">
-                                Perfect for flat lawns
+                                Perfect for flat lawns.
                             </h3>
                             <p className="mb-4 sm:text-lg text-base max-w-full">
                                 Versatile, allowing homeowners to position the system anywhere on the property.
@@ -119,11 +119,11 @@ const FrameSystemsSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:col-span-4 md:col-span-5 lg:mt-0 mt-8 md:text-left text-center md:px-0 px-5">
+                        <div className="lg:col-span-4 md:col-span-5 lg:mt-0 mt-4 md:text-left text-center md:px-0 px-5">
                             <div>
                                 <h2 className="text-3xl md:text-4xl font-semibold md:pb-0 pb-2">Streamline Frame</h2>
                                 <h3 className="text-xl lg:text-3xl md:text-2xl pb-4 xl:pb-5 mb-0 max-w-full text-orange-1000">
-                                    Ideal for any backyard
+                                    Ideal for any backyard.
                                 </h3>
                             </div>
                             <p className="mb-4 sm:text-lg text-base max-w-full">

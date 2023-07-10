@@ -37,9 +37,9 @@ const SitemapPage = () => {
                                         <Link to="/about" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
                                             About
                                         </Link>
-                                        <Link to="/comparison" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
+                                        {/* <Link to="/comparison" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
                                             Cinema Comparison
-                                        </Link>
+                                        </Link> */}
                                         {/* <Link
                                             to="/timberline-cinema-packages/96-jedi-bobcat-cinema"
                                             className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1"
@@ -56,11 +56,11 @@ const SitemapPage = () => {
                                             to="/timberline-cinema-packages/150-big-moose-cinema"
                                             className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1"
                                         >
-                                            150" Big Moose Wireless Outdoor Cinema
+                                            150” Big Moose Outdoor Movie Theater
                                         </Link>
-                                        <Link to="/accessory" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
+                                        {/* <Link to="/accessory" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
                                             Outdoor Cinema Accessories
-                                        </Link>
+                                        </Link> */}
                                         <Link
                                             to="/how-to-build-an-outdoor-movie-theater/"
                                             className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1"

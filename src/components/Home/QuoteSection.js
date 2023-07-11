@@ -55,7 +55,7 @@ const QuoteSection = () => {
         <div className="absolute left-0 px-5 w-full mt-14 top-0 hidden lg:grid grid-cols-12">
           <div className="flex flex-col col-start-7 col-span-6 text-center xl:px-8 max-w-xl mx-auto">
             <p className="quote_text text-2xl quote-todd mb-0 max-w-full relative px-6">
-              My wireless outdoor movie theaters take less time to set up and start watching than it does to pop a bag of popcorn
+              My wireless outdoor movie theaters take less time to set up and start watching than it does to pop a bag of popcorn.
             </p>
             <div className="hidden lg:block">
             <GatsbyImage image={getImage(SignatureImg)} alt=""

@@ -275,7 +275,7 @@ const PowerfulCinemaSection = ({ className }) => {
             <div className="mt-6 md:px-0 px-5">
               <h3 className="text-3xl font-bold ">Go Wired</h3>
               <h4 className="text-lg my-2">
-                Unlimited connection options. Play video games{" "}.
+                Unlimited connection options. Play video games.
               </h4>
               <p className="text-orange-1000 mb-0 text-lg">Connect to: </p>
               <ul className="m-0 p-0">

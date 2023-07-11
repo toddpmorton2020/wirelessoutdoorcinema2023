@@ -401,7 +401,7 @@ const ComparisonSection = () => {
                 <div className="col-span-6 font-extralight">
                   <h6 className="text-sm font-medium text-center mb-0">Frame Durability</h6>
                   <p className="text-sm text-center text-red-b20000 mb-0">
-                    Can potentially air leaks
+                    Potentially air leaks
                   </p>
                 </div>
                 <div className="col-span-6 font-extralight">
@@ -664,7 +664,7 @@ const ComparisonSection = () => {
                 <div className="col-span-12 lg:col-span-4 font-extralight text-23">
                   <h6 className="text-lg font-medium text-center mb-0">Frame Durability</h6>
                   <p className="text-lg text-center text-red-b20000 mb-0">
-                    Can potentially air leaks
+                    Potentially air leaks
                   </p>
                 </div>
                 <div className="col-span-12 lg:col-span-4 font-extralight text-23">

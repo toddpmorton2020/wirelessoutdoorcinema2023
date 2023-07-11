@@ -23,13 +23,13 @@ const FaqSection = () => {
             answer: (
               <>
                 <div className="mb-3">
-                The recommended wood for the frame system is pressure-treated 4x4 posts. And the recommended
+                The recommended wood for the frame system is pressure-treated 4" x 4" posts. And the recommended
                 timber to build the custom projector stand is Cedar, and you can also use pine wood. These two
                 types of wood keep the projector stand's weight light, making it easier to carry. However, when
                 using hardwood like maple or oak, the equipment stand's weight will be heavier.
                 </div>
                 <div className="mb-3">
-                For the frame system, use pressure-treated 4 x 4 posts. For the projector stand, you can use either
+                For the frame system, use pressure-treated 4" x 4" posts. For the projector stand, you can use either
                 cedar or pine; both of these wood varieties will ensure that the projector stand is lightweight 
                 and easy to carry. (If you use hardwood like maple or oak, please note that the equipment stand will 
                 be heavier and more difficult to transport.)
@@ -165,7 +165,7 @@ const FaqSection = () => {
                 <br />
                 <br />
                 <strong>Movable Frame System:</strong> Rough dimensions are 12' ft wide x 10' ft high x 5' ft depth.
-                Exact measurements are covered in the manual
+                Exact measurements are covered in the manual.
               </>
             ),
           },
@@ -236,7 +236,7 @@ const FaqSection = () => {
                 to screw hooks on the inside of the frame system.
                 <br />
                 <br />
-                There are two ways of hanging the screen
+                There are two ways of hanging the screen.
                 <br/>
                 <br/>
                 1) running a black nylon cord through the grommet holes and tying it off at the ends of the frame
@@ -521,12 +521,12 @@ const FaqSection = () => {
                 Frequently asked questions
               </h2>             
               <h3 className="md:block hidden md:text-2xl pb-5 xl:text-35 xl:pb-7 text-orange-1000">
-              Common questions on how-to build a professional outdoor movie theater
+              Common questions on how-to build a professional outdoor movie theater.
               </h3>
   
               <h3 className="md:hidden text-lg pb-4 text-orange-1000">
                 Frequently asked questions on how-to build a professional outdoor
-                movie theater
+                movie theater.
               </h3>
   
               <p className="sm:text-lg text-base mb-0 max-w-full">

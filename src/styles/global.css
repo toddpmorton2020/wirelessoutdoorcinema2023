@@ -45,7 +45,7 @@ p{font-weight: 400;}
 input.tgg-title {appearance: unset; all: unset;}
 .faq-accordion-title label {display: flex;align-items: center; padding: 8px 0; cursor: pointer;}
 .faq-accordion-header {position: relative;transition: color .2s linear; cursor: pointer; padding-left: 3.8rem;}
-.faq-accordion-header:hover {color: #ff5400;}
+.faq-accordion-header:hover, .faq-accordion .tgg-title:checked~.faq-accordion-title .faq-accordion-header {color: #ff5400;}
 .faq-accordion-header:after, .faq-accordion-header:before {content: "";position: absolute;left: 12px; top: 40%; width: 22px; height: 4px;
 margin-top: -2px; background-color: #fff;}
 .faq-accordion .faq-accordion-header:after {transform: rotate(90deg); transition: transform .35s cubic-bezier(.65,.05,.36,1);}
@@ -66,26 +66,22 @@ margin-top: -2px; background-color: #fff;}
 .closed-ps {max-height: 0;}
 
 .quote-todd:before {content:'';background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z'/%3E%3C/svg%3E");
-background-position: top left;background-repeat: no-repeat;width: 24px; height: 24px;position: absolute;left:12px;top:-5px;
+background-position: top left;background-repeat: no-repeat;width: 24px; height: 24px;position: absolute;top:-5px;margin-left: -28px;
 }
 .quote-todd:after {content:'';background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z'/%3E%3C/svg%3E"); 
 background-position: right bottom;background-repeat: no-repeat;width: 24px; height: 24px;position: absolute; padding-right: 30px;}
-
 
 .plusicon {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z'/%3E%3C/svg%3E"); background-position: right 15px center; background-repeat: no-repeat;}
 .minusicon {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M0 10h24v4h-24z'/%3E%3C/svg%3E"); background-position: right 15px center; background-repeat: no-repeat; }
     
 .image-text-color {color: #5e5e5e;}
 
-
 .quote-todd-orange:before {content:'';background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23ff6600'%3E%3Cpath d='M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z'/%3E%3C/svg%3E");
 background-position: top left;background-repeat: no-repeat;width: 24px; height: 24px;position: absolute;left:0;top:0;}
 .quote-todd-orange:after {content:'';background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23ff6600'%3E%3Cpath d='M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z'/%3E%3C/svg%3E"); 
 background-position: right bottom;background-repeat: no-repeat;width: 24px; height: 24px;position: absolute; padding-right: 30px;}
 
-
 .sub_heading.text-3xl{ font-size: 1.75rem;line-height: 2.2rem;}
-
 
 .thumbnail-slider-wrap .slick-track .slick-slide  {padding: 0 10px; }
 .slick-slider {text-align: center;}
@@ -101,7 +97,6 @@ width: 40px; height: 40px; content: ''; position: absolute; background-repeat: n
 
 .mobile-subnav .arrow {width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #fff;
 transition: transform .3s ease-in-out;}
-
 .mobile-subnav .arrow.open {transform: rotate(180deg);}
 
 
@@ -117,7 +112,7 @@ transition: transform .3s ease-in-out;}
 .quote_text.text-2xl{font-size: 1.7rem;;}
 }
 @media screen and (max-width: 1150px){
-.quote-todd:before{left:5px}
+/* .quote-todd:before{left:5px} */
 }
 @media screen and (min-width: 1024px){
 .large-justify-start {justify-content: flex-start!important;}
@@ -129,18 +124,17 @@ transition: transform .3s ease-in-out;}
 .quote_img{display: none !important;}
 .item_box{width: 220px; margin: 0 auto;}
 .quote-todd:before {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z'/%3E%3C/svg%3E");
-width: 15px;height: 15px;}
+width: 15px;height: 15px;margin-left: -19px;top:-3px;}
 .quote-todd:after {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z'/%3E%3C/svg%3E");
 width: 15px;height: 15px;}
-.herosection h1{font-size: 2.5rem;line-height: 2.8rem;}
-.quote-todd:before{left:12px}
+.herosection h1{font-size: 2.7rem;line-height: 3rem;}
 .quote-todd:after{padding-right:0;}
 }
 @media screen and (min-width: 640px) and (max-width: 767px){
 .herosection .w-4\/5 {width: 55%;}
 }
 @media screen and (min-width: 550px) and (max-width: 639px){
-.herosection .w-4\/5 {width: 70%;}
+.herosection .w-4\/5 {width: 80%;}
 }
 @media screen and (max-width:549px){
 .herosection .w-4\/5 {width: 100%;}
@@ -148,11 +142,9 @@ width: 15px;height: 15px;}
 }
 @media screen and (max-width:479px){
 .faq-accordion-header:after, .faq-accordion-header:before{margin-top: -5px; width: 18px;height: 3px;}
-.herosection .text-4xl {font-size: 1.75rem;line-height: 2rem;}
+.herosection .text-4xl {font-size: 1.9rem;line-height: 2.2rem;}
 }
-@media screen and (min-width: 350px) and (max-width: 390px){
-    .quote-todd:before {left:28px}
-}
+
 @media screen and (max-width: 319px){
 .item_box{width: 100%;}
 }

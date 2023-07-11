@@ -36,7 +36,7 @@ const HeaderScroll = () => {
                 </Link>
               </li>
               <li className="py-2 border-b border-grey-subnav text-sm mb-0">
-                <Link to="#framesystems" className="no-underline text-white hover:text-orange-500 font-normal">
+                <Link to="#features" className="no-underline text-white hover:text-orange-500 font-normal">
                   Systems
                 </Link>
               </li>
@@ -84,7 +84,7 @@ const HeaderScroll = () => {
                 </Link>
               </li>
               <li className="mx-1 xl:mx-3 mb-0">
-                <Link to="#framesystems" className="no-underline text-white hover:text-orange-500 font-normal">
+                <Link to="#features" className="no-underline text-white hover:text-orange-500 font-normal">
                   Systems
                 </Link>
               </li>

@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import HeaderScroll from "./HeaderScroll";
 
-const HeroSection = () => {
+const HeroSection = ({page=''}) => {
     const { HeroImg, TabletHeroImg, MobileHeroImg } = useStaticQuery(
         graphql`
           query {
@@ -29,7 +29,7 @@ const HeroSection = () => {
     )
     return (
         <>
-            <HeaderScroll />
+            {page!=='home' && <HeaderScroll />}
             <div className="bg-black relative text-white sm:top-0 sm:-mt-12 herosection">
                 <div className="hidden lg:block">
                     <GatsbyImage image={getImage(HeroImg)} alt="" loading="eager"

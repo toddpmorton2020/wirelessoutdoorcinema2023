@@ -20,7 +20,7 @@ import CopySection from "../components/Home/CopySection"
 
 const IndexPage = () => (
   <Layout>
-    <HeroSection />
+    <HeroSection page="home" />
     <VideoSection />
     <WhatyougetSection />
     <PerfectForSection />

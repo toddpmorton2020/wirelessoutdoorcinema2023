@@ -272,7 +272,7 @@ function Footer() {
                 loop
                 muted
                 playsInline
-                className="w-4/5 max-w-sm mx-auto margin-footer-fire md:mt-10"
+                className="w-4/5 max-w-sm mx-auto margin-footer-fire md:mt-14"
               >
                 <source src="/campfire.mp4" type="video/mp4" />
               </video>
@@ -281,18 +281,18 @@ function Footer() {
           <div class="flex-1 hidden lg:block">
             <div className="pt-0">
               <div className="flex flex-col lg:pl-10">
-                <h5 className="text-left text-orange-500 font-bold uppercase mb-1">
+                <h5 className="text-left text-orange-500 font-bold uppercase mb-2">
                   Quick Links
                 </h5>            
-                <Link to="/about" className="flex items-center no-underline text-white font-normal">
+                <Link to="/about" className="flex items-center no-underline text-white font-normal mb-1">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   About
                 </Link>
-                <Link to="/comparison" className="flex items-center no-underline text-white font-normal">
+                <Link to="/timberline-cinema-packages/150-big-moose-cinema/" className="flex items-center no-underline text-white font-normal mb-1">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
-                  Cinema Packages
+                  150” Big Moose Outdoor Movie Theater
                 </Link>
-                <Link to="/how-to-build-an-outdoor-movie-theater/" className="flex items-center no-underline text-white font-normal">
+                <Link to="/how-to-build-an-outdoor-movie-theater/" className="flex items-center no-underline text-white font-normal mb-1">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                 How To Build an Outdoor Movie Theater
                 </Link>
@@ -300,22 +300,34 @@ function Footer() {
               <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   Outdoor Cinema Accessories
                 </Link> */}
-                <Link to="/in-the-news" className="flex items-center no-underline text-white font-normal">
+                <Link to="/in-the-news" className="flex items-center no-underline text-white font-normal mb-1">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   In the News
                 </Link>
-                <Link to="/faq" className="flex items-center no-underline text-white font-normal">
+                <Link to="/faq" className="flex items-center no-underline text-white font-normal mb-1">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   FAQ
                 </Link>
-                <Link to="/connect" className="flex items-center no-underline text-white font-normal">
+                <Link to="/connect" className="flex items-center no-underline text-white font-normal mb-1">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   Connect
+                </Link>
+                <Link to="/terms" className="flex items-center no-underline text-white font-normal mb-1">
+                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
+                  Terms Of Use
+                </Link>
+                <Link to="/privacy" className="flex items-center no-underline text-white font-normal mb-1">
+                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
+                  Privacy Policy
+                </Link>
+                <Link to="/sitemap" className="flex items-center no-underline text-white font-normal mb-1">
+                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
+                  Sitemap
                 </Link>
                 <div className="my-1 flex items-center">
                   <Link
                     to="tel:2075952960"
-                    className="cursor-pointer flex items-center no-underline text-white font-normal"
+                    className="cursor-pointer flex items-center no-underline text-white font-normal mb-1"
                   >
                     <GatsbyImage image={getImage(CellImg)} alt="" className="w-5" />
                     <span className="ml-2">(207) 595-2960</span>
@@ -325,7 +337,7 @@ function Footer() {
                     <Link
                       to="https://www.facebook.com/The-Wireless-Outdoor-Cinema-Company-112773330512496"
                       target="_blank"
-                      className="cursor-pointer no-underline text-white font-normal"
+                      className="cursor-pointer no-underline text-white font-normal mb-1"
                     >
                       <GatsbyImage image={getImage(FacebookImg)} alt="" className="w-3 h-5 text-white" />
                     </Link>
@@ -353,18 +365,18 @@ function Footer() {
           <div></div>
         </div>
 
-        <div className="text-left lg:text-center text-sm mt-2 lg:mt-6 py-4 px-6 lg:px-0 lg:py-0 border-t border-gray-800 lg:border-none">
+        <div className="text-left lg:text-center text-sm mt-2 lg:mt-8 py-4 px-6 lg:px-0 lg:py-0 border-t border-gray-800 lg:border-none">
           <div className="flex items-center justify-center lg:mb-2">
             &copy;2020-{new Date().getFullYear()} The Wireless Outdoor Cinema
             Company. All Rights Reserved.{" "}
-            <span className="hidden lg:inline">
+            {/* <span className="hidden lg:inline">
               <Link className="ml-1 text-white no-underline font-normal" to="/terms">
                 Terms of Use
               </Link>{" "}
               <span className="mx-1">|</span> <Link to="/privacy" className="text-white no-underline font-normal">Privacy</Link>{" "}
               <span className="mx-1">|</span>{" "}
               <Link to="/sitemap" className="text-white no-underline font-normal">Site Map</Link>
-            </span>
+            </span> */}
           </div>
           <div className="flex items-center justify-center hidden lg:hidden">
             Website designed with <StaticImage src="../assets/images/icons/heart.png" className="h-4 mx-1" />{" "}

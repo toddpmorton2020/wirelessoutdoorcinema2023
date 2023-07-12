@@ -30,7 +30,7 @@ const HeroSection = ({page=''}) => {
     return (
         <>
             {page!=='home' && <HeaderScroll />}
-            <div className="bg-black relative text-white sm:top-0 sm:-mt-12 herosection">
+            <div className={`bg-black relative text-white herosection ${page!=='home' ? 'sm:top-0 sm:-mt-12' : '' }`}>
                 <div className="hidden lg:block">
                     <GatsbyImage image={getImage(HeroImg)} alt="" loading="eager"
                         className="mx-auto w-full max-w-2400 py-10" />

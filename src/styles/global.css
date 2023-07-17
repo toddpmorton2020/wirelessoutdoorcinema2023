@@ -23,14 +23,14 @@ p{font-weight: 400;}
 .rollover-svg-item:hover .rollover-color-title { color: #ff5400!important;}
 
 .rollover-svg-item:hover .color-svg-green-fill {fill: #11a14a !important;}
-  .rollover-svg-item:hover .color-svg-orange-fill {fill: #eca821 !important;}
-  .rollover-svg-item:hover .color-svg-purple-fill {fill: #6d4ee2 !important; } 
-  .rollover-svg-item:hover .color-svg-lightbrown-fill {fill: #b27f4c !important;}
-  .rollover-svg-item:hover .color-svg-purple2 {fill: #7267ae !important;}
-  .rollover-svg-item:hover .color-svg-orange2-fill {fill: #f15722 !important;}
-  .rollover-svg-item:hover .color-svg-lightgreen-fill {fill: #41b649 !important;}
-  .rollover-svg-item:hover .color-svg-blue2 {fill: #33aae1 !important;}
-  .rollover-svg-item:hover .color-svg-red2 {fill: #bc2025 !important;}
+.rollover-svg-item:hover .color-svg-orange-fill {fill: #eca821 !important;}
+.rollover-svg-item:hover .color-svg-purple-fill {fill: #6d4ee2 !important; } 
+.rollover-svg-item:hover .color-svg-lightbrown-fill {fill: #b27f4c !important;}
+.rollover-svg-item:hover .color-svg-purple2 {fill: #7267ae !important;}
+.rollover-svg-item:hover .color-svg-orange2-fill {fill: #f15722 !important;}
+.rollover-svg-item:hover .color-svg-lightgreen-fill {fill: #41b649 !important;}
+.rollover-svg-item:hover .color-svg-blue2 {fill: #33aae1 !important;}
+.rollover-svg-item:hover .color-svg-red2 {fill: #bc2025 !important;}
 
 .bg-opacity-gray {background-color: rgba(0,0,0,.5);background-size: contain;}
 
@@ -41,6 +41,8 @@ p{font-weight: 400;}
 .text-grey-bdbbba {color: #bdbbba;}
 .text-green-1f8f13 {color: #1f8f13;}
 .text-red-b20000 {color: #b20000;}
+
+.herosection sup{top:-2.5rem;}
 
 input.tgg-title {appearance: unset; all: unset;}
 .faq-accordion-title label {display: flex;align-items: center; padding: 8px 0; cursor: pointer;}

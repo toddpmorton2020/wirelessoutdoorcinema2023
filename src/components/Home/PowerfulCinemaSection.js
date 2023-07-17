@@ -145,7 +145,7 @@ const PowerfulCinemaSection = ({ className }) => {
   return (
     <div
       className="bg-black relative text-white pt-16 pb-12 lg:py-24 -mb-0.5"
-      id="features"
+      id="systems"
     >
       <div className="max-w-7xl md:px-5 px-0 mx-auto">
         <div className="flex flex-col xl:grid xl:grid-cols-12 w-full">

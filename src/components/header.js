@@ -128,20 +128,20 @@ const Header = ({ siteTitle }) => {
                       >
                         Cinema Comparison
                       </Link> */}
-                  <Link
+                  {/* <Link
                     to="/comparison"
                     className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
                   >
                     Timberline Series
-
+                    </Link> */}
                     <Link
                       to="/timberline-cinema-packages/150-big-moose-cinema/"
-                      className="w-full float-left py-2 px-4 hover:text-orange-500 font-normal text-white no-underline capitalize"
+                      className="py-2 px-4 hover:text-orange-500 no-underline text-white font-normal"
                     >
-                      150" big moose
+                     Timberline Series 150" big moose outdoor movie theater
                     </Link>
 
-                  </Link>
+                 
 
                   {/* <Link
                         to="/accessory"
@@ -248,11 +248,11 @@ const Header = ({ siteTitle }) => {
                     to="/how-to-build-an-outdoor-movie-theater/"
                     className="py-2 px-4 hover:text-orange-500 no-underline text-white pb-4 font-normal"
                   >
-                    How to build a professional outdoor movie theater
+                    How to Build a Professional Outdoor Movie Theater
                   </Link>
                   <Link
                     to="/timberline-cinema-packages/150-big-moose-cinema/"
-                    className="w-full float-left py-2 px-4 hover:text-orange-500 font-normal text-white no-underline capitalize"
+                    className="py-2 px-4 hover:text-orange-500 no-underline text-white pb-4 font-normal"
                   >
                     150” Big Moose Outdoor Movie Theater
                   </Link>

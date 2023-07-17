@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import HeaderScroll from "./HeaderScroll";
 
-const HeroSection = ({page=''}) => {
+const HeroSection = ({ page = '' }) => {
     const { HeroImg, TabletHeroImg, MobileHeroImg } = useStaticQuery(
         graphql`
           query {
@@ -29,11 +29,11 @@ const HeroSection = ({page=''}) => {
     )
     return (
         <>
-            {page!=='home' && <HeaderScroll />}
-            <div className={`bg-black relative text-white herosection ${page!=='home' ? 'sm:top-0 sm:-mt-12' : '' }`}>
+            {page !== 'home' && <HeaderScroll />}
+            <div className={`bg-black relative text-white herosection ${page !== 'home' ? 'sm:top-0 sm:-mt-12' : ''}`}>
                 <div className="hidden lg:block">
                     <GatsbyImage image={getImage(HeroImg)} alt="" loading="eager"
-                        className="mx-auto w-full max-w-2400 py-10" />
+                        className="mx-auto w-full max-w-2400 pt-10 pb-12" />
                 </div>
                 <div className="lg:hidden">
                     <div className="sm:block hidden">
@@ -43,9 +43,7 @@ const HeroSection = ({page=''}) => {
                     <div className="sm:hidden">
                         <GatsbyImage image={getImage(MobileHeroImg)} alt=""
                             className="mx-auto w-full" />
-                    </div>
-                    {/* <GatsbyImage image={getImage(MobileHeroImg)} alt="" loading="eager" 
-                className="mx-auto w-full" /> */}
+                    </div>                   
                 </div>
                 {/* <div class="absolute inset-0 bg-black opacity-50"></div> */}
                 <div className="lg:container pb-8 xl:pb-16 mx-auto px-5">
@@ -54,7 +52,7 @@ const HeroSection = ({page=''}) => {
                             <p className="font-semibold text-xl sm:text-2xl md:text-4xl mb-0 max-w-full">
                                 Get the only <span className="text-orange-1000">DIY</span> guide on
                             </p>
-                            <h1 className="lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl md:leading-tight text-4xl mb-4 font-semibold">
+                            <h1 className="lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl md:leading-tight text-4xl mb-5 font-semibold">
                                 <span className="text-orange-1000">How-to build a</span> professional
                                 outdoor movie theater
                                 <sup
@@ -69,7 +67,7 @@ const HeroSection = ({page=''}) => {
 
                             <div className="lg:flex-col-reverse flex-col flex">
                                 <div>
-                                    <p className="text-lg leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-1 max-w-full">
+                                    <p className="text-lg leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0.5 max-w-full">
                                         DIY guide bundle valued at $3,000
                                     </p>
                                     <p className="text-lg leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0 max-w-full">
@@ -77,14 +75,12 @@ const HeroSection = ({page=''}) => {
                                     </p>
                                 </div>
                                 <div>
-                                    <p className="lg:mb-5 mt-5 lg:mt-0 mb-0 text-lg md:text-2xl">
-                                        <Link
-                                            to="#"
-                                            className="px-6 py-1.5 xl:px-10 xl:py-2 bg-orange-1000 no-underline text-white rounded-md"
-                                        >
-                                            Get the DIY guide now
-                                        </Link>
-                                    </p>
+                                    <Link
+                                        to="#"
+                                        className="lg:mb-6 mt-6 lg:mt-0 mb-0 text-lg md:text-2xl inline-block px-6 py-1.5 xl:px-10 xl:py-2 bg-orange-1000 no-underline text-white rounded-md"
+                                    >
+                                        Get the DIY guide now
+                                    </Link>
                                 </div>
                             </div>
                         </div>

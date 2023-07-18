@@ -91,7 +91,7 @@ const CustomProjectorSection = () => {
       <div className="max-w-7xl md:px-5 px-0 mx-auto">
         <div className="">
           <div className="text-left xl:col-span-12 xl:text-xl mb-11 md:px-0 px-5">
-            <h2 className="hidden md:block xl:text-50 md:text-4xl font-semibold md:leading-none md:pb-3">
+            <h2 className="hidden md:block xl:text-50 md:text-4xl font-semibold md:pb-4">
               Timberline custom projector stand built just for you
             </h2>
 
@@ -99,7 +99,7 @@ const CustomProjectorSection = () => {
               <span className="block text-xl"> Timberline </span>
               Custom projector stand built just for you
             </h2>
-            <h3 className="mb-0 text-xl xl:text-35 md:text-2xl pb-4 xl:pb-5 text-orange-1000">
+            <h3 className="mb-0 text-xl xl:text-35 md:text-2xl xl:leading-10 pb-4 xl:pb-5 text-orange-1000">
               The only projector stand designed specifically for your outdoor movie theater setup.
             </h3>
             <p className="sm:text-lg text-base mb-4 max-w-full">
@@ -176,31 +176,6 @@ const CustomProjectorSection = () => {
             </div>
           </div>
         </BackgroundImage>
-
-        {/* <div
-            className="projectorstand mx-auto w-full relative hidden lg:block"           
-          >
-            <div className="reltive w-fill mx-auto  flex justify-end">
-              <div className="block text-left py-2 pb-16 p-10 bg-blck-size-128 bg-black/[.6]">
-                <div>
-                  <h3 className="text-3xl">Projector Stand </h3>
-                  <h4 className="text-2xl">Solid wood. Easy to build. </h4>
-  
-                  <ul className="text-xl m-0 p-0 ">
-                    {gridItems.map(item => {
-                      const Image = item.img
-                      return (
-                        <li className="flex items-center my-4 gap-3" key={item.id}>
-                          <Image className="white-svg p-0 h-8 pb-3 lg:pb-0 lg:w-10 x-auto lg:ml-0" />
-                          <span className="ml-2">{item.text}</span>
-                        </li>
-                      )
-                    })}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div> */}
       </div>
     </div>
   )

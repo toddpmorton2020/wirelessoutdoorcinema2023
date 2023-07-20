@@ -22,7 +22,7 @@ const VideoSection = () => {
             <p className="mb-0 max-w-full sm:text-lg text-base">
               This revolutionary outdoor movie theater has the fastest setup time, the most durable frame system, never has to be broken down, and is built to be used year-round. Transform your backyard into an entertainment destination.
             </p>
-            <Link to="https://www.wirelessoutdoorcinema.com/homePageVideo.mp4#t=0.1" className="no-underline flex items-center">
+            <Link to="https://wirelessoutdoorcinema.com/homePageVideo.mp4#t=0.1" className="no-underline flex items-center">
               <PlayIcon className="h-4 mr-2 " />
               <span className="text-blue-500 mb-0 sm:text-lg text-base">Watch to learn more.</span>
               </Link>
@@ -39,7 +39,7 @@ const VideoSection = () => {
                 objectFit: "cover",
               }}
             >
-              <source src="https://www.wirelessoutdoorcinema.com/homePageVideo.mp4#t=0.1" type="video/mp4" />
+              <source src="https://wirelessoutdoorcinema.com/homePageVideo.mp4#t=0.1" type="video/mp4" />
 
             </video>
           </div>

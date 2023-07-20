@@ -42,7 +42,7 @@ p{font-weight: 400;}
 .text-green-1f8f13 {color: #1f8f13;}
 .text-red-b20000 {color: #b20000;}
 
-.herosection sup{top:-2.5rem;}
+.herosection sup{top:0.25rem;}
 
 input.tgg-title {appearance: unset; all: unset;}
 .faq-accordion-title label {display: flex;align-items: center; padding: 8px 0; cursor: pointer;}
@@ -106,20 +106,30 @@ transition: transform .3s ease-in-out;}
 /* Responsive */
 
 @media screen and (min-width: 1280px){
+.herosection .xl\:w-2\/4 {width: 55%;}
 .callout .xl\:text-6xl {font-size: 3.6rem;}
 .callout .xl\:text-2xl {font-size: 1.75rem; line-height: 1.8rem;}
 .xl\:text-50{font-size: 50px !important; line-height: 55px !important;}
 .xl\:text-35{font-size: 35px !important;}
 .xl\:text-70{font-size: 70px !important; line-height: 80px !important;}
-.quote_text.text-2xl{font-size: 1.7rem;;}
+.quote_text.text-2xl{font-size: 1.7rem;}
 }
-@media screen and (max-width: 1150px){
-/* .quote-todd:before{left:5px} */
+@media screen and (min-width: 1280px) and (max-width: 1320px){
+.herosection .lg\:container{padding-left: 1.5rem;padding-right: 1.5rem;}
+.herosection .pb-12 {padding-bottom: 5rem;}
+}
+@media screen and (max-width: 1279px){
+.herosection sup {top: -0.25rem;}
+
 }
 @media screen and (min-width: 1024px){
 .large-justify-start {justify-content: flex-start!important;}
 .large-justify-end {justify-content: flex-end!important;}
 .projectorstand{height: 550px;}
+}
+
+@media screen and (max-width: 1023px){
+.herosection sup {top: 0.6rem;}
 }
 @media screen and (max-width: 767px){
 .bonus-banner-image { margin-left: -13px; margin-top: -15px; width:95px !important; height: 80px !important; max-width: inherit;}
@@ -132,7 +142,7 @@ width: 15px;height: 15px;padding-right:22px;}
 .herosection h1{font-size: 2.7rem;line-height: 3rem;}
 }
 @media screen and (min-width: 640px) and (max-width: 767px){
-.herosection .w-4\/5 {width: 55%;}
+.herosection .w-4\/5 {width: 70%;}
 }
 @media screen and (min-width: 550px) and (max-width: 639px){
 .herosection .w-4\/5 {width: 80%;}
@@ -143,9 +153,8 @@ width: 15px;height: 15px;padding-right:22px;}
 }
 @media screen and (max-width:479px){
 .faq-accordion-header:after, .faq-accordion-header:before{margin-top: -5px; width: 18px;height: 3px;}
-.herosection .text-4xl {font-size: 1.9rem;line-height: 2.2rem;}
+.herosection .text-4xl {font-size: 1.79rem;line-height: 2.2rem;}
 }
-
 @media screen and (max-width: 319px){
 .item_box{width: 100%;}
 }

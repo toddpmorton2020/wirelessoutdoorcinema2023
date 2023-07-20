@@ -108,8 +108,8 @@ const Header = ({ siteTitle }) => {
                 to="#"
                 className="cursor-pointer ml-12 flex items-center relative group"
               >
-                <Link to="/comparison" className="hover:text-orange-500 text-white no-underline font-normal">
-                  OUTDOOR CINEMAS
+                <Link to="/how-to-build-an-outdoor-movie-theater/" className="hover:text-orange-500 text-white no-underline font-normal">
+                OUTDOOR MOVIE THEATER
                 </Link>{" "}
                 <StaticImage
                   src="../assets/images/icons/downarrow.png"

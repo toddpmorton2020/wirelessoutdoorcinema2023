@@ -54,15 +54,16 @@ const HeroSection = ({ page = '' }) => {
                             </p>
                             <h1 className="lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl md:leading-tight text-4xl mb-5 font-semibold">
                                 <span className="text-orange-1000">How-to build a</span> professional
-                                outdoor movie theater
+                                outdoor movie <span className="relative">theater
                                 <sup
                                     style={{
                                         transform: "translateY(5px)",
                                     }}
-                                    className="pl-1 inline-block lg:text-3xl"
+                                    className="pl-1 inline-block lg:text-3xl absolute"
                                 >
                                     ©
                                 </sup>
+                                </span>
                             </h1>
 
                             <div className="lg:flex-col-reverse flex-col flex">

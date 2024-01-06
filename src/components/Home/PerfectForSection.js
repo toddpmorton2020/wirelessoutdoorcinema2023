@@ -76,11 +76,11 @@ const PerfectForSection = () => {
                 </h3>
               </div>
               <p className="sm:text-lg text-base mb-4 max-w-full lg:text-left text-center">
-                The Timberline Outdoor Movie Theater is designed to be an extension of your living room, allowing you to enjoy your favorite movies, streaming shows, sporting events, and more outside, thanks to a fast and easy setup every time. The cinema equipment stays on the custom projector stand and never has to be broken down or boxed up—just like your entertainment center inside your home.
+              The Timberline Outdoor Movie Theater is designed to be an extension of your living room, allowing you to enjoy your favorite movies, streaming shows, sporting events, and more outside, thanks to a fast and easy setup every time. The cinema equipment stays on the custom projector stand and never has to be broken down or boxed up — just like your entertainment center inside your home.
               </p>
 
               <p className="sm:text-lg text-base  max-w-full mb-0 lg:text-left text-center">
-                Designed with convenience in mind, the frame system stays up on your property year-round-- just hang the cinematic screen whenever you want to watch movies, enjoy sporting events, stream your favorite shows, or play video games outside. When the nightly entertainment is over, simply pick up the portable projector stand and bring it inside to protect the equipment from moisture and rain.
+              The frame system stays up on your property year-round and is built out of pressure-treated wood and weather-resistant hardware — hang the cinematic screen whenever you want to watch your favorite shows outside. When the nightly entertainment is over, pick up the portable projector stand and bring it inside to protect the equipment from moisture and rain.
               </p>
             </div>
           </div>

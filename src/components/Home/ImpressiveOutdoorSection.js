@@ -3,9 +3,9 @@ import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 
-// import ImpressiveImage1 from "../../assets/images/screen-setup-photo-695px-x392px.jpg"
-// import ImpressiveImage2 from "../../assets/images/strongest-frame-photo-695px-x-392px.jpg"
-// import ImpressiveImage3 from "../../assets/images/projector-stand-photo-695px-x392px.jpg"
+// import ImpressiveImage1 from "../../assets/images/fastest-setup-time-695px-x-392px-winter.jpg"
+// import ImpressiveImage2 from "../../assets/images/strongest-frame-photo-695px-x-392px-winter.jpg"
+// import ImpressiveImage3 from "../../assets/images/outdoor-projector-stand-695px-x-392px-winter.jpg"
 // import ImpressiveImage4 from "../../assets/images/year-round-photo-695px-x-392px.jpg"
 
 
@@ -20,19 +20,19 @@ const ImpressiveOutdoorSection = () => {
   const { ImpressiveImage1, ImpressiveImage2, ImpressiveImage3, ImpressiveImage4 } = useStaticQuery(
     graphql`
       query {
-        ImpressiveImage1: file(relativePath: {eq: "screen-setup-photo-695px-x392px.jpg"}) {
+        ImpressiveImage1: file(relativePath: {eq: "fastest-setup-time-695px-x-392px-winter.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         }
 
-        ImpressiveImage2: file(relativePath: {eq: "strongest-frame-photo-695px-x-392px.jpg"}) {
+        ImpressiveImage2: file(relativePath: {eq: "strongest-frame-photo-695px-x-392px-winter.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         }
 
-        ImpressiveImage3: file(relativePath: {eq: "projector-stand-photo-695px-x392px.jpg"}) {
+        ImpressiveImage3: file(relativePath: {eq: "outdoor-projector-stand-695px-x-392px-winter.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
@@ -86,7 +86,7 @@ const ImpressiveOutdoorSection = () => {
         <div className="mx-auto flex flex-col xl:grid xl:grid-cols-12 w-full">
           <div className="md:text-center xl:col-span-12 xl:text-xl mb-11 md:px-0 px-5">
             <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold md:leading-none md:pb-5 pb-2">
-              Time-saving and industry-leading features
+            Industry-leading outdoor movie theater features
             </h2>
 
             <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-7 text-orange-1000">

@@ -21,14 +21,14 @@ const PowerfulCinemaSection = ({ className }) => {
   const { WirelesscinemaImage, WiredcinemaImg, TabletWirelessImg, MobileWirelessImg, TabletWiredImg, MobileWiredImg } = useStaticQuery(
     graphql`
       query {
-        WirelesscinemaImage: file(relativePath: { eq: "wireless-cinema-package-1398px-x-658px.jpg" }) {
+        WirelesscinemaImage: file(relativePath: { eq: "streamline-wireless-system-1398px-x-658px-winter.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1398) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
-        WiredcinemaImg: file(relativePath: { eq: "wired-cinema-package-1398px-x-658px.jpg" }) {
+        WiredcinemaImg: file(relativePath: { eq: "streamline-wired-system-1398px-x-658px-winter.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1398) {
               ...GatsbyImageSharpFluid_withWebp
@@ -150,18 +150,12 @@ const PowerfulCinemaSection = ({ className }) => {
       <div className="max-w-7xl md:px-5 px-0 mx-auto">
         <div className="flex flex-col xl:grid xl:grid-cols-12 w-full">
           <div className="text-left xl:col-span-12 xl:text-xl mb-11 md:px-0 px-5">
-            <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold  md:leading-none md:pb-3 pb-2">Powerful wireless and wired cinema packages</h2>
+            <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold  md:leading-none md:pb-3 pb-2">Powerful wireless and wired outdoor cinema packages</h2>
             <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 max-w-full mb-0 text-orange-1000">
               Go wireless with no extension cords. Go wired for unlimited options.
             </h3>
             <p className="sm:text-lg text-base max-w-full mb-0">
-              The Timberline Outdoor Movie Theaters come in two different packages: wireless and wired.
-              The revolutionary wireless outdoor movie theater is powered by an off-grid battery,
-              allowing you to watch your favorite entertainment without running extension cords from your
-              home to the cinema equipment, and ensuring an easy and fast setup every time. The wired cinema
-              package provides more options to provide your viewers with a more robust theater experience
-              by adding receivers, tuners, PA speakers, and the ability to play video games on a massive
-              cinematic screen.
+            The Timberline Series Outdoor Movie Theaters come in two different cinema equipment packages: wireless and wired. This revolutionary wireless outdoor movie theater is powered by an off-grid battery, allowing you to watch your favorite entertainment without running extension cords from your home to the cinema equipment and ensuring an easy and fast setup every time. The wired cinema package provides a more robust theater experience by adding receivers, tuners, PA speakers, and the ability to play video games on a massive cinematic screen.
             </p>
           </div>
 

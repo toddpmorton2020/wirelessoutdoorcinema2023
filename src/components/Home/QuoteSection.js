@@ -6,7 +6,7 @@ const QuoteSection = () => {
   const { TimberlineImg1, TimberlineImg2, SignatureImg, MobilesignatureImg } = useStaticQuery(
     graphql`
       query {
-        TimberlineImg1: file(relativePath: {eq: "timberline-outdoor-movie-theater-quote-1920px-x-680px.jpg"}) {
+        TimberlineImg1: file(relativePath: {eq: "timberline-outdoor-movie-theater-quote-1920px-x-680px-winter.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }

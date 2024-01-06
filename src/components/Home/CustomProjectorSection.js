@@ -18,7 +18,7 @@ const CustomProjectorSection = () => {
   const { ProjectorstandImage, TabletProjectorstandImage, MobileProjectorstandImage } = useStaticQuery(
     graphql`
       query {
-        ProjectorstandImage: file(relativePath: { eq: "timberline-projector-stand-1398px-x-658px.jpg" }) {
+        ProjectorstandImage: file(relativePath: { eq: "timberline-outdoor-projector-stand-1398px-x-658px-winter.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1398) {
               ...GatsbyImageSharpFluid_withWebp
@@ -92,7 +92,7 @@ const CustomProjectorSection = () => {
         <div className="">
           <div className="text-left xl:col-span-12 xl:text-xl mb-11 md:px-0 px-5">
             <h2 className="hidden md:block xl:text-50 md:text-4xl font-semibold md:pb-4">
-              Timberline custom projector stand built just for you
+              Custom outdoor movie theater projector stand 
             </h2>
 
             <h2 className="md:hidden text-3xl md:text-4xl font-semibold pb-3">
@@ -100,19 +100,14 @@ const CustomProjectorSection = () => {
               Custom projector stand built just for you
             </h2>
             <h3 className="mb-0 text-xl xl:text-35 md:text-2xl xl:leading-10 pb-4 xl:pb-5 text-orange-1000">
-              The only projector stand designed specifically for your outdoor movie theater setup.
+            The only outdoor projector stand designed just for your backyard.
             </h3>
             <p className="sm:text-lg text-base mb-4 max-w-full">
-              The Timberline custom project stand was designed because one size does not fit all.
-              Every homeowner has a different property landscape and unique cinema equipment needs.
-              To ensure that the projector casts your preferred entertainment at the right height
-              and level, the projector stand must be aligned perfectly with the cinematic screen.
+            The Timberline custom outdoor projector stand solves the challenge of correctly getting the projector at the proper height to cast your entertainment onto the cinematic screen using multiple calculations. No outdoor projector stands are available online because manufacturers know one size does not meet everyone's requirements due to different landscaped backyards and theater setups.
             </p>
             <p className="sm:text-lg text-base max-w-full mb-0">
               <WarnIcon className="h-4 mr-2 -mt-1 inline-flex" />
-              Several calculations need to be made when building your custom projector stand to
-              ensure that it aligns correctly with the screen and landscape of your property.
-              All of the measurements are covered in the DIY guide.
+              The formula I developed calculates the perfect height the projector needs to be set at, regardless of your backyard landscape — the detailed calculations are in the DIY guide.
             </p>
           </div>
         </div>

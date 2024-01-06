@@ -15,12 +15,12 @@ const FrameSystemsSection = () => {
     const { FrameImg1, FrameImg2 } = useStaticQuery(
         graphql`
           query {
-            FrameImg1: file(relativePath: {eq: "timberline-movable-frame-1617px-x-750px.jpg"}) {
+            FrameImg1: file(relativePath: {eq: "timberline-movable-frame-1617px-x-750px-winter.jpg"}) {
               childImageSharp {
                 gatsbyImageData(quality: 100, layout: CONSTRAINED)
               }
             } 
-            FrameImg2: file(relativePath: {eq: "timberline-streamline-frame-1617px-x-750px.jpg"}) {
+            FrameImg2: file(relativePath: {eq: "timberline-streamline-cemented-frame-1617px-x-750px-winter.jpg"}) {
                 childImageSharp {
                   gatsbyImageData(quality: 100, layout: CONSTRAINED)
                 }
@@ -37,34 +37,27 @@ const FrameSystemsSection = () => {
             <div className="max-w-7xl md:px-5 px-0 mx-auto">
                 <div className="">
                     <div className="text-center md:text-left xl:text-xl mb-11 md:px-0 px-5">
-                        <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold md:leading-none md:pb-3 pb-2">Durable and long-lasting frame systems</h2>
+                        <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold md:leading-none md:pb-3 pb-2">Most durable outdoor movie theater frames</h2>
                         <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 text-orange-1000">
                             Introducing the Timberline Movable and Streamline Frame Systems.
                         </h3>
                         <p className="sm:text-lg text-base md:mb-0 mb-10 max-w-full">
-                            Everyone homeowner has a different landscape on their property, and the Timberline Movable and
-                            Streamline Frame System was developed to address every challenge when installing a backyard movie
-                            theater. Choose the Movable Frame System if you have a flat lawn and want the flexibility to move
-                            the frame anywhere on your property to enjoy your favorite entertainment. The Streamline Frame
-                            System was created for uneven landscapes and backyards with ledge stone and other obstacles.
-                            It is designed to be secured firmly in your preferred spot for movie-watching.
+                        Every homeowner has a different landscape on their property, and the Timberline Streamline Cemented Frame, Movable Frame, and Streamline Free-Standing Frame solve every challenge when installing a backyard movie theater. Use the Streamline Cemented Frame for flat lawns or uneven backyards where you can dig into the ground. Choose the Movable Frame if you have a flat lawn and want the flexibility to move the frame anywhere on your property. Use the Streamline Free-Standing Frame for uneven backyards or if you have ledge stone and can’t dig into the ground.
                         </p>
                     </div>
                     <div className="md:grid flex flex-col-reverse items-stretch lg:gap-4 grid-cols-12 pb-10 xl:mb-10 relative">
                         <div className="lg:col-span-4 md:col-span-5 md:text-left text-center lg:mt-0 mt-6 md:px-0 px-5">
-                            <h2 className="text-3xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Movable Frame</h2>
+                            <h2 className="text-3xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Movable Frame System</h2>
                             <h3 className="text-xl lg:text-3xl md:text-2xl pb-4 xl:pb-5 mb-0 max-w-full text-orange-1000">
-                                Perfect for flat lawns.
+                                Great for flat lawns.
                             </h3>
                             <p className="mb-4 sm:text-lg text-base max-w-full">
-                                Versatile, allowing homeowners to position the system anywhere on the property.
+                            The Timberline Movable Frame is versatile, allowing homeowners to position the system anywhere on the property.
                             </p>
-                            <p className="mb-4 sm:text-lg text-base max-w-full">Made from pressure-treated wood and weather-resistance hardware.   </p>
+                            <p className="mb-4 sm:text-lg text-base max-w-full">This movable frame system makes a great compliment if you own a pool or hot tub. You can even load the frame onto a trailer and take it to your next outdoor event.   </p>
                             <p className="mb-0 sm:text-lg text-base max-w-full">
                                 <WarnIcon className="h-4 mr-2 -mt-1 inline-flex" />
-                                Before you start building the Movable Frame System, you need to make exact calculations
-                                in order for the cinematic screen to fit correctly in the frame opening. You’ll find all the
-                                details you need in the how-to manual.
+                                The Movable Frame System's building, assembly, and installation instructions are all covered in the how-to manual.
                             </p>
                         </div>
                         <div className="lg:col-span-8 md:col-span-7">
@@ -119,25 +112,22 @@ const FrameSystemsSection = () => {
                         </div>
                         <div className="lg:col-span-4 md:col-span-5 lg:mt-0 mt-4 md:text-left text-center md:px-0 px-5">
                             <div>
-                                <h2 className="text-3xl md:text-4xl font-semibold md:pb-3 pb-2">Streamline Frame</h2>
+                                <h2 className="text-3xl md:text-4xl font-semibold md:pb-3 pb-2">Streamline Cemented Frame System</h2>
                                 <h3 className="text-xl lg:text-3xl md:text-2xl pb-4 xl:pb-5 mb-0 max-w-full text-orange-1000">
-                                    Ideal for any backyard.
+                                    Perfect for diggable lawns.
                                 </h3>
                             </div>
                             <p className="mb-4 sm:text-lg text-base max-w-full">
-                                The Timberline Streamline Frame System looks great and can be installed
-                                in the most challenging areas on a property.
+                            The Timberline Streamline Cemented Frame has a clean and sleek appearance and can be installed on flat or uneven lawns, as long as you can dig at least 26" down into the ground.
                             </p>
 
                             <p className="mb-4 sm:text-lg text-base max-w-full">
-                                You can dig into the ground and cement the posts. If you have ledge stone and other
-                                obstacles and can’t dig, use plywood form boxes, place the posts in the boxes, and
-                                pour the cement. After, remove the plywood and add a classic look of brick or stone.
+                            Just dig two holes into the ground, position the frame system into the holes, and pour the cement.
 
                             </p>
                             <p className="sm:text-lg text-base mb-0 max-w-full">
                                 <WarnIcon className="h-4 mr-2 -mt-1 inline-flex" />
-                                The Streamline Frame System’s installation instructions are covered in the how-to manual.
+                                The detailed how-to manual shares the Streamline Cemented Frame System's building, assembly, and installation instructions.
                             </p>
                         </div>
                     </div>

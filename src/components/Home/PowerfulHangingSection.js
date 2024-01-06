@@ -10,12 +10,12 @@ const PowerfulHangingSection = () => {
   const { HookImg, StraightImg, StopwatchIcon} = useStaticQuery(
     graphql`
       query {
-        HookImg: file(relativePath: {eq: "hook-style-screen.jpg"}) {
+        HookImg: file(relativePath: {eq: "manual-pull-down-screen-695px-x-392px-winter.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         } 
-        StraightImg: file(relativePath: {eq: "straight-line-screen.jpg"}) {
+        StraightImg: file(relativePath: {eq: "grommet-hole-screen-695px-x-392px-winter.jpg"}) {
             childImageSharp {
               gatsbyImageData(quality: 100, layout: CONSTRAINED)
             }
@@ -34,27 +34,18 @@ const PowerfulHangingSection = () => {
       <div id="screens" className="bg-black text-white pt-16 lg:pt-24">
         <div className="max-w-7xl md:px-5 px-0 lg:pb-24 pb-16 mx-auto border-b border-grey-subnav">
           <div className="md:px-0 px-5">
-            <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold pb-3 mb-0">Cinematic screen-hanging methods</h2>
+            <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold pb-3 mb-0">Outdoor projector screen options</h2>
             <h3 className="text-xl xl:text-35 md:text-2xl pb-4 xl:pb-5 text-orange-1000">
-            Hang the screen directly with hooks, or use rope for a straight-line look.
+            Use a manual or electric projector screen or a grommet hole cinematic screen.
             </h3>
             <div>
               <p className="mb-6 max-w-full sm:text-lg text-base">
-              The cinematic screen allows you to hang it from the frame system using two different methods: 
+              The outdoor projector screen you choose will dramatically impact the visual quality you'll experience when watching your favorite entertainment outside. There are many options when selecting your outdoor projector screen online, and I've provided two screens that will give you excellent viewing quality. You can use a manual or electric projector screen or a grommet hole cinematic screen. 
               </p>
-              <ol className="list-decimal ml-8">
-                <li className="sm:text-lg text-base mb-4">Hanging with screw hooks through the screen’s grommet holes, which are attached to the
-                   inside of the frame system.</li>
-            <li className="sm:text-lg text-base mb-4">Running a black nylon cord (supplied with the screen), through the grommet holes attached
-               to the screen, and tying off to the side posts.</li>
-              </ol>            
-
+                 
               <p className="sm:text-lg text-base max-w-full mb-11">
                 <WarnIcon className="h-4 mr-2 -mt-2 inline-flex" />
-                There are many options when buying your outdoor cinematic screen, as they are available in many 
-                different materials and sizes. The DIY guide covers which screens to stay away from, and which 
-                are the best ones to use. You’ll also need to make exact calculations in order to hang the screen 
-                correctly.  These are included with the manual and instructions.
+                Learn which outdoor projector screens are the best to use and the screens you should avoid — all provided in the DIY guide.
               </p>
             </div>
           </div>
@@ -73,7 +64,7 @@ const PowerfulHangingSection = () => {
                 <GatsbyImage image={getImage(StopwatchIcon)} alt=""
                 className="mx-auto w-16" />
                 
-                <span className="sm:text-lg text-sm">Quick hanging method with hooks</span>
+                <span className="sm:text-lg text-sm">Manual pull-down projector screen</span>
               </div>
             </div>
             <div className="col-span-6 relative">
@@ -87,7 +78,7 @@ const PowerfulHangingSection = () => {
                 }}
                 className="px-3 absolute flex items-center z-20 right-0 bg-black/[.5] h-8"
               >
-                <span className="sm:text-lg text-sm">Straight line method with rope</span>
+                <span className="sm:text-lg text-sm">Cinematic grommet hole screen</span>
                 <RopeIcon className="h-9 ml-2" />
               </div>
             </div>

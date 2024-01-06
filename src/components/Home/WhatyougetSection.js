@@ -46,7 +46,7 @@ const WhatyougetSection = () => {
       imghover: DesignPlanIconHover,
       title: "Design Plans",
       text:
-        "Detailed plans show you how to build the frame and the projector stand.",
+        "Complete design plans on how to build everything.",
       bonus: false,
     },
     {
@@ -54,24 +54,24 @@ const WhatyougetSection = () => {
       img: MaterialListIcon,
       imghover: MaterialListIconHover,
       title: "Material List",
-      text: "List of required materials including hardware, fasteners, and wood.",
+      text: "List of all materials including hardware, fasteners, and wood.",
       bonus: false,
     },
     {
       id: 125,
       img: ToolsNeededIcon,
       imghover: ToolsNeededIconHover,
-      title: "Equipment List",
+      title: "Required Tools",
       text:
-        "Recommended electronics for wireless and wired systems.",
+        "All tools are covered, from essential handheld to power tools.",
       bonus: false,
     },
     {
       id: 126,
       img: EquipmentListIcon,
       imghover: EquipmentListIconHover,
-      title: "Required Tools",
-      text: "All tools are covered, from essential handheld to power tools.",
+      title: "Equipment List",
+      text: "Recommended electronics for wireless and wired systems.",
       bonus: false,
     },
     {
@@ -79,7 +79,7 @@ const WhatyougetSection = () => {
       img: HowVideoIcon,
       imghover: HowVideoIconHover,
       title: "How-To Videos",
-      text: "How to videos on assembling and installing your movie theater.",
+      text: "How-to videos on assembling and installing your movie theater.",
       bonus: true,
     },
     {
@@ -88,7 +88,7 @@ const WhatyougetSection = () => {
       imghover: TipsTechniquesIconHover,
       title: "Tips & Techniques",
       text:
-        "Get the most out of your outdoor movie theater with expert advice.",
+        "Avoid costly mistakes with expert advice.",
       bonus: true,
     },
 
@@ -110,15 +110,13 @@ const WhatyougetSection = () => {
           <div className="text-center xl:col-span-7 lg:col-span-6 lg:text-left xl:text-xl pt-6 lg:pt-16 ">
             <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Here's what you get</h2>
             <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 mb-0 text-orange-1000">
-              Timberline Big Moose
-              <span className="text-white"> DIY </span>{" "} Guide.
+            You’ll receive all 4 Timberline products for just $99 (A bundle valued over $3,600).
             </h3>
 
             <div className="lg:max-w-xl text-center lg:text-left">
               <p className="sm:text-lg text-base mb-4 max-w-full">
-                Introducing the only professional DIY guide on how to build an outdoor movie theater, created just for homeowners. Jam-packed with valuable information, this how-to guide contains detailed diagrams, photographs, access to assembly and installation videos, recommended materials, tools, and equipment lists, wireless and wired cinema setups, different frame styles, tips and techniques, and bonus content.               </p>
+              Introducing the only complete professional DIY guide on how to build an outdoor movie theater. Take the guesswork and pain from trying to figure out how to enjoy your favorite entertainment outside by using this complete DIY guide designed to help you succeed in putting together your outdoor movie theater right the first time.               </p>
               <p className="sm:text-lg text-base max-w-full mb-0">
-                Get your professional DIY content and video bundle for just $99 (regularly $199, valued at $3,000), available at this price only until September 15, 2023.
               </p>
             </div>
           </div>

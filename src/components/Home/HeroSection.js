@@ -9,12 +9,12 @@ const HeroSection = ({ page = '' }) => {
     const { HeroImg, TabletHeroImg, MobileHeroImg } = useStaticQuery(
         graphql`
           query {
-            HeroImg: file(relativePath: {eq: "timberline-outdoor-movie-theater-1920px-x-680px.jpg"}) {
+            HeroImg: file(relativePath: {eq: "timberline-outdoor-movie-theater-1920px-x-680px-winter.jpg"}) {
               childImageSharp {
                 gatsbyImageData(quality: 100, layout: CONSTRAINED)
               }
             } 
-            TabletHeroImg: file(relativePath: {eq: "timberline-outdoor-movie-theater-1920px-x-680px.jpg"}) {
+            TabletHeroImg: file(relativePath: {eq: "outdoor-movie-theater-1920px-x-680px.jpg"}) {
                 childImageSharp {
                   gatsbyImageData(quality: 100, layout: CONSTRAINED)
                 }
@@ -50,7 +50,7 @@ const HeroSection = ({ page = '' }) => {
                     <div className="lg:absolute xl:mt-16 2xl:pt-18 sm:top-0">
                         <div className="relative lg:w-3/5 xl:w-2/4 2xl:w-3/6 z-20 xl:mt-0 lg:mt-20 mt-8 xl:mt-0">
                             <p className="font-semibold text-xl sm:text-2xl md:text-4xl mb-0 max-w-full">
-                                Get the only <span className="text-orange-1000">DIY</span> guide on
+                                Get the only <span className="text-orange-1000">complete DIY</span> guide on
                             </p>
                             <h1 className="lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl md:leading-tight text-4xl mb-5 font-semibold">
                                 <span className="text-orange-1000">How-to build a</span> professional
@@ -69,10 +69,10 @@ const HeroSection = ({ page = '' }) => {
                             <div className="lg:flex-col-reverse flex-col flex">
                                 <div>
                                     <p className="text-lg leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0.5 max-w-full">
-                                        DIY guide bundle valued at $3,000
+                                    On sale now for $99 (Reg. price $199. 50% off)
                                     </p>
                                     <p className="text-lg leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0 max-w-full">
-                                        On sale now for $99* (Reg. price $199. 50% off)
+                                    A limited-time offer valued at $3,600
                                     </p>
                                 </div>
                                 <div>

@@ -460,7 +460,7 @@ const ComparisonSection = () => {
                 <p className="text-xl text-grey-bdbbba mb-0">
                   Cinema equipment included
                 </p>
-                <p className="text-xl pt-3 pb-6 mb-0">$2,900 - 3,000</p>
+                <p className="text-xl pt-3 pb-6 mb-0">$3,500 - 3,600</p>
                 <hr className="mx-4 border-gray-500 mb-0 hr_brd" />
               </div>
             </div>
@@ -572,7 +572,7 @@ const ComparisonSection = () => {
                   </p>
                 </div>
                 <div className="col-span-12 lg:col-span-4 font-extralight text-23">
-                  <h6 className="text-lg font-medium text-center mb-0">Setup T  mb-0ime</h6>
+                  <h6 className="text-lg font-medium text-center mb-0">Setup Time</h6>
                   <p className="text-lg text-center text-red-b20000 mb-0">
                     25-30 minutes
                   </p>

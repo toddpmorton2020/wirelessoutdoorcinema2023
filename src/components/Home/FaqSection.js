@@ -24,22 +24,16 @@ const FaqSection = () => {
               <>
                 <div className="mb-3">
                 The recommended wood for the frame system is pressure-treated 4" x 4" posts. And the recommended
-                timber to build the custom projector stand is Cedar, and you can also use pine wood. These two
-                types of wood keep the projector stand's weight light, making it easier to carry. However, when
+                lumber to build the custom projector stand is pinewood, and you can also use any time of hardwood. Using pinewood will keep the projector stand's weight light, making it easier to carry. However, when
                 using hardwood like maple or oak, the equipment stand's weight will be heavier.
                 </div>
+                
                 <div className="mb-3">
-                For the frame system, use pressure-treated 4" x 4" posts. For the projector stand, you can use either
-                cedar or pine; both of these wood varieties will ensure that the projector stand is lightweight 
-                and easy to carry. (If you use hardwood like maple or oak, please note that the equipment stand will 
-                be heavier and more difficult to transport.)
-                </div>
-                <div className="mb-3">
-                The cost will vary depending on your location and source. Lumber is usually more cost-friendly at
+                The cost for lumber will vary depending on your location and source. Lumber is usually more cost-friendly at
                 your local big-box home improvement stores.
                 </div>
                 <div className="mb-3">
-                  <strong>Streamline Frame System:</strong> Average cost is
+                  <strong>Streamline Cemented Frame System:</strong> Average cost is
                   between $150-175.
                 </div>
                 <div className="mb-2">
@@ -47,16 +41,14 @@ const FaqSection = () => {
                   $175-225.
                 </div>
                 <div className="mb-2">
-                  <strong>Cedar Custom Projector Stand:</strong> Average cost is
-                  between $70-$90.
+                  <strong>Streamline Free-Standing Frame System:</strong> Average cost is between
+                  $175-225.
                 </div>
                 <div className="mb-2">
-                  <strong>Pine Custom Projector Stand:</strong> Average cost is
+                  <strong>Pinewood Custom Projector Stand:</strong> Average cost is
                   between $65-$85.
                 </div>
-                <strong>Pressure-treated Projector:</strong> Average cost is
-                between $24-$30.
-              </>
+                </>
             ),
           },
           {
@@ -64,7 +56,7 @@ const FaqSection = () => {
             question: "How much does the frame systems hardware cost?",
             answer: (
               <>
-                <strong>Streamline Frame System:</strong> The weather- resistant
+                <strong>Streamline Frame Systems:</strong> The weather- resistant
                 hardware costs between $275-300.
                 <br />
                 <br />
@@ -116,7 +108,7 @@ const FaqSection = () => {
             answer: (
               <>
                 The overall cost to build your own professional outdoor movie theater 
-                is between $1,000 and $1,400.
+                is between $1,000 and $1,500.
                 <br />
                 <br />
                 The cost will be less if you already have lumber and some compatible cinema equipment.
@@ -128,7 +120,7 @@ const FaqSection = () => {
       {
         id: 1,
         icon: <FrameIcon className="sm:h-11 h-10 sm:w-11 w-10  mr-2" />,
-        text: "Frame System",
+        text: "Frame Systems",
         questions: [
           {
             id: "11",
@@ -160,7 +152,7 @@ const FaqSection = () => {
             question: "What are the dimensions for the different frame systems?",
             answer: (
               <>
-                <strong>Streamline Frame System:</strong> Rough dimensions are 12' ft wide x 10' ft high x 4" depth.
+                <strong>Streamline Frame Systems:</strong> Rough dimensions are 12' ft wide x 10' ft high x 4" depth.
                 Exact measurements are covered in the manual.
                 <br />
                 <br />
@@ -175,7 +167,7 @@ const FaqSection = () => {
               "How much do the Movable and Streamline Frame Systems weigh?",
             answer: (
               <>
-                <strong>Streamline Frame System:</strong> weighs between 80-100
+                <strong>Streamline Frame Systems:</strong> weighs between 100-175
                 lbs.
                 <br />
                 <br />
@@ -202,77 +194,62 @@ const FaqSection = () => {
       {
         id: 2,
         icon: <ScreenIcon className="sm:h-11 h-10 sm:w-11 w-10 " />,
-        text: "Cinematic Screen",
+        text: "Outdoor Projector Screens",
         questions: [
           {
             id: "21",
-            question: "Can I use a bed sheet instead of a cinematic screen?",
+            question: "What is the cost for the different projector screens?",
             answer: (
               <>
-                Bed sheets allow too much light transmission through the material, causing the screen to look dull. 
+                The manual pull-down projector screen ranges in price from $400-600. 
                 <br />
                 <br />
-                Cinematic screens are made of unique materials to prevent light transmission providing a sharp
-                and crisp viewing experience. The more light that passes through the screen, the more visual
-                quality you’ll lose through the projector.
-                <br />
-                <br />
-                Outdoor cinematic screens cost roughly $10 more than a bedsheet.
+                The grommet hole cinematic screen ranges in price from $30-60.
               </>
             ),
           },
           {
             id: "22",
-            question: "What are the overall dimensions of the cinematic screen?",
+            question: "What are the sizes for the outdoor projector screens?",
             answer:
               "150” diagonal. The dimensions are 9’ ft. 3” wide x 5’ ft. 10” high.",
           },
           {
             id: "23",
-            question: "How do I attach the screen to the frame system?",
+            question: "How do I attach the different projector screens to the frame system?",
             answer: (
               <>
-                Most outdoor cinematic screens have grommet holes along the edges of the screen; these get attached
-                to screw hooks on the inside of the frame system.
-                <br />
-                <br />
-                There are two ways of hanging the screen.
+                The method of hanging the two different projector screens varies slightly on which screen you want to use.
                 <br/>
                 <br/>
-                1) running a black nylon cord through the grommet holes and tying it off at the ends of the frame
-                 for a clean, straight-line appearance. 
+                1) Manual pull-down projector screen: hang with two screw hooks below the main header beam inside the frame system. 
                  <br />
                  <br />
-                 2) hanging the screen on the screw hooks inside the frame system, giving the screen edges a slight 
-                 spider web appearance that you won't see while watching your favorite entertainment outside.
+                 2) Grommet hole cinematic screen: hang the screen using screw hooks all along the inside of the frame system.
               </>
             ),
           },
           {
             id: "24",
-            question: "Is the outdoor cinematic screen machine-washable?",
+            question: "How do I clean the different projector screens?",
             answer: (
               <>
-                Most screen manufacturers do not recommend washing your screen in your washing machine. 
-                Instead, they recommend spot-cleaning your cinematic screen with Woolite when it gets dirty,
-                followed by  running it through a dryer for 5-10 minutes.
+                The manual pull-down projector screen can be cleaned carefully using a soft microfiber towel or a soft kitchen sponge and a solution of warm water and Dawn dish detergent soap.
+              <br />
+              <br />
+              The grommet hole cinematic screen can be cleaned using a soft microfiber towel and a mix of water and Woolite.
               </>
             ),
           },
           {
             id: "25",
-            question: "Can the cinematic screen stay outside year-round? ",
+            question: "Can the outdoor projector screens stay outside year-round? ",
             answer: (
               <>
-                No. It is recommended that you take your screen down after each use outside. Try to avoid getting
-                the cinematic screen wet from the rain.
+                No. It is recommended that you take your screen down after each use outside unless you purchase an expensive waterproof screen, which starts at around $1,900 from Elite Screens. Most manual pull-down projector screens are not waterproof and will get damaged if left outside in the rain.
                 <br />
                 <br />
-                <strong>Warning:</strong> If you leave your cinematic screen attached to the Movable frame system
-                 when there are strong wind gusts, the wind will fill up your screen like a sail on a sailboat and 
-                 topple the heavy frame system over, crushing anything in front of it. The wind will also stress
-                 the grommets on the edges of the screen and eventually rip them out. It’s always best to remove 
-                 the screen in advance of any expected windy weather.
+                <strong>Warning:</strong> If you leave your grommet hole cinematic screen attached to the Movable frame system when there are strong wind gusts, the wind will fill up your screen like a sail on a sailboat and topple the heavy frame system over, crushing anything in front of it. The wind will also stress the grommets on the edges of the screen and eventually rip them out. It’s always best to remove the screen before any expected windy weather.
               </>
             ),
           },
@@ -288,13 +265,11 @@ const FaqSection = () => {
             question: "What type of wood is recommended for the projector stand?",
             answer: (
               <>
-                White eastern cedar 5/4” thick x 6” wide, or you can use 1” thick x 6” wide pinewood.
-                You can also build the projector stand using pressure-treated wood. Pressure-treated 
-                wood costs much less but weighs more than cedar and pine wood. 
+                Pinewood 1” thick x 10” wide. You can also build the projector stand using hardwoods like maple or oak. Hardwoods cost more and are heavier than pinewood, making the projector stand more challenging to carry. 
 
                 <br />
                 <br />
-                To protect your projector stand, you should always apply a coat of a semi-transparent stain.
+                To protect your projector stand, apply a coat of semi-transparent stain and put on 2-3 coats of polyurethane.
               </>
             ),
           },

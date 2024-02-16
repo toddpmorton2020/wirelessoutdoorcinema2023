@@ -52,28 +52,32 @@ const ImpressiveOutdoorSection = () => {
       id: 0,
       img: ImpressiveImage1,
       icon: StopWatchIcon,
-      text: "Todd Morton, founder of the Wireless Outdoor Cinema hanging an outdoor projector screen on a Timberline Outdoor Movie Theater.",
+      text: "2-minute setup time",
+      alt_text: "Todd Morton, founder of the Wireless Outdoor Cinema hanging an outdoor projector screen on a Timberline Outdoor Movie Theater.",
       align: "start",
     },
     {
       id: 1,
       img: ImpressiveImage2,
       icon: StrongIcon,
-      text: "Timberline Movable Outdoor Movie Theater set up on a frozen lake in Maine.",
+      text: "Strongest screen frame",
+      alt_text: "Timberline Movable Outdoor Movie Theater set up on a frozen lake in Maine.",
       align: "end",
     },
     {
       id: 2,
       img: ImpressiveImage3,
       icon: PencilIcon,
-      text: "Timberline Custom Outdoor Projector Stand set up in the winter next to a burning bonfire.",
+      text: "Custom projector stand",
+      alt_text: "Timberline Custom Outdoor Projector Stand set up in the winter next to a burning bonfire.",
       align: "start",
     },
     {
       id: 3,
       img: ImpressiveImage4,
       icon: YearRoundIcon,
-      text: "Atomic Blonde movie playing on a Timberline Outdoor Movie Theater during the winter.",
+      text: "Enjoy movies year-round",
+      alt_text: "Atomic Blonde movie playing on a Timberline Outdoor Movie Theater during the winter.",
       align: "end",
     },
   ]
@@ -112,7 +116,7 @@ const ImpressiveOutdoorSection = () => {
                         className="grid-image mb-0 w-full"
                       /> */}
 
-                    <GatsbyImage image={getImage(item.img)} alt={item.text} className="grid-image mb-0 w-full" />
+                    <GatsbyImage image={getImage(item.img)} alt={alt_text} className="grid-image mb-0 w-full" />
 
                     <div
                       style={{

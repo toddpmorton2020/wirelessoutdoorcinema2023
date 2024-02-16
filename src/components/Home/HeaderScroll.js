@@ -17,7 +17,7 @@ const HeaderScroll = () => {
         <div onClick={() => setOpenW(!openW)} className="cursor-pointer px-4">
           <div className="h-16 flex items-center justify-between text-sm text-white gap-4">
             <div className="flex flex-1 justify-around">
-              <span className="text-white mr-4">How-to build a professional outdoor movie theater</span>
+              <span className="text-white mr-4">How to build a professional outdoor movie theater</span>
               {/* <span>&#9660;</span> */}
               <div className={`ml-4 mt-2 arrow ${openW ? "open" : ""}`}></div>
             </div>
@@ -75,7 +75,7 @@ const HeaderScroll = () => {
         <div className="container mx-auto px-5 h-12">
           <div className="flex justify-between text-white content-center h-full">
             <div className="hidden xl:flex text-lg h-full items-center">
-              <span>How-to build a professional outdoor movie theater</span>
+              <span>How to build a professional outdoor movie theater</span>
             </div>
             <ul className="m-0 p-0 flex justify-between xl:justify-end text-xs xl:text-sm h-full items-center w-full xl:w-auto">
               <li className="mr-1 xl:mr-3 mb-0">

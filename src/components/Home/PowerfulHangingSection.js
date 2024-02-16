@@ -10,12 +10,12 @@ const PowerfulHangingSection = () => {
   const { HookImg, StraightImg, StopwatchIcon} = useStaticQuery(
     graphql`
       query {
-        HookImg: file(relativePath: {eq: "manual-pull-down-screen-695px-x-392px-winter.jpg"}) {
+        HookImg: file(relativePath: {eq: "outdoor-projector-screen-manual-pull-down-695x392-winter.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         } 
-        StraightImg: file(relativePath: {eq: "grommet-hole-screen-695px-x-392px-winter.jpg"}) {
+        StraightImg: file(relativePath: {eq: "outdoor-projector-screen-grommet-hole-695x392-winter.jpg"}) {
             childImageSharp {
               gatsbyImageData(quality: 100, layout: CONSTRAINED)
             }
@@ -52,7 +52,7 @@ const PowerfulHangingSection = () => {
           <div className="md:grid grid-cols-12 gap-2">
             <div className="col-span-6 mb-11 md:mb-0 relative">
               {" "}
-              <GatsbyImage image={getImage(HookImg)} alt=""  
+              <GatsbyImage image={getImage(HookImg)} alt="Manual pull-down outdoor projector screen setup on a Timberline Outdoor Movie Theater Screen Frame."  
                 className="mx-auto z-10 w-full" />
               <div
                 style={{
@@ -70,7 +70,7 @@ const PowerfulHangingSection = () => {
             <div className="col-span-6 relative">
               {" "}
               
-              <GatsbyImage image={getImage(StraightImg)} alt="" 
+              <GatsbyImage image={getImage(StraightImg)} alt="Grommet hole outdoor projection screen setup on a Timberline Outdoor Movie Theater Screen Frame." 
                 className="mx-auto z-10 w-full" />
               <div
                 style={{

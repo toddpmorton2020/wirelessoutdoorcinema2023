@@ -30,7 +30,7 @@ const CustomProjectorSection = () => {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         }  
-        MobileProjectorstandImage: file(relativePath: {eq: "mobile-projector-stand-480px-460px.jpg"}) {
+        MobileProjectorstandImage: file(relativePath: {eq: "mobile-timberline-outdoor-projector-stand-480x460-winter.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
@@ -113,11 +113,11 @@ const CustomProjectorSection = () => {
         </div>
         <div className="lg:hidden">
           <div className="sm:block hidden">
-            <GatsbyImage image={getImage(TabletProjectorstandImage)} alt=""
+            <GatsbyImage image={getImage(TabletProjectorstandImage)} alt="Timberline Custom Outdoor Projector Stand set up in the winter."
               className="mx-auto w-full" />
           </div>
           <div className="sm:hidden">
-            <GatsbyImage image={getImage(MobileProjectorstandImage)} alt=""
+            <GatsbyImage image={getImage(MobileProjectorstandImage)} alt="Timberline Custom Outdoor Projector Stand set up in the winter."
               className="mx-auto w-full" />
           </div>
           <div className="lg:mt-0 mt-8 md:px-0 px-5">

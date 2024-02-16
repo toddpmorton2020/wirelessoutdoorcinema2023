@@ -4,7 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 // import ImpressiveImage1 from "../../assets/images/fastest-setup-time-695px-x-392px-winter.jpg"
-// import ImpressiveImage2 from "../../assets/images/strongest-frame-photo-695px-x-392px-winter.jpg"
+// import ImpressiveImage2 from "../../assets/images/timberline-movable-outdoor-movie-theater-on-ice-695x392-winter.jpg"
 // import ImpressiveImage3 from "../../assets/images/outdoor-projector-stand-695px-x-392px-winter.jpg"
 // import ImpressiveImage4 from "../../assets/images/year-round-photo-695px-x-392px.jpg"
 
@@ -20,13 +20,13 @@ const ImpressiveOutdoorSection = () => {
   const { ImpressiveImage1, ImpressiveImage2, ImpressiveImage3, ImpressiveImage4 } = useStaticQuery(
     graphql`
       query {
-        ImpressiveImage1: file(relativePath: {eq: "fastest-setup-time-695px-x-392px-winter.jpg"}) {
+        ImpressiveImage1: file(relativePath: {eq: "outdoor-movie-theater-fastest-setup-time-695x392-winter.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         }
 
-        ImpressiveImage2: file(relativePath: {eq: "strongest-frame-photo-695px-x-392px-winter.jpg"}) {
+        ImpressiveImage2: file(relativePath: {eq: "timberline-movable-outdoor-movie-theater-on-ice-695x392-winter.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
@@ -38,7 +38,7 @@ const ImpressiveOutdoorSection = () => {
           }
         }
 
-        ImpressiveImage4: file(relativePath: {eq: "year-round-photo-695px-x-392px.jpg"}) {
+        ImpressiveImage4: file(relativePath: {eq: "outdoor-movie-theater-year-round-use-695x392.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
@@ -59,7 +59,7 @@ const ImpressiveOutdoorSection = () => {
       id: 1,
       img: ImpressiveImage2,
       icon: StrongIcon,
-      text: "Strongest frame system",
+      text: "Strongest screen frame",
       align: "end",
     },
     {
@@ -90,15 +90,11 @@ const ImpressiveOutdoorSection = () => {
             </h2>
 
             <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-7 text-orange-1000">
-              Fastest setup. Strongest frame system. Custom equipment stand. Year-round.
+              Fastest setup. Strongest screen frame. Custom projector stand. Year-round.
             </h3>
 
             <p className="sm:text-lg text-base mb-0 max-w-full">
-              After researching and testing all of the outdoor movie theaters you can buy online,
-              I found four main areas for improvement. My benchmark testing focused on setup time,
-              the durability of frame systems, cinema equipment organization, and the ability to
-              use year-round in cold climates states like Maine. As a result, all of my Timberline
-              Series Outdoor Movie Theaters have the following time-saving and industry-leading features:
+              After researching and testing all of the residential outdoor movie theater setups you can buy online, I found four main areas for improvement. My benchmark testing focused on setup time, durability of the screen frames, cinema equipment organization, and the ability to use year-round in cold climates states like Maine. As a result, all of my Timberline Series Outdoor Movie Theaters have the following time-saving and industry-leading features:
             </p>
           </div>
           <div className="col-span-12 grid grid-cols-12 lg:gap-2">

@@ -6,7 +6,7 @@ const CopySection = () => {
         <div className="max-w-7xl px-5 mx-auto py-8 xl:py-12 xl:px-8">
           <div className="">
             <p className="sm:text-lg text-base max-w-full mb-0">
-            * This limited-time offer on How-to Build a Professional Outdoor Movie Theater expires on June 1, 2024. There are no refunds after purchase, as this is a digital download product.
+            * This limited-time professional DIY bundle offer on How to Build an Outdoor Movie Theater expires on September 30, 2024. There are no refunds after purchase, as this is a digital download product.
             </p>
             <br />
             <p className="sm:text-lg text-base max-w-full mb-0">

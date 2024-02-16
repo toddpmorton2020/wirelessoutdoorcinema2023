@@ -11,69 +11,36 @@ const AboutPage = () => (
        
        <Breadcrumbs />    
       <div className="max-w-4xl mx-auto top-heading px-5">
-        <h1 className="text-orange-500 xl:text-70 md:text-5xl text-4xl my-6">
-          <span className="about">About</span>
+        <h1 className="text-orange-500 xl:text-70 text-orange-500 text-4xl md:text-5xl font-medium my-6">
+        <span className="text-black">The</span> Story
         </h1>
       </div>
       {/* </div> */}
       <div className="max-w-4xl mx-auto px-5">
-        <StaticImage src="../assets/images/todd-morton-founder.png" alt="" className="w-full" />
+        <StaticImage src="../assets/images/bridgton-twin-drive-in-861px-x-460px.png" alt="" className="w-full" />
         <p className="text-neutral-600 sm:text-lg text-base pt-2 max-w-full">
-          Todd Morton, founder of the Wireless Outdoor Cinema Company.
+        Bridgton Twin Drive-In Theatre in beautiful Bridgton, Maine.
         </p>
       </div>
       <div className="max-w-4xl mx-auto mobile-padding px-5">
         <div className="mt-6">
-          <p className="mb-6 max-w-full sm:text-lg text-base">
-            Welcome! Thank you for stopping by – I appreciate your interest in
-            learning more about me and my Wireless Outdoor Cinema business.
-          </p>
-          <h2 className="xl:text-50 lg:text-4xl text-3xl font-bold mb-4">My Background</h2>
           <p className="mb-4 max-w-full sm:text-lg text-base">
-            I’m originally from Vermont, and growing up; I split my time between
-            Vermont and Maine.
+          I will never forget the first time my parents took me to the drive-in movie theatre. Butch Cassidy and the Sundance Kid was playing at the Bridgton Twin Drive-In Theatre in Bridgton, Maine. It was a warm summer night; stars filled the sky, and people sat on the grass with blankets and in the back of pickup trucks with sleeping bags and pillows. I remember the excitement and how magical the evening was.
           </p>
           <p className="mb-4 max-w-full sm:text-lg text-base">
-            When I was young and going through school, I learned all about the
-            construction trade working for my neighbors who were home builders.
+          That childhood experience stayed with me throughout my adult life. I looked forward to the opening of the Bridgton Twin Drive-In Theatre each spring and lamented its closing every fall.  But I wanted more; I wanted to bring that same magical experience of watching movies outdoors to my own backyard to enjoy whenever I wanted, regardless of the time of year. I started researching residential outdoor movie theater setups online and found only two types existed: the aluminum tripod frame and screen system and the inflatable air screen system.
           </p>
           <p className="mb-4 max-w-full sm:text-lg text-base">
-            I took business and marketing courses at Champlain College in
-            Burlington, Vermont, to help expand my business knowledge. After
-            college, I self-taught myself all about the emerging internet in the
-            mid-90s and built my first website, while starting to learn about
-            search engine optimization and how to get websites found online.
+          First, I ordered one of the aluminum tripod frame and screen systems. I liked the light weight of the aluminum telescopic tripod frame and how easy it was to set up, which took only about 10-15 minutes. It was only after installing it on my lawn that I realized the tripod frame system only works on flat surfaces. Unfortunately, the area where I wanted to set it up was not perfectly flat. I ended up returning the aluminum outdoor movie theater package the next day.
           </p>
           <p className="mb-4 max-w-full sm:text-lg text-base">
-            Then I moved into the Internet Marketing field and had the
-            opportunity to work for some well-known high technology companies
-            such as Lycos – the internet search company (remember the Black
-            Lab?) and Dragon Software (the voice-to-text software), a division
-            of Nuance Communications – now owned by Microsoft.
+          Next, I ordered one of the inflatable outdoor movie theater packages. I liked that the inflatable air screen setup had fewer parts than the aluminum tripod frame system. But after over 30 minutes of running my air compressor to blow up the air screen, I realized that although there was nothing inherently wrong with the setup, I didn’t like how it looked. It just wasn’t the look I was going for in my own backyard, even temporarily. Feeling disappointed, I returned the inflatable air screen outdoor movie theater setup.
           </p>
-          <p className="mb-4 max-w-full sm:text-lg text-base">
-            After 25 years of working in the Internet Marketing field, my desire
-            to build and create things frequently occupied my thoughts. I
-            decided to take time off from the corporate world and strategized on
-            my next career move. I knew I wanted to work for myself and be
-            outside in nature versus being tethered to a desk in an unhealthy
-            corporate environment.
-          </p>
-          <div className="xl:pt-4 max-w-full">
-            <StaticImage src="../assets/images/second.png" alt="" className="w-full" />
-            <p className="text-neutral-600 sm:text-lg text-base pt-2 max-w-full">
-              Todd Morton, owner of the Wireless Outdoor Cinema Company
-              preparing cuts on table saw at his property in Bridgton, ME.
-            </p>
-          </div>
-        </div>
+      </div>
       </div>
       <div className="mt-8 bg-orange-1000 py-6 text-center md:hidden block">
         <div className="mx-auto px-5 text-lg sm:text-3xl pt-3 pb-6 text-white when-build">
-          When I built my first outdoor movie theater in my backyard, I knew
-          other homeowners would love this as much as I do. Today, I am
-          providing big-screen entertainment to homeowners and businesses and
-          passionate about what I do.
+        Four years later, I still feel fortunate and grateful for all the positive feedback I have received from customers, family, friends, and the media alike. I hope you and I get to know each other and explore the possibilities of building your dream backyard movie theater.
         </div>
         {/* <StaticImage
           src="../assets/images/signature_white.png"
@@ -86,33 +53,7 @@ const AboutPage = () => (
       </div>
       <div className="max-w-4xl px-5 mx-auto mobile-padding">
         <div className="mt-6">
-          <h2 className="xl:text-50 lg:text-4xl text-3xl font-bold mb-4">
-            The Outdoor Cinema Solution
-          </h2>
-          <p className="mb-4 max-w-full sm:text-lg text-base">
-            My entrepreneurial wheels started to turn. I wanted to set up an
-            outdoor movie theater in my backyard for years and started
-            researching online companies that provided outdoor cinemas.
-            Unfortunately, the companies I found online only sold inflatable air
-            screen cinemas and wanted a better solution that was easy to set up
-            and start watching without a lengthy setup. I spent two years
-            researching and testing different outdoor cinema equipment and
-            fine-tuning my outdoor movie theater solution. Finally, I developed
-            a simple to use, high-quality outdoor movie theater that could be
-            used year-round – even in the cold winter months.
-          </p>
-          <p className="mb-4 max-w-full sm:text-lg text-base">
-            I created a weather-resistant movie screen frame built from
-            pressure-treated 4” x 4” wood posts and added post and beam hardware
-            so it would never rust. The final product is strong, durable, can
-            handle any weather condition Mother Nature throws at it and looks
-            fantastic on my property. The movie screen frame never has to be
-            broken down and stays up for year-round use, making it easy to
-            attach and remove the cinematic screen when you want to watch
-            movies. After a year of designing and building various frame
-            systems, I developed one that I knew homeowners would love.
-          </p>
-        </div>
+      </div>
       </div>
       <div className="">
         <div
@@ -121,34 +62,17 @@ const AboutPage = () => (
         />
       </div>
       <div className="max-w-4xl px-5 mx-auto desktop">
-        <StaticImage src="../assets/images/third.png" alt="" className="w-full" />
+        <StaticImage src="../assets/images/outdoor-movie-theater-winter-about-861px-x-460px.png" alt="" className="w-full" />
         <p className="text-neutral-600 sm:text-lg text-base pt-2 max-w-full">
-          New Timberline Outdoor Cinema 150” Big Moose wired option package
-          located on site of the Wireless Outdoor Cinema Company property in
-          Bridgton, ME.
+        Watching Atomic Blonde on my wireless outdoor movie theater in the winter of 2020.
         </p>
       </div>
       <div className="max-w-4xl px-5 mx-auto mobile-padding">
           <p className="mb-4 max-w-full sm:text-lg text-base">
-            After developing a solid frame system, the next challenge was
-            figuring out how to organize all of my cinema equipment, such as the
-            projector, DVD player, streaming media player, digital tuner,
-            transmitter, speakers, and more. I searched endlessly online for an
-            outdoor projector and equipment stand solution and only found tripod
-            projector stands with enough room to hold an outdoor projector and
-            nothing else.
+          Then one night while I was enjoying a campfire in my backyard and wishing I didn’t have to go back inside to watch a movie on my TV, and thought, why not build my own? I started designing and building different prototype frame systems in my wood shop. Eventually, I came up with a design I liked, set it up next to my bonfire pit, and loved it. The pressure-treated frame system I built had a rustic aesthetic look and blended perfectly with my wooded backyard. My friends and family also loved the wireless outdoor movie theater I had built and watched movies by the bonfire whenever the weather permitted. I wanted to bring that same excitement and passion to other homeowners, so I started the Wireless Outdoor Cinema Company.
           </p>
           <p className="mb-4 max-w-full sm:text-lg text-base">
-            Discouraged with the results I found online for projector stand
-            solutions, I began designing various outdoor projector stands that
-            could hold all of the cinema electronic components on. I built over
-            ten different projector stand models and tested them over a year.
-            The final result was a beautiful cedar wood projector and equipment
-            stand that neatly organized all of my cinema equipment. In addition,
-            the projector stand is lightweight, easy to carry,
-            weather-resistant, and has an adjustable projector shelf to get the
-            proper viewing angle to reach the cinematic screen – the only one of
-            its kind on the market.
+          Four years later, I still feel fortunate and grateful for all the positive feedback I have received from customers, family, friends, and the media alike. I hope you and I get to know each other and explore the possibilities of building your dream backyard movie theater.
           </p>
       </div>
       <div className="">
@@ -158,36 +82,18 @@ const AboutPage = () => (
         />
       </div>
       <div className="max-w-4xl px-5 mx-auto xl:pt-4 desktop">
-        <StaticImage src="../assets/images/fourth.png" alt="" className="w-full" />
+        <StaticImage src="../assets/images/todd-morton-winter-story-861px-x-460px.png" alt="" className="w-full" />
         <p className="text-neutral-600 sm:text-lg text-base pt-3 max-w-full">
-          New Outdoor Projector Stand located on site of the Wireless Outdoor
-          Cinema Company property in Bridgton, ME.
+        Todd Morton, founder of the Wireless Outdoor Cinema Company located in Bridgton, Maine.
         </p>
       </div>
       <div className="max-w-4xl px-5 mx-auto mobile-padding thankyou">
         <div className="mt-6">
           <p className="mb-4 max-w-full sm:text-lg text-base">
-            The cinema equipment stays on the projector stand and never needs to
-            be removed - similar to an entertainment center inside your home.
-            Store the projector stand with everything on it inside your house,
-            and when you want to have a movie night, carry the stand outside,
-            power it on, and start watching immediately. After the movie, you’ll
-            need to take the projector stand back inside, as the cinema
-            equipment is not waterproof.
-          </p>
-          <p className="mb-4 max-w-full sm:text-lg text-base">
-            I’ve been thrilled with the positive feedback on my wireless outdoor
-            cinema business from customers, family, friends, and the media. I
-            hope we get an opportunity to get to know each other and explore the
-            possibilities of building your very own dream backyard movie
-            theater.
-          </p>
-          <p className="mb-4 max-w-full sm:text-lg text-base">
-            Thanks for taking the time to read about me, and don’t hesitate to
-            reach out with any questions you might have.
+          My name is Todd Morton, and I build year-round outdoor movie theaters with the fastest and easiest setup available. I know you will love the experience of watching movies under the moon and stars in the privacy of your backyard as much as I do with my Timberline Series Outdoor Movie Theaters.
           </p>
           <p className="mb-4 max-w-full sm:text-lg text-base">My best,</p>
-          <StaticImage src="../assets/images/signature_black.png" className="mb-16" />
+          <StaticImage src="../assets/images/signature-founder.png" className="mb-16" />
         </div>
       </div>
     </Layout>

@@ -6,12 +6,12 @@ const QuoteSection = () => {
   const { TimberlineImg1, TimberlineImg2, SignatureImg, MobilesignatureImg } = useStaticQuery(
     graphql`
       query {
-        TimberlineImg1: file(relativePath: {eq: "timberline-outdoor-movie-theater-quote-1920px-x-680px-winter.jpg"}) {
+        TimberlineImg1: file(relativePath: {eq: "wireless-outdoor-cinema-founder-todd-morton-1920x680px-winter.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         } 
-        TimberlineImg2: file(relativePath: {eq: "quote-photo-480px-420px.jpg"}) {
+        TimberlineImg2: file(relativePath: {eq: "mobile-wireless-outdoor-cinema-founder-todd-morton-480x420-winter.jpg"}) {
             childImageSharp {
               gatsbyImageData(quality: 100, layout: CONSTRAINED)
             }
@@ -21,7 +21,7 @@ const QuoteSection = () => {
               gatsbyImageData(quality: 100, layout: CONSTRAINED)
             }
           }
-          MobilesignatureImg: file(relativePath: {eq: "mobile-quote-signature.png"}) {
+          MobilesignatureImg: file(relativePath: {eq: "mobile-todd-morton-founder-signature-329x49.png"}) {
             childImageSharp {
               gatsbyImageData(quality: 100, layout: CONSTRAINED)
             }
@@ -33,11 +33,11 @@ const QuoteSection = () => {
   return (
     <div className="bg-black relative text-white border-grey-subnav md:pb-12 pb-8">
       <div className="hidden md:block">
-        <GatsbyImage image={getImage(TimberlineImg1)} alt=""
+        <GatsbyImage image={getImage(TimberlineImg1)} alt="Todd Morton, founder of the Wireless Outdoor Cinema Company, sitting next to a bonfire in the winter."
           className="mx-auto w-full max-w-2400 mb-4 lg:pb-24" />
       </div>
       <div className="md:hidden">
-        <GatsbyImage image={getImage(TimberlineImg2)} alt=""
+        <GatsbyImage image={getImage(TimberlineImg2)} alt="Todd Morton, founder of the Wireless Outdoor Cinema Company, sitting next to a bonfire in the winter."
           className="mx-auto w-full max-w-2400 mb-4" />
       </div>
       <div className="max-w-7xl mx-auto w-full px-5">
@@ -47,7 +47,7 @@ const QuoteSection = () => {
               My wireless outdoor movie theaters take less time to set up and start watching than it does to pop a bag of popcorn.
             </p>
             <div className="lg:hidden">
-            <GatsbyImage image={getImage(MobilesignatureImg)} alt=""
+            <GatsbyImage image={getImage(MobilesignatureImg)} alt="Todd Morton, founder of the Wireless Outdoor Cinema Company signature."
               className="sm:w-3/5 px-10 mx-auto mt-5" />
               </div>
           </div>
@@ -58,7 +58,7 @@ const QuoteSection = () => {
               My wireless outdoor movie theaters take less time to set up and start watching than it does to pop a bag of popcorn.
             </p>
             <div className="hidden lg:block">
-            <GatsbyImage image={getImage(SignatureImg)} alt=""
+            <GatsbyImage image={getImage(SignatureImg)} alt="Todd Morton, founder of the Wireless Outdoor Cinema Company signature."
               className="w-3/4 mx-auto mt-5" />
               </div>
           </div>

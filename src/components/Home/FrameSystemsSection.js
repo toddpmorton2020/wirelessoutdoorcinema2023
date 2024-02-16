@@ -15,12 +15,12 @@ const FrameSystemsSection = () => {
     const { FrameImg1, FrameImg2 } = useStaticQuery(
         graphql`
           query {
-            FrameImg1: file(relativePath: {eq: "timberline-movable-frame-1617px-x-750px-winter.jpg"}) {
+            FrameImg1: file(relativePath: {eq: "timberline-movable-screen-frame-outdoor-theater-1617x750-winter.jpg"}) {
               childImageSharp {
                 gatsbyImageData(quality: 100, layout: CONSTRAINED)
               }
             } 
-            FrameImg2: file(relativePath: {eq: "timberline-streamline-cemented-frame-1617px-x-750px-winter.jpg"}) {
+            FrameImg2: file(relativePath: {eq: "timberline-cemented-screen-frame-outdoor-theater-1617x750-winter.jpg"}) {
                 childImageSharp {
                   gatsbyImageData(quality: 100, layout: CONSTRAINED)
                 }
@@ -37,31 +37,32 @@ const FrameSystemsSection = () => {
             <div className="max-w-7xl md:px-5 px-0 mx-auto">
                 <div className="">
                     <div className="text-center md:text-left xl:text-xl mb-11 md:px-0 px-5">
-                        <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold md:leading-none md:pb-3 pb-2">Most durable outdoor movie theater frames</h2>
+                        <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold md:leading-none md:pb-3 pb-2">Most durable outdoor movie theater screen frames</h2>
                         <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 text-orange-1000">
-                            Introducing the Timberline Movable and Streamline Frame Systems.
+                        Introducing the Timberline Cemented, Movable, and Free-Standing Frames.
                         </h3>
                         <p className="sm:text-lg text-base md:mb-0 mb-10 max-w-full">
-                        Every homeowner has a different landscape on their property, and the Timberline Streamline Cemented Frame, Movable Frame, and Streamline Free-Standing Frame solve every challenge when installing a backyard movie theater. Use the Streamline Cemented Frame for flat lawns or uneven backyards where you can dig into the ground. Choose the Movable Frame if you have a flat lawn and want the flexibility to move the frame anywhere on your property. Use the Streamline Free-Standing Frame for uneven backyards or if you have ledge stone and can’t dig into the ground.
+                        Every homeowner has a different landscape on their property, and the Timberline Cemented, Movable, and Free-Standing Screen Frames solve every challenge when installing a backyard movie theater. Use the Cemented Screen Frame for flat lawns or uneven backyards where you can dig into the ground. Choose the Movable Screen Frame if you have a flat lawn and want the flexibility to move the frame anywhere on your property. Use the Timberline Free-Standing Screen Frame for uneven backyards or if you have ledge stone and can’t dig into the ground.
                         </p>
+                        <br></br>
+                        <p className="mb-0 sm:text-lg text-base max-w-full">
+                                <WarnIcon className="h-4 mr-2 -mt-1 inline-flex" />
+                                When building any of the Timberline Series Outdoor Movie Theater Frame Systems, you must follow the exact instructions covered in the DIY guide to avoid costly mistakes, pitfalls, and potential injury.
+                            </p>
                     </div>
                     <div className="md:grid flex flex-col-reverse items-stretch lg:gap-4 grid-cols-12 pb-10 xl:mb-10 relative">
                         <div className="lg:col-span-4 md:col-span-5 md:text-left text-center lg:mt-0 mt-6 md:px-0 px-5">
-                            <h2 className="text-3xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Movable Frame System</h2>
+                            <h2 className="text-3xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Movable Screen Frame</h2>
                             <h3 className="text-xl lg:text-3xl md:text-2xl pb-4 xl:pb-5 mb-0 max-w-full text-orange-1000">
                                 Great for flat lawns.
                             </h3>
                             <p className="mb-4 sm:text-lg text-base max-w-full">
-                            The Timberline Movable Frame is versatile, allowing homeowners to position the system anywhere on the property.
+                            The Timberline Series Movable Screen Frame looks great and is versatile, allowing you to position the system anywhere on your property as long as you have a flat lawn. The Movable Screen Frame is the best-selling outdoor movie theater among customers in New England.
                             </p>
-                            <p className="mb-4 sm:text-lg text-base max-w-full">This movable frame system makes a great compliment if you own a pool or hot tub. You can even load the frame onto a trailer and take it to your next outdoor event.   </p>
-                            <p className="mb-0 sm:text-lg text-base max-w-full">
-                                <WarnIcon className="h-4 mr-2 -mt-1 inline-flex" />
-                                The Movable Frame System's building, assembly, and installation instructions are all covered in the how-to manual.
-                            </p>
-                        </div>
+                            <p className="mb-4 sm:text-lg text-base max-w-full">This movable screen frame makes a great compliment if you own a pool or hot tub. You can even load the frame onto a trailer and take it to your next outdoor event.   </p>
+                           </div>
                         <div className="lg:col-span-8 md:col-span-7">
-                            <GatsbyImage image={getImage(FrameImg1)} alt=""
+                            <GatsbyImage image={getImage(FrameImg1)} alt="Timberline Movable Screen Frame and Wired Outdoor Movie Theater setup in the winter."
                                 className="mx-auto w-full" />
 
                             <div className="py-3 flex md:px-0 px-3 justify-around text-center sm:gap-0 gap-2">
@@ -86,7 +87,7 @@ const FrameSystemsSection = () => {
                     </div>
                     <div className="md:grid lg:gap-10 gap-4 items-stretch grid-cols-12 relative">
                         <div className="lg:col-span-8 md:col-span-7 text-center">
-                            <GatsbyImage image={getImage(FrameImg2)} alt=""
+                            <GatsbyImage image={getImage(FrameImg2)} alt="Timberline Cemented Screen Frame and Wired Outdoor Movie Theater setup in the winter."
                                 className="mx-auto w-full" />
 
                             <div className="bg-gray-990 md:px-0 px-3 py-3 flex justify-around sm:gap-0 gap-2">
@@ -112,24 +113,18 @@ const FrameSystemsSection = () => {
                         </div>
                         <div className="lg:col-span-4 md:col-span-5 lg:mt-0 mt-4 md:text-left text-center md:px-0 px-5">
                             <div>
-                                <h2 className="text-3xl md:text-4xl font-semibold md:pb-3 pb-2">Streamline Cemented Frame System</h2>
+                                <h2 className="text-3xl md:text-4xl font-semibold md:pb-3 pb-2">Cemented Screen Frame</h2>
                                 <h3 className="text-xl lg:text-3xl md:text-2xl pb-4 xl:pb-5 mb-0 max-w-full text-orange-1000">
                                     Perfect for diggable lawns.
                                 </h3>
                             </div>
                             <p className="mb-4 sm:text-lg text-base max-w-full">
-                            The Timberline Streamline Cemented Frame has a clean and sleek appearance and can be installed on flat or uneven lawns, as long as you can dig at least 26" down into the ground.
+                            The Timberline Series Cemented Screen Frame has a clean and aesthetic appearance and can be installed in the most challenging areas on a property, as long as you can dig at least 26" down into the ground.
                             </p>
-
                             <p className="mb-4 sm:text-lg text-base max-w-full">
-                            Just dig two holes into the ground, position the frame system into the holes, and pour the cement.
-
+                            Just dig two holes into the ground roughly 30" in diameter, position the screen frame into the dug holes, and pour the cement.
                             </p>
-                            <p className="sm:text-lg text-base mb-0 max-w-full">
-                                <WarnIcon className="h-4 mr-2 -mt-1 inline-flex" />
-                                The detailed how-to manual shares the Streamline Cemented Frame System's building, assembly, and installation instructions.
-                            </p>
-                        </div>
+                            </div>
                     </div>
                 </div>
             </div>

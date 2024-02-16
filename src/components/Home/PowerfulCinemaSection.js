@@ -21,14 +21,14 @@ const PowerfulCinemaSection = ({ className }) => {
   const { WirelesscinemaImage, WiredcinemaImg, TabletWirelessImg, MobileWirelessImg, TabletWiredImg, MobileWiredImg } = useStaticQuery(
     graphql`
       query {
-        WirelesscinemaImage: file(relativePath: { eq: "streamline-wireless-system-1398px-x-658px-winter.jpg" }) {
+        WirelesscinemaImage: file(relativePath: { eq: "timberline-wireless-outdoor-movie-theater-1398x658-winter.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1398) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
-        WiredcinemaImg: file(relativePath: { eq: "streamline-wired-system-1398px-x-658px-winter.jpg" }) {
+        WiredcinemaImg: file(relativePath: { eq: "timberline-wired-cinema-outdoor-movie-theater-1398x658-winter.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1398) {
               ...GatsbyImageSharpFluid_withWebp
@@ -36,22 +36,22 @@ const PowerfulCinemaSection = ({ className }) => {
           }
         }
 
-        TabletWirelessImg: file(relativePath: {eq: "wireless-cinema-package-1398px-x-658px.jpg"}) {
+        TabletWirelessImg: file(relativePath: {eq: "timberline-wireless-outdoor-movie-theater-1398x658-winter.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         } 
-        MobileWirelessImg: file(relativePath: {eq: "mobile-wireless-cinema-package-480px-x-340px.jpg"}) {
+        MobileWirelessImg: file(relativePath: {eq: "mobile-timberline-wireless-outdoor-movie-theater-480x320-winter.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         } 
-        TabletWiredImg: file(relativePath: {eq: "wired-cinema-package-1398px-x-658px.jpg"}) {
+        TabletWiredImg: file(relativePath: {eq: "timberline-wired-cinema-outdoor-movie-theater-1398x658-winter.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         } 
-        MobileWiredImg: file(relativePath: {eq: "mobile-wired-cinema-package-480px-x-340px2.jpg"}) {
+        MobileWiredImg: file(relativePath: {eq: "mobile-timberline-wired-outdoor-movie-theater-480x320-winter.jpg"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
@@ -155,7 +155,7 @@ const PowerfulCinemaSection = ({ className }) => {
               Go wireless with no extension cords. Go wired for unlimited options.
             </h3>
             <p className="sm:text-lg text-base max-w-full mb-0">
-            The Timberline Series Outdoor Movie Theaters come in two different cinema equipment packages: wireless and wired. This revolutionary wireless outdoor movie theater is powered by an off-grid battery, allowing you to watch your favorite entertainment without running extension cords from your home to the cinema equipment and ensuring an easy and fast setup every time. The wired cinema package provides a more robust theater experience by adding receivers, tuners, PA speakers, and the ability to play video games on a massive cinematic screen.
+            The Timberline 150” Big Moose Outdoor Movie Theaters come in two different cinema packages: wireless and wired. The revolutionary wireless outdoor movie theater is powered by an off-grid compact battery station, allowing you to watch your favorite entertainment without running extension cords from your home to the cinema equipment, making for a fast and easy setup every time. The wired cinema package provides a more robust theater experience by adding receivers, tuners, PA speakers, and the ability to play video games on a massive 150” diagonal cinematic screen.
             </p>
           </div>
 
@@ -163,14 +163,14 @@ const PowerfulCinemaSection = ({ className }) => {
             <div>
               {" "}
               <div className="sm:block hidden">
-                <GatsbyImage image={getImage(TabletWirelessImg)} alt=""
+                <GatsbyImage image={getImage(TabletWirelessImg)} alt="Timberline Cemented Screen Frame and Wireless Outdoor Movie Theater setup in front of a lake in the winter."
                   className="mx-auto w-full" />
               </div>
               <div className="sm:hidden">
-                <GatsbyImage image={getImage(MobileWirelessImg)} alt=""
+                <GatsbyImage image={getImage(MobileWirelessImg)} alt="Timberline Cemented Screen Frame and Wireless Outdoor Movie Theater setup in front of a lake in the winter."
                   className="mx-auto w-full" />
               </div>
-              {/* <GatsbyImage image={getImage(MobileWirelessImg)} alt=""
+              {/* <GatsbyImage image={getImage(MobileWirelessImg)} alt="Timberline Cemented Screen Frame and Wireless Outdoor Movie Theater setup in front of a lake in the winter."
                 className="mx-auto w-full mb-3" /> */}
             </div>
             <div className="mt-6 md:px-0 px-5">
@@ -256,14 +256,14 @@ const PowerfulCinemaSection = ({ className }) => {
           <div className="block lg:hidden col-span-12 ">
             <div>
               <div className="sm:block hidden">
-                <GatsbyImage image={getImage(TabletWiredImg)} alt=""
+                <GatsbyImage image={getImage(TabletWiredImg)} alt="Timberline Free-Standing Screen Frame and Wired Outdoor Movie Theater setup in the winter."
                   className="mx-auto w-full" />
               </div>
               <div className="sm:hidden">
-                <GatsbyImage image={getImage(MobileWiredImg)} alt=""
+                <GatsbyImage image={getImage(MobileWiredImg)} alt="Timberline Free-Standing Screen Frame and Wired Outdoor Movie Theater setup in the winter."
                   className="mx-auto w-full" />
               </div>
-              {/* <GatsbyImage image={getImage(MobileWiredImg)} alt=""
+              {/* <GatsbyImage image={getImage(MobileWiredImg)} alt="Timberline Free-Standing Screen Frame and Wired Outdoor Movie Theater setup in the winter."
                 className="mx-auto w-full mb-3" /> */}
             </div>
             <div className="mt-6 md:px-0 px-5">

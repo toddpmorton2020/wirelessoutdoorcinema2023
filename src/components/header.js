@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => {
   const { LogoImage, CellImg, CellOrangeImg, FacebookImg, FacebookOrangeImg, LinkedinWhiteImg, LinkedinOrangeImg } = useStaticQuery(
     graphql`
       query {
-        LogoImage: file(relativePath: {eq: "cinemalogo.png"}) {
+        LogoImage: file(relativePath: {eq: "wireless-outdoor-cinema-company-logo.png"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED, width:448, height: 82)
           }
@@ -75,8 +75,8 @@ const Header = ({ siteTitle }) => {
               <Link to="tel:2075952960"
                 className="cursor-pointer flex items-center no-underline font-normal"
               >
-                <GatsbyImage image={getImage(CellImg)} alt="" className="w-5" />
-                <span className="ml-2 text-white no-underline">(207) 647-8759</span>
+                <GatsbyImage image={getImage(CellImg)} alt="Cell phone Image" className="w-5" />
+                <span className="ml-2 text-white no-underline">(207) 595-2960</span>
               </Link>
               <div className="mx-6 bg-orange-500 w-px h-5"></div>
               <div className="flex items-center">
@@ -85,14 +85,14 @@ const Header = ({ siteTitle }) => {
                   target="_blank"
                   className="cursor-pointer hover:text-orange-500 no-underline"
                 >
-                  <GatsbyImage image={getImage(FacebookImg)} alt="" className="h-4 w-3 text-white no-underline" />
+                  <GatsbyImage image={getImage(FacebookImg)} alt="Todd Morton Facebook Profile" className="h-4 w-3 text-white no-underline" />
                 </Link>
                 <Link
                   to="https://www.linkedin.com/in/todd-morton-7851b1b"
                   target="_blank"
                   className="cursor-pointer hover:text-orange-500 no-underline"
                 >
-                  <GatsbyImage image={getImage(LinkedinWhiteImg)} alt="" className="ml-6 h-4 w-4 text-white" />
+                  <GatsbyImage image={getImage(LinkedinWhiteImg)} alt="Todd Morton Linkedin Profile" className="ml-6 h-4 w-4 text-white" />
                 </Link>
               </div>
             </div>
@@ -102,14 +102,14 @@ const Header = ({ siteTitle }) => {
                 to="/about"
                 className="cursor-pointer hover:text-orange-500 text-white no-underline font-normal"
               >
-                About
+                The Story
               </Link>
               <span
                 to="#"
                 className="cursor-pointer ml-12 flex items-center relative group"
               >
-                <Link to="/how-to-build-an-outdoor-movie-theater/" className="hover:text-orange-500 text-white no-underline font-normal">
-                OUTDOOR MOVIE THEATER
+                <Link to="#" className="hover:text-orange-500 text-white no-underline font-normal">
+                OUTDOOR MOVIE THEATER SOLUTIONS
                 </Link>{" "}
                 <StaticImage
                   src="../assets/images/icons/downarrow.png"
@@ -120,7 +120,7 @@ const Header = ({ siteTitle }) => {
                     to="/how-to-build-an-outdoor-movie-theater/"
                     className="py-2 px-4 hover:text-orange-500 no-underline text-white font-normal"
                   >
-                    How to build a professional outdoor movie theater
+                    How to build an outdoor movie theater [Available May 1st]
                   </Link>
                   {/* <Link
                         to="/comparison"
@@ -163,23 +163,35 @@ const Header = ({ siteTitle }) => {
                   className="ml-2 h-2 w-2 transition-transform transform group-hover:rotate-180 duration-300"
                 />
                 <div className="bg-black w-60 absolute z-50 left-0 bottom-0 transform translate-y-full z-10 flex-col pt-6 pb-2 hidden group-hover:flex whitespace-no-wrap">
-                  <Link
-                    to="/october-10-sun-journal-news-article"
+                <Link
+                    to="/november-30-press-release"
                     className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
                   >
-                    Oct 11 2021 News Article
+                    Nov 30 2023 Press Release
+                  </Link>
+                  <Link
+                    to="/march-02-press-release"
+                    className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
+                  >
+                    Mar 02 2023 Press Release
                   </Link>
                   <Link
                     to="/august-28-press-release"
                     className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
                   >
-                    Aug 28 2021 Press Release
+                    Aug 28 2022 Press Release
                   </Link>
                   <Link
                     to="/june-30-press-release"
                     className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
                   >
-                    June 30 2021 Press Release
+                    June 30 2022 Press Release
+                  </Link>
+                  <Link
+                    to="/october-10-sun-journal-news-article"
+                    className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
+                  >
+                    Oct 10 2021 News Article
                   </Link>
                   <Link
                     to="/january-04-press-release"
@@ -197,7 +209,7 @@ const Header = ({ siteTitle }) => {
                     to="/june-25-bridgton-news-article"
                     className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
                   >
-                    June 25 2020 Press Release
+                    June 25 2020 News Article
                   </Link>
                   <Link
                     to="/june-08-press-release"
@@ -207,6 +219,12 @@ const Header = ({ siteTitle }) => {
                   </Link>
                 </div>
               </span>
+              <Link
+                to="https://outdoormovietheater.blog/" target="_blank"
+                className="cursor-pointer ml-12 hover:text-orange-500 text-white no-underline font-normal"
+              >
+                BLOG
+              </Link>
               <Link
                 to="/faq"
                 className="cursor-pointer ml-12 hover:text-orange-500 text-white no-underline font-normal"
@@ -248,7 +266,7 @@ const Header = ({ siteTitle }) => {
                     to="/how-to-build-an-outdoor-movie-theater/"
                     className="py-2 px-4 hover:text-orange-500 no-underline text-white pb-4 font-normal"
                   >
-                    How to Build a Professional Outdoor Movie Theater
+                    How to Build an Outdoor Movie Theater
                   </Link>
                   <Link
                     to="/timberline-cinema-packages/150-big-moose-cinema/"
@@ -296,7 +314,7 @@ const Header = ({ siteTitle }) => {
                 to="tel:2075952960"
                 className="cursor-pointer flex items-center w-8/12 text-white no-underline"
               >
-                <GatsbyImage image={getImage(CellOrangeImg)} alt="" className="h-6" />
+                <GatsbyImage image={getImage(CellOrangeImg)} alt="Cell Phone Icon" className="h-6" />
                 <span className="ml-2">(207) 595-2960</span>
               </Link>
               <div className="flex items-center">
@@ -305,14 +323,14 @@ const Header = ({ siteTitle }) => {
                   target="_blank"
                   className="cursor-pointer hover:text-orange-500"
                 >
-                  <GatsbyImage image={getImage(FacebookOrangeImg)} alt="" />
+                  <GatsbyImage image={getImage(FacebookOrangeImg)} alt="Facebook Icon" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/todd-morton-7851b1b"
                   target="_blank"
                   className="cursor-pointer hover:text-orange-500"
                 >
-                  <GatsbyImage image={getImage(LinkedinOrangeImg)} alt="" className="ml-6" />
+                  <GatsbyImage image={getImage(LinkedinOrangeImg)} alt="Linkedin Icon" className="ml-6" />
                 </a>
               </div>
             </div>

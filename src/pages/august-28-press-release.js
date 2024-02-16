@@ -15,73 +15,75 @@ const Aug28PressRelease = () => {
                     <div className="max-w-3xl px-5 mx-auto">
                         <div className="sm:hidden block text-center">
                             <p className="text-grey-100 pt-6 text-base max-w-full mb-0">
-                                Press Release | August 28, 2021
+                                Press Release | August 28, 2022
                             </p>                          
                             <h2 className="text-3xl pt-5 text-white font-extrabold pb-3">
-                            Wireless Outdoor Cinema Company Introduces its New Timberline Series Frame System Built to Withstand Fall and Winter Weather
+                            Wireless Outdoor Cinema Company announces new frame supports to Timberline Series Movable Screen Frame System
                             </h2>
                         </div>
                         <div className="sm:hidden full-bleed-mobile relative mt-6 bg-center">
                             <StaticImage
                                 className="w-full "
-                                src="../assets/images/28-aug-full.png"
+                                src="../assets/images/mobile-news-aug-28-2022-movable-outdoor-movie-theater-414x327.jpg" alt="August 28, 2022, press release announcement of new frame supports for the Movable Outdoor Movie Theater screen frame."
                             />
                         </div>
                         <p className="text-grey-100 max-w-full mb-0 text-base sm:hidden block pt-5">
-                            Interview with Kathryn Skelton from the Sun Journal and Todd
-                            Morton, owner of the Wireless Outdoor Cinema Company
+                        The new Timberline Series Movable Screen Frame set up onsite at the home of the Wireless Outdoor Cinema Company.
                         </p>
                         <div className="sm:block hidden py-5">
                             <p className="sm:text-lg text-base text-neutral-600  max-w-full mb-0">Press Release</p>
-                            <p className="sm:text-lg text-base text-neutral-600 max-w-full mb-0">August 28, 2021</p>
+                            <p className="sm:text-lg text-base text-neutral-600 max-w-full mb-0">August 28, 2022</p>
                         </div>
                         <div className="hidden sm:block">
                             <h2 className="text-4xl xl:text-50 font-semibold">
-                                Wireless Outdoor Cinema Company Introduces its New Timberline Series Frame System Built to Withstand Fall and Winter Weather
+                            Wireless Outdoor Cinema Company announces new frame supports to Timberline Series Movable Screen Frame
                             </h2>
                         </div>
                         <div className="hidden sm:block">
                             <p className="sm:pt-4 pb-6 sm:text-lg text-base font-normal mb-0 max-w-full">
-                                New and improved frame system with added stability supports to the base and weather-resistance post and beam hardware
+                            The product enhancements to the movable screen frame have new side and base supports and new timber-frame weather-resistance hardware
+
                             </p>
-                            <StaticImage src="../assets/images/28Aug-Full.png" alt="" />
+                            <StaticImage src="../assets/images/news-august-28-2022-movable-outdoor-movie-theater-853x619.png" alt="August 28, 2022, press release announcement of new frame supports for the Movable Outdoor Movie Theater frame system." />
                             <p className="max-w-full mb-0 sm:text-lg text-base pt-3 text-neutral-600">
-                                The new Timberline Outdoor Cinema Series frame system provides additional base support and durable weather-resistant post and beam hardware.
+                            The new Timberline Series Movable Screen Frame set up onsite at the home of the Wireless Outdoor Cinema Company.
                             </p>
                         </div>
                         <div className="sm:pt-10 pt-6 sm:text-black text-white">
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                <strong>BRIDGTON, MAINE – August 28, 2021 – The Wireless Outdoor Cinema Company, </strong>a premier provider of complete outdoor movie theater solutions for homeowners and businesses, today announced the availability of the new Timberline Outdoor Cinema Series. The new reinforced frame system is included with the purchase of each of the three Timberline option packages: the 96” Jedi Bobcat Outdoor Gaming Cinema ($2,499); the 120” Bella Bear Backyard Outdoor Cinema (starting at $2,399); and the 150” Big Moose Premium Outdoor Cinema (starting at $2,899).
+                                <strong>BRIDGTON, MAINE – August 28, 2022 – The Wireless Outdoor Cinema Company, </strong>a premier provider of complete outdoor movie theater solutions for homeowners, today announced a significant product enhancement to the Timberline Series Movable Screen Frame. The reinforced screen frame system has added base support to help with stability when moving to different locations on your property, making it the strongest movable screen frame system available.
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                The more stable new frame system, that supports the cinematic screen, can withstand strong wind gusts, rain storms and snow. There’s no need to break it down, deflate or shove back into a box since it is designed to remain outdoors year-round. The new frame features newly added front bottom 45-degree angle supports and new heavy-duty post and beam weather-resistant hardware. Customers who previously purchased an outdoor cinema package will receive the new frame system.
+                            The movable screen frame has new front bottom 45-degree angle side supports, making the frame solid and sturdy. With the Timberline Movable Screen Frame System, there's no need to break it down and place it back into storage until the next time you use it. Once the frame system is set up on your property, it is designed to remain fully assembled outdoors, allowing for a fast setup so you can start watching your favorite entertainment like you would inside your home.
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                “The Timberline Outdoor Cinema’s new reinforced wood frame system can handle any weather Mother Nature throws at it, making it the ideal outdoor backyard cinema no matter where you live,” said Todd Morton, owner of the Wireless Outdoor Cinema Company. “I’m thrilled to bring this quality woodworking craftsmanship that Maine is known for, to customers. This new frame design will last as long as your outside deck attached to your home will.”
+                            "The new Timberline Movable Screen Frame makes it easier to move to different locations on your property without putting stress on the frame joints with the added base frame supports and timber-frame hardware," said Todd Morton, owner of the Wireless Outdoor Cinema Company. "Adding new base supports to the frame system also allows you to transport the fully assembled screen to your next big outdoor event, such as a family reunion or wedding reception. Get a couple of people, load it onto a flatbed trailer, and take it anywhere.”
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
                                 <strong>
-                                    The Timberline Outdoor Cinema Series Frame System provides the following additional benefits:
+                                Timberline Series Movable Screen Frame Features:
                                 </strong>
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base pb-5 sm:ml-8 ml-2">
-                                • Made from pressure-treated wood that is naturally resistant to rot, decay, and insects
+                            <li> Versatile and can be moved and transported to any place where the ground is flat
+                            </li>
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base pb-5 sm:ml-8 ml-2">
-                                • It’s inside hook screws where the grommet hole cinematic screen attaches allows for the fastest setup time in just minutes
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base pb-5 sm:ml-8 ml-2">
-                                • While sturdy, the frame is also moveable, allowing for placement anywhere on the property at any time
+                            <li> Fastest setup time of 2-3 minutes, allowing you to start watching movies almost immediately
+                            </li>
+                            </p>
+                            <p className="max-w-full mb-0 sm:text-lg text-base pb-5 sm:ml-8 ml-2">
+                            <li> Multiple screen hanging options where you can hang a manual pull-down projection screen or a cinematic grommet hole screen
+                            </li>
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base pb-5">
-                                The new frame systems are now available and included with all
-                                new purchases of the Timberline Outdoor Cinemas. All of the
-                                outdoor cinema frame systems built prior for clients will
-                                receive the new additions to their frame.
+                            The new and improved movable screen frame is now available and included with the purchase of a Timberline Series Movable Outdoor Movie Theater. Customers who bought earlier versions of the movable screen frames will receive a free upgrade where the Wireless Outdoor Cinema Company will add on the new side supports.
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base pb-5">
                                 <strong>About The Wireless Outdoor Cinema Company</strong>{" "}
-                                <br /> Located in Bridgton, a resort area in Maine’s scenic Lakes Region, The Wireless Outdoor Cinema Company brings the finest quality craftsmanship of traditional Maine woodworking to the outdoor movie theater experience. Since 2020, Founder Todd Morton has been constructing outdoor movie theater solutions that bring big-screen Hollywood entertainment to homeowners and businesses – year-round. Designed to be intuitive with fast and easy set-up, the cinema packages vary by screen size, and all include a pressure-treated frame, a cinematic screen, 1080p LED projector, sound system, Roku 4k media player, and a light-weight custom cedar wood projector and equipment stand.
+                                <br /> Located in Bridgton, a resort area in Maine’s scenic Lakes Region, the Wireless Outdoor Cinema Company brings the finest quality craftsmanship of traditional Maine woodworking to the outdoor movie theater experience. Since 2020, Founder Todd Morton has been constructing outdoor movie theater solutions that bring big-screen Hollywood entertainment to homeowners – year-round in the privacy of their backyards. The outdoor movie theaters are designed to be intuitive with a fast and easy set-up; cinema packages come in both wireless or wired and include a pressure-treated wooden screen frame system, cinematic screen, 1080p LED projector, sound system, Roku 4k media player, rechargeable battery station, and a custom lightweight wooden projector and equipment stand.
                             </p>
                         </div>
                         <div className="pt-8 sm:text-black text-white">
@@ -92,7 +94,7 @@ const Aug28PressRelease = () => {
                             <p className="max-w-full mb-0 sm:text-lg text-base">
                                 Wireless Outdoor Cinema Company
                                 <br />
-                                Todd Morton – owner
+                                Todd Morton – founder
                             </p>
                             <Link
                                 className="text-blue-600 sm:text-lg text-base no-underline font-normal"

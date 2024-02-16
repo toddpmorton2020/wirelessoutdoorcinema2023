@@ -6,17 +6,17 @@ const ComparisonSection = () => {
   const { AluminumImg, AirscreenImg, TimberlineImg } = useStaticQuery(
     graphql`
       query {
-        AluminumImg: file(relativePath: {eq: "aluminum-frame-photo-423px-x-307px.png"}) {
+        AluminumImg: file(relativePath: {eq: "outdoor-movie-theater-comparison-aluminum-system-423x307.png"}) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         } 
-        AirscreenImg: file(relativePath: {eq: "airscreen-frame-photo-423px-x-307px.png"}) {
+        AirscreenImg: file(relativePath: {eq: "outdoor-movie-theater-comparison-airscreen-system-423x307.png"}) {
             childImageSharp {
               gatsbyImageData(quality: 100, layout: CONSTRAINED)
             }
           }  
-          TimberlineImg: file(relativePath: {eq: "timberline-frame-photo-423px-x-307px.png"}) {
+          TimberlineImg: file(relativePath: {eq: "outdoor-movie-theater-comparison-timberline-big-moose-423x307.png"}) {
             childImageSharp {
               gatsbyImageData(quality: 100, layout: CONSTRAINED)
             }
@@ -46,16 +46,13 @@ const ComparisonSection = () => {
               How does the competition stack up to the Timberline Series 150” Big Moose?
             </h3>
             <p className="sm:text-lg text-base max-w-full mb-0">
-              There are only three types of outdoor movie theater systems available for homeowners to buy;
-              the aluminum frame cinema systems (made in China), the inflatable air screens (made in China),
-              and the solid, year-round, pressure-treated frame cinema system (designed and handcrafted in
-              Maine by the Wireless Outdoor Cinema Company).
+              There are only three types of outdoor movie theater screen frames available for homeowners to buy for setting up an outdoor movie theater: the aluminum screen frame systems (made in China), the inflatable screens (made in China), and the solid wood screen frames (designed and handcrafted in Maine by the Wireless Outdoor Cinema Company).
             </p>
           </div>
           <div className="block lg:hidden">
             <div className="grid grid-cols-12 mt-11 text-center items-center">
               <div className="col-span-6">
-                <GatsbyImage image={getImage(AluminumImg)} alt=""
+                <GatsbyImage image={getImage(AluminumImg)} alt="A China-made aluminum screen frame system made for watching outdoor movies."
                   className="md:w-80 mx-auto" />
                 <h1 className="md:py-3 text-base sm:text-2xl md:text-31 font-medium mb-0">
                   <p className="mb-0">Aluminum System</p>
@@ -69,7 +66,7 @@ const ComparisonSection = () => {
                 <hr className="mx-4 border-gray-500 mb-0 hr_brd" />
               </div>
               <div className="col-span-6">
-                <GatsbyImage image={getImage(TimberlineImg)} alt=""
+                <GatsbyImage image={getImage(TimberlineImg)} alt="Timberline Big Moose Outdoor Movie Theater being shown in a comparison chart with outdoor theater competitors."
                   className="md:w-80 mx-auto" />
                 <h1 className="md:py-3 text-base sm:text-2xl md:text-31 font-medium mb-0">
                   <p className="text-orange-1000 mb-0">
@@ -241,10 +238,10 @@ const ComparisonSection = () => {
 
             <div className="grid grid-cols-12 mt-11 text-center items-center">
               <div className="col-span-6">
-                <GatsbyImage image={getImage(AirscreenImg)} alt=""
+                <GatsbyImage image={getImage(AirscreenImg)} alt="A China-made inflatable screen made for watching outdoor movies."
                   className="md:w-80 mx-auto" />
                 <h1 className="text-base sm:text-2xl md:py-3 md:text-31 font-medium mb-0">
-                  <p className="mb-0">Inflatable Air Screen</p>
+                  <p className="mb-0">Inflatable Systems</p>
                 </h1>
                 <p className="text-sm md:text-xl text-grey-bdbbba mb-0 py-1">
                   Cinema equipment included
@@ -255,7 +252,7 @@ const ComparisonSection = () => {
                 <hr className="mx-4 border-gray-500 mb-0 hr_brd" />
               </div>
               <div className="col-span-6">
-                <GatsbyImage image={getImage(TimberlineImg)} alt=""
+                <GatsbyImage image={getImage(TimberlineImg)} alt="Timberline Big Moose Outdoor Movie Theater being shown in a comparison chart with outdoor theater competitors."
                   className="md:w-80 mx-auto" />
                 <h1 className="text-base sm:text-2xl md:py-3 md:text-31 font-medium mb-0">
                   <p className="text-orange-1000 mb-0">
@@ -386,7 +383,7 @@ const ComparisonSection = () => {
                 <div className="col-span-6 font-extralight">
                   <h6 className="text-sm font-medium text-center mb-0">Frame Storage</h6>
                   <p className="text-sm text-center text-red-b20000 mb-0">
-                    Needs to be broken down
+                    Needs to be deflated
                   </p>
                 </div>
                 <div className="col-span-6 font-extralight">
@@ -426,7 +423,7 @@ const ComparisonSection = () => {
           <div className="hidden lg:block">
             <div className="grid grid-cols-12 mt-11 text-center items-center">
               <div className="col-span-12 lg:col-span-4">
-                <GatsbyImage image={getImage(AluminumImg)} alt=""
+                <GatsbyImage image={getImage(AluminumImg)} alt="A China-made aluminum screen frame system made for watching outdoor movies."
                   className="md:w-80 mx-auto" />
                 <h1 className="py-3 text-31 font-medium mb-0">
                   <p className="mb-0">Aluminum System</p>
@@ -438,10 +435,10 @@ const ComparisonSection = () => {
                 <hr className="mx-4 border-gray-500 mb-0 hr_brd" />
               </div>
               <div className="col-span-12 lg:col-span-4">
-                <GatsbyImage image={getImage(AirscreenImg)} alt=""
+                <GatsbyImage image={getImage(AirscreenImg)} alt="A China-made inflatable screen made for watching outdoor movies."
                   className="md:w-80 mx-auto" />
                 <h1 className="py-3 text-31 font-medium mb-0">
-                  <p className="mb-0">Inflatable Air Screen</p>
+                  <p className="mb-0">Inflatable Screen</p>
                 </h1>
                 <p className="text-xl text-grey-bdbbba mb-0">
                   Cinema equipment included
@@ -450,7 +447,7 @@ const ComparisonSection = () => {
                 <hr className="mx-4 border-gray-500 mb-0 hr_brd" />
               </div>
               <div className="col-span-12 lg:col-span-4">
-                <GatsbyImage image={getImage(TimberlineImg)} alt=""
+                <GatsbyImage image={getImage(TimberlineImg)} alt="Timberline Big Moose Outdoor Movie Theater being shown in a comparison chart with outdoor theater competitors."
                   className="md:w-80 mx-auto" />
                 <h1 className="py-3 text-31 font-medium mb-0">
                   <p className="text-orange-1000 mb-0">
@@ -641,7 +638,7 @@ const ComparisonSection = () => {
                     Frame System After Use
                   </h6>
                   <p className="text-lg text-center text-red-b20000 mb-0">
-                    Needs to be broken down
+                    Needs to be deflated
                   </p>
                 </div>
                 <div className="col-span-12 lg:col-span-4 font-extralight text-23">

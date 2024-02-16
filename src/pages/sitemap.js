@@ -18,13 +18,13 @@ const SitemapPage = () => {
                                 <StaticImage className="w-full h-full object-cover " src="../assets/images/sitemap.png" />
                             </div>
                             <div className="mt-8">
-                                <h1 className="text-center md:text-left text-black mb-0 sm:text-orange-500 xl:text-70 text-orange-500 text-4xl md:text-5xl relative">
-                                    Site <span className="text-orange-500 sm:text-black">Map</span>
+                                <h1 className="text-orange-500  xl:text-70 text-orange-500 text-4xl md:text-5xl leading-none font-medium relative mb-0">
+                                    Site<span className="text-orange-500 sm:text-black">map</span>
                                 </h1>
                             </div>
                             <div className="mt-2">
                                 <div className="text-center md:text-left text-2xl xl:text-3xl">
-                                    <h3>Search Engines Crawl Away</h3>
+                                    <h2>Search Engines Crawl Away</h2>
                                 </div>
                                 <div className="mt-6">
                                     <div className="hidden sm:block font-bold text-2xl">
@@ -35,7 +35,7 @@ const SitemapPage = () => {
                                             Home
                                         </Link>
                                         <Link to="/about" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
-                                            About
+                                            The Story
                                         </Link>
                                         {/* <Link to="/comparison" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
                                             Cinema Comparison
@@ -71,14 +71,20 @@ const SitemapPage = () => {
                                         <Link to="/in-the-news" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
                                             In the News
                                         </Link>
-                                        <Link to="/october-10-sun-journal-news-article" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
-                                            {">"} october 11, 2021 News Article
+                                        <Link to="/november-30-press-release" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
+                                            {">"} November 30, 2023 Press Release
+                                        </Link>
+                                        <Link to="/march-02-press-release" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
+                                            {">"} March 2, 2023 Press Release
                                         </Link>
                                         <Link to="/august-28-press-release" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
-                                            {">"} August 28, 2021 Press Release
+                                            {">"} August 28, 2022 Press Release
                                         </Link>
                                         <Link to="/june-30-press-release" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
-                                            {">"} June 30, 2021 Press Release
+                                            {">"} June 30, 2022 Press Release
+                                        </Link>
+                                        <Link to="/october-10-sun-journal-news-article" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
+                                            {">"} October 10, 2021 News Article
                                         </Link>
                                         <Link to="/january-04-press-release" className="no-underline  sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
                                             {">"} January 04, 2021 Press Release
@@ -95,11 +101,20 @@ const SitemapPage = () => {
                                         <Link to="/june-08-press-release" className="no-underline sm:text-lg text-base text-blue-600 hover:text-blue-800 font-normal mb-1">
                                             {">"} June 08, 2020 Press Release
                                         </Link>
+                                        <Link to="https://outdoormovietheater.blog" className="no-underline text-blue-600 sm:text-lg text-base hover:text-blue-800 font-normal mb-1">
+                                            Blog
+                                        </Link>
                                         <Link to="/faq" className="no-underline text-blue-600 sm:text-lg text-base hover:text-blue-800 font-normal mb-1">
                                             FAQ
                                         </Link>
                                         <Link to="/connect" className="no-underline text-blue-600 sm:text-lg text-base hover:text-blue-800 font-normal mb-1">
                                             Connect
+                                        </Link>
+                                        <Link to="/terms" className="no-underline text-blue-600 sm:text-lg text-base hover:text-blue-800 font-normal mb-1">
+                                            Terms
+                                        </Link>
+                                        <Link to="/privacy" className="no-underline text-blue-600 sm:text-lg text-base hover:text-blue-800 font-normal mb-1">
+                                            Privacy Policy
                                         </Link>
                                         <Link to="/sitemap" className="no-underline text-blue-600 sm:text-lg text-base hover:text-blue-800 font-normal mb-1">
                                             Sitemap

@@ -18,14 +18,14 @@ const PrivacyPage = () => {
                                 <StaticImage className="w-full h-full object-cover " src="../assets/images/privacy.png" />
                             </div>
                             <div className="mt-8">
-                                <h1 className="xl:text-70 text-orange-500 text-4xl md:text-5xl text-orange-500 leading-none relative mb-0">
+                                <h1 className="text-orange-500  xl:text-70 text-orange-500 text-4xl md:text-5xl leading-none font-medium relative mb-0">
                                     Privacy{" "}
                                     <span className="text-orange-500 sm:text-black">Policy</span>
                                 </h1>
                             </div>
                             <div className="mt-2">
                                 <div className="text-2xl xl:text-3xl hide">
-                                    <h3 className="privacy-margin-subHeading">Protecting your private information is our priority</h3>
+                                    <h3 className="privacy-margin-subHeading">Protecting your private information</h3>
                                 </div>
                                 <div className="mt-6 privacy-padding">
                                     <p className="mb-6 max-w-full sm:text-lg text-base">

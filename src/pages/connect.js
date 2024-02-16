@@ -55,13 +55,13 @@ const ConnectPage = () => {
                         <div className="md:hidden w-full full-bleed-mobile relative mt-6 mb-6">
                             <StaticImage
                                 className="max-w-full w-full h-full object-cover object-top "
-                                src="../assets/images/todd-wireless-outdoor-cinema.png"
+                                src="../assets/images/todd-morton-wireless-outdoor-cinema-company-750px-x-550px.png"
                             />
                         </div>
                         <div className="mt-8">
-                            <h1 className="text-orange-500 mb-6 text-4xl md:text-5xl xl:text-70 relative">
-                                Let&apos;s <span className="text-black">Connect</span>
-                            </h1>
+                           <h1 className="text-orange-500 xl:text-70 text-orange-500 text-4xl md:text-5xl font-medium my-6">
+                           <span className="text-black">Let&apos;s</span> Connect
+                           </h1>
                         </div>
                         <div className="mt-4 flex">
                             <div className="md:w-7/12">
@@ -112,12 +112,14 @@ const ConnectPage = () => {
                                                 PO Box 752
                                                 <br />
                                                 Bridgton, Maine 04009
+                                                <br />
+                                                <br />
                                             </p>
                                         </div>
                                     </div>
-                                    <h2 className="text-2xl sm:text-3xl xl:text-50 lg:text-4xl mt-6">
+                                    <h3 className="xl:text-35 text-3xl font-medium">
                                         What are you interested in learning more about?
-                                    </h2>
+                                    </h3>
                                     <p className="mt-4 what-interested sm:text-lg text-base max-w-full mb-0">
                                         Take a moment to fill in the required fields and you will
                                         get a friendly response back within 24 hours or sooner.
@@ -174,23 +176,14 @@ const ConnectPage = () => {
                                                 </label>
                                                 <select name="interested" className="standard-input w-full rounded border border-slate-300 py-2 px-4">
                                                     <option value="">Select</option>
-                                                    <option value="96” Jedi Bobcat Wireless Outdoor Cinema">
-                                                        96” Jedi Bobcat Wireless Outdoor Cinema
-                                                    </option>
-                                                    <option value="120” Bella Bear Wireless Outdoor Cinema">
-                                                        120” Bella Bear Wireless Outdoor Cinema
-                                                    </option>
-                                                    <option value="150” Big Moose Wireless Outdoor Cinema">
-                                                        150” Big Moose Wireless Outdoor Cinema
+                                                    <option value="Getting an outdoor movie theater installed">
+                                                    Getting an outdoor movie theater installed
                                                     </option>
                                                     <option value="Media Relations">
                                                         Media Relations
                                                     </option>
-                                                    <option value="Cinema Installers">
-                                                        Cinema Installers
-                                                    </option>
                                                     <option value="Partnerships">Partnerships</option>
-                                                    <option value="Cinema Support">Cinema Support</option>
+                                                    <option value="Cinema Support">Support</option>
                                                     <option value="General Question">
                                                         General Question
                                                     </option>
@@ -216,9 +209,6 @@ const ConnectPage = () => {
                                                     <option value="Google Search">Google Search</option>
                                                     <option value="Bing Search">Bing Search</option>
                                                     <option value="Yahoo Search">Yahoo Search</option>
-                                                    <option value="The big moose told me">
-                                                        The Big Moose told me
-                                                    </option>
                                                     <option value="Other">Other</option>
                                                 </select>
                                             </div>
@@ -252,7 +242,7 @@ const ConnectPage = () => {
                             <div className="hidden md:block flex-1 pl-6 xl:pl-0">
                                 <div className="w-full shadow-xl rounded-lg xl:-mt-10">
                                     <StaticImage
-                                        src="../assets/images/todd.jpg"
+                                        src="../assets/images/todd-morton-wireless-outdoor-cinema-company-750px-x-550px.png"
                                         className="w-full shadow-xl rounded-lg todd-image"
                                     />
                                 </div>
@@ -260,17 +250,15 @@ const ConnectPage = () => {
                                     {/* <span className="left-0 top-0 absolute text-6xl text-orange-500 leading-none">
                                         &ldquo;
                                     </span> */}
-                                    <p className="relative quote-todd-orange text-2xl xl:text-3xl leading-tight px-8 xl:px-6">
-                                        My wireless outdoor cinemas are designed to be used
-                                        year-round and know you will love this experience as much as
-                                        I do.
+                                    <p className="relative quote-todd-orange text-2xl xl:text-2xl leading-tight px-8 xl:px-6">
+                                    My name is Todd Morton, and know you will love the experience of watching movies and your favorite entertainment on my Timberline Series Outdoor Movie Theaters.
                                     </p>
                                     {/* <span className="absolute bottom-0 leading-none right-0 text-6xl text-orange-500 transform translate-y-8">
                                         &rdquo;
                                     </span> */}
                                 </div>
                                 <div className="w-full mx-auto text-center">
-                                    <StaticImage src="../assets/images/signature.png" className="w-1/2 mt-3 mx-auto" />
+                                    <StaticImage src="../assets/images/signature-founder-black-750px-x-79px.png" className="w-1/2 mt-3 mx-auto" />
                                 </div>
                             </div>
                         </div>

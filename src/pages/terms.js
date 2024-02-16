@@ -20,7 +20,7 @@ const TermsPage = () => {
                            <StaticImage className="w-full h-full object-cover " src="../assets/images/terms.png" />
                         </div>
                         <div className="mt-8">
-                            <h1 className="xl:text-70 text-orange-500 text-4xl md:text-5xl leading-none relative mb-0">
+                            <h1 className="text-orange-500  xl:text-70 text-orange-500 text-4xl md:text-5xl leading-none font-medium relative mb-0">
                                 Terms and{" "}
                                 <span className="text-orange-500 sm:text-black block sm:inline">
                                     Conditions
@@ -32,11 +32,7 @@ const TermsPage = () => {
                         <div className="mt-3">
                             <div className="text-2xl xl:text-3xl mt-1 sm:mt-0">
                                 <h3>
-                                    Agreement between user &
-                                    <span>
-                                        {" "}
-                                        www.wirelessoutdoorcinema.com
-                                    </span>
+                                    User agreement
                                 </h3>
                             </div>
                             <div className="mt-6 terms-padding">
@@ -173,7 +169,9 @@ const TermsPage = () => {
                                     restrictions or regulations.
                                 </p>
                                 <p className="mb-6 max-w-full sm:text-lg text-base">
-                                    <b>Indemnification</b>You agree to indemnify, defend and hold
+                                    <b>Indemnification</b>
+                                    <br />
+                                    You agree to indemnify, defend and hold
                                     harmless Wireless Outdoor Cinema, its officers, directors,
                                     employees, agents and third parties, for any losses, costs,
                                     liabilities and expenses (including reasonable attorney's

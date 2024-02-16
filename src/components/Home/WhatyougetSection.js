@@ -79,7 +79,7 @@ const WhatyougetSection = () => {
       img: HowVideoIcon,
       imghover: HowVideoIconHover,
       title: "How-To Videos",
-      text: "How-to videos on assembling and installing your movie theater.",
+      text: "Watch how to build, assemble, and install your outdoor theater.",
       bonus: true,
     },
     {
@@ -88,7 +88,7 @@ const WhatyougetSection = () => {
       imghover: TipsTechniquesIconHover,
       title: "Tips & Techniques",
       text:
-        "Avoid costly mistakes with expert advice.",
+        "Avoid costly mistakes and pitfalls with expert advice.",
       bonus: true,
     },
 
@@ -110,12 +110,12 @@ const WhatyougetSection = () => {
           <div className="text-center xl:col-span-7 lg:col-span-6 lg:text-left xl:text-xl pt-6 lg:pt-16 ">
             <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Here's what you get</h2>
             <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 mb-0 text-orange-1000">
-            You’ll receive all 4 Timberline products for just $99 (A bundle valued over $3,600).
+            You’ll receive all 4 DIY Guides for just $99 (A bundle value over $3,600).
             </h3>
 
             <div className="lg:max-w-xl text-center lg:text-left">
               <p className="sm:text-lg text-base mb-4 max-w-full">
-              Introducing the only complete professional DIY guide on how to build an outdoor movie theater. Take the guesswork and pain from trying to figure out how to enjoy your favorite entertainment outside by using this complete DIY guide designed to help you succeed in putting together your outdoor movie theater right the first time.               </p>
+              Introducing the only complete DIY guide on how to build a professional outdoor movie theater. Take the guesswork and pain from trying to figure out how to enjoy your favorite entertainment outside by using this professional DIY guide designed to help you succeed in putting together your dream outdoor movie theater. You will receive all four DIY guides in .pdf format and get video access to learn how to build, assemble, and install your new outdoor theater setup.               </p>
               <p className="sm:text-lg text-base max-w-full mb-0">
               </p>
             </div>

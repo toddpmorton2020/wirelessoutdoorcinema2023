@@ -120,9 +120,8 @@ function Footer() {
                   </p>
                 )}
                 {submitted && (
-                  <p className="md:mt-3 md:ml-3 mt-2 md:pb-0 pb-2 sm:text-lg text-base max-w-full text-green-800">
-                    Your submission has been sent. We will get back to you as
-                    soon as possible.
+                  <p className="md:mt-3 md:ml-3 mt-2 md:pb-0 pb-2 sm:text-lg text-base max-w-full text-black">
+                    Your submission has been sent. You will receive future promotions and new product announcements.
                   </p>
                 )}
               </div>
@@ -181,7 +180,7 @@ function Footer() {
               <div className="flex flex-col">
                 <Link to="/about" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-600 mr-2">&gt;</span>
-                  About
+                  The Story
                 </Link>
                 <Link to="/timberline-cinema-packages/150-big-moose-cinema/" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-500 mr-2">&gt;</span>
@@ -189,7 +188,7 @@ function Footer() {
                 </Link>
                 <Link to="/how-to-build-an-outdoor-movie-theater" className="flex items-center py-2 no-underline text-white font-normal">
                 <span className="text-orange-500 mr-2">&gt;</span>
-                How To Build an Outdoor Movie Theater
+                How to Build an Outdoor Movie Theater
                 </Link>
                 {/* <Link to="/accessory" className="flex items-center py-2 no-underline text-white">
                   <span className="text-orange-500 mr-2">&gt;</span>
@@ -198,6 +197,10 @@ function Footer() {
                 <Link to="/in-the-news" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-500 mr-2">&gt;</span>
                   In the News
+                </Link>
+                <Link to="https://outdoormovietheater.blog/" className="flex items-center py-2 no-underline text-white font-normal">
+                  <span className="text-orange-500 mr-2">&gt;</span>
+                  Blog
                 </Link>
                 <Link to="/faq" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-500 mr-2">&gt;</span>
@@ -209,7 +212,7 @@ function Footer() {
                 </Link>
                 <Link to="/terms" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-500 mr-2">&gt;</span>
-                  Terms Of Use
+                  Terms of Use
                 </Link>
                 <Link to="/privacy" className="flex items-center py-2 no-underline text-white font-normal">
                   <span className="text-orange-500 mr-2">&gt;</span>
@@ -244,7 +247,7 @@ function Footer() {
               </Link>
               <p className="mb-0">
                 Please get in touch with any questions you may have with your
-                wireless cinema...
+                outdoor movie theater...
               </p>
             </div>
           </div>
@@ -286,7 +289,7 @@ function Footer() {
                 </h5>            
                 <Link to="/about" className="flex items-center no-underline text-white font-normal mb-1">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
-                  About
+                  The Story
                 </Link>
                 <Link to="/timberline-cinema-packages/150-big-moose-cinema/" className="flex items-center no-underline text-white font-normal mb-1">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
@@ -294,7 +297,7 @@ function Footer() {
                 </Link>
                 <Link to="/how-to-build-an-outdoor-movie-theater/" className="flex items-center no-underline text-white font-normal mb-1">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
-                How To Build an Outdoor Movie Theater
+                How to Build an Outdoor Movie Theater
                 </Link>
                 {/* <Link to="/accessory" className="flex items-center no-underline text-white">
               <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
@@ -303,6 +306,10 @@ function Footer() {
                 <Link to="/in-the-news" className="flex items-center no-underline text-white font-normal mb-1">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   In the News
+                </Link>
+                <Link to="https://outdoormovietheater.blog/" className="flex items-center no-underline text-white font-normal mb-1">
+                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
+                  Blog
                 </Link>
                 <Link to="/faq" className="flex items-center no-underline text-white font-normal mb-1">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
@@ -314,7 +321,7 @@ function Footer() {
                 </Link>
                 <Link to="/terms" className="flex items-center no-underline text-white font-normal mb-1">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
-                  Terms Of Use
+                  Terms
                 </Link>
                 <Link to="/privacy" className="flex items-center no-underline text-white font-normal mb-1">
                 <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
@@ -329,7 +336,7 @@ function Footer() {
                     to="tel:2075952960"
                     className="cursor-pointer flex items-center no-underline text-white font-normal mb-1"
                   >
-                    <GatsbyImage image={getImage(CellImg)} alt="" className="w-5" />
+                    <GatsbyImage image={getImage(CellImg)} alt="Cell Phone Icon" className="w-5" />
                     <span className="ml-2">(207) 595-2960</span>
                   </Link>
                   <div className="mx-6 bg-orange-500 w-px h-5"></div>
@@ -339,14 +346,14 @@ function Footer() {
                       target="_blank"
                       className="cursor-pointer no-underline text-white font-normal mb-1"
                     >
-                      <GatsbyImage image={getImage(FacebookImg)} alt="" className="w-3 h-5 text-white" />
+                      <GatsbyImage image={getImage(FacebookImg)} alt="Facebook Icon" className="w-3 h-5 text-white" />
                     </Link>
                     <Link
                       to="https://www.linkedin.com/in/todd-morton-7851b1b"
                       target="_blank"
                       className="cursor-pointer no-underline text-white"
                     >
-                      <GatsbyImage image={getImage(LinkedinWhiteImg)} alt="" className="ml-6 w-5 h-5 text-white" />
+                      <GatsbyImage image={getImage(LinkedinWhiteImg)} alt="Linkedin Icon" className="ml-6 w-5 h-5 text-white" />
                     </Link>
                   </div>
                 </div>
@@ -355,7 +362,7 @@ function Footer() {
                     to="mailto:todd@wirelessoutdoorcinema.com"
                     className="cursor-pointer flex items-center no-underline text-white font-normal"
                   >
-                    <GatsbyImage image={getImage(EmailImg)} alt="" className="w-6 h-4" />
+                    <GatsbyImage image={getImage(EmailImg)} alt="email icon" className="w-6 h-4" />
                     <span className="ml-2">todd@wirelessoutdoorcinema.com</span>
                   </Link>
                 </div>

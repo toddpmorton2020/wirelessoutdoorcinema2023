@@ -27,12 +27,12 @@ const October10PressRelease = () => {
                         <div className="sm:hidden relative mt-6 bg-center">
                             <StaticImage
                                 className="w-full "
-                                src="../assets/images/mobile-in-the-news-todd-414px-x-327px.png"
+                                src="../assets/images/mobile-news-oct-10-2021-outdoor-movie-theater-interview-414x327.jpg" alt="October 10, 2021, Sun Journal Newspaper interview with Todd Morton, founder of the Wireless Outdoor Cinema Company." 
                             />
                         </div>
                         <p className="text-grey-100 max-w-full mb-0 text-base sm:hidden block pt-5">
                             Interview with Kathryn Skelton from the Sun Journal and Todd
-                            Morton, owner of the Wireless Outdoor Cinema Company
+                            Morton, founder of the Wireless Outdoor Cinema Company
                         </p>
                         <div className="sm:block hidden py-5">
                             <p className="text-lg text-neutral-600 max-w-full mb-0">SUN JOURNAL</p>
@@ -49,24 +49,21 @@ const October10PressRelease = () => {
                         <div className="hidden sm:block">
                             <p className="sm:pt-4 text-lg font-normal pb-6 mb-0">
                                 Interview with Kathryn Skelton from the Sun Journal and Todd
-                                Morton, owner of the Wireless Outdoor Cinema Company
+                                Morton, founder of the Wireless Outdoor Cinema Company
                             </p>
-                            <StaticImage src="../assets/images/todd-morton-sun-journal.png" alt="" />
+                            <StaticImage src="../assets/images/news-october-10-2021-outdoor-movie-theater-interview-853x619.png" alt="October 10, 2021, Sun Journal Newspaper interview with Todd Morton, founder of the Wireless Outdoor Cinema Company." />
                             <p className="text-neutral-600 max-w-full mb-0 text-lg pt-3">
-                                Todd Morton, the Wireless Outdoor Cinema Company owner, was
-                                interviewed at his home in Bridgton, Maine, on October 10, 2021.
+                                Todd Morton interviewed at his home in Bridgton, Maine, on October 10, 2021.
                             </p>
                         </div>
                         <div className="sm:pt-10 pt-6 sm:text-black text-white">
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
                                 <strong>October 10, 2021 — BRIDGTON — </strong>Todd Morton
-                                wanted the perfect outdoor screen to watch movies next to a
-                                bonfire and under the stars with friends at his Woods Pond home.
+                                wanted the perfect outdoor movie theater setup to watch movies next to a
+                                bonfire under the stars and moon with friends and family at his Woods Pond home.
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                Inflatable offerings took 30 minutes to blow up with a
-                                compressor and didn't seem rugged enough. Telescoping tripods
-                                blew over with a stiff wind.
+                                Inflatable air screen offerings took 30 minutes to blow up with an air compressor and they didn't blend in with his wooded backyard. Telescoping tripods screen frame systems only work on perfectly flat ground and weren't rugged enough.
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
                                 He hit his wood shop and built a business.
@@ -76,85 +73,44 @@ const October10PressRelease = () => {
                                 2020 after a year of experimenting with the right setup.
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                For 15 years, Morton, 49, had commuted from Bridgton to an
-                                internet marketing job in Burlington, Massachusetts, three days
-                                a week, nearly three hours each way.
+                            For 20 years, Morton, 49, worked in the high-technology field as an internet marketer selling consumer products online for companies such as Lycos (the internet search company) and Dragon Naturally Speaking Software (a division owned by Microsoft).
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                After a massive layoff four years ago, "I took a break," he
+                                After a large corporate layoff four years ago, "I took a break," he
                                 said. "I knew I wanted to do something different in my career,
-                                and get more in tune with building again, being outside. This
+                                and get back to my passion of wood working and being outside. This
                                 idea just kind of laid into that at the right time. I love what
                                 I do. I'm growing it."
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                Step one was deciding screens on the market didn't fit his movie
-                                viewing vision.
+                            Step one was deciding on screen frame systems on the market that didn't fit his movie-viewing vision.
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                "I know from past experience, getting anything inflatable, has a
-                                short shelf life before a little tear or leak happens within the
-                                seams and knew the air screen cinemas on the market was not
-                                going to make the cut'" Morton said.
+                            "I know from experience, getting anything inflatable has the potential of getting tears or leaks and knew the air screen cinemas on the market were not going to make the cut," Morton said.
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                Step two was deciding projector stands on the market didn't fit
-                                that vision either.
+                            Step two was deciding on projector stands on the market, which didn't fit that vision either.
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                "The projector fit perfect on there, and the tripod stand really
-                                allowed you to find the different heights and angles to adjust
-                                once it was on there," but there wasn't room for anything else,
-                                he said.
+                            "The telescopic tripod projector shelf stands on the market can only hold a projector and none of the other cinema electronics," he said.
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                Like a DVD player, laptop, receiver or tuner.
+                            Like a DVD player, laptop, receiver, tuner, battery station, or bluetooth speakers.
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                "I would bring out milk crates, I would bring out a Home Depot
-                                bucket and I would make sure that it wasn't sitting on the
-                                ground," Morton said. "It didn't look aesthetically pleasing to
-                                the eye with that setup and that's when I started to think,
-                                'Well, maybe I can design an outdoor projector stand that would
-                                hold all of these components and make it act almost like an
-                                entertainment system that's inside your house where you have to
-                                never remove everything, it stays plugged in, and when you're
-                                ready to watch movies, you just carry this projector stand out
-                                with all of the equipment to get it set up in front of the movie
-                                screen.'"
+                            "After I built my first wooden screen frame system, the next challenge was setting up the cinema electronics and organizing them, as no outdoor projector stands are available on the market." Morton said. "I would stack milk crates on top of each other and use 5-gallon buckets to place my cinema electronics on, which didn't look aesthetically pleasing to the eye. That's when I decided to design a portable, lightweight projector stand built out of pinewood to neatly organize all of the cinema equipment - similar to an entertainment center. At the end of the night, when the movie is over, all you have to do is bring the projector stand inside, and nothing has to be unplugged or boxed up so it's ready to use for your next outdoor movie night."
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                He sells frames between 8- and 12-feet wide to fit 96-inch to
-                                150-inch diagonal screens. Once the frames are set up outdoors,
-                                they're built to stay out year-round but remain moveable around
-                                the yard. Screens hang on a grommet system and take less than
-                                two minutes to attach, Morton said.
+                            He sells 12-foot wide screen frame systems to fit 150-inch diagonal screens. Once the screen frames are set up outdoors, they're built to stay out year-round but remain moveable around the yard. Screen options include manual pull-down projector screens and cinematic grommet hole screens, which take less than two minutes to attach, Morton said.
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                Frames and projector stands are built out of a lightweight cedar
-                                in his wood shop and take two to three days. Sales so far have
-                                been within Maine, but he's able to travel within a four-hour
-                                radius to New Hampshire, Massachusetts and Vermont to deliver
-                                and setup.
+                            Screen Frame Systems are built out of 4" x 4" pressure-treated lumber and projector stands are built out of a lightweight pinewood in his wood shop and take two to three days. Sales so far have been within Maine, but he can travel all over New England to deliver and set up for customers.
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                Packages, which include projectors and equipment, in wired and
-                                wireless versions, start at $2,399.
+                            Packages, including screen frame systems, screens, cinema equipment, and custom projector stand, start at $2,899.
                             </p>
                             <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                Next month, he plans to start selling how-to manuals and
-                                blueprints for customers to build their own frames and stands.
-                            </p>
-                            <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                Especially with a fire pit nearby, they're good for year-round
-                                outdoor viewing, Morton said.
-                            </p>
-                            <p className="max-w-full mb-0 sm:text-lg text-base font-normal pb-5">
-                                His favorite two movies to watch under the stars are "Lost
-                                Boys," "which brings me back to being a teenager hanging out
-                                with my friends and family watching Halloween movies," and
-                                "Tombstone," "which brings me back to my youth watching western
-                                cowboy movies with my dad."
+                            His favorite two movies to watch under the stars are "Lost Boys," "which brings me back to being a teenager hanging out with friends and family watching Halloween movies," and "Tombstone," "which reminds me of watching Western movies with my dad."
                             </p>
                         </div>
                         <div className="pt-8 sm:text-black text-white">
@@ -165,7 +121,7 @@ const October10PressRelease = () => {
                             <p className="max-w-full mb-0 sm:text-lg text-base">
                                 Wireless Outdoor Cinema Company
                                 <br />
-                                Todd Morton – owner
+                                Todd Morton – founder
                             </p>
                             <Link
                                 className="text-blue-600 sm:text-lg text-base no-underline font-normal"

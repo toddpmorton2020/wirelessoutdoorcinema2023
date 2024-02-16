@@ -116,7 +116,7 @@ const ImpressiveOutdoorSection = () => {
                         className="grid-image mb-0 w-full"
                       /> */}
 
-                    <GatsbyImage image={getImage(item.img)} alt={alt_text} className="grid-image mb-0 w-full" />
+                    <GatsbyImage image={getImage(item.img)} alt={item.alt_text} className="grid-image mb-0 w-full" />
 
                     <div
                       style={{

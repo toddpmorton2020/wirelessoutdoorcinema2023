@@ -118,4 +118,5 @@ const Mar11PressRelease = () => {
         </Layout>
     )
 }
+export const Head = () => <Seo />
 export default Mar11PressRelease

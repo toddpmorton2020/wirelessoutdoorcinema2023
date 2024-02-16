@@ -119,4 +119,8 @@ const Nov30PressRelease = () => {
         </Layout>
     )
 }
+
+export const Head = () => <Seo 
+title="Get the new Free-Standing Outdoor Movie Theater Screen Frame." 
+description="The Wireless Outdoor Cinema Company announced their new Timberline Free-Standing Screen Frame today." />
 export default Nov30PressRelease

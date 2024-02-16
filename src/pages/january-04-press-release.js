@@ -98,4 +98,8 @@ const Jan04PressRelease = () => {
         </Layout>
     )
 }
+
+export const Head = () => <Seo 
+title="Outdoor movie theater winner to the 107.5 Frank FM Contest " 
+description="Justin from Lewiston, Maine, won the outdoor movie theater giveaway from the 107.5 Frank FM contest." />
 export default Jan04PressRelease

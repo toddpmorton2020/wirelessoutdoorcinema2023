@@ -99,5 +99,7 @@ const AboutPage = () => (
     </Layout>
 )
 
-
+export const Head = () => <Seo 
+title="Wireless Outdoor Cinema Company - The Story" 
+description="Introducing the Wireless Outdoor Cinema Company - a provider of residential outdoor movie theaters." />
 export default AboutPage

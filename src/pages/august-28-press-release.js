@@ -117,4 +117,7 @@ const Aug28PressRelease = () => {
         </Layout>
     )
 }
+export const Head = () => <Seo 
+title="Movable Outdoor Movie Theater screen frame improved design" 
+description="Wireless Outdoor Cinema Company announces new supports to their Timberline Movable Screen Frame today." />
 export default Aug28PressRelease

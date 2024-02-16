@@ -353,4 +353,7 @@ const IntheNewsPage = () => {
         </Layout>
     )
 }
+export const Head = () => <Seo 
+title="Outdoor movie theater news - Wireless Outdoor Cinema Company" 
+description="Get the latest news on outdoor movie theater packages, screen frames, projector screens, and more." />
 export default IntheNewsPage

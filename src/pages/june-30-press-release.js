@@ -119,4 +119,7 @@ const June30PressRelease = () => {
         </Layout>
     )
 }
+export const Head = () => <Seo 
+title="Wireless Outdoor Cinema unveils new Outdoor Projector Stand " 
+description="New Projector Stand solves the challenge of casting movies on the screen at the proper height and angle." />
 export default June30PressRelease

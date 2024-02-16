@@ -120,4 +120,7 @@ const FaqPage = () => {
         </Layout>
     )
 }
+export const Head = () => <Seo 
+title="Frequently asked questions on outdoor movie theaters " 
+description="Get all the answers you are searching for on how to set up an outdoor movie theater on your property." />
 export default FaqPage

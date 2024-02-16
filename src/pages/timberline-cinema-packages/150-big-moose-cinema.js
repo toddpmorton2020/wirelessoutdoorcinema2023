@@ -1744,4 +1744,7 @@ const BigMooseCinema = () => {
         </Layout >
     )
 }
+export const Head = () => <Seo 
+title="Outdoor Movie Theaters – Timberline Series Big Moose" 
+description="Get the only year-round outdoor movie theater package you don't have to box up after use. Learn more" />
 export default BigMooseCinema

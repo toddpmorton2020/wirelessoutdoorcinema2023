@@ -9,12 +9,26 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `The Wireless Outdoor Cinema Company`,
-    description: `The Backyard Drive-In Cinema. Get a year-round wireless outdoor movie cinema and start creating unforgettable memories.`,
+    title: `Outdoor Movie Theaters - Wireless Outdoor Cinema Company`,
+    description: `Turn your backyard into an entertainment destination with a premium outdoor movie theater. Learn more.`,
     author: `@nanirama`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://wirelessoutdoorcinema.com/`,
   },
+
   plugins: [
+
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        policy: [
+          {
+            userAgent: "*",
+            disallow: ["/terms", "/privacy", "/sitemap"],
+            // Add other rules as needed
+          },
+        ],
+      },
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     {

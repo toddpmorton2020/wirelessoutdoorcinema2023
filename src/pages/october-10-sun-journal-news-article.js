@@ -144,4 +144,7 @@ const October10PressRelease = () => {
         </Layout>
     )
 }
+export const Head = () => <Seo 
+title="Film buff starts Outdoor Movie Theater business " 
+description="Kathryn Skelton from Sun Journal interviews Todd Morton, founder of the Wireless Outdoor Cinema Company." />
 export default October10PressRelease

@@ -114,4 +114,8 @@ const Mar02PressRelease = () => {
         </Layout>
     )
 }
+
+export const Head = () => <Seo 
+title="Get the new Cemented Outdoor Movie Theater Screen Frame" 
+description="The Wireless Outdoor Cinema Company announced their new Timberline Cemented Screen Frame today. Read now." />
 export default Mar02PressRelease

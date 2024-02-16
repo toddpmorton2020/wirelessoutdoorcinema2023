@@ -100,5 +100,7 @@ const Sept10PressRelease = () => {
         </Layout>
     )
 }
-
+export const Head = () => <Seo 
+title="Wireless Outdoor Cinema Company partners with 107.5 Frank FM " 
+description="The winner of the 107.5 Frank FM Fantasy Pro Football Challenge will receive an Outdoor Movie Theater." />
 export default Sept10PressRelease

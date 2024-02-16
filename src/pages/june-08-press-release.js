@@ -117,4 +117,8 @@ const June08PressRelease = () => {
         </Layout>
     )
 }
+export const Head = () => <Seo 
+title="Introducing the Wireless Outdoor Cinema Company " 
+description="Providing homeowners with a unique backyard wireless outdoor movie theater experience. Read more." />
+
 export default June08PressRelease

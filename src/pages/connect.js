@@ -277,5 +277,7 @@ const ConnectPage = () => {
         </Layout>
     )
 }
-
+export const Head = () => <Seo 
+title="Connect – Wireless Outdoor Cinema Company " 
+description="Get in touch with any questions you have about outdoor move theaters at: todd@wirelessoutdoorcinema.com." />
 export default ConnectPage

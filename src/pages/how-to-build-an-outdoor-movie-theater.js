@@ -37,6 +37,8 @@ const HowToBuildPage = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo 
+title="How to build an outdoor movie theater - professional DIY" 
+description="Get the only professional DIY guide for homeowners on how to build an outdoor movie theater. On sale now." />
 
 export default HowToBuildPage

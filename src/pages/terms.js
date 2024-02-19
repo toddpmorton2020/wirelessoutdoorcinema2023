@@ -10,7 +10,7 @@ const TermsPage = () => {
     
     return (
         <Layout bgcolor="bg-gray-100">
-             <Breadcrumbs />
+             <Breadcrumbs page_title={'Terms'}/>
         <>
             <div className="pb-6">
                 <div className="py-5 overflow-hidden">
@@ -30,10 +30,10 @@ const TermsPage = () => {
                           
                         </div>
                         <div className="mt-3">
-                            <div className="text-2xl xl:text-3xl mt-1 sm:mt-0">
-                                <h3>
+                            <div className="xl:text-50 text-2xl sm:text-3xl mt-1 sm:mt-0">
+                                <h2>
                                     User agreement
-                                </h3>
+                                </h2>
                             </div>
                             <div className="mt-6 terms-padding">
                                 <p className="mb-6 max-w-full sm:text-lg text-base">

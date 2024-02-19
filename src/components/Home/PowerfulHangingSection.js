@@ -7,7 +7,7 @@ import RopeIcon from "../../assets/images/icons/RopeIcon"
 
 
 const PowerfulHangingSection = () => {
-  const { HookImg, StraightImg, StopwatchIcon} = useStaticQuery(
+  const { HookImg, StraightImg, StopwatchIcon, HandIcon, GrommetIcon } = useStaticQuery(
     graphql`
       query {
         HookImg: file(relativePath: {eq: "outdoor-projector-screen-manual-pull-down-695x392-winter.jpg"}) {
@@ -24,7 +24,19 @@ const PowerfulHangingSection = () => {
             childImageSharp {
               gatsbyImageData(quality: 100, layout: FIXED, width:64,height:44)
             }
-          } 
+          }
+
+          HandIcon: file(relativePath: {eq: "icons/icon-hand-144x98.png"}) {
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: FIXED, width:35,height:28)
+            }
+          }
+
+          GrommetIcon: file(relativePath: {eq: "icons/icon-grommet-144x98.png"}) {
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: FIXED, width:35,height:28)
+            }
+          }
           
           
       }
@@ -61,7 +73,7 @@ const PowerfulHangingSection = () => {
                 className="px-3 absolute flex items-center z-20 left-0 bg-black/[.5] h-8"
               >
                 
-                <GatsbyImage image={getImage(StopwatchIcon)} alt=""
+                <GatsbyImage image={getImage(HandIcon)} alt=""
                 className="mx-auto w-16" />
                 
                 <span className="sm:text-lg text-sm">Manual pull-down projector screen</span>
@@ -79,7 +91,8 @@ const PowerfulHangingSection = () => {
                 className="px-3 absolute flex items-center z-20 right-0 bg-black/[.5] h-8"
               >
                 <span className="sm:text-lg text-sm">Cinematic grommet hole screen</span>
-                <RopeIcon className="h-9 ml-2" />
+                <GatsbyImage image={getImage(GrommetIcon)} alt="Cinematic grommet hole screen"
+                className="mx-auto w-16"/>
               </div>
             </div>
           </div>

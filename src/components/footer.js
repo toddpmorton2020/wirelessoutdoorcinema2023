@@ -1,7 +1,9 @@
 import React, { useRef, useState } from "react"
-import { Link, useStaticQuery, graphql} from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 //import { Orange, QuoteContainerOr } from "../css/homepage"
+import InstagramIcon from '../../src/assets/images/icons/InstagramIcon'
+import TiktokIcon from '../assets/images/icons/TiktokIcon'
 
 function Footer() {
   const [error, setError] = useState("")
@@ -25,52 +27,67 @@ function Footer() {
     setSubmitted(true)
   }
 
-  const { LogoImage, DeskformImg, MobileformImg, ArrowRight, CellImg, EmailImg, FacebookImg,  LinkedinWhiteImg } = useStaticQuery(
+  const {
+    LogoImage,
+    DeskformImg,
+    MobileformImg,
+    ArrowRight,
+    CellImg,
+    EmailImg,
+    FacebookImg,
+    LinkedinWhiteImg,
+  } = useStaticQuery(
     graphql`
       query {
-        LogoImage: file(relativePath: {eq: "cinemalogo.png"}) {
+        LogoImage: file(relativePath: { eq: "cinemalogo.png" }) {
           childImageSharp {
-            gatsbyImageData(quality: 100, layout: CONSTRAINED, width:448, height: 82)
+            gatsbyImageData(
+              quality: 100
+              layout: CONSTRAINED
+              width: 448
+              height: 82
+            )
           }
         }
-        DeskformImg: file(relativePath: {eq: "desk-form.png"}) {
+        DeskformImg: file(relativePath: { eq: "desk-form.png" }) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         }
-        MobileformImg: file(relativePath: {eq: "mobile-form.png"}) {
+        MobileformImg: file(relativePath: { eq: "mobile-form.png" }) {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         }
-        ArrowRight: file(relativePath: {eq: "icons/arrowright.png"}) {
+        ArrowRight: file(relativePath: { eq: "icons/arrowright.png" }) {
           childImageSharp {
-            gatsbyImageData(quality: 100, layout: FIXED, width:12, height: 12)
-          }
-        } 
-        
-        CellImg: file(relativePath: {eq: "icons/cell.png"}) {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FIXED, width:20, height: 22)
-          }
-        } 
-        EmailImg: file(relativePath: {eq: "icons/emailwhite.png"}) {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FIXED, width:24, height: 16)
-          }
-        } 
-               
-        FacebookImg: file(relativePath: {eq: "icons/facebook.png"}) {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FIXED, width:12, height: 16)
-          }
-        }        
-        LinkedinWhiteImg: file(relativePath: {eq: "icons/linkedinwhite.png"}) {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FIXED, width:13, height: 16)
+            gatsbyImageData(quality: 100, layout: FIXED, width: 12, height: 12)
           }
         }
-        
+
+        CellImg: file(relativePath: { eq: "icons/cell.png" }) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width: 20, height: 22)
+          }
+        }
+        EmailImg: file(relativePath: { eq: "icons/emailwhite.png" }) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width: 24, height: 16)
+          }
+        }
+
+        FacebookImg: file(relativePath: { eq: "icons/facebook.png" }) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width: 12, height: 16)
+          }
+        }
+        LinkedinWhiteImg: file(
+          relativePath: { eq: "icons/linkedinwhite.png" }
+        ) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FIXED, width: 13, height: 16)
+          }
+        }
       }
     `
   )
@@ -81,15 +98,20 @@ function Footer() {
         <div className="bg-orange-1000">
           <div className="max-w-7xl mx-auto py-4 px-4">
             <div className="flex md:flex-row flex-col items-center md:items-start py-4 lg:py-0 orange-mob">
-           <div className="hidden md:inline-block">
-            <GatsbyImage image={getImage(DeskformImg)} alt="" className="ml-3" />
-            </div>
-            <div className="inline-block md:hidden">
-              <GatsbyImage image={getImage(MobileformImg)} alt="" />
+              <div className="hidden md:inline-block">
+                <GatsbyImage
+                  image={getImage(DeskformImg)}
+                  alt=""
+                  className="ml-3"
+                />
+              </div>
+              <div className="inline-block md:hidden">
+                <GatsbyImage image={getImage(MobileformImg)} alt="" />
               </div>
               <div className="orange-signup flex flex-col pt-6 lg:pt-10 md:pl-10 lg:pl-16 z-30">
                 <h3 className="text-2xl font-medium text-white -mt-20 md:mt-0 text-center md:text-left leading-tight max-w-sm md:max-w-full">
-                  Signup up to receive special <strong>promotions and new product announcements</strong>
+                  Signup up to receive special{" "}
+                  <strong>promotions and new product announcements</strong>
                 </h3>
                 <div className="flex md:flex-row md:gap-6 flex-col items-center md:items-stretch pt-4 md:ml-1 input-div">
                   <div class="md:w-2/5 w-64 mb-3 md:mb-0">
@@ -121,7 +143,8 @@ function Footer() {
                 )}
                 {submitted && (
                   <p className="md:mt-3 md:ml-3 mt-2 md:pb-0 pb-2 sm:text-lg text-base max-w-full text-black">
-                    Your submission has been sent. You will receive future promotions and new product announcements.
+                    Your submission has been sent. You will receive future
+                    promotions and new product announcements.
                   </p>
                 )}
               </div>
@@ -150,14 +173,36 @@ function Footer() {
                   target="_blank"
                   className="cursor-pointer font-normal"
                 >
-                  <GatsbyImage image={getImage(FacebookImg)} alt="" className="w-4 text-white" />
+                  <GatsbyImage
+                    image={getImage(FacebookImg)}
+                    alt=""
+                    className="w-4 text-white"
+                  />
                 </Link>
                 <Link
                   to="https://www.linkedin.com/in/todd-morton-7851b1b"
                   target="_blank"
                   className="cursor-pointer font-normal"
                 >
-                  <GatsbyImage image={getImage(LinkedinWhiteImg)} alt="" className="ml-4 w-4 text-white" />
+                  <GatsbyImage
+                    image={getImage(LinkedinWhiteImg)}
+                    alt=""
+                    className="ml-4 w-4 text-white"
+                  />
+                </Link>
+                <Link
+                to="https://www.tiktok.com/@outdoormovieguy" 
+                target="_blank"
+                className="cursor-pointer hover:text-orange-500 no-underline"
+                >
+                <TiktokIcon className="h-4 w-4 ml-6" />
+                </Link>
+                <Link
+                to="#" 
+                target="_blank"
+                className="cursor-pointer hover:text-orange-500 no-underline"
+                >
+                  <InstagramIcon className="h-4 w-4 ml-6"/>
                 </Link>
               </div>
               <Link
@@ -171,54 +216,99 @@ function Footer() {
                 to="mailto:todd@wirelessoutdoorcinema.com"
                 className="cursor-pointer flex gap-2 items-center no-underline text-white font-normal sm:text-lg text-base sm:flex-nowrap flex-wrap"
               >
-                 <div><GatsbyImage image={getImage(EmailImg)} alt="" className="w-4 h-4" /></div>
+                <div>
+                  <GatsbyImage
+                    image={getImage(EmailImg)}
+                    alt=""
+                    className="w-4 h-4"
+                  />
+                </div>
                 <span>todd@wirelessoutdoorcinema.com</span>
               </Link>
             </div>
             <div className="mb-4">
               <h5 className="text-orange-500 uppercase">Links</h5>
               <div className="flex flex-col">
-                <Link to="/about" className="flex items-center py-2 no-underline text-white font-normal">
+                <Link
+                  to="/the-story"
+                  className="flex items-center py-2 no-underline text-white font-normal"
+                >
                   <span className="text-orange-600 mr-2">&gt;</span>
                   The Story
                 </Link>
-                <Link to="/timberline-cinema-packages/150-big-moose-cinema/" className="flex items-center py-2 no-underline text-white font-normal">
+                <Link
+                  to="/Timberline-series/150-big-moose-outdoor-movie-theater/"
+                  className="flex items-center py-2 no-underline text-white font-normal"
+                >
                   <span className="text-orange-500 mr-2">&gt;</span>
                   150” Big Moose Outdoor Movie Theater
                 </Link>
-                <Link to="/how-to-build-an-outdoor-movie-theater" className="flex items-center py-2 no-underline text-white font-normal">
-                <span className="text-orange-500 mr-2">&gt;</span>
-                How to Build an Outdoor Movie Theater
+                <Link
+                  to="/how-to-build-an-outdoor-movie-theater"
+                  className="flex items-center py-2 no-underline text-white font-normal"
+                >
+                  <span className="text-orange-500 mr-2">&gt;</span>
+                  How to Build an Outdoor Movie Theater
                 </Link>
                 {/* <Link to="/accessory" className="flex items-center py-2 no-underline text-white">
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Outdoor Cinema Accessories
                 </Link> */}
-                <Link to="/in-the-news" className="flex items-center py-2 no-underline text-white font-normal">
+                <Link
+                  to="/in-the-news"
+                  className="flex items-center py-2 no-underline text-white font-normal"
+                >
                   <span className="text-orange-500 mr-2">&gt;</span>
                   In the News
                 </Link>
-                <Link to="https://outdoormovietheater.blog/" className="flex items-center py-2 no-underline text-white font-normal">
+                {/* <Link
+                  to="https://outdoormovietheater.blog/"
+                  className="flex items-center py-2 no-underline text-white font-normal"
+                >
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Blog
-                </Link>
-                <Link to="/faq" className="flex items-center py-2 no-underline text-white font-normal">
+                </Link> */}
+                    <Link
+                      to="https://outdoormovietheater.blog/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center py-2 no-underline text-white font-normal"
+                    >
+                      <span className="text-orange-500 mr-2">&gt;</span>
+                      Blog
+                    </Link>
+                <Link
+                  to="/faq"
+                  className="flex items-center py-2 no-underline text-white font-normal"
+                >
                   <span className="text-orange-500 mr-2">&gt;</span>
                   FAQ
                 </Link>
-                <Link to="/connect" className="flex items-center py-2 no-underline text-white font-normal">
+                <Link
+                  to="/connect"
+                  className="flex items-center py-2 no-underline text-white font-normal"
+                >
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Connect
                 </Link>
-                <Link to="/terms" className="flex items-center py-2 no-underline text-white font-normal">
+                <Link
+                  to="/terms"
+                  className="flex items-center py-2 no-underline text-white font-normal"
+                >
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Terms of Use
                 </Link>
-                <Link to="/privacy" className="flex items-center py-2 no-underline text-white font-normal">
+                <Link
+                  to="/privacy"
+                  className="flex items-center py-2 no-underline text-white font-normal"
+                >
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Privacy Policy
                 </Link>
-                <Link to="/sitemap" className="flex items-center py-2 no-underline text-white font-normal">
+                <Link
+                  to="/sitemap"
+                  className="flex items-center py-2 no-underline text-white font-normal"
+                >
                   <span className="text-orange-500 mr-2">&gt;</span>
                   Sitemap
                 </Link>
@@ -257,7 +347,11 @@ function Footer() {
           <div class="flex-1 hidden lg:block">
             <div>
               <Link to="/" className="cursor-pointer font-normal">
-              <GatsbyImage image={getImage(LogoImage)} alt={`The Wireless Outdoor Cinema Company`} className="md:w-64 w-48 " />
+                <GatsbyImage
+                  image={getImage(LogoImage)}
+                  alt={`The Wireless Outdoor Cinema Company`}
+                  className="md:w-64 w-48 "
+                />
               </Link>
               <p className="mt-3 pl-0 mb-0" style={{ textAlign: "left" }}>
                 Turn your backyard into an exciting outdoor movie theater. Watch
@@ -286,49 +380,121 @@ function Footer() {
               <div className="flex flex-col lg:pl-10">
                 <h5 className="text-left text-orange-500 font-bold uppercase mb-2">
                   Quick Links
-                </h5>            
-                <Link to="/about" className="flex items-center no-underline text-white font-normal mb-1">
-                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
+                </h5>
+                <Link
+                  to="/the-story"
+                  className="flex items-center no-underline text-white font-normal mb-1"
+                >
+                  <GatsbyImage
+                    image={getImage(ArrowRight)}
+                    alt=""
+                    className="h-3 mr-3"
+                  />
                   The Story
                 </Link>
-                <Link to="/timberline-cinema-packages/150-big-moose-cinema/" className="flex items-center no-underline text-white font-normal mb-1">
-                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
+                <Link
+                  to="/Timberline-series/150-big-moose-outdoor-movie-theater/"
+                  className="flex items-center no-underline text-white font-normal mb-1"
+                >
+                  <GatsbyImage
+                    image={getImage(ArrowRight)}
+                    alt=""
+                    className="h-3 mr-3"
+                  />
                   150” Big Moose Outdoor Movie Theater
                 </Link>
-                <Link to="/how-to-build-an-outdoor-movie-theater/" className="flex items-center no-underline text-white font-normal mb-1">
-                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
-                How to Build an Outdoor Movie Theater
+                <Link
+                  to="/how-to-build-an-outdoor-movie-theater/"
+                  className="flex items-center no-underline text-white font-normal mb-1"
+                >
+                  <GatsbyImage
+                    image={getImage(ArrowRight)}
+                    alt=""
+                    className="h-3 mr-3"
+                  />
+                  How to Build an Outdoor Movie Theater
                 </Link>
                 {/* <Link to="/accessory" className="flex items-center no-underline text-white">
               <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
                   Outdoor Cinema Accessories
                 </Link> */}
-                <Link to="/in-the-news" className="flex items-center no-underline text-white font-normal mb-1">
-                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
+                <Link
+                  to="/in-the-news"
+                  className="flex items-center no-underline text-white font-normal mb-1"
+                >
+                  <GatsbyImage
+                    image={getImage(ArrowRight)}
+                    alt=""
+                    className="h-3 mr-3"
+                  />
                   In the News
                 </Link>
-                <Link to="https://outdoormovietheater.blog/" className="flex items-center no-underline text-white font-normal mb-1">
-                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
+                <Link
+                  to="https://outdoormovietheater.blog/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center no-underline text-white font-normal mb-1"
+                >
+                  <GatsbyImage
+                    image={getImage(ArrowRight)}
+                    alt=""
+                    className="h-3 mr-3"
+                  />
                   Blog
                 </Link>
-                <Link to="/faq" className="flex items-center no-underline text-white font-normal mb-1">
-                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
+                <Link
+                  to="/faq"
+                  className="flex items-center no-underline text-white font-normal mb-1"
+                >
+                  <GatsbyImage
+                    image={getImage(ArrowRight)}
+                    alt=""
+                    className="h-3 mr-3"
+                  />
                   FAQ
                 </Link>
-                <Link to="/connect" className="flex items-center no-underline text-white font-normal mb-1">
-                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
+                <Link
+                  to="/connect"
+                  className="flex items-center no-underline text-white font-normal mb-1"
+                >
+                  <GatsbyImage
+                    image={getImage(ArrowRight)}
+                    alt=""
+                    className="h-3 mr-3"
+                  />
                   Connect
                 </Link>
-                <Link to="/terms" className="flex items-center no-underline text-white font-normal mb-1">
-                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
+                <Link
+                  to="/terms"
+                  className="flex items-center no-underline text-white font-normal mb-1"
+                >
+                  <GatsbyImage
+                    image={getImage(ArrowRight)}
+                    alt=""
+                    className="h-3 mr-3"
+                  />
                   Terms
                 </Link>
-                <Link to="/privacy" className="flex items-center no-underline text-white font-normal mb-1">
-                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
+                <Link
+                  to="/privacy"
+                  className="flex items-center no-underline text-white font-normal mb-1"
+                >
+                  <GatsbyImage
+                    image={getImage(ArrowRight)}
+                    alt=""
+                    className="h-3 mr-3"
+                  />
                   Privacy Policy
                 </Link>
-                <Link to="/sitemap" className="flex items-center no-underline text-white font-normal mb-1">
-                <GatsbyImage image={getImage(ArrowRight)} alt="" className="h-3 mr-3" />
+                <Link
+                  to="/sitemap"
+                  className="flex items-center no-underline text-white font-normal mb-1"
+                >
+                  <GatsbyImage
+                    image={getImage(ArrowRight)}
+                    alt=""
+                    className="h-3 mr-3"
+                  />
                   Sitemap
                 </Link>
                 <div className="my-1 flex items-center">
@@ -336,7 +502,11 @@ function Footer() {
                     to="tel:2075952960"
                     className="cursor-pointer flex items-center no-underline text-white font-normal mb-1"
                   >
-                    <GatsbyImage image={getImage(CellImg)} alt="Cell Phone Icon" className="w-5" />
+                    <GatsbyImage
+                      image={getImage(CellImg)}
+                      alt="Cell Phone Icon"
+                      className="w-5"
+                    />
                     <span className="ml-2">(207) 595-2960</span>
                   </Link>
                   <div className="mx-6 bg-orange-500 w-px h-5"></div>
@@ -346,15 +516,37 @@ function Footer() {
                       target="_blank"
                       className="cursor-pointer no-underline text-white font-normal mb-1"
                     >
-                      <GatsbyImage image={getImage(FacebookImg)} alt="Facebook Icon" className="w-3 h-5 text-white" />
+                      <GatsbyImage
+                        image={getImage(FacebookImg)}
+                        alt="Facebook Icon"
+                        className="w-3 h-5 text-white"
+                      />
                     </Link>
                     <Link
                       to="https://www.linkedin.com/in/todd-morton-7851b1b"
                       target="_blank"
                       className="cursor-pointer no-underline text-white"
                     >
-                      <GatsbyImage image={getImage(LinkedinWhiteImg)} alt="Linkedin Icon" className="ml-6 w-5 h-5 text-white" />
+                      <GatsbyImage
+                        image={getImage(LinkedinWhiteImg)}
+                        alt="Linkedin Icon"
+                        className="ml-6 w-5 h-5 text-white"
+                      />
                     </Link>
+                    <Link
+                to="https://www.tiktok.com/@outdoormovieguy" 
+                target="_blank"
+                className="cursor-pointer hover:text-orange-500 no-underline"
+                >
+                <TiktokIcon className="h-4 w-4 ml-6" />
+                </Link>
+                <Link
+                to="#" 
+                target="_blank"
+                className="cursor-pointer hover:text-orange-500 no-underline"
+                >
+                  <InstagramIcon className="h-4 w-4 ml-6"/>
+                </Link>
                   </div>
                 </div>
                 <div className="mt-1 flex items-center">
@@ -362,7 +554,11 @@ function Footer() {
                     to="mailto:todd@wirelessoutdoorcinema.com"
                     className="cursor-pointer flex items-center no-underline text-white font-normal"
                   >
-                    <GatsbyImage image={getImage(EmailImg)} alt="email icon" className="w-6 h-4" />
+                    <GatsbyImage
+                      image={getImage(EmailImg)}
+                      alt="email icon"
+                      className="w-6 h-4"
+                    />
                     <span className="ml-2">todd@wirelessoutdoorcinema.com</span>
                   </Link>
                 </div>
@@ -386,7 +582,11 @@ function Footer() {
             </span> */}
           </div>
           <div className="flex items-center justify-center hidden lg:hidden">
-            Website designed with <StaticImage src="../assets/images/icons/heart.png" className="h-4 mx-1" />{" "}
+            Website designed with{" "}
+            <StaticImage
+              src="../assets/images/icons/heart.png"
+              className="h-4 mx-1"
+            />{" "}
             from Maine.
           </div>
         </div>

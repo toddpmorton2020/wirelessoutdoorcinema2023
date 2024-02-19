@@ -12,7 +12,7 @@ import FireIcon from "../../assets/images/icons/FireIcon"
 import BudgetIcon from "../../assets/images/icons/BudgetIcon"
 
 const FrameSystemsSection = () => {
-    const { FrameImg1, FrameImg2 } = useStaticQuery(
+    const { FrameImg1, FrameImg2,FrameImg3 } = useStaticQuery(
         graphql`
           query {
             FrameImg1: file(relativePath: {eq: "timberline-movable-screen-frame-outdoor-theater-1617x750-winter.jpg"}) {
@@ -24,7 +24,13 @@ const FrameSystemsSection = () => {
                 childImageSharp {
                   gatsbyImageData(quality: 100, layout: CONSTRAINED)
                 }
-              }           
+              } 
+              
+            FrameImg3: file(relativePath: {eq: "timberline-free-standing-frame-outdoor-theater-1617x750-winter.jpg"}) {
+                childImageSharp {
+                  gatsbyImageData(quality: 100, layout: CONSTRAINED)
+                }
+              }
           }
         `
     )
@@ -85,7 +91,7 @@ const FrameSystemsSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="md:grid lg:gap-10 gap-4 items-stretch grid-cols-12 relative">
+                    <div className="md:grid lg:gap-10 gap-4 items-stretch grid-cols-12 pb-10 xl:mb-10 relative">
                         <div className="lg:col-span-8 md:col-span-7 text-center">
                             <GatsbyImage image={getImage(FrameImg2)} alt="Timberline Cemented Screen Frame and Wired Outdoor Movie Theater setup in the winter."
                                 className="mx-auto w-full" />
@@ -125,6 +131,40 @@ const FrameSystemsSection = () => {
                             Just dig two holes into the ground roughly 30" in diameter, position the screen frame into the dug holes, and pour the cement.
                             </p>
                             </div>
+                    </div>
+                    <div className="md:grid flex flex-col-reverse items-stretch lg:gap-4 grid-cols-12 pb-10 xl:mt-10 relative">
+                        <div className="lg:col-span-4 md:col-span-5 md:text-left text-center lg:mt-0 mt-6 md:px-0 px-5">
+                            <h2 className="text-3xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Movable Screen Frame</h2>
+                            <h3 className="text-xl lg:text-3xl md:text-2xl pb-4 xl:pb-5 mb-0 max-w-full text-orange-1000">
+                            Ideal for any backyard 
+                            </h3>
+                            <p className="mb-4 sm:text-lg text-base max-w-full">
+                            The Timberline Series Free-Standing Screen Frame has an attractive decorative look and was designed for homeowners who can't dig into the ground due to ledge stone and other obstacles or whose lawn is uneven                            </p>
+                            <p className="mb-4 sm:text-lg text-base max-w-full">The base boxes have inside pressure-treated 4" x 4" supports that hold the frame in place, making it secure. This frame system is also movable.  </p>
+                           </div>
+                        <div className="lg:col-span-8 md:col-span-7">
+                            <GatsbyImage image={getImage(FrameImg3)} alt="Timberline Movable Screen Frame and Wired Outdoor Movie Theater setup in the winter."
+                                className="mx-auto w-full" />
+
+                            <div className="py-3 flex md:px-0 px-3 justify-around text-center sm:gap-0 gap-2">
+                                <div>
+                                    <MovableIcon className="w-full h-7 sm:h-8 xl:h-12 p-1" />
+                                    <p className="md:text-lg sm:text-base text-sm mb-0">Movable</p>
+                                </div>
+                                <div>
+                                    <SturdyIcon className="w-full h-7 sm:h-8 xl:h-12 p-1" />
+                                    <p className="md:text-lg sm:text-base text-sm mb-0">Sturdy</p>
+                                </div>
+                                <div>
+                                    <YearRoundIcon className="w-full h-7 sm:h-8 xl:h-12 p-1" />
+                                    <p className="md:text-lg sm:text-base text-sm mb-0">Year-round</p>
+                                </div>
+                                <div>
+                                    <AffordableIcon className="w-full h-7 sm:h-8 xl:h-12 p-1" />
+                                    <p className="md:text-lg sm:text-base text-sm mb-0">Affordable</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

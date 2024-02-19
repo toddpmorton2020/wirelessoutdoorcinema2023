@@ -59,7 +59,7 @@ const QuoteSection = () => {
             </p>
             <div className="hidden lg:block">
             <GatsbyImage image={getImage(SignatureImg)} alt="Todd Morton, founder of the Wireless Outdoor Cinema Company signature."
-              className="w-3/4 mx-auto mt-5" />
+              className="mx-auto mt-5" style={{width:'90%'}} />
               </div>
           </div>
         </div>

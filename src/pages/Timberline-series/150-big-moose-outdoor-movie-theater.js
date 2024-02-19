@@ -857,10 +857,10 @@ const BigMooseCinema = () => {
                                 >
                                     Home
                                 </Link>
+                                {/* <span className="mx-2">&gt;</span> */}
+                                {/* <span to="#">Timberline Cinema Packages</span> */}
                                 <span className="mx-2">&gt;</span>
-                                <span to="#">Timberline Cinema Packages</span>
-                                <span className="mx-2">&gt;</span>
-                                <span>150" Big Moose</span>
+                                <span>150 Big Moose Outdoor Cinema</span>
                             </div>
                             <div className="mt-12 flex flex-col-reverse md:flex-row mb-8">
                                 <div className="mt-10">

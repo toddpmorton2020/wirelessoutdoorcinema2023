@@ -211,8 +211,14 @@ const FaqSection = () => {
           {
             id: "22",
             question: "What are the sizes for the outdoor projector screens?",
-            answer:
-              "150” diagonal. The dimensions are 9’ ft. 3” wide x 5’ ft. 10” high.",
+            answer:(
+              <>
+                The manual pull-down projector screen is 142” diagonal. The dimensions are 10- ft. 11" wide x 7’ ft. 3” high.
+                <br />
+                <br />
+                The grommet hole cinematic screen is 150” diagonal. The dimensions are 9’ ft. 3” wide x 5’ ft. 10” high.
+              </>
+            )
           },
           {
             id: "23",

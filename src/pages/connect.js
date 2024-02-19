@@ -48,7 +48,7 @@ const ConnectPage = () => {
     }
     return (
         <Layout bgcolor="bg-gray-100">
-            <Breadcrumbs />
+            <Breadcrumbs page_title={'Connect'} />
             <div>
                 <div className="pt-5 overflow-hidden md:pb-20 pb-10">
                     <div className="max-w-7xl px-5 mx-auto">

@@ -82,7 +82,7 @@ const FaqPage = () => {
 
     return (
         <Layout bgcolor="bg-gray-100">
-            <Breadcrumbs />
+            <Breadcrumbs page_title={'Faq'} />
             <div className="pb-8">
                 <div className="pt-5 overflow-hidden">
                     <div className="max-w-7xl px-5 mx-auto">

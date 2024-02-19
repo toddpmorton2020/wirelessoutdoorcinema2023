@@ -9,7 +9,7 @@ import Breadcrumbs from "../components/Elements/breadcrumbs"
 const PrivacyPage = () => {
     return (
         <Layout bgcolor="bg-gray-100">
-            <Breadcrumbs />
+            <Breadcrumbs page_title={'Privacy'}/>
             <>
                 <div className="pb-8">
                     <div className="py-5 overflow-hidden">
@@ -24,8 +24,8 @@ const PrivacyPage = () => {
                                 </h1>
                             </div>
                             <div className="mt-2">
-                                <div className="text-2xl xl:text-3xl hide">
-                                    <h3 className="privacy-margin-subHeading">Protecting your private information</h3>
+                                <div className="xl:text-50 text-2xl sm:text-3xl mt-3 hide">
+                                    <h2 className="privacy-margin-subHeading">Protecting your private information</h2>
                                 </div>
                                 <div className="mt-6 privacy-padding">
                                     <p className="mb-6 max-w-full sm:text-lg text-base">

@@ -7527,10 +7527,10 @@ node-uuid@~1.4.7:
   resolved "https://registry.npmjs.org/node-uuid/-/node-uuid-1.4.8.tgz"
   integrity sha512-TkCET/3rr9mUuRp+CpO7qfgT++aAxfDRaalQhwPFzI9BY/2rCDn6OfpZOVggi1AXfTPpfkTrg5f5WQx5G1uLxA==
 
-node@^21.6.2:
-  version "21.6.2"
-  resolved "https://registry.npmjs.org/node/-/node-21.6.2.tgz"
-  integrity sha512-QdY/IILdqFN4yLJxG4u9njJ37FqBB7QLIkX6YuhOEx77HwgXXzEJOwhxHtEZevAbVt/sy7JIwIZJMgpijyGGxQ==
+node@^21.0.0:
+  version "21.0.0"
+  resolved "https://registry.npmjs.org/node/-/node-21.0.0.tgz"
+  integrity sha512-k0wCk1CXe+Bp6sDniB6x52IKMaP849Ei01zA0U88/iOGLrX8jnkyfCThlRqNrHT8hL0mG/OAU+8Z87N9atVRQQ==
   dependencies:
     node-bin-setup "^1.0.0"
 

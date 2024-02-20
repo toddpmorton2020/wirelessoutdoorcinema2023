@@ -50,12 +50,12 @@ const WhatyougetItem = ({ item }) => {
       )} */}
       <div className="item_box rounded-md border-grey-theater md:p-2 px-3 py-2 text-center h-full flex flex-col justify-start">
         <div className="flex gap-4">
-          <div className="border rounded-xl p-4" style={{width:'100px',height:'100px',display:'flex',alignItems:'center'}}>
+          <div className="" style={{width:'100px',height:"80px",display:'flex',alignItems:'center'}}>
             <Image
               style={{
                 maxWidt: "",
               }}
-              className="my-auto md:w-auto lg:h-10 h-16 mx-auto"
+              className=""
             />
           </div>
           <div className="flex flex-col text-left pt-3">

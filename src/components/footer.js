@@ -519,7 +519,7 @@ function Footer() {
                       <GatsbyImage
                         image={getImage(FacebookImg)}
                         alt="Facebook Icon"
-                        className="w-3 h-5 text-white"
+                        className="w-3 h-5 pt-2 text-white"
                       />
                     </Link>
                     <Link

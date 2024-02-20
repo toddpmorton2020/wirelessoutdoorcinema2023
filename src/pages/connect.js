@@ -258,7 +258,7 @@ const ConnectPage = () => {
                                     </span> */}
                                 </div>
                                 <div className="w-full mx-auto text-center">
-                                    <StaticImage src="../assets/images/signature-founder-black-750px-x-79px.png" className="w-1/2 mt-3 mx-auto" />
+                                    <StaticImage src="../assets/images/signature-founder-black-750px-x-79px.png" className="w-3/4 mt-3 mx-auto" />
                                 </div>
                             </div>
                         </div>

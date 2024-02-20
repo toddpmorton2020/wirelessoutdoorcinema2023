@@ -250,7 +250,7 @@ const WhatyougetSection = () => {
       id: 125,
       img: MaterialListIcon,
       imghover: MaterialListIconHover,
-      title: "Material List",
+      title: "Building Material List",
       text: "List of all materials including hardware, fasteners, and wood.",
       bonus: false,
     },
@@ -266,7 +266,7 @@ const WhatyougetSection = () => {
       id: 127,
       img: EquipmentListIcon,
       imghover: EquipmentListIconHover,
-      title: "Equipment List",
+      title: "Cinema Equipment List",
       text: "Recommended electronics for wireless and wired systems.",
       bonus: false,
     },
@@ -317,7 +317,7 @@ const WhatyougetSection = () => {
     {
       id: 4,
       name: "Timberline Custom Outdoor Projector Stand",
-      listPrice: "$249.00",
+      listPrice: "$299.00",
       smallImage: Photo4Small,
       largeImage: Photo4Large,
       mobileSmallImage:MobilePhoto4Small,
@@ -397,7 +397,7 @@ const WhatyougetSection = () => {
           )} */}
                   <div className="text-center mt-3 text-lg px-4">
                     <p style={{ marginBottom: 0 }}>{image.name}</p>
-                    <p>List Price: {image.listPrice}</p>
+                    <p className="font-semibold"> {image.listPrice}</p>
                   </div>
                 </div>
               ))}
@@ -460,9 +460,9 @@ const WhatyougetSection = () => {
 
           <div className="border rounded-xl px-5 col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto">
             <div className="col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto">
-              <h3 className="col-span-12 text-xl md:text-2xl xl:text-35 mb-4 p-4">
-                You’ll get all the resources you need to build a professional
-                outdoor movie theater:
+              <h3 className="col-span-12 text-lg md:text-xl xl:text-3xl mb-4 p-4">
+                You’ll get all the resources you need to<span className="text-orange-1000"> build an professional
+                outdoor movie theater:</span>
               </h3>
               {gridItems.map(item => (
                 <WhatyougetItem item={item} />
@@ -507,14 +507,14 @@ const WhatyougetSection = () => {
             })} */}
           </div>
           <div className="col-span-6">
-            <button className="bg-orange-1000 text-white py-2 px-10 rounded-lg">
+            <button className="bg-orange-1000 font-semibold text-white py-2 px-10 rounded-lg">
               Available May 1, 2024
             </button>
             <div className="mt-2">
-              <p className="mb-0">
+              <p className=" font-semibold mb-0">
                 On sale now for $99 (Reg. price $199. 50% off).
               </p>
-              <p>
+              <p className="font-semibold">
                 This limited-time bundle offer, valued at $3,600, expires
                 September 30, 2024.
               </p>

@@ -12,13 +12,13 @@ const AboutPage = () => (
        <Breadcrumbs page_title={'The Story'}/>
        <div className="h-9"></div>
       <div className="max-w-4xl mx-auto top-heading px-5">
-        <h1 className="text-orange-500 xl:text-50 text-orange-500 text-3xl md:text-4xl font-medium my-6">
+        <h1 className="text-orange-500 xl:text-70 text-orange-500 text-5xl md:text-5xl font-medium my-6">
         <span className="text-black">The</span> Story
         </h1>
       </div>
       {/* </div> */}
       <div className="max-w-4xl mx-auto px-5">
-        <StaticImage src="../assets/images/bridgton-twin-drive-in-861px-x-460px.png" alt="" className="w-full shadow-xl" />
+        <StaticImage src="../assets/images/bridgton-twin-drive-in-861px-x-460px.png" alt="" className="w-full rounded-lg shadow-xl" />
         <p className="text-neutral-600 sm:text-lg text-base pt-2 max-w-full">
         Bridgton Twin Drive-In Theatre in beautiful Bridgton, Maine.
         </p>

@@ -849,6 +849,8 @@ const BigMooseCinema = () => {
                 </div>
                 <div className="wrapper mobile md:hidden block">
                     <div className="max-w-7xl px-5 mx-auto">
+
+                        
                         <div className="py-6">
                             <div className="flex flex-wrap items-center text-sm text-lg">
                                 <Link

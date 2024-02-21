@@ -9,7 +9,7 @@ import Breadcrumbs from "../components/Elements/breadcrumbs"
 const June25PressRelease = () => {
     return (
         <Layout bgcolor="sm:bg-white bg-grey-10">
-            <Breadcrumbs />
+            <Breadcrumbs page_title={"June 25 News Article"} />
             <div className="pb-12">
                 <div className="pt-5 overflow-hidden">
                     <div className="max-w-3xl px-5 mx-auto">

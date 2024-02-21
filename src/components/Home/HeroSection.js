@@ -74,13 +74,13 @@ const HeroSection = ({ page = "" }) => {
         <div className="lg:container pb-8 xl:pb-16 mx-auto px-5">
           <div className="lg:absolute xl:mt-16 2xl:pt-18 sm:top-0">
             <div className="relative lg:w-3/5 xl:w-2/5 2xl:w-3/5 z-20 xl:mt-0 lg:mt-20 mt-8 xl:mt-0">
-              <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] font-semibold text-2xl sm:text-2xl md:text-5xl mb-4 max-w-full">
+              <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] font-semibold text-2xl sm:text-2xl md:text-5xl mb-3 max-w-full">
                 Get the only
               </p>
               <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] font-semibold text-2xl sm:text-2xl md:text-5xl mb-4 max-w-full ">
                 professional DIY guide on
               </p>
-              <h1 className=" [text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] max-w-full lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl md:leading-tight text-4xl mb-5 font-semibold shadow-xl">
+              <h1 className=" text-orange-1000 [text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] max-w-full lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl md:leading-tight text-4xl mb-5 font-semibold shadow-xl">
                 How to build an outdoor movie{" "}
                 <span className="relative">
                   theater
@@ -88,7 +88,7 @@ const HeroSection = ({ page = "" }) => {
                     style={{
                       transform: "translateY(5px)",
                     }}
-                    className="pl-1 inline-block lg:text-3xl absolute"
+                    className="pl-1 inline-block lg:text-3xl absolute text-orange-1000 "
                   >
                     ©
                   </sup>

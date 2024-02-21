@@ -49,11 +49,21 @@ const WhatyougetItem = ({ item }) => {
         />
       )} */}
       <div className="item_box rounded-md border-grey-theater md:p-2 px-3 py-2 text-center h-full flex flex-col justify-start">
-        <div className="flex gap-4">
-          <div className="" style={{width:'100px',height:"80px",display:'flex',alignItems:'center'}}>
+        <div className="flex items-center gap-4">
+          <div
+            className=""
+            style={{
+              width: "50px",
+              height: "35px",
+              display: "flex",
+              alignItems: "start",
+              marginBottom:'20px'
+            }}
+          >
             <Image
               style={{
-                maxWidt: "",
+                width: "100%", // Ensures the SVG fills the container width
+                height: "100%", // Ensures the SVG fills the container height
               }}
               className=""
             />
@@ -62,7 +72,11 @@ const WhatyougetItem = ({ item }) => {
             <p className="font-bold text-lg md:text-xl mb-1 rollover-color-title text-orange-1000">
               {item.title}
             </p>
-            <p className="mb-3 sm:text-lg text-base">{item.text}</p>
+            <p
+              className="mb-3 sm:text-lg text-base"
+            >
+              {item.text}
+            </p>
           </div>
         </div>
       </div>

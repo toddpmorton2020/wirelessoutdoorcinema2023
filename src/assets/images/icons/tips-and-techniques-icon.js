@@ -6,6 +6,7 @@ export const TipsTechniquesIcon = ({ className }) => (
       xmlns="http://www.w3.org/2000/svg"
       data-name="Layer 1"
       viewBox="0 0 122.2 112.5"
+      // viewBox="0 0 612 792"
       className={className}
     >
       <path

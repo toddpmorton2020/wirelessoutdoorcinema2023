@@ -7,9 +7,12 @@ export const VideoIconSvg = ({ classname }) => {
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
     //   xmlnsXlink="http://www.w3.org/1999/xlink"
-      // x="0px"
+      // x="100px"
       // y="0px"
-      viewBox="0 0 612 792"
+      // viewBox="0 140 500 692"
+      viewBox="100 140 440 700"
+
+      // viewBox="0 0 1224 1584"
       xmlSpace="preserve"
       className={classname}
     >

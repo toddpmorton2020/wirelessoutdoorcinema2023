@@ -29,7 +29,7 @@ const IntheNewsPage = () => {
                     <StaticImage
                       src="../assets/images/in-the-news-nov30-2023-outdoor-movie-theater-screen-frame-815x443.png"
                       alt="November 30, 2023, press release announcing the new Timberline Free-Standing Screen Frame and Outdoor Movie Theater."
-                      className="shadow-xl"
+                      // className="shadow-xl"
                     />
                     <div className="bg-white pt-5 px-5 cursor-pointer rounded-b-lg">
                       <p className="text-gray-600 mb-0 max-w-full text-lg">
@@ -52,7 +52,7 @@ const IntheNewsPage = () => {
                     <StaticImage
                       src="../assets/images/in-the-news-mar2-2023-outdoor-movie-theater-screen-frame-815x443.png"
                       alt="March 2, 2023, press release announcing the new Timberline Cemented Screen Frame and Outdoor Movie Theater."
-                      className="shadow-xl"
+                      // className="shadow-xl"
                     />
                     <div className="bg-white pt-5 px-5 cursor-pointer rounded-b-lg">
                       <p className="text-gray-600 mb-0 max-w-full text-lg">

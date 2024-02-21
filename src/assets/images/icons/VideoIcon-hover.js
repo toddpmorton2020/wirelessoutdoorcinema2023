@@ -7,9 +7,9 @@ export const VideoIconSvgHover = ({ classname }) => {
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
     //   xmlnsXlink="http://www.w3.org/1999/xlink"
-      x="0px"
-      y="0px"
-      viewBox="0 0 612 792"
+      // x="0px"
+      // y="0px"
+      viewBox="100 140 440 700"
       xmlSpace="preserve"
       className={classname}
     >

@@ -22,23 +22,24 @@ const VideoSection = () => {
       <div className="max-w-5xl mx-auto md:px-5 px-0">
         <div className="flex lg:flex-col flex-col-reverse how-to">
           <div className="lg:pb-11 text-white lg:pt-0 pt-11 md:px-0 px-5">
-            <div className="flex">
+            <div className="flex items-end">
               {/* <StaticImage src="../assets/images/timberline-big-moose-220px-x-211px.png" className="w-full"/> */}
               <GatsbyImage
                 image={getImage(TimberlineMoose)}
                 style={{
                   height: "200px",
                   width: "400px",
-                  margin: "auto",
+                  // margin: "auto",
+                  paddingBottom:'15px'
                 }}
                 alt="Timberline Moose"
               />
-              <div>
-                <h2 className="xl:text-50 text-2xl lg:text-5xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2 md:block hidden">
+              <div >
+                <h2 className="xl:text-50 text-2xl lg:text-5xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2 md:block hidden mt-8">
                   Introducing the Timberline Series Big Moose Outdoor Movie
                   Theater
                 </h2>
-                <h3 className="xl:text-35 text-xl md:text-2xl pb-4 xl:pb-5 mb-0 text-orange-1000 ">
+                <h3 className="xl:text-35 text-xl md:text-2xl mb-0 text-orange-1000 ">
                   Enjoy your favorite shows outside in the fresh air.
                 </h3>
               </div>
@@ -50,7 +51,7 @@ const VideoSection = () => {
             {/* <h3 className="xl:text-35 text-xl md:text-2xl pb-4 xl:pb-5 mb-0 text-orange-1000 ">
               Enjoy your favorite shows outside in the fresh air.
             </h3> */}
-            <p className="mb-0 max-w-full sm:text-lg text-base">
+            <p className="mb-0 max-w-full sm:text-lg text-base mt-4">
               This revolutionary outdoor movie theater has the fastest setup
               time, the most durable frame system, never has to be broken down,
               and is built to be used year-round. Transform your backyard into

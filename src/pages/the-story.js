@@ -10,7 +10,7 @@ const AboutPage = () => (
   <Layout>
        
        <Breadcrumbs page_title={'The Story'}/>
-       <div className="h-9"></div>
+       <div className="h-5"></div>
       <div className="max-w-4xl mx-auto top-heading px-5">
         <h1 className="text-orange-500 xl:text-70 text-orange-500 text-5xl md:text-5xl font-medium my-6">
         <span className="text-black">The</span> Story

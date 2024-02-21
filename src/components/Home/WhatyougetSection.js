@@ -397,7 +397,7 @@ const WhatyougetSection = () => {
           )} */}
                   <div className="text-center mt-3 text-lg px-4">
                     <p className="font-semibold" style={{ marginBottom: 0 }}>{image.name}</p>
-                    <p > {image.listPrice}</p>
+                    <p className="mb-0" > {image.listPrice}</p>
                   </div>
                 </div>
               ))}

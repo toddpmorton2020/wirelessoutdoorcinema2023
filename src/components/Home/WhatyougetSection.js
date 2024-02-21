@@ -459,7 +459,7 @@ const WhatyougetSection = () => {
           )}
 
           <div className="border rounded-xl px-5 col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto">
-            <div className="col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto">
+            <div className="col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto mb-4">
               <h3 className="col-span-12 text-lg md:text-xl xl:text-3xl mb-4 p-4">
                 You’ll get all the resources you need to<span className="text-orange-1000"> build an professional
                 outdoor movie theater:</span>

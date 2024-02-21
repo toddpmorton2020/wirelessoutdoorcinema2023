@@ -240,10 +240,10 @@ const ConnectPage = () => {
                                 </div>
                             </div>
                             <div className="hidden md:block flex-1 pl-6 xl:pl-0">
-                                <div className="w-full shadow-xl rounded-lg xl:-mt-10">
+                                <div className="w-full  rounded-lg xl:-mt-10">
                                     <StaticImage
                                         src="../assets/images/todd-morton-wireless-outdoor-cinema-company-750px-x-550px.png"
-                                        className="w-full shadow-xl rounded-lg todd-image"
+                                        className="w-full  rounded-lg todd-image"
                                     />
                                 </div>
                                 <div className="mt-8 text-center">

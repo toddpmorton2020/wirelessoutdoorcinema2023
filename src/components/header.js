@@ -180,7 +180,7 @@ const Header = ({ siteTitle }) => {
                     to="/how-to-build-an-outdoor-movie-theater/"
                     className="py-2 px-4 hover:text-orange-500 no-underline text-white font-normal"
                   >
-                    How to build an outdoor movie theater [Available May 1st]
+                    How to build an outdoor movie theater<span className="text-white"> [Available May 1st]</span>
                   </Link>
                   {/* <Link
                         to="/comparison"

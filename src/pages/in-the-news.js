@@ -84,7 +84,7 @@ const IntheNewsPage = () => {
                         <StaticImage
                           src="../assets/images/in-the-news-aug28-2022-outdoor-movie-theater-screen-frame-152x143.png"
                           alt="August 28, 2022, press release notification of new supports to the Timberline Movable Screen Frame and Outdoor Movie Theater."
-                          className="w-full h-full object-cover rounded shadow-md"
+                          className="w-full h-full object-cover rounded  "
                           style={{width:'110px',height:'100px'}}
                         />
                       </div>
@@ -106,7 +106,7 @@ const IntheNewsPage = () => {
                         <StaticImage
                           src="../assets/images/in-the-news-jun30-2022-outdoor-projector-stand-152x143.png"
                           alt="June 30, 2022, press release unveiling the new Timberline Outdoor Movie Theater Projector Stand."
-                          className="w-full h-full object-cover rounded shadow-md"
+                          className="w-full h-full object-cover rounded  "
                           style={{width:'110px',height:'100px'}}
                         />
                       </div>
@@ -128,7 +128,7 @@ const IntheNewsPage = () => {
                         <StaticImage
                           src="../assets/images/in-the-news-oct10-2021-todd-morton-founder-woc-152x143.png"
                           alt="October 10, 2021, Sun Journal Newspaper interview with Todd Morton, founder of the Wireless Outdoor Cinema Company."
-                          className="w-full h-full object-cover rounded shadow-md"
+                          className="w-full h-full object-cover rounded  "
                           style={{width:'110px',height:'100px'}}
                         />
                       </div>
@@ -153,7 +153,7 @@ const IntheNewsPage = () => {
                         <StaticImage
                           src="../assets/images/in-the-news-jan4-2021-outdoor-movie-theater-winner-152x143.png"
                           alt="January 4, 2021, press release announcing 107.5 Frank FM Fantasy Pro Football Challenge winner of the Outdoor Movie Theater."
-                          className="w-full h-full object-cover rounded shadow-md"
+                          className="w-full h-full object-cover rounded  "
                           style={{width:'110px',height:'100px'}}
                         />
                       </div>
@@ -175,7 +175,7 @@ const IntheNewsPage = () => {
                         <StaticImage
                           src="../assets/images/in-the-news-sep10-2020-outdoor-movie-theater-giveaway-152x143.png"
                           alt="September 10, 2021, press release announcing Fantasy Pro Football Challenge giveaway of an outdoor movie theater."
-                          className="w-full h-full object-cover rounded shadow-md"
+                          className="w-full h-full object-cover rounded  "
                           style={{width:'110px',height:'100px'}}
                         />
                       </div>
@@ -197,7 +197,7 @@ const IntheNewsPage = () => {
                         <StaticImage
                           src="../assets/images/in-the-news-jun25-2020-todd-morton-founder-152x143.png"
                           alt="June 25, 2020, Bridgton News interview with Todd Morton, founder of the Wireless Outdoor Cinema Company."
-                          className="w-full h-full object-cover rounded shadow-md"
+                          className="w-full h-full object-cover rounded  "
                           style={{width:'110px',height:'100px'}}
                         />
                       </div>
@@ -219,7 +219,7 @@ const IntheNewsPage = () => {
                         <StaticImage
                           src="../assets/images/in-the-news-jun8-2020-wireless-outdoor-cinema-company-152x143.png"
                           alt="June 08, 2020, press release introducing the Wireless Outdoor Cinema Company."
-                          className="w-full h-full object-cover rounded shadow-md"
+                          className="w-full h-full object-cover rounded  "
                           style={{width:'110px',height:'100px'}}
                         />
                       </div>

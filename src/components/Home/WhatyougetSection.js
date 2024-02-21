@@ -240,8 +240,8 @@ const WhatyougetSection = () => {
     },
     {
       id: 124,
-      img: ToolsNeededIcon,
-      imghover: ToolsNeededIconHover,
+      img: EquipmentListIcon,
+      imghover: EquipmentListIconHover,
       title: "Required Tools",
       text: "All tools are covered, from essential handheld to power tools.",
       bonus: false,
@@ -264,8 +264,8 @@ const WhatyougetSection = () => {
     },
     {
       id: 127,
-      img: EquipmentListIcon,
-      imghover: EquipmentListIconHover,
+      img: ToolsNeededIcon,
+      imghover: ToolsNeededIconHover,
       title: "Cinema Equipment List",
       text: "Recommended electronics for wireless and wired systems.",
       bonus: false,
@@ -396,8 +396,8 @@ const WhatyougetSection = () => {
             </div>
           )} */}
                   <div className="text-center mt-3 text-lg px-4">
-                    <p style={{ marginBottom: 0 }}>{image.name}</p>
-                    <p className="font-semibold"> {image.listPrice}</p>
+                    <p className="font-semibold" style={{ marginBottom: 0 }}>{image.name}</p>
+                    <p > {image.listPrice}</p>
                   </div>
                 </div>
               ))}
@@ -459,7 +459,7 @@ const WhatyougetSection = () => {
           )}
 
           <div className="border w-full rounded-xl px-5 col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto">
-            <div className="col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto mb-4">
+            <div className="col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto mb-8">
               <h3 className="col-span-12 text-lg md:text-xl xl:text-3xl mb-4 p-4">
                 You’ll get all the resources you need to<span className="text-orange-1000"> build an professional
                 outdoor movie theater:</span>
@@ -507,15 +507,15 @@ const WhatyougetSection = () => {
             })} */}
           </div>
           <div className="col-span-6 ">
-            <button className="bg-orange-1000 font-semibold text-white py-2 px-10 rounded-lg">
+            <button className="bg-orange-1000 sm:text-lg text-base  text-white py-2 px-10 rounded-lg">
               Available May 1, 2024
             </button>
-            <div className="mt-2">
-              <p className=" font-semibold mb-0">
+            <div className="mt-6">
+              <p className=" sm:text-lg text-base  mb-0">
                 On sale now for $99 (Reg. price $199. 50% off).
               </p>
-              <p className="font-semibold">
-                This limited-time bundle offer, valued at $3,600, expires
+              <p className="sm:text-lg text-base">
+                This limited-time offer, valued at $3,600, expires
                 September 30, 2024.
               </p>
             </div>

@@ -18,7 +18,7 @@ const AboutPage = () => (
       </div>
       {/* </div> */}
       <div className="max-w-4xl mx-auto px-5">
-        <StaticImage src="../assets/images/bridgton-twin-drive-in-861px-x-460px.png" alt="" className="w-full rounded-lg shadow-xl" />
+        <StaticImage src="../assets/images/bridgton-twin-drive-in-861px-x-460px.png" alt="" className="w-full rounded-lg " />
         <p className="text-neutral-600 sm:text-lg text-base pt-2 max-w-full">
         Bridgton Twin Drive-In Theatre in beautiful Bridgton, Maine.
         </p>
@@ -63,7 +63,7 @@ const AboutPage = () => (
         />
       </div>
       <div className="max-w-4xl px-5 mx-auto desktop">
-        <StaticImage src="../assets/images/outdoor-movie-theater-winter-about-861px-x-460px.png" alt="" className="w-full shadow-xl" />
+        <StaticImage src="../assets/images/outdoor-movie-theater-winter-about-861px-x-460px.png" alt="" className="w-full " />
         <p className="text-neutral-600 sm:text-lg text-base pt-2 max-w-full">
         Watching Atomic Blonde on my wireless outdoor movie theater in the winter of 2020.
         </p>
@@ -83,7 +83,7 @@ const AboutPage = () => (
         />
       </div>
       <div className="max-w-4xl px-5 mx-auto xl:pt-4 desktop">
-        <StaticImage src="../assets/images/todd-morton-winter-story-861px-x-460px.png" alt="" className="w-full shadow-xl" />
+        <StaticImage src="../assets/images/todd-morton-winter-story-861px-x-460px.png" alt="" className="w-full " />
         <p className="text-neutral-600 sm:text-lg text-base pt-3 max-w-full">
         Todd Morton, founder of the Wireless Outdoor Cinema Company located in Bridgton, Maine.
         </p>

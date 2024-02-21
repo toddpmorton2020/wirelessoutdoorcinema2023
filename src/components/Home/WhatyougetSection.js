@@ -506,7 +506,7 @@ const WhatyougetSection = () => {
               )
             })} */}
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 ml-4">
             <button className="bg-orange-1000 font-semibold text-white py-2 px-10 rounded-lg">
               Available May 1, 2024
             </button>

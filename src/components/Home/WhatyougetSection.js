@@ -368,7 +368,7 @@ const WhatyougetSection = () => {
               className="mx-auto mb-5 xl:pb-0 w-full" />
           </div> */}
           <div className="col-span-12 hidden lg:block">
-            <div className="flex gap-1">
+            <div className="flex w-full justify-between">
               {imageDetails.map(image => (
                 <div key={image.id} className="justify-center" style={{width:'305px'}}>
                   <button onClick={() => setModalImage(image.largeImage)}>

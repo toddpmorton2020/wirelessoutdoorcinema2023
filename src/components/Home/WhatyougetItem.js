@@ -48,7 +48,7 @@ const WhatyougetItem = ({ item }) => {
           className='bonus-banner-image'
         />
       )} */}
-      <div className="item_box rounded-md border-grey-theater md:p-2 px-3 py-2 text-center h-full flex flex-col justify-start">
+      <div className="item_box rounded-md border-grey-theater md:p-2 px-3 py-1 text-center h-full flex flex-col justify-start">
         <div className="flex items-center gap-4">
           <div
             className=""
@@ -68,12 +68,12 @@ const WhatyougetItem = ({ item }) => {
               className=""
             />
           </div>
-          <div className="flex flex-col text-left pt-3">
+          <div className="flex flex-col text-left">
             <p className="font-bold text-lg md:text-xl mb-1 rollover-color-title text-orange-1000">
               {item.title}
             </p>
             <p
-              className="mb-3 sm:text-lg text-base"
+              className="mb-1 sm:text-lg text-base"
             >
               {item.text}
             </p>

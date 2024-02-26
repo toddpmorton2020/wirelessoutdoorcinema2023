@@ -117,13 +117,13 @@ const ImpressiveOutdoorSection = () => {
                       /> */}
 
                     <GatsbyImage image={getImage(item.img)} alt={item.alt_text} className="grid-image mb-0 w-full" />
-
+                  
                     <div
                       style={{
                         bottom: "1rem",
                       }}
-                      className={`bg-black/[.6] flex p-2 absolute lg:hidden items-center gap-2 h-8 ${item.align === "start" ? "pr-8" : "right-0 flex-row-reverse pl-8"
-                        }`}
+                      className={`bg-black/[.6] hidden p-2 absolute sm:flex sm:bock lg:hidden items-center gap-2 h-8 ${item.align === "start" ? "pr-8" : "right-0 flex-row-reverse pl-8"
+                    }`}
                     >
                       <div>
                         <Icon
@@ -133,6 +133,16 @@ const ImpressiveOutdoorSection = () => {
                       </div>
                       <div className="sm:text-lg text-sm">{item.text}</div>
                     </div>
+                    {/* mobile---------------> */}
+                    <div className="flex p-2 justify-center sm:hidden items-center gap-2 h-10 mt-2">
+                      <div>
+                        <Icon
+                          className="h-8"
+                        />
+                      </div>
+                      <div className="sm:text-lg text-sm">{item.text}</div>
+                    </div>
+                    {/* mobile  <--------------- */}
 
                     <div
                       className={`absolute w-full lg:flex justify-center hidden large-justify-${item.align} top-1/2 xl:py-24 py-12 lg:my-0`}

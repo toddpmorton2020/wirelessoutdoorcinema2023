@@ -33,8 +33,9 @@ const VideoSection = () => {
                   paddingBottom:'15px'
                 }}
                 alt="Timberline Moose"
+                className="hidden md:block"
               />
-              <div >
+              <div className="hidden md:block">
                 <h2 className="xl:text-50 text-2xl lg:text-5xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2 md:block hidden mt-8">
                   Introducing the Timberline Series Big Moose Outdoor Movie
                   Theater
@@ -45,12 +46,12 @@ const VideoSection = () => {
               </div>
             </div>
             <h2 className="text-3xl font-semibold pb-2 md:hidden">
-              <span className="text-xl block">Timberline</span>
+              <span className="text-xl block">Introducing the Timberline</span>
               Outdoor Movie Theater
             </h2>
-            {/* <h3 className="xl:text-35 text-xl md:text-2xl pb-4 xl:pb-5 mb-0 text-orange-1000 ">
+            <h3 className="xl:text-35 text-xl md:text-2xl pb-4 xl:pb-5 mb-0 text-orange-1000 ">
               Enjoy your favorite shows outside in the fresh air.
-            </h3> */}
+            </h3>
             <p className="mb-0 max-w-full sm:text-lg text-base mt-4">
               This revolutionary outdoor movie theater has the fastest setup
               time, the most durable frame system, never has to be broken down,

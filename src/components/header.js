@@ -175,7 +175,7 @@ const Header = ({ siteTitle }) => {
                   src="../assets/images/icons/downarrow.png"
                   className="ml-2 h-2 w-2 transition-transform transform group-hover:rotate-180 duration-300"
                 />
-                <div className="bg-black w-80 z-50 absolute left-0 bottom-0 transform translate-y-full z-10 flex-col pt-6 pb-2 hidden group-hover:flex whitespace-no-wrap">
+                <div className="bg-black w-80 absolute left-0 bottom-0 transform translate-y-full z-10 flex-col pt-6 pb-2 hidden group-hover:flex whitespace-no-wrap">
                   <Link
                     to="/how-to-build-an-outdoor-movie-theater/"
                     className="py-2 px-4 hover:text-orange-500 no-underline text-white font-normal"
@@ -223,7 +223,7 @@ const Header = ({ siteTitle }) => {
                   src="../assets/images/icons/downarrow.png"
                   className="ml-2 h-2 w-2 transition-transform transform group-hover:rotate-180 duration-300"
                 />
-                <div className="bg-black w-60 absolute z-50 left-0 bottom-0 transform translate-y-full z-10 flex-col pt-6 pb-2 hidden group-hover:flex whitespace-no-wrap">
+                <div className="bg-black w-60 absolute left-0 bottom-0 transform translate-y-full z-10 flex-col pt-6 pb-2 hidden group-hover:flex whitespace-no-wrap">
                   <Link
                     to="/november-30-press-release"
                     className="py-2 px-4 hover:text-orange-500 text-white no-underline font-normal"
@@ -309,12 +309,12 @@ const Header = ({ siteTitle }) => {
           <div className="text-white text-xl flex flex-col">
             <Link to="/the-story" className="no-underline">
               <span className="block py-3 px-6 text-white font-normal">
-                About
+                The Story
               </span>
             </Link>
             <div class="w-full border border-b border-gray-600"></div>
             <span onClick={() => setOpenW(!openW)} className="cursor-pointer">
-              <span className="block py-3 px-6 flex items-center justify-between">
+              <span className="py-3 px-6 flex items-center justify-between">
                 <span>Outdoor Movie Theaters</span>
                 <span>&#9660;</span>
               </span>
@@ -372,19 +372,20 @@ const Header = ({ siteTitle }) => {
               <span className="block py-3 px-6">Sitemap</span>
             </Link>
             <div class="w-full border border-b border-gray-600"></div>
-            <div className="py-3 px-6 flex items-center justify-between">
+            <div className="py-2 px-6 flex items-center justify-between">
               <Link
                 to="tel:2075952960"
                 className="cursor-pointer flex items-center w-8/12 text-white no-underline"
               >
                 <GatsbyImage
-                  image={getImage(CellOrangeImg)}
+                  image={getImage(CellImg)}
                   alt="Cell Phone Icon"
                   className="h-6"
+                  style={{width:'32px',height:'35px'}}
                 />
                 <span className="ml-2">(207) 595-2960</span>
               </Link>
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <a
                   href="https://www.facebook.com/The-Wireless-Outdoor-Cinema-Company-112773330512496"
                   target="_blank"
@@ -406,7 +407,7 @@ const Header = ({ siteTitle }) => {
                     className="ml-6"
                   />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -51,13 +51,13 @@ const ConnectPage = () => {
             <Breadcrumbs page_title={'Connect'} />
             <div>
                 <div className="pt-5 overflow-hidden md:pb-20 pb-10">
-                    <div className="max-w-7xl px-5 mx-auto">
                         <div className="md:hidden w-full full-bleed-mobile relative mt-6 mb-6">
                             <StaticImage
                                 className="max-w-full w-full h-full object-cover object-top "
-                                src="../assets/images/todd-morton-wireless-outdoor-cinema-company-750px-x-550px.png"
+                                src="../assets/images/mobile-todd-morton-wireless-outdoor-cinema-480x320.jpg"
                             />
                         </div>
+                    <div className="max-w-7xl px-5 mx-auto">
                         <div className="mt-8">
                            <h1 className="text-orange-500 xl:text-70 text-orange-500 text-4xl md:text-5xl font-medium my-6">
                            <span className="text-black">Let&apos;s</span> Connect

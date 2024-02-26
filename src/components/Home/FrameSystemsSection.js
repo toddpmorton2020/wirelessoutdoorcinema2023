@@ -47,7 +47,7 @@ const FrameSystemsSection = () => {
                         <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 text-orange-1000">
                         Introducing the Timberline Cemented, Movable, and Free-Standing Frames.
                         </h3>
-                        <p className="sm:text-lg text-base md:mb-0 mb-10 max-w-full">
+                        <p className="sm:text-lg text-base md:mb-0 mb-1 max-w-full">
                         Every homeowner has a different landscape on their property, and the Timberline Cemented, Movable, and Free-Standing Screen Frames solve every challenge when installing a backyard movie theater. Use the Cemented Screen Frame for flat lawns or uneven backyards where you can dig into the ground. Choose the Movable Screen Frame if you have a flat lawn and want the flexibility to move the frame anywhere on your property. Use the Timberline Free-Standing Screen Frame for uneven backyards or if you have ledge stone and can’t dig into the ground.
                         </p>
                         <br></br>

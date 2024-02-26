@@ -96,7 +96,7 @@ const HeroSection = ({ page = "" }) => {
               </h1>
 
               <div className="lg:flex-col-reverse flex-col flex">
-                <div>
+                <div className="hidden md:block">
                   <p className="text-lg  leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0.5 max-w-full">
                     On sale now for $99 (Reg. price $199. 50% off)
                   </p>
@@ -105,12 +105,22 @@ const HeroSection = ({ page = "" }) => {
                   </p>
                 </div>
                 <div>
+                <button>
                   <Link
                     to="#"
                     className="lg:mb-6 mt-6 lg:mt-0 mb-0 text-lg md:text-2xl inline-block px-6 py-1.5 xl:px-10 xl:py-2 bg-orange-1000 no-underline text-white rounded-md"
                   >
                     Available May 1, 2024
                   </Link>
+                </button>
+                <div className="block md:hidden mt-10">
+                  <p className="text-lg  leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0.5 max-w-full">
+                    On sale for $99 (Reg. $199. 50% off)
+                  </p>
+                  <p className="text-lg  leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0 max-w-full">
+                    A limited-time offer valued over $3,600
+                  </p>
+                </div>
                 </div>
               </div>
             </div>

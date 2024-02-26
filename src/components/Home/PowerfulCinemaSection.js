@@ -154,8 +154,12 @@ const PowerfulCinemaSection = ({ className }) => {
             <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 max-w-full mb-0 text-orange-1000">
               Go wireless with no extension cords. Go wired for unlimited options.
             </h3>
-            <p className="sm:text-lg text-base max-w-full mb-0">
+            <p className="sm:text-lg text-base max-w-full mb-0 hidden md:block">
             The Timberline 150” Big Moose Outdoor Movie Theaters come in two different cinema packages: wireless and wired. The revolutionary wireless outdoor movie theater is powered by an off-grid compact battery station, allowing you to watch your favorite entertainment without running extension cords from your home to the cinema equipment, making for a fast and easy setup every time. The wired cinema package provides a more robust theater experience by adding receivers, tuners, PA speakers, and the ability to play video games on a massive 150” diagonal cinematic screen.
+            </p>
+            <p className="sm:text-lg text-base max-w-full mb-0 block md:hidden">
+            The Timberline 150” Big Moose Outdoor Movie Theaters come in two different cinema 
+packages: wireless and wired
             </p>
           </div>
 
@@ -173,11 +177,21 @@ const PowerfulCinemaSection = ({ className }) => {
               {/* <GatsbyImage image={getImage(MobileWirelessImg)} alt="Timberline Cemented Screen Frame and Wireless Outdoor Movie Theater setup in front of a lake in the winter."
                 className="mx-auto w-full mb-3" /> */}
             </div>
-            <div className="mt-6 md:px-0 px-5">
+            <div className="mt-6 md:px-0 px-5 ">
               <h3 className="text-3xl font-bold ">Go Wireless</h3>
-              <h4 className="text-lg my-2">
+              <h4 className="text-lg my-2 hidden sm:block">
                 No extensions cords. Fast setup every time.{" "}
               </h4>
+              <div className="block sm:hidden">
+              <h4 className="text-lg my-2 text-orange-1000">
+              No extension cords. Fast setup.{" "}
+              </h4>
+              <p>
+                This revolutionary wireless outdoor movie theater is powered by an off-grid compact battery 
+station, allowing you to watch your favorite entertainment without running extension cords 
+from your home to the cinema equipment, making for a fast and easy setup every time.
+              </p>
+              </div>
 
               <p className="text-orange-1000 mb-0 text-lg">Connect to: </p>
               <ul className="m-0 p-0">
@@ -268,9 +282,14 @@ const PowerfulCinemaSection = ({ className }) => {
             </div>
             <div className="mt-6 md:px-0 px-5">
               <h3 className="text-3xl font-bold ">Go Wired</h3>
-              <h4 className="text-lg my-2">
+              <h4 className="text-lg my-2 text-orange-1000">
                 Unlimited connection options. Play video games.
               </h4>
+              <p>
+              The wired cinema package provides a more robust theater experience by adding receivers, 
+tuners, PA speakers, and the ability to play video games on a massive 150” diagonal cinematic 
+screen.
+              </p>
               <p className="text-orange-1000 mb-0 text-lg">Connect to: </p>
               <ul className="m-0 p-0">
                 {gridItems2.map(item => {

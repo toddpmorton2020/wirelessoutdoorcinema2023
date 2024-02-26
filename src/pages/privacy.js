@@ -13,10 +13,13 @@ const PrivacyPage = () => {
             <>
                 <div className="pb-8">
                     <div className="py-5 overflow-hidden">
-                        <div className="max-w-7xl px-5 mx-auto">
-                            <div className="md:hidden relative mt-6 mb-6">
+                    <div className="md:hidden relative mt-6 mb-6">
                                 <StaticImage className="w-full h-full object-cover " src="../assets/images/privacy.png" />
                             </div>
+                        <div className="max-w-7xl px-5 mx-auto">
+                            {/* <div className="md:hidden relative mt-6 mb-6">
+                                <StaticImage className="w-full h-full object-cover " src="../assets/images/privacy.png" />
+                            </div> */}
                             <div className="mt-8">
                                 <h1 className="text-orange-500  xl:text-70 text-orange-500 text-4xl md:text-5xl leading-none font-medium relative mb-0">
                                     Privacy{" "}

@@ -18,7 +18,6 @@ import { HowVideoIconHover } from "../../assets/images/icons/how-to-video-icon-h
 import { TipsTechniquesIconHover } from "../../assets/images/icons/tips-and-techniques-icon-hover"
 import { VideoIconSvgHover } from "../../assets/images/icons/VideoIcon-hover"
 
-
 // import { TimberMovableOutdoorSmall } from "../../assets/images/timberline-movable-outdoor-movie-theater-337px-x-216px.jpg"
 // import { TimberMovableOutdoorLarge } from "../../assets/images/timberline-movable-outdoor-movie-theater-1200px-x-675px.jpg"
 
@@ -142,7 +141,6 @@ const WhatyougetSection = () => {
           }
         }
 
-
         Photo3Small: file(
           relativePath: {
             eq: "timberline-free-standing-outdoor-movie-theater-337px-x-216px.jpg"
@@ -172,7 +170,6 @@ const WhatyougetSection = () => {
             gatsbyImageData(quality: 100, layout: CONSTRAINED, height: 200)
           }
         }
-
         MobilePhoto3Large: file(
           relativePath: {
             eq: "mobile-timberline-free-standing-outdoor-movie-theater-640x360.jpg"
@@ -203,7 +200,6 @@ const WhatyougetSection = () => {
           }
         }
 
-
         MobilePhoto4Small: file(
           relativePath: {
             eq: "mobile-timberline-outdoor-projector-stand-480x320.jpg"
@@ -223,8 +219,6 @@ const WhatyougetSection = () => {
             gatsbyImageData(quality: 100, layout: CONSTRAINED)
           }
         }
-
-
       }
     `
   )
@@ -256,8 +250,10 @@ const WhatyougetSection = () => {
     },
     {
       id: 126,
-      img: VideoIconSvg,
-      imghover: VideoIconSvgHover,
+      img: HowVideoIcon,
+      // img: VideoIconSvg,
+      imghover: HowVideoIconHover,
+      // imghover: VideoIconSvgHover,
       title: "How-To Videos",
       text: "Watch how to build, assemble, and install your outdoor theater.",
       bonus: true,
@@ -293,8 +289,8 @@ const WhatyougetSection = () => {
       listPrice: "$3,499.00",
       smallImage: Photo1Small,
       largeImage: Photo1Large,
-      mobileSmallImage:MobilePhoto1Small,
-      mobileLargeImage:MobilePhoto1Large,
+      mobileSmallImage: MobilePhoto1Small,
+      mobileLargeImage: MobilePhoto1Large,
     },
     {
       id: 2,
@@ -302,8 +298,8 @@ const WhatyougetSection = () => {
       listPrice: "$3,499.00",
       smallImage: Photo2Small,
       largeImage: Photo2Large,
-      mobileSmallImage:MobilePhoto2Small,
-      mobileLargeImage:MobilePhoto2Large,
+      mobileSmallImage: MobilePhoto2Small,
+      mobileLargeImage: MobilePhoto2Large,
     },
     {
       id: 3,
@@ -311,8 +307,9 @@ const WhatyougetSection = () => {
       listPrice: "$3,599.00",
       smallImage: Photo3Small,
       largeImage: Photo3Large,
-      mobileSmallImage:MobilePhoto3Small,
-      mobileLargeImage:MobilePhoto3Large,
+      mobileSmallImage: MobilePhoto3Small,
+      // mobileLargeImage: MobilePhoto3Large, ===> not working
+      mobileLargeImage: Photo3Large,
     },
     {
       id: 4,
@@ -320,8 +317,8 @@ const WhatyougetSection = () => {
       listPrice: "$299.00",
       smallImage: Photo4Small,
       largeImage: Photo4Large,
-      mobileSmallImage:MobilePhoto4Small,
-      mobileLargeImage:MobilePhoto4Large,
+      mobileSmallImage: MobilePhoto4Small,
+      mobileLargeImage: MobilePhoto4Large,
     },
   ]
 
@@ -330,7 +327,7 @@ const WhatyougetSection = () => {
       className="bg-gray-990 relative text-white pb-14 lg:pb-24 lg:pt-0 pt-16 -mb-0.5"
       id="whatyouget"
     >
-      <div className="max-w-7xl px-5 mx-auto">
+      <div className="max-w-7xl px-5 mx-auto hidden md:block">
         <div className="flex flex-col lg:grid lg:grid-cols-12 w-full lg:gap-8">
           {/* <div className="col-span-5 lg:hidden sm:max-w-2xl mx-auto">
             <GatsbyImage
@@ -340,11 +337,11 @@ const WhatyougetSection = () => {
             />
           </div> */}
 
-          <div className="text-center xl:col-span-12 lg:col-span-6 lg:text-left xl:text-xl pt-6 lg:pt-16 ">
+          <div className="text-center xl:col-span-12 lg:col-span-6 lg:text-left xl:text-xl pt-6 lg:pt-16 px-5">
             <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">
               Here's what you get
             </h2>
-            <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 mb-0 text-orange-1000">
+            <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 mb-0 text-orange-1000 px-5">
               You’ll receive all 4 DIY Guides for just $99 (A bundle value over
               $3,600).
             </h3>
@@ -356,21 +353,27 @@ const WhatyougetSection = () => {
                 from trying to figure out how to enjoy your favorite
                 entertainment outside by using this professional DIY guide
                 designed to help you succeed in putting together your dream
-                outdoor movie theater. You will receive all four DIY guides in
-                .pdf format and get video access to learn how to build,
-                assemble, and install your new outdoor theater setup.{" "}
+                outdoor movie theater.
               </p>
-              <p className="sm:text-lg text-base max-w-full mb-0"></p>
+              <p className="sm:text-lg text-base max-w-full mb-0">
+                You will receive all four DIY guides in .pdf format and get
+                video access to learn how to build, assemble, and install your
+                new outdoor theater setup.{" "}
+              </p>
             </div>
           </div>
           {/* <div className="xl:col-span-5 lg:col-span-6 hidden lg:block lg:-mt-10">
             <GatsbyImage image={getImage(MooseImg)} alt=""
               className="mx-auto mb-5 xl:pb-0 w-full" />
           </div> */}
-          <div className="col-span-12 hidden lg:block">
+          <div className="col-span-12">
             <div className="flex w-full justify-between">
               {imageDetails.map(image => (
-                <div key={image.id} className="justify-center" style={{width:'305px'}}>
+                <div
+                  key={image.id}
+                  className="justify-center"
+                  style={{ width: "305px" }}
+                >
                   <button onClick={() => setModalImage(image.largeImage)}>
                     <GatsbyImage
                       image={getImage(image.smallImage)}
@@ -396,45 +399,10 @@ const WhatyougetSection = () => {
             </div>
           )} */}
                   <div className="text-center mt-3 text-lg px-4">
-                    <p className="font-semibold" style={{ marginBottom: 0 }}>{image.name}</p>
-                    <p className="mb-0" > {image.listPrice}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="col-span-12 block lg:hidden">
-            <div className="flex gap-1">
-              {imageDetails.map(image => (
-                <div key={image.id} className="col-span-6 justify-center">
-                  <button onClick={() => setModalImage(image.mobileLargeImage)}>
-                    <GatsbyImage
-                      image={getImage(image.mobileSmallImage)}
-                      style={{
-                        height: "200px",
-                        width: "300px",
-                        margin: "auto",
-                      }}
-                      alt=""
-                    />
-                  </button>
-                  {/* {modalImage && modalImage.name === image.largeImage && (
-            <div
-              className="fixed top-0 left-0 flex items-center justify-center w-full h-full bg-black bg-opacity-75"
-              onClick={closeModal}
-            >
-              <button className="absolute top-0 right-0 m-4 text-white" onClick={closeModal}>
-                Close
-              </button>
-              <div className="max-w-4xl mx-auto">
-                <GatsbyImage image={getImage(modalImage)} alt="" />
-              </div>
-            </div>
-          )} */}
-                  <div className="text-center mt-3 text-lg px-4">
-                    <p style={{ marginBottom: 0 }}>{image.name}</p>
-                    <p>List Price: {image.listPrice}</p>
+                    <p className="font-semibold" style={{ marginBottom: 0 }}>
+                      {image.name}
+                    </p>
+                    <p className="mb-0 text-[#bbb9b9]"> {image.listPrice}</p>
                   </div>
                 </div>
               ))}
@@ -447,12 +415,12 @@ const WhatyougetSection = () => {
               onClick={() => setModalImage(null)}
             >
               <button
-                className="absolute top-0 right-0 m-4 text-white"
+                className="absolute top-[20px] right-[20px] m-4 text-white"
                 onClick={() => setModalImage(null)}
               >
                 Close
               </button>
-              <div className="max-w-4xl mx-auto">
+              <div className="max-w-full m-auto">
                 <GatsbyImage image={getImage(modalImage)} alt="" />
               </div>
             </div>
@@ -461,8 +429,122 @@ const WhatyougetSection = () => {
           <div className="border w-full rounded-xl px-5 col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto">
             <div className="col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto mb-8">
               <h3 className="col-span-12 text-lg md:text-xl xl:text-3xl mb-4 p-4">
-                You’ll get all the resources you need to<span className="text-orange-1000"> build an professional
-                outdoor movie theater:</span>
+                You’ll get all the resources you need to
+                <span className="text-orange-1000">
+                  {" "}
+                  build an professional outdoor movie theater:
+                </span>
+              </h3>
+              {gridItems.map(item => (
+                <WhatyougetItem item={item} />
+              ))}
+            </div>
+          </div>
+          <div className="col-span-6 mt-6 ">
+            <button className="bg-orange-1000 sm:text-lg text-base  text-white py-2 px-10 rounded-lg">
+              Available May 1, 2024
+            </button>
+            <div className="mt-6">
+              <p className=" sm:text-lg text-base  mb-0">
+                On sale now for $99 (Reg. price $199. 50% off).
+              </p>
+              <p className="sm:text-lg text-base">
+                This limited-time offer, valued at $3,600, expires September 30,
+                2024.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* mobile view version----------------------------> */}
+      <div className="max-w-7xl mx-auto block md:hidden">
+        <div className="flex flex-col lg:grid lg:grid-cols-12 w-full lg:gap-8">
+          <div className="text-center xl:col-span-12 lg:col-span-6 lg:text-left xl:text-xl pt-6 lg:pt-16 px-5">
+            <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">
+              Here's what you get
+            </h2>
+            <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 mb-0 text-orange-1000 px-5">
+              You’ll receive all 4 DIY Guides for just $99 (A bundle value over
+              $3,600).
+            </h3>
+
+            <div className="px-5">
+              <p className="sm:text-lg text-base mb-4 max-w-full">
+                Introducing the only complete DIY guide on how to build a
+                professional outdoor movie theater. Take the guesswork and pain
+                from trying to figure out how to enjoy your favorite
+                entertainment outside by using this professional DIY guide
+                designed to help you succeed in putting together your dream
+                outdoor movie theater.
+              </p>
+              <p className="sm:text-lg text-base max-w-full mb-0">
+                You will receive all four DIY guides in .pdf format and get
+                video access to learn how to build, assemble, and install your
+                new outdoor theater setup.{" "}
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 mt-8">
+            {imageDetails.map(image => (
+              <div key={image.id}>
+                <button onClick={() => setModalImage(image.mobileLargeImage)} style={{ width: '100%', height: '200px' }}>
+                  <GatsbyImage
+                    image={getImage(image.mobileSmallImage)}
+                    className="w-[100%] h-[200px] cursor-pointer"
+                    alt=""
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
+                </button>
+                {/* {modalImage && modalImage.name === image.largeImage && (
+                  <div
+                    className="fixed top-0 left-0 flex items-center justify-center w-full h-full bg-black bg-opacity-75"
+                    onClick={closeModal}
+                  >
+                    <div className="max-w-4xl mx-auto">
+                      <GatsbyImage image={getImage(modalImage)} alt="" />
+                    </div>
+                    <button className="m-4 text-white" onClick={closeModal}>
+                      Close
+                    </button>
+                  </div>
+                )} */}
+                <div className="text-center mt-3 text-lg px-4">
+                  <p style={{ marginBottom: 0 }}>{image.name}</p>
+                  <p className="text-[#bbb9b9]">{image.listPrice}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* ==========================mobile================================= */}
+
+          {modalImage && (
+            <div
+              className="fixed top-0 left-0 flex items-center justify-center w-full h-full bg-black bg-opacity-75"
+              onClick={() => setModalImage(null)}
+            >
+              <button
+                className="absolute top-0 right-0 m-4 text-white"
+                onClick={() => setModalImage(null)}
+              >
+                Close
+              </button>
+              <div className="max-w-md mx-auto">
+                <GatsbyImage image={getImage(modalImage)} alt="" className="w-full" />
+              </div>
+            </div>
+          )}
+
+          <div className="border w-full rounded-xl px-5 col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto">
+            <div className="col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto mb-8">
+              <h3 className="col-span-12 text-lg md:text-xl xl:text-3xl mb-4 p-4">
+                You’ll get all the resources you need to
+                <span className="text-orange-1000">
+                  {" "}
+                  build an professional outdoor movie theater:
+                </span>
               </h3>
               {gridItems.map(item => (
                 <WhatyougetItem item={item} />
@@ -506,17 +588,17 @@ const WhatyougetSection = () => {
               )
             })} */}
           </div>
-          <div className="col-span-6 mt-6 ">
-            <button className="bg-orange-1000 sm:text-lg text-base  text-white py-2 px-10 rounded-lg">
+          <div className="mt-6 w-full flex flex-col items-center px-5">
+            <button className="bg-orange-1000 sm:text-lg text-base text-white py-2 px-10 rounded-lg">
               Available May 1, 2024
             </button>
-            <div className="mt-6">
-              <p className=" sm:text-lg text-base  mb-0">
-                On sale now for $99 (Reg. price $199. 50% off).
+            <div className="mt-6 text-center">
+              <p className="sm:text-lg text-base mb-0">
+                On sale now for $99 (Reg. $199. 50% off).
               </p>
               <p className="sm:text-lg text-base">
-                This limited-time offer, valued at $3,600, expires
-                September 30, 2024.
+                This limited-time offer, valued at $3,600, expires September 30,
+                2024.
               </p>
             </div>
           </div>

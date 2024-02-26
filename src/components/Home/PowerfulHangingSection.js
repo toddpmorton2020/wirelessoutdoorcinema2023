@@ -62,7 +62,7 @@ const PowerfulHangingSection = () => {
             </div>
           </div>
           <div className="md:grid grid-cols-12 gap-2">
-            <div className="col-span-6 mb-11 md:mb-0 relative">
+            <div className="col-span-6 mb-11 md:mb-0 relative hidden md:block">
               {" "}
               <GatsbyImage image={getImage(HookImg)} alt="Manual pull-down outdoor projector screen setup on a Timberline Outdoor Movie Theater Screen Frame."  
                 className="mx-auto z-10 w-full" />
@@ -79,7 +79,26 @@ const PowerfulHangingSection = () => {
                 <span className="sm:text-lg text-sm">Manual pull-down projector screen</span>
               </div>
             </div>
-            <div className="col-span-6 relative">
+            <div className="col-span-6 mb-11 md:mb-0 relative block md:hidden">
+              {" "}
+              <div>
+              <GatsbyImage image={getImage(HookImg)} alt="Manual pull-down outdoor projector screen setup on a Timberline Outdoor Movie Theater Screen Frame."  
+                className="mx-auto z-10 w-full" />
+                </div>
+                <div className="flex pt-2 items-center justify-center">
+                
+                <GatsbyImage image={getImage(HandIcon)} alt=""
+                className="w-16" />
+                
+                <span className="sm:text-lg text-sm">Manual pull-down projector screen</span>
+              </div>
+
+            </div>
+
+
+
+
+            <div className="col-span-6 relative hidden md:block">
               {" "}
               
               <GatsbyImage image={getImage(StraightImg)} alt="Grommet hole outdoor projection screen setup on a Timberline Outdoor Movie Theater Screen Frame." 
@@ -93,6 +112,17 @@ const PowerfulHangingSection = () => {
                 <span className="sm:text-lg text-sm">Cinematic grommet hole screen</span>
                 <GatsbyImage image={getImage(GrommetIcon)} alt="Cinematic grommet hole screen"
                 className="mx-auto w-16"/>
+              </div>
+            </div>
+            <div className="col-span-6 relative block md:hidden">
+              {" "}
+              
+              <GatsbyImage image={getImage(StraightImg)} alt="Grommet hole outdoor projection screen setup on a Timberline Outdoor Movie Theater Screen Frame." 
+                className="mx-auto z-10 w-full" />
+                <div className="flex pt-2 items-center justify-center">
+                <GatsbyImage image={getImage(GrommetIcon)} alt="Cinematic grommet hole screen"
+                className="w-16 mr-2"/>
+                <span className="sm:text-lg text-sm">Cinematic grommet hole screen</span>
               </div>
             </div>
           </div>

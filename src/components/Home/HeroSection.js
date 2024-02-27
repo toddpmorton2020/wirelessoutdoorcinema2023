@@ -72,7 +72,7 @@ const HeroSection = ({ page = "" }) => {
         </div>
         {/* <div class="absolute inset-0 bg-black opacity-50"></div> */}
         <div className="lg:container pb-8 xl:pb-16 mx-auto px-5">
-          <div className="lg:absolute xl:mt-16 2xl:pt-18 sm:top-0">
+          <div className="lg:absolute xl:mt-16 2xl:pt-4 sm:top-0">
             <div className="relative lg:w-3/5 xl:w-2/5 2xl:w-3/5 z-20 xl:mt-0 lg:mt-20 mt-8 xl:mt-0">
               <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] mb-0 font-semibold text-2xl sm:text-2xl md:text-5xl md:mb-3 max-w-full">
                 Get the only

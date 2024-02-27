@@ -613,7 +613,7 @@ const WhatyougetSection = () => {
           )}
 
           <div className="md:border w-full rounded-xl mb-0 px-6 col-span-12 justify-center grid grid-cols-12 lg:mt-4 xl:max-w-full md:max-w-lg mx-auto">
-            <div className="col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-2 xl:max-w-full md:max-w-lg mx-auto mb-8">
+            <div className="col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-2 xl:max-w-full md:max-w-lg mx-auto mb-2">
               <div className="col-span-12 mb-4 p-4 text-center">
                 <h3 className="text-lg md:text-xl xl:text-3xl  text-orange-1000">
                   You’ll get all the resources you need

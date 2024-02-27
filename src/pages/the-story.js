@@ -40,19 +40,19 @@ const AboutPage = () => (
           </p>
       </div>
       </div>
-      <div className="mt-8 bg-orange-1000 py-6 text-center md:hidden block">
+      {/* <div className="mt-8 bg-orange-1000 py-6 text-center md:hidden block">
         <div className="mx-auto px-5 text-lg sm:text-3xl pt-3 pb-6 text-white when-build hidden md:block">
         Four years later, I still feel fortunate and grateful for all the positive feedback I have received from customers, family, friends, and the media alike. I hope you and I get to know each other and explore the possibilities of building your dream backyard movie theater.
         </div>
-        {/* <StaticImage
+        <StaticImage
           src="../assets/images/signature_white.png"
           className="mt-3 signature-white hidden"
-        /> */}
+        />
         <StaticImage
           src="../assets/images/signature_black.png"
           className="sm:w-3/12 w-1/2 mt-3 mx-auto signature-black"
         />
-      </div>
+      </div> */}
       <div className="max-w-4xl px-5 mx-auto mobile-padding">
         <div className="mt-6">
       </div>

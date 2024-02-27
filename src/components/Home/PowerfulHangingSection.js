@@ -85,7 +85,7 @@ const PowerfulHangingSection = () => {
               <GatsbyImage image={getImage(HookImg)} alt="Manual pull-down outdoor projector screen setup on a Timberline Outdoor Movie Theater Screen Frame."  
                 className="mx-auto z-10 w-full" />
                 </div>
-                <div className="flex pt-2 items-center justify-center">
+                <div className="flex pt-2 mt-2 items-center justify-center">
                 
                 <GatsbyImage image={getImage(HandIcon)} alt=""
                 className="w-16" />
@@ -119,7 +119,7 @@ const PowerfulHangingSection = () => {
               
               <GatsbyImage image={getImage(StraightImg)} alt="Grommet hole outdoor projection screen setup on a Timberline Outdoor Movie Theater Screen Frame." 
                 className="mx-auto z-10 w-full" />
-                <div className="flex pt-2 items-center justify-center">
+                <div className="flex pt-2 items-center mt-2  justify-center">
                 <GatsbyImage image={getImage(GrommetIcon)} alt="Cinematic grommet hole screen"
                 className="w-16 mr-2"/>
                 <span className="sm:text-lg text-sm">Cinematic grommet hole screen</span>

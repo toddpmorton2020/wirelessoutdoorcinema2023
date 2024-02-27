@@ -18,7 +18,7 @@ const VideoSection = () => {
     `
   )
   return (
-    <div className="bg-black pt-9 xl:pt-10 xl:pb-36 lg:pb-24 pb-16">
+    <div className="bg-black pt-9 xl:pt-10 xl:pb-24 lg:pb-24 pb-16">
       <div className="max-w-5xl mx-auto md:px-5 px-0">
         <div className="flex lg:flex-col flex-col-reverse how-to">
           <div className="lg:pb-11 text-white lg:pt-0 pt-11 md:px-0 px-5">

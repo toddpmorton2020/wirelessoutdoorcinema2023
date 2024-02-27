@@ -49,7 +49,7 @@ const PerfectForSection = () => {
   ]
   return (
     <div
-      className="bg-black relative text-white pt-16 lg:pt-24tt"
+      className="bg-black relative text-white pt-16 lg:pt-24"
       id="cnemauses"
     >
       <div className="max-w-7xl px-5 mx-auto lg:pb-24 pb-14 border-b border-grey-subnav">

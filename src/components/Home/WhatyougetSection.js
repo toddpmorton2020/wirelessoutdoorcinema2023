@@ -392,7 +392,7 @@ const WhatyougetSection = () => {
             />
           </div> */}
 
-          <div className="text-center xl:col-span-12 lg:col-span-6 lg:text-left xl:text-xl pt-6 lg:pt-16">
+          <div className="text-center xl:col-span-12 lg:col-span-6 lg:text-left xl:text-xl pt-6 lg:pt-24">
             <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">
               Here's what you get
             </h2>
@@ -503,7 +503,7 @@ const WhatyougetSection = () => {
               <p className=" sm:text-lg text-base  mb-0">
                 On sale now for $99 (Reg. price $199. 50% off).
               </p>
-              <p className="sm:text-lg text-base">
+              <p className="sm:text-lg text-base mb-0">
                 This limited-time offer, valued at $3,600, expires September 30,
                 2024.
               </p>
@@ -515,7 +515,7 @@ const WhatyougetSection = () => {
       {/* mobile view version----------------------------> */}
       <div className="max-w-7xl mx-auto block md:hidden">
         <div className="flex flex-col lg:grid lg:grid-cols-12 w-full lg:gap-8">
-          <div className="text-center xl:col-span-12 lg:col-span-6 lg:text-left xl:text-xl pt-6 lg:pt-16 px-2">
+          <div className="text-center xl:col-span-12 lg:col-span-6 lg:text-left xl:text-xl pt-0 md:pt-6 lg:pt-16 px-2">
             <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">
               Here's what you get
             </h2>
@@ -583,7 +583,7 @@ const WhatyougetSection = () => {
                   >
                     {image.name}
                   </p>
-                  <p className="text-[#bbb9b9]">{image.listPrice}</p>
+                  <p className="text-[#bbb9b9] md:mb-0">{image.listPrice}</p>
                 </div>
               </div>
             ))}
@@ -612,8 +612,8 @@ const WhatyougetSection = () => {
             </div>
           )}
 
-          <div className="md:border w-full rounded-xl mb-0 px-6 col-span-12 justify-center grid grid-cols-12 lg:mt-4 xl:max-w-full md:max-w-lg mx-auto">
-            <div className="col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-2 xl:max-w-full md:max-w-lg mx-auto mb-2">
+          <div className="md:border  w-full rounded-xl mb-0 px-6 col-span-12 justify-center grid grid-cols-12 lg:mt-4 xl:max-w-full md:max-w-lg mx-auto ">
+            <div className="col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-2 xl:max-w-full md:max-w-lg mx-auto mb-2 ">
               <div className="col-span-12 mb-4 p-4 text-center">
                 <h3 className="text-lg md:text-xl xl:text-3xl  text-orange-1000">
                   You’ll get all the resources you need

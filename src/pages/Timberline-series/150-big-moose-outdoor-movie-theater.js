@@ -63,15 +63,16 @@ const BigMooseCinema = () => {
 
     return (
         <Layout>
+                      <Breadcrumbs page_title={'150 Big Moose Outdoor Cinema'}/>
             <>
                 <div className="wrapper desktop md:block hidden">
                     <div className="max-w-7xl px-5 mx-auto">
-                        <div className="py-5 xl:pt-5">
-                            <Breadcrumbs page_title={'150 Big Moose Outdoor Cinema'}/>
+                        <div className="">
+                  
                             <div className="mt-12 grid xl:grid-cols-2 grid-cols-1">
                                 <div className="mt-10 xl:mt-0 pr-0 xl:pr-12 xl:order-first order-last">
-                                    <h1 className="xl:text-70 text-4xl md:text-5xl text-orange-500 sm:text-5xl leading-none relative mb-0">
-                                        150” Big Moose
+                                    <h1 className="xl:text-70 text-4xl md:text-5xl text-orange-500 sm:text-5xl leading-none font-medium relative mb-0">
+                                       <span className="text-black"> 150 </span> Big Moose
                                     </h1>
                                     <h2 className="xl:text-50 md:text-4xl text-3xl text-black leading-none relative mb-0 mt-0">
                                         Outdoor Cinema

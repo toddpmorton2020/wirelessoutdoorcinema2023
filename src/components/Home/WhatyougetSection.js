@@ -392,11 +392,11 @@ const WhatyougetSection = () => {
             />
           </div> */}
 
-          <div className="text-center xl:col-span-12 lg:col-span-6 lg:text-left xl:text-xl pt-6 lg:pt-16 px-5">
+          <div className="text-center xl:col-span-12 lg:col-span-6 lg:text-left xl:text-xl pt-6 lg:pt-16">
             <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">
               Here's what you get
             </h2>
-            <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 mb-0 text-orange-1000 px-5">
+            <h3 className="text-xl md:text-2xl xl:text-35 pb-4 xl:pb-5 mb-0 text-orange-1000">
               You’ll receive all 4 DIY Guides for just $99 (A bundle value over
               $3,600).
             </h3>
@@ -663,7 +663,7 @@ const WhatyougetSection = () => {
             })} */}
           </div>
           <div className="mt-2 md:mt-6 w-full flex flex-col items-center px-5">
-            <button className="bg-orange-1000 sm:text-lg font-bold text-base text-white py-2 w-[86%] rounded-lg">
+            <button className="bg-orange-1000 text-lg font-bold text-base text-white py-2 w-[86%] rounded-lg">
               Available May 1, 2024
             </button>
             <div className="mt-6 text-center">

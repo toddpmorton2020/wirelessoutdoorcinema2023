@@ -17,8 +17,9 @@ const AboutPage = () => (
         </h1>
       </div>
       {/* </div> */}
+        <StaticImage src="../assets/images/mobile-bridgton-twin-drive-in-480x320.jpg" alt="" className="w-full rounded-sm block md:hidden" />
       <div className="max-w-4xl mx-auto px-5">
-        <StaticImage src="../assets/images/bridgton-twin-drive-in-861px-x-460px.png" alt="" className="w-full rounded-lg " />
+        <StaticImage src="../assets/images/bridgton-twin-drive-in-861px-x-460px.png" alt="" className="w-full rounded-lg hidden md:block" />
         <p className="text-neutral-600 sm:text-lg text-base pt-2 max-w-full">
         Bridgton Twin Drive-In Theatre in beautiful Bridgton, Maine.
         </p>
@@ -39,19 +40,19 @@ const AboutPage = () => (
           </p>
       </div>
       </div>
-      <div className="mt-8 bg-orange-1000 py-6 text-center md:hidden block">
-        <div className="mx-auto px-5 text-lg sm:text-3xl pt-3 pb-6 text-white when-build">
+      {/* <div className="mt-8 bg-orange-1000 py-6 text-center md:hidden block">
+        <div className="mx-auto px-5 text-lg sm:text-3xl pt-3 pb-6 text-white when-build hidden md:block">
         Four years later, I still feel fortunate and grateful for all the positive feedback I have received from customers, family, friends, and the media alike. I hope you and I get to know each other and explore the possibilities of building your dream backyard movie theater.
         </div>
-        {/* <StaticImage
+        <StaticImage
           src="../assets/images/signature_white.png"
           className="mt-3 signature-white hidden"
-        /> */}
+        />
         <StaticImage
           src="../assets/images/signature_black.png"
           className="sm:w-3/12 w-1/2 mt-3 mx-auto signature-black"
         />
-      </div>
+      </div> */}
       <div className="max-w-4xl px-5 mx-auto mobile-padding">
         <div className="mt-6">
       </div>
@@ -62,8 +63,9 @@ const AboutPage = () => (
           // style={{ backgroundImage: `url(${frameMobile})` }}
         />
       </div>
+        <StaticImage src="../assets/images/mobile-outdoor-movie-theater-winter-the-story-480x320.jpg" alt="" className="w-full block md:hidden" />
       <div className="max-w-4xl px-5 mx-auto desktop">
-        <StaticImage src="../assets/images/outdoor-movie-theater-winter-about-861px-x-460px.png" alt="" className="w-full " />
+        <StaticImage src="../assets/images/outdoor-movie-theater-winter-about-861px-x-460px.png" alt="" className="w-full hidden md:block" />
         <p className="text-neutral-600 sm:text-lg text-base pt-2 max-w-full">
         Watching Atomic Blonde on my wireless outdoor movie theater in the winter of 2020.
         </p>
@@ -82,8 +84,9 @@ const AboutPage = () => (
           // style={{ backgroundImage: `url(${standMobile})` }}
         />
       </div>
+        <StaticImage src="../assets/images/mobile-todd-morton-winter-the-story-480x320.jpg" alt="" className="w-full block md:hidden" />
       <div className="max-w-4xl px-5 mx-auto xl:pt-4 desktop">
-        <StaticImage src="../assets/images/todd-morton-winter-story-861px-x-460px.png" alt="" className="w-full " />
+        <StaticImage src="../assets/images/todd-morton-winter-story-861px-x-460px.png" alt="" className="w-full hidden md:block" />
         <p className="text-neutral-600 sm:text-lg text-base pt-3 max-w-full">
         Todd Morton, founder of the Wireless Outdoor Cinema Company located in Bridgton, Maine.
         </p>

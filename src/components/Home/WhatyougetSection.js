@@ -287,22 +287,32 @@ const WhatyougetSection = () => {
     },
     {
       id: 124,
-      img: EquipmentListIcon,
-      imghover: EquipmentListIconHover,
+      img: MaterialListIcon,
+      imghover: MaterialListIconHover,
+      title: "Material List",
+      text: "List of all materials including hardware, fasteners, and wood.",
+      bonus: false,
+    },
+    {
+      id: 125,
+      // img: EquipmentListIcon,
+      // imghover: EquipmentListIconHover,
+      img: ToolsNeededIcon,
+      imghover: ToolsNeededIconHover,
       title: "Required Tools",
       text: "All tools are covered, from essential handheld to power tools.",
       bonus: false,
     },
     {
-      id: 125,
-      img: MaterialListIcon,
-      imghover: MaterialListIconHover,
-      title: "Building Material List",
-      text: "List of all materials including hardware, fasteners, and wood.",
+      id: 126,
+      img: EquipmentListIcon,
+      imghover: EquipmentListIconHover,
+      title: "Equipment List",
+      text: "Recommended electronics for wireless and wired systems.",
       bonus: false,
     },
     {
-      id: 126,
+      id: 127,
       img: HowVideoIcon,
       // img: VideoIconSvg,
       imghover: HowVideoIconHover,
@@ -310,14 +320,6 @@ const WhatyougetSection = () => {
       title: "How-To Videos",
       text: "Watch how to build, assemble, and install your outdoor theater.",
       bonus: true,
-    },
-    {
-      id: 127,
-      img: ToolsNeededIcon,
-      imghover: ToolsNeededIconHover,
-      title: "Cinema Equipment List",
-      text: "Recommended electronics for wireless and wired systems.",
-      bonus: false,
     },
     {
       id: 128,
@@ -374,7 +376,6 @@ const WhatyougetSection = () => {
       mobileLargeImage: MobilePhoto4Large,
     },
   ]
-  
 
   return (
     <div
@@ -514,7 +515,7 @@ const WhatyougetSection = () => {
       {/* mobile view version----------------------------> */}
       <div className="max-w-7xl mx-auto block md:hidden">
         <div className="flex flex-col lg:grid lg:grid-cols-12 w-full lg:gap-8">
-          <div className="text-center xl:col-span-12 lg:col-span-6 lg:text-left xl:text-xl pt-6 lg:pt-16 px-5">
+          <div className="text-center xl:col-span-12 lg:col-span-6 lg:text-left xl:text-xl pt-6 lg:pt-16 px-2">
             <h2 className="text-3xl md:text-4xl xl:text-50 font-semibold leading-c18 md:leading-none md:pb-3 pb-2">
               Here's what you get
             </h2>
@@ -523,7 +524,7 @@ const WhatyougetSection = () => {
               $3,600).
             </h3>
 
-            <div className="px-5">
+            <div className="px-2">
               <p className="sm:text-lg text-base mb-4 max-w-full">
                 Introducing the only complete DIY guide on how to build a
                 professional outdoor movie theater. Take the guesswork and pain
@@ -543,12 +544,19 @@ const WhatyougetSection = () => {
           <div className="grid grid-cols-1 mt-8">
             {imageDetails.map(image => (
               <div key={image.id}>
-                <button onClick={() => setModalImage(image.mobileLargeImage)} style={{ width: '100%', height: '200px' }}>
+                <button
+                  onClick={() => setModalImage(image.mobileLargeImage)}
+                  style={{ width: "100%", height: "200px" }}
+                >
                   <GatsbyImage
                     image={getImage(image.mobileSmallImage)}
                     className="w-[100%] h-[200px] cursor-pointer"
                     alt=""
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
                   />
                 </button>
                 {/* {modalImage && modalImage.name === image.largeImage && (
@@ -564,8 +572,17 @@ const WhatyougetSection = () => {
                     </button>
                   </div>
                 )} */}
-                <div className="text-center mt-3 text-lg px-4">
-                  <p style={{ marginBottom: 0 }}>{image.name}</p>
+                <div className="text-center mt-4 text-lg px-6">
+                  <p
+                    style={{
+                      marginBottom: 0,
+                      fontSize: "18px",
+                      lineHeight: "18px",
+                    }}
+                    className="font-bold "
+                  >
+                    {image.name}
+                  </p>
                   <p className="text-[#bbb9b9]">{image.listPrice}</p>
                 </div>
               </div>
@@ -586,20 +603,23 @@ const WhatyougetSection = () => {
                 Close
               </button>
               <div className="max-w-md mx-auto">
-                <GatsbyImage image={getImage(modalImage)} alt="" className="w-full" />
+                <GatsbyImage
+                  image={getImage(modalImage)}
+                  alt=""
+                  className="w-full"
+                />
               </div>
             </div>
           )}
 
-          <div className="border w-full rounded-xl px-5 col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto">
-            <div className="col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-10 xl:max-w-full md:max-w-lg mx-auto mb-8">
-              <h3 className="col-span-12 text-lg md:text-xl xl:text-3xl mb-4 p-4">
-                You’ll get all the resources you need to
-                <span className="text-orange-1000">
-                  {" "}
-                  build an professional outdoor movie theater:
-                </span>
-              </h3>
+          <div className="md:border w-full rounded-xl mb-0 px-6 col-span-12 justify-center grid grid-cols-12 lg:mt-4 xl:max-w-full md:max-w-lg mx-auto">
+            <div className="col-span-12 justify-center grid grid-cols-12 lg:mt-4 mt-2 xl:max-w-full md:max-w-lg mx-auto mb-8">
+              <div className="col-span-12 mb-4 p-4 text-center">
+                <h3 className="text-lg md:text-xl xl:text-3xl  text-orange-1000">
+                  You’ll get all the resources you need
+                </h3>
+                <h3> to build an outdoor movie theater:</h3>
+              </div>
               {mobileGridItems.map(item => (
                 <WhatyougetItem item={item} />
               ))}
@@ -642,17 +662,16 @@ const WhatyougetSection = () => {
               )
             })} */}
           </div>
-          <div className="mt-6 w-full flex flex-col items-center px-5">
-            <button className="bg-orange-1000 sm:text-lg text-base text-white py-2 px-10 rounded-lg">
+          <div className="mt-2 md:mt-6 w-full flex flex-col items-center px-5">
+            <button className="bg-orange-1000 sm:text-lg font-bold text-base text-white py-2 w-[86%] rounded-lg">
               Available May 1, 2024
             </button>
             <div className="mt-6 text-center">
-              <p className="sm:text-lg text-base mb-0">
-                On sale now for $99 (Reg. $199. 50% off).
+              <p className="text-lg  leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0.5 max-w-full">
+                On sale now for $99 (Reg. $199. 50% off)
               </p>
-              <p className="sm:text-lg text-base">
-                This limited-time offer, valued at $3,600, expires September 30,
-                2024.
+              <p className="text-lg  leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0 max-w-full">
+                A limited-time offer valued over $3,600
               </p>
             </div>
           </div>

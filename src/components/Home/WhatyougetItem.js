@@ -36,7 +36,7 @@ const WhatyougetItem = ({ item }) => {
   return (
     <div
       id={item.id}
-      className="col-span-12 md:col-span-6 xl:col-span-6 mx-auto rollover-svg-item w-full lg:mb-0 mb-4"
+      className="col-span-12 md:col-span-6 xl:col-span-6 mx-auto rollover-svg-item w-full lg:mb-0 mb-8 md:mb-4"
       ref={boxRef}
       onMouseOver={() => handleMouseEnter(item.id)}
       onMouseOut={() => handleMouseEnter("")}
@@ -48,7 +48,7 @@ const WhatyougetItem = ({ item }) => {
           className='bonus-banner-image'
         />
       )} */}
-      <div className="item_box rounded-md border-grey-theater md:p-2 px-3 py-1 text-center h-full flex flex-row justify-start border md:border-none">
+      <div className="item_box rounded-md border-grey-theater md:p-2 px-3 py-2 md:py-1 text-center h-full flex flex-row justify-start border-2 md:border-none">
         {item.bonus && (
           <div
             className="block md:hidden"
@@ -61,7 +61,7 @@ const WhatyougetItem = ({ item }) => {
             />
           </div>
         )}
-        <div className="flex items-center gap-4 flex-col md:flex-row">
+        <div className="flex items-center gap-4 flex-col p-1 md:p-0 md:flex-row">
           <div
             className="col-span-12 w-[35%] md:w-[50px] mt-1 md:mt-0"
             style={{
@@ -80,8 +80,8 @@ const WhatyougetItem = ({ item }) => {
               className=""
             />
           </div>
-          <div className="flex flex-col text-center md:text-left">
-            <p className="font-bold text-lg md:text-xl mb-1 rollover-color-title text-orange-1000">
+          <div className="flex flex-col text-center md:text-left mt-2">
+            <p className="font-bold text-lg md:text-xl mb-1 rollover-color-title text-white md:text-orange-1000">
               {item.title}
             </p>
             <p className="mb-1 sm:text-lg text-base">{item.text}</p>

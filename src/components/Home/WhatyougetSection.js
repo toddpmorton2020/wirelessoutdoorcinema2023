@@ -250,6 +250,59 @@ const WhatyougetSection = () => {
     },
     {
       id: 126,
+      // img: HowVideoIcon,
+      img: VideoIconSvg,
+      // imghover: HowVideoIconHover,
+      // imghover: VideoIconSvgHover,
+      title: "How-To Videos",
+      text: "Watch how to build, assemble, and install your outdoor theater.",
+      bonus: true,
+    },
+    {
+      id: 127,
+      img: ToolsNeededIcon,
+      imghover: ToolsNeededIconHover,
+      title: "Cinema Equipment List",
+      text: "Recommended electronics for wireless and wired systems.",
+      bonus: false,
+    },
+    {
+      id: 128,
+      img: TipsTechniquesIcon,
+      imghover: TipsTechniquesIconHover,
+      title: "Tips & Techniques",
+      text: "Avoid costly mistakes and pitfalls with expert advice.",
+      bonus: true,
+    },
+  ]
+
+  const mobileGridItems = [
+    {
+      id: 123,
+      img: DesignPlanIcon,
+      imghover: DesignPlanIconHover,
+      title: "Design Plans",
+      text: "Complete design plans on how to build everything.",
+      bonus: false,
+    },
+    {
+      id: 124,
+      img: EquipmentListIcon,
+      imghover: EquipmentListIconHover,
+      title: "Required Tools",
+      text: "All tools are covered, from essential handheld to power tools.",
+      bonus: false,
+    },
+    {
+      id: 125,
+      img: MaterialListIcon,
+      imghover: MaterialListIconHover,
+      title: "Building Material List",
+      text: "List of all materials including hardware, fasteners, and wood.",
+      bonus: false,
+    },
+    {
+      id: 126,
       img: HowVideoIcon,
       // img: VideoIconSvg,
       imghover: HowVideoIconHover,
@@ -321,6 +374,7 @@ const WhatyougetSection = () => {
       mobileLargeImage: MobilePhoto4Large,
     },
   ]
+  
 
   return (
     <div
@@ -402,7 +456,7 @@ const WhatyougetSection = () => {
                     <p className="font-semibold" style={{ marginBottom: 0 }}>
                       {image.name}
                     </p>
-                    <p className="mb-0 text-[#bbb9b9]"> {image.listPrice}</p>
+                    <p className="mb-0"> {image.listPrice}</p>
                   </div>
                 </div>
               ))}
@@ -420,7 +474,7 @@ const WhatyougetSection = () => {
               >
                 Close
               </button>
-              <div className="max-w-full m-auto">
+              <div className="max-w-4xl m-auto">
                 <GatsbyImage image={getImage(modalImage)} alt="" />
               </div>
             </div>
@@ -546,7 +600,7 @@ const WhatyougetSection = () => {
                   build an professional outdoor movie theater:
                 </span>
               </h3>
-              {gridItems.map(item => (
+              {mobileGridItems.map(item => (
                 <WhatyougetItem item={item} />
               ))}
             </div>

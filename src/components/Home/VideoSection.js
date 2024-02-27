@@ -45,13 +45,16 @@ const VideoSection = () => {
                 </h3>
               </div>
             </div>
-            <h2 className="text-3xl font-semibold pb-2 md:hidden">
+            <div className="block md:hidden">
+            <h2 className="text-3xl font-semibold pb-2">
               <span className="text-xl block">Introducing the Timberline</span>
               Outdoor Movie Theater
             </h2>
-            <h3 className="xl:text-35 text-xl md:text-2xl pb-4 xl:pb-5 mb-0 text-orange-1000 ">
+            <h3 className="xl:text-35 text-xl md:text-2xl xl:pb-5 mb-0 text-orange-1000 font-medium">
               Enjoy your favorite shows outside in the fresh air.
             </h3>
+            </div>
+
             <p className="mb-0 max-w-full sm:text-lg text-base mt-4">
               This revolutionary outdoor movie theater has the fastest setup
               time, the most durable frame system, never has to be broken down,

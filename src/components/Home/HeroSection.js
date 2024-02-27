@@ -77,10 +77,10 @@ const HeroSection = ({ page = "" }) => {
               <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] font-semibold text-2xl sm:text-2xl md:text-5xl mb-3 max-w-full">
                 Get the only
               </p>
-              <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] font-semibold text-2xl sm:text-2xl md:text-5xl mb-4 max-w-full ">
+              <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] font-semibold text-2xl sm:text-2xl md:text-5xl mb-4 max-w-full text-orange-1000 md:text-white">
                 professional DIY guide on
               </p>
-              <h1 className=" text-orange-1000 [text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] max-w-full lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl md:leading-tight text-4xl mb-5 font-semibold shadow-xl">
+              <h1 className="text-white md:text-orange-1000 [text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] max-w-full lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl md:leading-tight text-4xl mb-5 font-semibold shadow-xl">
                 How to build an outdoor movie{" "}
                 <span className="relative">
                   theater
@@ -88,7 +88,7 @@ const HeroSection = ({ page = "" }) => {
                     style={{
                       transform: "translateY(5px)",
                     }}
-                    className="pl-1 inline-block lg:text-3xl absolute text-orange-1000 "
+                    className="pl-1 inline-block lg:text-3xl absolute text-white md:text-orange-1000 "
                   >
                     ©
                   </sup>
@@ -108,12 +108,12 @@ const HeroSection = ({ page = "" }) => {
                 <button>
                   <Link
                     to="#"
-                    className="lg:mb-6 mt-6 lg:mt-0 mb-0 text-lg md:text-2xl inline-block px-6 py-1.5 xl:px-10 xl:py-2 bg-orange-1000 no-underline text-white rounded-md"
+                    className="lg:mb-6 mt-4 lg:mt-0 mb-0 text-lg md:text-2xl inline-block px-8 py-2 xl:px-10 xl:py-2 bg-orange-1000 no-underline text-white rounded-md"
                   >
                     Available May 1, 2024
                   </Link>
                 </button>
-                <div className="block md:hidden mt-10">
+                <div className="block md:hidden mt-8">
                   <p className="text-lg  leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0.5 max-w-full">
                     On sale for $99 (Reg. $199. 50% off)
                   </p>

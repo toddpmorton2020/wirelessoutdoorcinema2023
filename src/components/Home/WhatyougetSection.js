@@ -433,7 +433,7 @@ const WhatyougetSection = () => {
                     <GatsbyImage
                       image={getImage(image.smallImage)}
                       style={{
-                        height: "320px",
+                        height: "200px",
                         width: "300px",
                         margin: "auto",
                        
@@ -551,7 +551,7 @@ const WhatyougetSection = () => {
                 >
                   <GatsbyImage
                     image={getImage(image.mobileSmallImage)}
-                    className="w-[100%] h-[320px] cursor-pointer object-fill md:object-cover"
+                    className="w-[100%] h-[320px] cursor-pointer md:object-cover"
                     alt=""
               
                     style={{

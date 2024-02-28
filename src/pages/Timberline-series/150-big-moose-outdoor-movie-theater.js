@@ -869,11 +869,11 @@ const BigMooseCinema = () => {
                             </div>
                             <div className="mt-12 flex flex-col-reverse md:flex-row mb-8">
                                 <div className="mt-10">
-                                    <h1 className="text-4xl text-orange-500 mb-0 relative">
-                                        150” Big Moose
+                                    <h1 className="text-4xl font-medium text-orange-500 mb-0 relative">
+                                        150 Big Moose
                                     </h1>
                                     <h2 className="text-black text-3xl mb-0 relative">
-                                        Outdoor Cinema
+                                        Outdoor Movie Theater
                                     </h2>
                                     <p className="sm:text-lg text-base mt-3 max-w-full">
                                         Standing at 12’ ft. wide and 10’ ft. high, this massive

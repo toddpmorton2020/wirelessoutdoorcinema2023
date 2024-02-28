@@ -170,4 +170,7 @@ width: 15px;height: 15px;padding-right:22px;}
     object-fit: contain !important;
 }
 
-    
+.custom-image{
+    height: 320px !important;
+    width: 480px !important;
+}    

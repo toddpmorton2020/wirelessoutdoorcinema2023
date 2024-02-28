@@ -73,14 +73,14 @@ const HeroSection = ({ page = "" }) => {
         {/* <div class="absolute inset-0 bg-black opacity-50"></div> */}
         <div className="lg:container pb-8 xl:pb-16 mx-auto px-5">
           <div className="lg:absolute xl:mt-16 2xl:pt-4 sm:top-0">
-            <div className="relative lg:w-3/5 xl:w-2/5 2xl:w-3/5 z-20 xl:mt-0 lg:mt-20 mt-8 xl:mt-0">
-              <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] mb-0 font-semibold text-2xl sm:text-2xl md:text-5xl md:mb-3 max-w-full">
+            <div className="relative lg:w-3/5  xl:w-3/5 2xl:w-3/5 z-20 xl:mt-0 lg:mt-20 mt-4 xl:mt-0">
+              <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] mb-0 font-semibold lg:text-4xl text-2xl sm:text-2xl md:text-5xl md:mb-3 max-w-full">
                 Get the only
               </p>
-              <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] mb-2 font-semibold text-2xl sm:text-2xl md:text-5xl md:mb-4 max-w-full text-orange-1000 md:text-white">
+              <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] mb-2 font-semibold text-2xl sm:text-2xl lg:text-4xl md:text-5xl md:mb-4 max-w-full text-orange-1000 md:text-white">
                 professional DIY guide on
               </p>
-              <h1 className="text-white md:text-white [text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] max-w-full lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl md:leading-tight text-4xl mb-5 font-semibold ">
+              <h1 className="text-white md:text-white [text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] max-w-full lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl lg:text-5xl md:leading-tight text-4xl mb-5 font-semibold ">
                 How to build an outdoor movie{" "}
                 <span className="relative">
                   theater
@@ -95,25 +95,25 @@ const HeroSection = ({ page = "" }) => {
                 </span>
               </h1>
 
-              <div className="lg:flex-col-reverse flex-col flex mt-0 md:mt-16">
+              <div className="lg:flex-col-reverse flex-col flex mt-0 lg:mt-8 md:mt-16">
                 <div className="hidden md:block">
                   <p className="text-lg  leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0.5 max-w-full">
-                    On sale now for $99 (Reg. price $199. 50% off)
+                    On sale for $99 (Reg. price $199. 50% off)
                   </p>
                   <p className="text-lg  leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0 max-w-full">
-                    A limited-time bundle offer valued over $3,600
+                    A limited-time offer valued over $3,600
                   </p>
                 </div>
                 <div>
                 <button>
                   <Link
                     to="#"
-                    className="lg:mb-6 mt-4 lg:mt-0 mb-0 text-lg md:text-2xl inline-block px-8 py-2 xl:px-10 xl:py-2 bg-orange-1000 no-underline text-white rounded-md"
+                    className="lg:mb-6 lg:mt-0 mb-0 text-lg md:text-2xl inline-block px-8 py-2 xl:px-10 xl:py-2 bg-orange-1000 no-underline text-white rounded-md"
                   >
                     Available May 1, 2024
                   </Link>
                 </button>
-                <div className="block md:hidden mt-8">
+                <div className="block md:hidden mt-4">
                   <p className="text-lg  leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0.5 max-w-full">
                     On sale for $99 (Reg. $199. 50% off)
                   </p>

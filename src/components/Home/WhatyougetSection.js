@@ -433,7 +433,7 @@ const WhatyougetSection = () => {
                     <GatsbyImage
                       image={getImage(image.smallImage)}
                       style={{
-                        height: "200px",
+                        height: "320px",
                         width: "300px",
                         margin: "auto",
                        
@@ -547,13 +547,13 @@ const WhatyougetSection = () => {
               <div key={image.id} >
                 <button
                   onClick={() => setModalImage(image.mobileLargeImage)}
-                  style={{ width: "100%", height: "200px" }}
+                  style={{ width: "100%", height: "320px" }}
                 >
                   <GatsbyImage
                     image={getImage(image.mobileSmallImage)}
-                    className="w-[100%] h-[200px] cursor-pointer object-fill md:object-cover"
+                    className="w-[100%] h-[320px] cursor-pointer object-fill md:object-cover"
                     alt=""
-                    objectFit="fill"
+              
                     style={{
                       width: "100%",
                       height: "100%",

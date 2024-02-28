@@ -381,7 +381,7 @@ const Header = ({ siteTitle }) => {
                   image={getImage(CellImg)}
                   alt="Cell Phone Icon"
                   className="h-6"
-                  style={{width:'32px',height:'35px'}}
+                  // style={{width:'32px',height:'35px'}}
                 />
                 <span className="ml-2">(207) 595-2960</span>
               </Link>

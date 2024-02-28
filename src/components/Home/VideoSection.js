@@ -27,18 +27,23 @@ const VideoSection = () => {
              <div  style={{
                   height: "200px",
                   width: "400px",
+                  objectFit:"contain",
                   // margin: "auto",
                   paddingBottom:'15px'
-                }} className="hidden md:block"> <GatsbyImage
+                }} className="hidden md:block custom-moose"> 
+                <GatsbyImage
                 image={getImage(TimberlineMoose)}
                 style={{
                  
                   // margin: "auto",
-                  paddingBottom:'15px'
+                  paddingBottom:'15px',
+                  objectFit:"contain !important"
                 }}
+                // className="custom-moose"
                 alt="Timberline Moose"
              
-              /></div>
+              />
+              </div>
               <div className="hidden md:block">
                 <h2 className="xl:text-50 text-2xl lg:text-5xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2 md:block hidden mt-8">
                   Introducing the Timberline Series Big Moose Outdoor Movie

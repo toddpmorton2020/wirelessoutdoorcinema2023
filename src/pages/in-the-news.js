@@ -250,7 +250,7 @@ const IntheNewsPage = () => {
                     <p className="text-gray-600 text-sm font-semibold mb-0 max-w-full text-lg">
                       PRESS RELEASE
                     </p>
-                    <p className="text-xl font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
+                    <p className="text-xl text-gray-800 font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
                       Wireless Outdoor Cinema Company introduces new Timberline
                       Free-Standing Screen Frame System
                     </p>
@@ -272,7 +272,7 @@ const IntheNewsPage = () => {
                     <p className="text-gray-600 text-sm font-semibold mb-0 max-w-full text-lg">
                       PRESS RELEASE
                     </p>
-                    <p className="text-xl font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
+                    <p className="text-xl text-gray-800 font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
                       Wireless Outdoor Cinema Company unveils new Timberline
                       Cemented Screen Frame System
                     </p>
@@ -294,7 +294,7 @@ const IntheNewsPage = () => {
                     <p className="text-gray-600 text-sm font-semibold mb-0 max-w-full text-lg">
                       PRESS RELEASE
                     </p>
-                    <p className="text-xl font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
+                    <p className="text-xl text-gray-800 font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
                       Wireless Outdoor Cinema Company announces new frame
                       supports to Timberline Series Movable Screen Frame System
                     </p>
@@ -316,7 +316,7 @@ const IntheNewsPage = () => {
                     <p className="text-gray-600 text-sm font-semibold mb-0 max-w-full text-lg">
                       PRESS RELEASE
                     </p>
-                    <p className="text-xl font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
+                    <p className="text-xl text-gray-800 font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
                       Wireless Outdoor Cinema Company unveils new Outdoor Movie
                       Theater Projector Stand
                     </p>
@@ -338,7 +338,7 @@ const IntheNewsPage = () => {
                     <p className="text-gray-600 text-sm font-semibold mb-0 max-w-full text-lg">
                       NEWS ARTICLE
                     </p>
-                    <p className="text-xl font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
+                    <p className="text-xl text-gray-800 font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
                       Film buff's inspiration inspires backyard theater business
                     </p>
                     <p className="text-gray-600 pt-1 pb-3 mb-0 max-w-full text-lg">
@@ -359,7 +359,7 @@ const IntheNewsPage = () => {
                     <p className="text-gray-600 text-sm font-semibold mb-0 max-w-full text-lg">
                       PRESS RELEASE
                     </p>
-                    <p className="text-xl font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
+                    <p className="text-xl text-gray-800 font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
                       Wireless Outdoor Cinema Company announces winner to the
                       107.5 Frank FM Fantasy Pro Football Challenge
                     </p>
@@ -381,7 +381,7 @@ const IntheNewsPage = () => {
                     <p className="text-gray-600 text-sm font-semibold mb-0 max-w-full text-lg">
                       PRESS RELEASE
                     </p>
-                    <p className="text-xl font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
+                    <p className="text-xl text-gray-800 font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
                       Wireless Outdoor Cinema Company partners with 107.5 Frank
                       FM on Fantasy Pro Football Challenge
                     </p>
@@ -403,7 +403,7 @@ const IntheNewsPage = () => {
                     <p className="text-gray-600 text-sm font-semibold mb-0 max-w-full text-lg">
                       BRIDGTON NEWS
                     </p>
-                    <p className="text-xl font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
+                    <p className="text-xl text-gray-800 font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
                       Bring movies and gaming outdoors
                     </p>
                     <p className="text-gray-600 pt-1 pb-3 mb-0 max-w-full text-lg">
@@ -424,7 +424,7 @@ const IntheNewsPage = () => {
                     <p className="text-gray-600 text-sm font-semibold mb-0 max-w-full text-lg">
                       PRESS RELEASE
                     </p>
-                    <p className="text-xl font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
+                    <p className="text-xl text-gray-800 font-semibold leading-tight pt-1 mb-0 max-w-full text-lg">
                       Introducing the Wireless Outdoor Cinema Company
                     </p>
                     <p className="text-gray-600 pt-1 pb-3 mb-0 max-w-full text-lg">

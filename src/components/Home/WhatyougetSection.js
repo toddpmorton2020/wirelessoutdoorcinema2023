@@ -429,13 +429,14 @@ const WhatyougetSection = () => {
                   className="justify-center"
                   style={{ width: "305px" }}
                 >
-                  <button onClick={() => setModalImage(image.largeImage)}>
+                  <button  onClick={() => setModalImage(image.largeImage)}>
                     <GatsbyImage
                       image={getImage(image.smallImage)}
                       style={{
                         height: "200px",
                         width: "300px",
                         margin: "auto",
+                       
                       }}
                       alt=""
                     />
@@ -543,19 +544,21 @@ const WhatyougetSection = () => {
 
           <div className="grid grid-cols-1 mt-8">
             {imageDetails.map(image => (
-              <div key={image.id}>
+              <div key={image.id} >
                 <button
                   onClick={() => setModalImage(image.mobileLargeImage)}
                   style={{ width: "100%", height: "200px" }}
                 >
                   <GatsbyImage
                     image={getImage(image.mobileSmallImage)}
-                    className="w-[100%] h-[200px] cursor-pointer"
+                    className="w-[100%] h-[200px] cursor-pointer object-fill md:object-cover"
                     alt=""
+                    objectFit="fill"
                     style={{
                       width: "100%",
                       height: "100%",
-                      objectFit: "cover",
+                      
+                     
                     }}
                   />
                 </button>

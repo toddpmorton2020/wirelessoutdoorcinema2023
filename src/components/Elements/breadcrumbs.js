@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-const Breadcrumbs = ({page_title}) => {
+const Breadcrumbs = ({page_title,dark_mode=false}) => {
     return (
         <div className="max-w-7xl mx-auto px-5">
         <div className="pt-5">
@@ -10,7 +10,7 @@ const Breadcrumbs = ({page_title}) => {
                     Home
                 </Link>
                 <span className="mx-1 sm:mx-2">&gt;</span>
-                <span to="#" className="sm:text-lg text-base">{page_title}</span>
+                <span to="#"  className={`sm:text-lg text-base ${dark_mode?"light-breadcrumb-title":""}`}>{page_title}</span>
             </div>
         </div>
         </div>

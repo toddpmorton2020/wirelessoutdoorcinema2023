@@ -33,6 +33,7 @@ const WhatyougetItem = ({ item }) => {
     setOver(id)
   }
   const Image = over == item.id ? item.imghover : item.img
+  console.log({item})
   return (
     <div
       id={item.id}
@@ -67,16 +68,16 @@ const WhatyougetItem = ({ item }) => {
             style={{
               // width: "50px",
               height: "35px",
-              display: "flex",
+            
               alignItems: "start",
               marginBottom: "20px",
             }}
           >
             <Image
-              style={{
-                width: "100%", // Ensures the SVG fills the container width
-                height: "100%", // Ensures the SVG fills the container height
-              }}
+     
+     style={{
+      maxWidt: ''
+  }}
               className=""
             />
           </div>

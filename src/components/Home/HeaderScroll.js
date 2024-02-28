@@ -72,7 +72,7 @@ const HeaderScroll = () => {
       </div>
 
       <div className="desktop-subnav z-30 sticky top-0 hidden sm:block -mt-px border-b border-grey-subnav">
-        <div className="container mx-auto px-5 h-12">
+        <div className="container mx-auto  h-12">
           <div className="flex justify-between text-white content-center h-full">
             <div className="hidden xl:flex text-lg h-full items-center">
               <span>How to build a professional outdoor movie theater</span>

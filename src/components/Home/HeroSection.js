@@ -80,7 +80,7 @@ const HeroSection = ({ page = "" }) => {
               <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] mb-2 font-semibold text-2xl sm:text-2xl md:text-5xl md:mb-4 max-w-full text-orange-1000 md:text-white">
                 professional DIY guide on
               </p>
-              <h1 className="text-white md:text-white [text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] max-w-full lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl md:leading-tight text-4xl mb-5 font-semibold shadow-xl">
+              <h1 className="text-white md:text-white [text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] max-w-full lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl md:leading-tight text-4xl mb-5 font-semibold ">
                 How to build an outdoor movie{" "}
                 <span className="relative">
                   theater
@@ -95,7 +95,7 @@ const HeroSection = ({ page = "" }) => {
                 </span>
               </h1>
 
-              <div className="lg:flex-col-reverse flex-col flex mt-16">
+              <div className="lg:flex-col-reverse flex-col flex mt-0 md:mt-16">
                 <div className="hidden md:block">
                   <p className="text-lg  leading-6 sm:text-xl xl:text-3xl md:text-2xl mb-0.5 max-w-full">
                     On sale now for $99 (Reg. price $199. 50% off)

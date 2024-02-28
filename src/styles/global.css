@@ -132,6 +132,9 @@ transition: transform .3s ease-in-out;}
 .herosection sup {top: 0.6rem;}
 }
 @media screen and (max-width: 767px){
+    .light-breadcrumb-title{
+      color:rgb(175 175 175) !important;
+    }
 .bonus-banner-image { margin-left: -13px; margin-top: -15px; width:95px !important; height: 80px !important; max-width: inherit;}
 .quote_img{display: none !important;}
 .item_box{width: 220px; margin: 0 auto;}
@@ -162,3 +165,9 @@ width: 15px;height: 15px;padding-right:22px;}
 .custom-hidden-mobile{
     display: none;
 }
+
+.custom-moose img{
+    object-fit: contain !important;
+}
+
+    

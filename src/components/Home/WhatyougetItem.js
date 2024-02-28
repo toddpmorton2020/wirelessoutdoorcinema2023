@@ -33,7 +33,7 @@ const WhatyougetItem = ({ item }) => {
     setOver(id)
   }
   const Image = over == item.id ? item.imghover : item.img
-  console.log({item})
+  console.log({ item })
   return (
     <div
       id={item.id}
@@ -62,30 +62,30 @@ const WhatyougetItem = ({ item }) => {
             />
           </div>
         )}
-        <div className="flex items-center gap-4 flex-col p-1 md:p-0 md:flex-row">
+        <div className="flex items-center gap-0 md:gap-4 flex-col p-0 md:p-0 md:flex-row">
           <div
-            className="col-span-12 w-[35%] md:w-[50px] mt-1 md:mt-0"
+            className="col-span-12  md:w-[50px] mt-1 md:mt-0"
             style={{
               // width: "50px",
               height: "35px",
-            
+
               alignItems: "start",
               marginBottom: "20px",
             }}
           >
             <Image
-     
-     style={{
-      maxWidt: ''
-  }}
-              className=""
+
+              style={{
+              
+              }}
+              className=" lg:h-auto h-14 mx-auto"
             />
           </div>
           <div className="flex flex-col text-center md:text-left mt-2">
             <p className="font-bold text-lg md:text-xl mb-1 rollover-color-title text-white md:text-orange-1000">
               {item.title}
             </p>
-            <p className="mb-1 sm:text-lg text-base">{item.text}</p>
+            <p className="mb-3 md:mb-1 sm:text-lg text-base">{item.text}</p>
           </div>
         </div>
       </div>

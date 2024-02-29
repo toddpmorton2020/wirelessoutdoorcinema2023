@@ -139,7 +139,7 @@ const FrameSystemsSection = () => {
 
                     <div className="md:grid flex flex-col-reverse items-stretch lg:gap-4 grid-cols-12  xl:mt-10 relative">
                         <div className="lg:col-span-4 md:col-span-5 md:text-left text-center lg:mt-0 mt-6 md:px-0 px-5">
-                            <h2 className="text-3xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2">Free-Standing Screen Frame
+                            <h2 className="text-3xl md:text-4xl font-semibold leading-c18 md:leading-none md:pb-3 pb-2 leading-9">Free-Standing Screen Frame
 </h2>
                             <h3 className="text-xl lg:text-3xl md:text-2xl pb-4 xl:pb-5 mb-0 max-w-full text-orange-1000">
                             Ideal for any backyard 

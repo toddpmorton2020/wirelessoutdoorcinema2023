@@ -77,10 +77,10 @@ const HeroSection = ({ page = "" }) => {
               <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] mb-0 font-semibold lg:text-4xl text-2xl sm:text-2xl md:text-5xl md:mb-3 max-w-full">
                 Get the only
               </p>
-              <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] mb-2 font-semibold text-2xl sm:text-2xl lg:text-4xl md:text-5xl md:mb-4 max-w-full text-orange-1000 md:text-white">
+              <p className="[text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] mb-2 font-semibold text-2xl sm:text-2xl lg:text-4xl md:text-5xl md:mb-4 max-w-full text-orange-1000 md:text-white lg:leading-8">
                 professional DIY guide on
               </p>
-              <h1 className="text-white md:text-white [text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] max-w-full lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl lg:text-5xl md:leading-tight text-4xl mb-5 font-semibold ">
+              <h1 className="  text-white md:text-white [text-shadow:_0_1px_0_rgb(0_0_30_/_80%)] max-w-full lg:w-full md:w-4/6 w-4/5 xl:text-70 md:text-5xl lg:text-5xl md:leading-tight text-4xl mb-5 font-semibold lg:leading-8">
                 How to build an outdoor movie{" "}
                 <span className="relative">
                   theater

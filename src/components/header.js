@@ -175,7 +175,7 @@ const Header = ({ siteTitle }) => {
                   src="../assets/images/icons/downarrow.png"
                   className="ml-2 h-2 w-2 transition-transform transform group-hover:rotate-180 duration-300"
                 />
-                <div className="bg-black w-80 absolute left-0 bottom-0 transform translate-y-full z-10 flex-col pt-6 pb-2 hidden group-hover:flex whitespace-no-wrap">
+                <div className="bg-black w-80 absolute left-0 bottom-0 transform translate-y-full z-50 flex-col pt-6 pb-2 hidden group-hover:flex whitespace-no-wrap">
                   <Link
                     to="/how-to-build-an-outdoor-movie-theater/"
                     className="py-2 px-4 hover:text-orange-500 no-underline text-white font-normal"

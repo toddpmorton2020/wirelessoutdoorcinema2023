@@ -44,6 +44,7 @@ const WhatyougetSection = () => {
     Photo4Large,
     MobilePhoto4Small,
     MobilePhoto4Large,
+    MobilePhoto4Small2
   } = useStaticQuery(
     graphql`
       query {
@@ -84,7 +85,7 @@ const WhatyougetSection = () => {
 
         MobilePhoto1Small: file(
           relativePath: {
-            eq: "mobile-timberline-movable-outdoor-movie-theater-480x320.jpg"
+            eq: "timberline-movable-outdoor-movie-theater-on-ice-695x392-winter.jpg"
           }
         ) {
           childImageSharp {
@@ -163,7 +164,7 @@ const WhatyougetSection = () => {
 
         MobilePhoto3Small: file(
           relativePath: {
-            eq: "mobile-timberline-free-standing-outdoor-movie-theater-480x320.jpg"
+            eq: "mobile-timberline-wired-outdoor-movie-theater-480x320-winter.jpg"
           }
         ) {
           childImageSharp {
@@ -203,6 +204,15 @@ const WhatyougetSection = () => {
         MobilePhoto4Small: file(
           relativePath: {
             eq: "mobile-timberline-outdoor-projector-stand-480x320.jpg"
+          }
+        ) {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: CONSTRAINED, height: 250)
+          }
+        }
+        MobilePhoto4Small2: file(
+          relativePath: {
+            eq: "mobile-timberline-outdoor-projector-stand-480x460-winter.jpg"
           }
         ) {
           childImageSharp {
@@ -372,7 +382,8 @@ const WhatyougetSection = () => {
       listPrice: "$299.00",
       smallImage: Photo4Small,
       largeImage: Photo4Large,
-      mobileSmallImage: MobilePhoto4Small,
+      // mobileSmallImage: MobilePhoto4Small,
+      mobileSmallImage: MobilePhoto4Small2,
       mobileLargeImage: MobilePhoto4Large,
     },
   ]
@@ -547,11 +558,11 @@ const WhatyougetSection = () => {
               <div key={image.id} >
                 <button
                   onClick={() => setModalImage(image.mobileLargeImage)}
-                  style={{ width: "100%", height: "320px" }}
+                  style={{ width: "100%", }}
                 >
                   <GatsbyImage
-                    image={getImage(image.mobileSmallImage)}
-                    className="w-[100%] h-[320px] cursor-pointer md:object-cover"
+                    image={getImage(image.mobileLargeImage)}
+                    className="mx-auto w-full"
                     alt=""
               
                     style={{

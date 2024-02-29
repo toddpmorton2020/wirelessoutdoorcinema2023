@@ -558,11 +558,11 @@ const WhatyougetSection = () => {
               <div key={image.id} >
                 <button
                   onClick={() => setModalImage(image.mobileLargeImage)}
-                  style={{ width: "100%", height: "320px" }}
+                  style={{ width: "100%", }}
                 >
                   <GatsbyImage
-                    image={getImage(image.mobileSmallImage)}
-                    className="w-[100%] h-[320px] cursor-pointer md:object-cover"
+                    image={getImage(image.mobileLargeImage)}
+                    className="mx-auto w-full"
                     alt=""
               
                     style={{
